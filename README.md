@@ -23,4 +23,4 @@
 **EXTRA**
 -"git branch -r", to view all branches in remote repository
 
-# main BRANCHE IS ONLY TO MERGE THE PARTS THAT HAS BEEN FINALISED
+# main BRANCH IS ONLY TO MERGE THE PARTS THAT HAS BEEN FINALISED
