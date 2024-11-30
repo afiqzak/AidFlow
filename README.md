@@ -1,5 +1,5 @@
 1. Clone Repository
-   - Ensure git is intsalled
+   - Ensure git is intsalled (link to download git -> https://git-scm.com/)
    - open Android Studio, go to File → New → Project from Version Control → Git, and paste the repository URL.
 
 2. Link Android Studio to GitHub
