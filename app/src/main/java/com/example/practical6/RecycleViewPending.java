@@ -5,24 +5,22 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link RatingFragment#newInstance} factory method to
+ * Use the {@link RecycleViewPending#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class RatingFragment extends Fragment {
+public class RecycleViewPending extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -33,7 +31,7 @@ public class RatingFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public RatingFragment() {
+    public RecycleViewPending() {
         // Required empty public constructor
     }
 
@@ -43,11 +41,11 @@ public class RatingFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment DogFragment.
+     * @return A new instance of fragment RecycleViewPending.
      */
     // TODO: Rename and change types and number of parameters
-    public static RatingFragment newInstance(String param1, String param2) {
-        RatingFragment fragment = new RatingFragment();
+    public static RecycleViewPending newInstance(String param1, String param2) {
+        RecycleViewPending fragment = new RecycleViewPending();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -64,39 +62,25 @@ public class RatingFragment extends Fragment {
         }
     }
 
-
-    @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
-        Button btnBack = view.findViewById(R.id.btnBack2);
-        View.OnClickListener OCLBack = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Navigation.findNavController(view).navigate(R.id.DestReport);
-            }
-        };
-        btnBack.setOnClickListener(OCLBack);
-    }
-
-
     private RecyclerView recyclerView;
-    private RatingAdapter adapter;
-    private List<String> ratingTitles;
+    private PendingAdapter adapter;
+    private List<String> pendingTitles;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_rate, container, false);
+        View view = inflater.inflate(R.layout.fragment_recycle_view_pending, container, false);
 
-        recyclerView = view.findViewById(R.id.recyclerViewRate);
+        recyclerView = view.findViewById(R.id.recyclerViewPending);
 
         // Sample data
-        ratingTitles = new ArrayList<>();
-        ratingTitles.add("Resolution Effectiveness");
-        ratingTitles.add("Service Quality");
-        ratingTitles.add("Delivery Time");
+        pendingTitles = new ArrayList<>();
+        pendingTitles.add("Resolution Effectiveness");
+        pendingTitles.add("Service Quality");
+        pendingTitles.add("Delivery Time");
 
         // Set up adapter and RecyclerView
-        adapter = new RatingAdapter(getContext(), ratingTitles);
+        adapter = new PendingAdapter(getContext(), pendingTitles);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(adapter);
 

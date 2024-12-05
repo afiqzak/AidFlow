@@ -89,18 +89,21 @@
 
         </RadioGroup>
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="378dp"
-            android:layout_height="246dp"
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainerView"
+            android:name="com.example.practical6.RecycleViewPending"
+            android:layout_width="wrap_content"
+            android:layout_height="241dp"
             android:layout_above="@+id/reportbutton"
             android:layout_below="@+id/toggle"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="-43dp"
-            android:layout_marginEnd="17dp"
-            android:layout_marginBottom="7dp"
-            tools:listitem="@layout/pending_projects_card"/>
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="-46dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="0dp"
+            tools:layout="@layout/fragment_recycle_view_pending" />
+
 
     </RelativeLayout>
 
