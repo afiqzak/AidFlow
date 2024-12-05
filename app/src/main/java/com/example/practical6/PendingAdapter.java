@@ -16,7 +16,7 @@ import java.util.List;
 public class PendingAdapter extends RecyclerView.Adapter<PendingAdapter.PendingViewHolder> {
 
     private Context context;
-    private List<String> pendingTitles; // List of titles or data for the cards
+    private List<String> pendingTitles; // list pending projects
 
     public PendingAdapter(Context context, List<String> ratingTitles) {
         this.context = context;
@@ -35,6 +35,7 @@ public class PendingAdapter extends RecyclerView.Adapter<PendingAdapter.PendingV
         return pendingTitles.size();
     }
 
+    //onbind ni tak tau do semua sbb den yg buat saya copy je (tanya den)
     @Override
     public void onBindViewHolder(@NonNull PendingViewHolder holder, int position) {
         String title = pendingTitles.get(position);
@@ -43,6 +44,7 @@ public class PendingAdapter extends RecyclerView.Adapter<PendingAdapter.PendingV
     }
 
 
+    //ni class for recycle view so takyah kacau kot
     public static class PendingViewHolder extends RecyclerView.ViewHolder {
         TextView pendingPlace,pendingTitle;
 

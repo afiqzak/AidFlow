@@ -3055,6 +3055,7 @@ int drawable abc_vector_test 0x7f070077
 int drawable avd_hide_password 0x7f070078
 int drawable avd_show_password 0x7f070079
 int drawable back_arrow_sementara 0x7f07007a
+int drawable back_icon 0x7f0700fc
 int drawable btn_checkbox_checked_mtrl 0x7f07007b
 int drawable btn_checkbox_checked_to_unchecked_mtrl_animation 0x7f07007c
 int drawable btn_checkbox_unchecked_mtrl 0x7f07007d
@@ -3070,7 +3071,9 @@ int drawable design_ic_visibility_off 0x7f070086
 int drawable design_password_eye 0x7f070087
 int drawable design_snackbar_background 0x7f070088
 int drawable donate_hand_sementara 0x7f070089
+int drawable donations_icon 0x7f0700f8
 int drawable edit_text_background 0x7f07008a
+int drawable home_button 0x7f0700f7
 int drawable home_icon_sementara 0x7f07008b
 int drawable ic_arrow_back_black_24 0x7f07008c
 int drawable ic_call_answer 0x7f07008d
@@ -3169,6 +3172,7 @@ int drawable notification_tile_bg 0x7f0700e9
 int drawable notify_panel_notification_icon_bg 0x7f0700ea
 int drawable outline_award_star_24 0x7f0700eb
 int drawable profile_sementara 0x7f0700ec
+int drawable rate_icon 0x7f0700fd
 int drawable rating_bar 0x7f0700ed
 int drawable rounded_corners 0x7f0700ee
 int drawable rounded_lightblue 0x7f0700ef
@@ -3177,7 +3181,10 @@ int drawable test_level_drawable 0x7f0700f1
 int drawable toggle_widget_background 0x7f0700f2
 int drawable tooltip_frame_dark 0x7f0700f3
 int drawable tooltip_frame_light 0x7f0700f4
+int drawable user_icon 0x7f0700f9
+int drawable volunteer_button 0x7f0700fa
 int drawable water_icon 0x7f0700f5
+int drawable water_logo 0x7f0700fb
 int drawable yucar_studios_cfr_v1quekw_unsplash 0x7f0700f6
 int id ALT 0x7f080000
 int id BOTTOM_END 0x7f080001
@@ -3357,7 +3364,10 @@ int id disablePostScroll 0x7f0800ae
 int id disableScroll 0x7f0800af
 int id disjoint 0x7f0800b0
 int id donation 0x7f0800b1
+int id doneStarButton 0x7f080230
+int id done_place 0x7f080231
 int id done_projects 0x7f0800b2
+int id done_title 0x7f080232
 int id dragAnticlockwise 0x7f0800b3
 int id dragClockwise 0x7f0800b4
 int id dragDown 0x7f0800b5
@@ -3401,6 +3411,7 @@ int id fixed 0x7f0800da
 int id flip 0x7f0800db
 int id floating 0x7f0800dc
 int id forever 0x7f0800dd
+int id fragmentContainerNoti 0x7f080238
 int id fragmentContainerView 0x7f0800de
 int id fragment_container_view_tag 0x7f0800df
 int id frost 0x7f0800e0
@@ -3427,7 +3438,6 @@ int id ifRoom 0x7f0800f4
 int id ignore 0x7f0800f5
 int id ignoreRequest 0x7f0800f6
 int id image 0x7f0800f7
-int id imageButton 0x7f0800f8
 int id immediateStop 0x7f0800f9
 int id included 0x7f0800fa
 int id indeterminate 0x7f0800fb
@@ -3532,6 +3542,8 @@ int id noState 0x7f08015d
 int id none 0x7f08015e
 int id normal 0x7f08015f
 int id north 0x7f080160
+int id noti_text 0x7f080235
+int id noti_title 0x7f080236
 int id notification_background 0x7f080161
 int id notification_main_column 0x7f080162
 int id notification_main_column_container 0x7f080163
@@ -3584,6 +3596,8 @@ int id rating_seekbar 0x7f080191
 int id rating_title 0x7f080192
 int id ratio 0x7f080193
 int id rectangles 0x7f080194
+int id recyclerViewDone 0x7f080233
+int id recyclerViewNoti 0x7f080237
 int id recyclerViewPending 0x7f080195
 int id recyclerViewRate 0x7f080196
 int id report_drawn 0x7f080197
@@ -3873,6 +3887,7 @@ int layout design_text_input_end_icon 0x7f0b002b
 int layout design_text_input_start_icon 0x7f0b002c
 int layout done_card 0x7f0b002d
 int layout fragment_home 0x7f0b002e
+int layout fragment_notifications 0x7f0b007d
 int layout fragment_rate 0x7f0b002f
 int layout fragment_recycle_view_done 0x7f0b0030
 int layout fragment_recycle_view_pending 0x7f0b0031
@@ -3930,6 +3945,7 @@ int layout mtrl_picker_text_input_date 0x7f0b0064
 int layout mtrl_picker_text_input_date_range 0x7f0b0065
 int layout mtrl_search_bar 0x7f0b0066
 int layout mtrl_search_view 0x7f0b0067
+int layout noti_card 0x7f0b007e
 int layout notification_action 0x7f0b0068
 int layout notification_action_tombstone 0x7f0b0069
 int layout notification_media_action 0x7f0b006a

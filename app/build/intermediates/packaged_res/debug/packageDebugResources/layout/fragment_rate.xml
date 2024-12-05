@@ -16,7 +16,7 @@
         android:backgroundTint="@color/white"
         android:padding="10dp"
         app:cornerRadius="10dp"
-        app:icon="@drawable/back_arrow_sementara"
+        app:icon="@drawable/back_icon"
         app:iconTint="@color/vibrant_blue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.049"

@@ -2,22 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/volunteer"
-        android:icon="@drawable/donate_hand_sementara"
-        android:title="Volunteer" />
+        android:icon="@drawable/volunteer_button" />
     <item
         android:id="@+id/WaterQuality"
-        android:icon="@drawable/water_icon"
-        android:title="Water Quality" />
+        android:icon="@drawable/water_logo" />
     <item
         android:id="@+id/home"
-        android:icon="@drawable/home_icon_sementara"
-        android:title="Home" />
+        android:icon="@drawable/home_button" />
     <item
         android:id="@+id/donation"
-        android:icon="@drawable/donate_hand_sementara"
-        android:title="Donation" />
+        android:icon="@drawable/donations_icon" />
     <item
         android:id="@+id/profile"
-        android:icon="@drawable/profile_sementara"
-        android:title="Profile" />
+        android:icon="@drawable/user_icon" />
 </menu>
