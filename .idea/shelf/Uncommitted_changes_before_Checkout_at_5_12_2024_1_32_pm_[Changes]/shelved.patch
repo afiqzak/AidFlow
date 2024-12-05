@@ -1,0 +1,12 @@
+Index: app/src/main/java/com/example/practical6/RecyclerViewAdapter.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>public class RecyclerViewAdapter {\r\n}\r\n
+===================================================================
+diff --git a/app/src/main/java/com/example/practical6/RecyclerViewAdapter.java b/app/src/main/java/com/example/practical6/RecyclerViewAdapter.java
+--- a/app/src/main/java/com/example/practical6/RecyclerViewAdapter.java	(revision 4249a8f9a1b2674b1638144f84835ecdea4dbdb0)
++++ b/app/src/main/java/com/example/practical6/RecyclerViewAdapter.java	(date 1733376367747)
+@@ -1,2 +1,3 @@
++package com.example.practical6;
+ public class RecyclerViewAdapter {
+ }

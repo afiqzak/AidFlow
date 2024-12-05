@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="dark_blue">#1D2388</color>
+    <color name="light_blue">#B2E8FF</color>
+    <color name="navy_blue">#8BADBB</color>
+    <color name="really_light_blue">#EAF8FE</color>
+    <color name="vibrant_blue">#5DCCFC</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Practical6</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <style name="Base.Theme.Practical6" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.Practical6" parent="Base.Theme.Practical6"/>
+</resources>

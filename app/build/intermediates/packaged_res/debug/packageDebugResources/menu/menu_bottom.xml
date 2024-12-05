@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/volunteer"
+        android:icon="@drawable/donate_hand_sementara"
+        android:title="Volunteer" />
+    <item
+        android:id="@+id/WaterQuality"
+        android:icon="@drawable/water_icon"
+        android:title="Water Quality" />
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home_icon_sementara"
+        android:title="Home" />
+    <item
+        android:id="@+id/donation"
+        android:icon="@drawable/donate_hand_sementara"
+        android:title="Donation" />
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/profile_sementara"
+        android:title="Profile" />
+</menu>
