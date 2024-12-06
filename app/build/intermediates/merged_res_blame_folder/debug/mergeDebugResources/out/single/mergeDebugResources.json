@@ -60,10 +60,6 @@
         "source": "C:\\Users\\radin\\.gradle\\daemon\\8.9\\com.example.practical6.app-main-47:\\drawable\\rounded_corners.xml"
     },
     {
-        "merged": "com.example.practical6.app-debug-45:/layout_pending_projects_card.xml.flat",
-        "source": "com.example.practical6.app-main-47:/layout/pending_projects_card.xml"
-    },
-    {
         "merged": "C:\\Users\\radin\\.gradle\\daemon\\8.9\\com.example.practical6.app-debug-45:\\drawable_toggle_widget_background.xml.flat",
         "source": "C:\\Users\\radin\\.gradle\\daemon\\8.9\\com.example.practical6.app-main-47:\\drawable\\toggle_widget_background.xml"
     },
@@ -188,16 +184,16 @@
         "source": "C:\\Users\\radin\\.gradle\\daemon\\8.9\\com.example.practical6.app-main-47:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\radin\\.gradle\\daemon\\8.9\\com.example.practical6.app-debug-45:\\layout_fragment_recycle_view_pending.xml.flat",
-        "source": "C:\\Users\\radin\\.gradle\\daemon\\8.9\\com.example.practical6.app-main-47:\\layout\\fragment_recycle_view_pending.xml"
+        "merged": "com.example.practical6.app-debug-45:/layout_activity_main.xml.flat",
+        "source": "com.example.practical6.app-main-47:/layout/activity_main.xml"
     },
     {
         "merged": "C:\\Users\\radin\\.gradle\\daemon\\8.9\\com.example.practical6.app-debug-45:\\layout_activity_main.xml.flat",
         "source": "C:\\Users\\radin\\.gradle\\daemon\\8.9\\com.example.practical6.app-main-47:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.example.practical6.app-debug-45:/layout_done_card.xml.flat",
-        "source": "com.example.practical6.app-main-47:/layout/done_card.xml"
+        "merged": "C:\\Users\\radin\\.gradle\\daemon\\8.9\\com.example.practical6.app-debug-45:\\layout_fragment_recycle_view_pending.xml.flat",
+        "source": "C:\\Users\\radin\\.gradle\\daemon\\8.9\\com.example.practical6.app-main-47:\\layout\\fragment_recycle_view_pending.xml"
     },
     {
         "merged": "C:\\Users\\radin\\.gradle\\daemon\\8.9\\com.example.practical6.app-debug-45:\\drawable_home_button.xml.flat",
