@@ -3195,8 +3195,8 @@ int id DestHome 0x7f080005
 int id DestRating 0x7f080006
 int id DestReport 0x7f080007
 int id FUNCTION 0x7f080008
+int id FragmentViewMain 0x7f080239
 int id META 0x7f080009
-int id NHFMain 0x7f08000a
 int id NO_DEBUG 0x7f08000b
 int id PageFragment 0x7f08000c
 int id RelatedReportImage 0x7f08000d
@@ -3524,7 +3524,7 @@ int id mtrl_picker_text_input_range_start 0x7f08014b
 int id mtrl_picker_title_text 0x7f08014c
 int id mtrl_view_tag_bottom_padding 0x7f08014d
 int id multiply 0x7f08014e
-int id nav_animal_lover 0x7f08014f
+int id nav 0x7f08023a
 int id nav_controller_view_tag 0x7f080150
 int id nav_host_fragment_container 0x7f080151
 int id navigation_bar_item_active_indicator_view 0x7f080152

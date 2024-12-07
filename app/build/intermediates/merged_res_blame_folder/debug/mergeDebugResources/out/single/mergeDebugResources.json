@@ -48,12 +48,12 @@
         "source": "C:\\Users\\radin\\.gradle\\daemon\\8.9\\com.example.practical6.app-main-47:\\drawable\\rate_icon.xml"
     },
     {
-        "merged": "C:\\Users\\radin\\.gradle\\daemon\\8.9\\com.example.practical6.app-debug-45:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\radin\\.gradle\\daemon\\8.9\\com.example.practical6.app-main-47:\\xml\\data_extraction_rules.xml"
-    },
-    {
         "merged": "C:\\Users\\radin\\.gradle\\daemon\\8.9\\com.example.practical6.app-debug-45:\\drawable_edit_text_background.xml.flat",
         "source": "C:\\Users\\radin\\.gradle\\daemon\\8.9\\com.example.practical6.app-main-47:\\drawable\\edit_text_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\radin\\.gradle\\daemon\\8.9\\com.example.practical6.app-debug-45:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\radin\\.gradle\\daemon\\8.9\\com.example.practical6.app-main-47:\\xml\\data_extraction_rules.xml"
     },
     {
         "merged": "C:\\Users\\radin\\.gradle\\daemon\\8.9\\com.example.practical6.app-debug-45:\\drawable_rounded_corners.xml.flat",
@@ -68,16 +68,16 @@
         "source": "C:\\Users\\radin\\.gradle\\daemon\\8.9\\com.example.practical6.app-main-47:\\drawable\\rating_bar.xml"
     },
     {
-        "merged": "C:\\Users\\radin\\.gradle\\daemon\\8.9\\com.example.practical6.app-debug-45:\\drawable_yucar_studios_cfr_v1quekw_unsplash.jpg.flat",
-        "source": "C:\\Users\\radin\\.gradle\\daemon\\8.9\\com.example.practical6.app-main-47:\\drawable\\yucar_studios_cfr_v1quekw_unsplash.jpg"
+        "merged": "C:\\Users\\radin\\.gradle\\daemon\\8.9\\com.example.practical6.app-debug-45:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\radin\\.gradle\\daemon\\8.9\\com.example.practical6.app-main-47:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
         "merged": "C:\\Users\\radin\\.gradle\\daemon\\8.9\\com.example.practical6.app-debug-45:\\drawable_jouni_rajala_0aiko248fhe_unsplash.jpg.flat",
         "source": "C:\\Users\\radin\\.gradle\\daemon\\8.9\\com.example.practical6.app-main-47:\\drawable\\jouni_rajala_0aiko248fhe_unsplash.jpg"
     },
     {
-        "merged": "C:\\Users\\radin\\.gradle\\daemon\\8.9\\com.example.practical6.app-debug-45:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\radin\\.gradle\\daemon\\8.9\\com.example.practical6.app-main-47:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\radin\\.gradle\\daemon\\8.9\\com.example.practical6.app-debug-45:\\drawable_yucar_studios_cfr_v1quekw_unsplash.jpg.flat",
+        "source": "C:\\Users\\radin\\.gradle\\daemon\\8.9\\com.example.practical6.app-main-47:\\drawable\\yucar_studios_cfr_v1quekw_unsplash.jpg"
     },
     {
         "merged": "C:\\Users\\radin\\.gradle\\daemon\\8.9\\com.example.practical6.app-debug-45:\\drawable_ic_launcher_background.xml.flat",

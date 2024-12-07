@@ -36,7 +36,7 @@ id DLMain
 id DestHome
 id DestRating
 id DestReport
-id NHFMain
+id FragmentViewMain
 id PageFragment
 id RelatedReportImage
 id WaterQuality
@@ -59,7 +59,7 @@ id home
 id last_name
 id linear_layout
 id linear_layout1
-id nav_animal_lover
+id nav
 id noti_text
 id noti_title
 id pending_place
