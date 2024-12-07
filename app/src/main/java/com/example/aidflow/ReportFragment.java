@@ -58,13 +58,14 @@ public class ReportFragment extends Fragment {
         }
     }
 
+    //ni utk fragment
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_report, container, false);
     }
 
+    //ni function utk bila tekan butang2
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState){
         Button btnBack = view.findViewById(R.id.btnBack);
@@ -75,15 +76,6 @@ public class ReportFragment extends Fragment {
             }
         };
         btnBack.setOnClickListener(OCLBack);
-
-        Button photoUploadButton = view.findViewById(R.id.upload_photo_button);
-        View.OnClickListener OCLPhotoUpload = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Navigation.findNavController(view).navigate(R.id.DestRating);
-            }
-        };
-        photoUploadButton.setOnClickListener(OCLPhotoUpload);
 
     }
 }

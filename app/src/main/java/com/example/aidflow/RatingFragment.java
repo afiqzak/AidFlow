@@ -65,19 +65,22 @@ public class RatingFragment extends Fragment {
     }
 
 
+    //button function semua
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         Button btnBack = view.findViewById(R.id.btnBack2);
         View.OnClickListener OCLBack = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Navigation.findNavController(view).navigate(R.id.DestReport);
+                Navigation.findNavController(view).navigate(R.id.DestHome);
             }
         };
         btnBack.setOnClickListener(OCLBack);
     }
 
 
+    //ni method utk isi rating recycle view tu
+    //sama gak ni placeholder sementara je lu
     private RecyclerView recyclerView;
     private RatingAdapter adapter;
     private List<String> ratingTitles;
@@ -95,7 +98,7 @@ public class RatingFragment extends Fragment {
         ratingTitles.add("Service Quality");
         ratingTitles.add("Delivery Time");
 
-        // Set up adapter and RecyclerView
+        // takyah kacau
         adapter = new RatingAdapter(getContext(), ratingTitles);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(adapter);

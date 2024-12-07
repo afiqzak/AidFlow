@@ -6,17 +6,17 @@
     app:startDestination="@id/DestHome">
     <fragment
         android:id="@+id/DestReport"
-        android:name="com.example.practical6.ReportFragment"
+        android:name="com.example.aidflow.ReportFragment"
         android:label="fragment_cat"
         tools:layout="@layout/fragment_report" />
     <fragment
         android:id="@+id/DestHome"
-        android:name="com.example.practical6.HomeFragment"
+        android:name="com.example.aidflow.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/DestRating"
-        android:name="com.example.practical6.RatingFragment"
+        android:name="com.example.aidflow.RatingFragment"
         android:label="fragment_rate"
         tools:layout="@layout/fragment_rate" />
 

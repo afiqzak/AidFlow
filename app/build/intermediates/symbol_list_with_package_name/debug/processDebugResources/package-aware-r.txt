@@ -1,4 +1,4 @@
-com.example.practical6
+com.example.aidflow
 anim abc_fade_in
 anim abc_fade_out
 anim abc_grow_fade_in_from_bottom
@@ -3056,6 +3056,8 @@ drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
 drawable back_arrow_sementara
+drawable back_icon
+drawable bottom_nav
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -3071,7 +3073,9 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable donate_hand_sementara
+drawable donations_icon
 drawable edit_text_background
+drawable home_button
 drawable home_icon_sementara
 drawable ic_arrow_back_black_24
 drawable ic_call_answer
@@ -3170,6 +3174,7 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable outline_award_star_24
 drawable profile_sementara
+drawable rate_icon
 drawable rating_bar
 drawable rounded_corners
 drawable rounded_lightblue
@@ -3178,7 +3183,10 @@ drawable test_level_drawable
 drawable toggle_widget_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable user_icon
+drawable volunteer_button
 drawable water_icon
+drawable water_logo
 drawable yucar_studios_cfr_v1quekw_unsplash
 id ALT
 id BOTTOM_END
@@ -3358,7 +3366,10 @@ id disablePostScroll
 id disableScroll
 id disjoint
 id donation
+id doneStarButton
+id done_place
 id done_projects
+id done_title
 id dragAnticlockwise
 id dragClockwise
 id dragDown
@@ -3402,6 +3413,7 @@ id fixed
 id flip
 id floating
 id forever
+id fragmentContainerNoti
 id fragmentContainerView
 id fragment_container_view_tag
 id frost
@@ -3428,7 +3440,6 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
-id imageButton
 id immediateStop
 id included
 id indeterminate
@@ -3533,6 +3544,8 @@ id noState
 id none
 id normal
 id north
+id noti_text
+id noti_title
 id notification_background
 id notification_main_column
 id notification_main_column_container
@@ -3585,6 +3598,8 @@ id rating_seekbar
 id rating_title
 id ratio
 id rectangles
+id recyclerViewDone
+id recyclerViewNoti
 id recyclerViewPending
 id recyclerViewRate
 id report_drawn
@@ -3874,6 +3889,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout done_card
 layout fragment_home
+layout fragment_notifications
 layout fragment_rate
 layout fragment_recycle_view_done
 layout fragment_recycle_view_pending
@@ -3931,6 +3947,7 @@ layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
 layout mtrl_search_bar
 layout mtrl_search_view
+layout noti_card
 layout notification_action
 layout notification_action_tombstone
 layout notification_media_action
@@ -4203,6 +4220,7 @@ style Base_TextAppearance_MaterialComponents_Subtitle2
 style Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item
 style Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle
 style Base_TextAppearance_Widget_AppCompat_Toolbar_Title
+style Base_Theme_AidFlow
 style Base_Theme_AppCompat
 style Base_Theme_AppCompat_CompactMenu
 style Base_Theme_AppCompat_Dialog
@@ -4248,7 +4266,6 @@ style Base_Theme_MaterialComponents_Light_Dialog_Bridge
 style Base_Theme_MaterialComponents_Light_Dialog_FixedSize
 style Base_Theme_MaterialComponents_Light_Dialog_MinWidth
 style Base_Theme_MaterialComponents_Light_DialogWhenLarge
-style Base_Theme_Practical6
 style Base_ThemeOverlay_AppCompat
 style Base_ThemeOverlay_AppCompat_ActionBar
 style Base_ThemeOverlay_AppCompat_Dark
@@ -4657,6 +4674,7 @@ style TextAppearance_MaterialComponents_Tooltip
 style TextAppearance_Widget_AppCompat_ExpandedMenu_Item
 style TextAppearance_Widget_AppCompat_Toolbar_Subtitle
 style TextAppearance_Widget_AppCompat_Toolbar_Title
+style Theme_AidFlow
 style Theme_AppCompat
 style Theme_AppCompat_CompactMenu
 style Theme_AppCompat_DayNight
@@ -4762,7 +4780,6 @@ style Theme_MaterialComponents_Light_NoActionBar
 style Theme_MaterialComponents_Light_NoActionBar_Bridge
 style Theme_MaterialComponents_NoActionBar
 style Theme_MaterialComponents_NoActionBar_Bridge
-style Theme_Practical6
 style ThemeOverlay_AppCompat
 style ThemeOverlay_AppCompat_ActionBar
 style ThemeOverlay_AppCompat_Dark

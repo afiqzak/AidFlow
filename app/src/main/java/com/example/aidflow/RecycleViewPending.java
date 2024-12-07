@@ -62,6 +62,8 @@ public class RecycleViewPending extends Fragment {
         }
     }
 
+    //ni method utk isi rating recycle view tu
+    //sama gak ni placeholder sementara je lu
     private RecyclerView recyclerView;
     private PendingAdapter adapter;
     private List<String> pendingTitles;
@@ -79,7 +81,7 @@ public class RecycleViewPending extends Fragment {
         pendingTitles.add("Service Quality");
         pendingTitles.add("Delivery Time");
 
-        // Set up adapter and RecyclerView
+        // takyah kacau
         adapter = new PendingAdapter(getContext(), pendingTitles);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(adapter);

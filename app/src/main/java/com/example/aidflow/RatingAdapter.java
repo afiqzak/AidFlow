@@ -9,14 +9,14 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.practical6.R;
+import com.example.aidflow.R;
 
 import java.util.List;
 
 public class RatingAdapter extends RecyclerView.Adapter<RatingAdapter.RatingViewHolder> {
 
     private Context context;
-    private List<String> ratingTitles; // List of titles or data for the cards
+    private List<String> ratingTitles; // list yg rating
 
     public RatingAdapter(Context context, List<String> ratingTitles) {
         this.context = context;
@@ -30,6 +30,8 @@ public class RatingAdapter extends RecyclerView.Adapter<RatingAdapter.RatingView
         return new RatingViewHolder(view);
     }
 
+
+    //bind yg ni lak utk seek bar gerak2 tu
     @Override
     public void onBindViewHolder(@NonNull RatingViewHolder holder, int position) {
         String title = ratingTitles.get(position);
@@ -55,6 +57,7 @@ public class RatingAdapter extends RecyclerView.Adapter<RatingAdapter.RatingView
         return ratingTitles.size();
     }
 
+    //ni class utk recycle view so takyah kacau kot
     public static class RatingViewHolder extends RecyclerView.ViewHolder {
         TextView ratingTitle;
         SeekBar seekBar;

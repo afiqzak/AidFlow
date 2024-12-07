@@ -7,11 +7,11 @@
     <color name="really_light_blue">#EAF8FE</color>
     <color name="vibrant_blue">#5DCCFC</color>
     <color name="white">#FFFFFFFF</color>
-    <string name="app_name">Practical6</string>
+    <string name="app_name">AidFlow</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <style name="Base.Theme.Practical6" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.AidFlow" parent="Theme.Material3.DayNight.NoActionBar">
         
         
     </style>
-    <style name="Theme.Practical6" parent="Base.Theme.Practical6"/>
+    <style name="Theme.AidFlow" parent="Base.Theme.AidFlow"/>
 </resources>
