@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/round_shape"
+        android:title="Volunteer"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/donations"
+        android:icon="@drawable/round_shape"
+        android:title="Water Quality"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/red_urgency"
+        android:title="Home"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/air"
+        android:icon="@drawable/red_urgency"
+        android:title="Donation"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/donate"
+        android:icon="@drawable/red_urgency"
+        android:title="Profile"
+        app:showAsAction="ifRoom" />
+</menu>
