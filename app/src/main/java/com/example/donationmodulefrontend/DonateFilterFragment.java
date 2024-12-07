@@ -29,6 +29,7 @@ public class DonateFilterFragment extends DialogFragment {
 
             WindowManager.LayoutParams params = getDialog().getWindow().getAttributes();
 
+            //test
             params.gravity = Gravity.BOTTOM; // Positions the layout at the bottom
             params.y = 500; // Offset from the bottom (in pixels)
 
