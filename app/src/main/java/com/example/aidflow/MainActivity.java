@@ -33,4 +33,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    private void setupBottomNavMenu(NavController navController){
+        BottomNavigationView bottomNav = findViewById(R.id.bottomNavigationView);
+        NavigationUI.setupWithNavController(bottomNav, navController);
+    }
 }
