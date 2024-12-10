@@ -42,8 +42,8 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsViewHolder
     @Override
     public void onBindViewHolder(@NonNull NewsViewHolder holder, int position) {
         String title = newsTitles.get(position);
-        holder.pendingTitle.setText(title);
-        holder.pendingPlace.setText("Place " + (position + 1)); // Example: Dynamically set the place
+//        holder.pendingTitle.setText(title);
+//        holder.pendingPlace.setText("Place " + (position + 1)); // Example: Dynamically set the place
     }
 
 
