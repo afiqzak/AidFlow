@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
             // Load DonationFragment as the default fragment
             getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.fragment_container, new DonationFragment())
+                    .replace(R.id.fragment_container, new main_donation_Fragment())
                     .commit();
         }
 

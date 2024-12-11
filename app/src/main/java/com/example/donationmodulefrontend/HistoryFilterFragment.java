@@ -29,7 +29,7 @@ public class HistoryFilterFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 FragmentTransaction fr = requireActivity().getSupportFragmentManager().beginTransaction();
-                fr.replace(R.id.fragment_container,new HistoryFragment());
+                fr.replace(R.id.fragment_container,new main_donation_Fragment());
                 fr.addToBackStack(null);
                 fr.commit();
 
@@ -42,11 +42,13 @@ public class HistoryFilterFragment extends Fragment {
             public void onClick(View v) {
                 Toast.makeText(getContext(), "Filter Applied", Toast.LENGTH_LONG).show();
                 FragmentTransaction fr = requireActivity().getSupportFragmentManager().beginTransaction();
-                fr.replace(R.id.fragment_container,new HistoryFragment());
+                fr.replace(R.id.fragment_container,new main_donation_Fragment());
                 fr.addToBackStack(null);
                 fr.commit();
             }
         });
+
+
 
         return view;
     }

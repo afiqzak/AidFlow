@@ -19,30 +19,15 @@ import java.util.List;
 
 public class DonationFragment extends Fragment {
 
+
+
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_donation, container, false);
-        Button donation_button = view.findViewById(R.id.History);
-        donation_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                FragmentTransaction fr = requireActivity().getSupportFragmentManager().beginTransaction();
-                fr.replace(R.id.fragment_container,new HistoryFragment());
-                fr.addToBackStack(null);
-                fr.commit();
-            }
-        });
 
-        FloatingActionButton fab = view.findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                DonateFilterFragment floatingLayout = new DonateFilterFragment();
-                floatingLayout.show(requireActivity().getSupportFragmentManager().beginTransaction(), "FloatingLayout");
-            }
-        });
 
         return view;
     }

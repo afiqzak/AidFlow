@@ -22,27 +22,7 @@ public class HistoryFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_history, container, false);
-        Button history_button = (Button) view.findViewById(R.id.Donation_button);
-        history_button.setOnClickListener(new View.OnClickListener() {
 
-            @Override
-            public void onClick(View v) {
-                FragmentTransaction fr = requireActivity().getSupportFragmentManager().beginTransaction();
-                fr.replace(R.id.fragment_container,new DonationFragment());
-                fr.addToBackStack(null);
-                        fr.commit();
-            }
-        });
-
-        FloatingActionButton fab_history = view.findViewById(R.id.fab_history);
-        fab_history.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FragmentTransaction fr = requireActivity().getSupportFragmentManager().beginTransaction();
-                fr.replace(R.id.fragment_container,new HistoryFilterFragment());
-                fr.addToBackStack(null);
-                fr.commit();            }
-        });
 
         return view;
 

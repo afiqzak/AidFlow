@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 
@@ -41,19 +42,19 @@ public class DonationDonateFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 FragmentTransaction fr = requireActivity().getSupportFragmentManager().beginTransaction();
-                fr.replace(R.id.fragment_container,new DonationFragment());
+                fr.replace(R.id.fragment_container,new main_donation_Fragment());
                 fr.addToBackStack(null);
                 fr.commit();
             }
         });
 
-        Button donateButton_donate = view.findViewById(R.id.donationButton_donate);
-        donateButton_donate.setOnClickListener(new View.OnClickListener() {
+        LinearLayout donationButton_donate = view.findViewById(R.id.donationButton_donate);
+        donationButton_donate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getContext(), "Donate Request Sent", Toast.LENGTH_LONG).show();
                 FragmentTransaction fr = requireActivity().getSupportFragmentManager().beginTransaction();
-                fr.replace(R.id.fragment_container,new DonationFragment());
+                fr.replace(R.id.fragment_container,new main_donation_Fragment());
                 fr.addToBackStack(null);
                 fr.commit();
             }

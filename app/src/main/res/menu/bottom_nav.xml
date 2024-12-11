@@ -4,31 +4,31 @@
 
     <item
         android:id="@+id/home"
-        android:icon="@drawable/round_shape"
+        android:icon="@drawable/heart_hand"
         android:title="Volunteer"
         app:showAsAction="ifRoom" />
 
     <item
         android:id="@+id/donations"
-        android:icon="@drawable/round_shape"
+        android:icon="@drawable/droplet_icon"
         android:title="Water Quality"
         app:showAsAction="ifRoom" />
 
     <item
         android:id="@+id/profile"
-        android:icon="@drawable/red_urgency"
+        android:icon="@drawable/home_icon"
         android:title="Home"
         app:showAsAction="ifRoom" />
 
     <item
         android:id="@+id/air"
-        android:icon="@drawable/red_urgency"
+        android:icon="@drawable/hands_donate_icon_color"
         android:title="Donation"
         app:showAsAction="ifRoom" />
 
     <item
         android:id="@+id/donate"
-        android:icon="@drawable/red_urgency"
+        android:icon="@drawable/user_profile_icon"
         android:title="Profile"
         app:showAsAction="ifRoom" />
 </menu>
