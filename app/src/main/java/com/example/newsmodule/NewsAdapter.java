@@ -41,9 +41,9 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsViewHolder
     //onbind ni tak tau do semua sbb den yg buat saya copy je (tanya den)
     @Override
     public void onBindViewHolder(@NonNull NewsViewHolder holder, int position) {
-        String title = newsTitles.get(position);
-//        holder.pendingTitle.setText(title);
-//        holder.pendingPlace.setText("Place " + (position + 1)); // Example: Dynamically set the place
+        holder.newsTitle.setText(newsTitles.get(position));
+        holder.newsDesc.setText(newsDesc.get(position));
+        holder.newsDate.setText(newsDate.get(position));
     }
 
 
