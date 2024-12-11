@@ -17,10 +17,10 @@ import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link NewsView#newInstance} factory method to
+ * Use the {@link StoryView#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class NewsView extends Fragment {
+public class StoryView extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -31,7 +31,7 @@ public class NewsView extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public NewsView() {
+    public StoryView() {
         // Required empty public constructor
     }
 
@@ -41,11 +41,11 @@ public class NewsView extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment NewsView.
+     * @return A new instance of fragment StotyView.
      */
     // TODO: Rename and change types and number of parameters
-    public static NewsView newInstance(String param1, String param2) {
-        NewsView fragment = new NewsView();
+    public static StoryView newInstance(String param1, String param2) {
+        StoryView fragment = new StoryView();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -63,39 +63,26 @@ public class NewsView extends Fragment {
     }
 
     private RecyclerView recyclerView;
-    private NewsAdapter adapter;
-    private List<String> newsTitles, newsDesc, newsDate;
+    private StoryAdapter adapter;
+    private List<Integer> storyImages;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_news_view, container, false);
+        View view = inflater.inflate(R.layout.fragment_story_view, container, false);
 
-        recyclerView = view.findViewById(R.id.newsList);
+        recyclerView = view.findViewById(R.id.storyList);
 
         // Sample data
-        newsTitles = new ArrayList<>();
-        newsTitles.add("News 1");
-        newsTitles.add("News 2");
-        newsTitles.add("News 3");
-        newsTitles.add("News 4");
+        storyImages = new ArrayList<>();
+        storyImages.add(R.drawable.story1);
+        storyImages.add(R.drawable.story2);
+        storyImages.add(R.drawable.story3);
 
-
-        newsDesc = new ArrayList<>();
-        newsDesc.add("Description 1");
-        newsDesc.add("Description 2");
-        newsDesc.add("Description 3");
-        newsDesc.add("Description 4");
-
-        newsDate = new ArrayList<>();
-        newsDate.add("Date 1");
-        newsDate.add("Date 2");
-        newsDate.add("Date 3");
-        newsDate.add("Date 4");
 
         // takyah kacau
-        adapter = new NewsAdapter(getContext(), newsTitles, newsDesc, newsDate);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        adapter = new StoryAdapter(getContext(), storyImages);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
         recyclerView.setAdapter(adapter);
 
         return view;
