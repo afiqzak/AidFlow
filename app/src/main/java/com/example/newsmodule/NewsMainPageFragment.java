@@ -3,10 +3,12 @@ package com.example.newsmodule;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RadioGroup;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -61,4 +63,34 @@ public class NewsMainPageFragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_news_main_page, container, false);
     }
+
+    private RadioGroup toggleGroup;
+
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        toggleGroup = view.findViewById(R.id.toggleNews);
+
+        toggleGroup.setOnCheckedChangeListener((group, checkedId) -> {
+            if (checkedId == R.id.projectButton) {
+                // tukar ke pending
+                switchFragment(new ProjectsFragment());
+            } else if (checkedId == R.id.newsButton) {
+                // tukar ke done fragment
+                switchFragment(new NewsView());
+            }
+        });
+
+        // default klau tak pilih pape agi pending
+        switchFragment(new ProjectsFragment());
+    }
+
+    // ni fragment manager
+    private void switchFragment(Fragment fragment) {
+        FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
+        transaction.replace(R.id.fragmentContainerViewNews, fragment);
+        transaction.commit();
+    }
+
 }
