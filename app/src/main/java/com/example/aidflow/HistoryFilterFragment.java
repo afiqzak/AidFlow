@@ -4,7 +4,10 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
-
+import androidx.fragment.app.Fragment;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,6 +29,7 @@ public class HistoryFilterFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 FragmentTransaction fr = requireActivity().getSupportFragmentManager().beginTransaction();
+                fr.replace(R.id.fragment_container,new main_donation_Fragment());
                 fr.replace(R.id.FragmentViewMain,new HistoryFragment());
                 fr.addToBackStack(null);
                 fr.commit();
@@ -40,6 +44,7 @@ public class HistoryFilterFragment extends Fragment {
                 Toast.makeText(getContext(), "Filter Applied", Toast.LENGTH_LONG).show();
                 FragmentTransaction fr = requireActivity().getSupportFragmentManager().beginTransaction();
                 fr.replace(R.id.FragmentViewMain,new HistoryFragment());
+                fr.replace(R.id.fragment_container,new main_donation_Fragment());
                 fr.addToBackStack(null);
                 fr.commit();
             }
