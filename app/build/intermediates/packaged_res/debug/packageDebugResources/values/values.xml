@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
-    <color name="colorapatah">#8BADBB</color>
     <color name="dark_blue">#1D2388</color>
     <color name="green">#008000</color>
     <color name="light_blue">#B2E8FF</color>
     <color name="navy_blue">#8BADBB</color>
-    <color name="purple">#1D2388</color>
     <color name="really_light_blue">#EAF8FE</color>
     <color name="red">#FF0000</color>
     <color name="transparent">#00FFFFFF</color>
@@ -14,7 +12,13 @@
     <color name="white">#FFFFFFFF</color>
     <color name="yellow">#FFFF00</color>
     <string name="app_name">AidFlow</string>
+    <string name="gcm_defaultSenderId" translatable="false">1015996066021</string>
+    <string name="google_api_key" translatable="false">AIzaSyBEgQFSBpbp4jS-yf-VzQHAWIBtbksExos</string>
+    <string name="google_app_id" translatable="false">1:1015996066021:android:dd14122d634f4284658c0c</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBEgQFSBpbp4jS-yf-VzQHAWIBtbksExos</string>
+    <string name="google_storage_bucket" translatable="false">madproject-a9b78.firebasestorage.app</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="project_id" translatable="false">madproject-a9b78</string>
     <style name="Base.Theme.AidFlow" parent="Theme.Material3.DayNight.NoActionBar">
         
         

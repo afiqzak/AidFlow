@@ -60,7 +60,7 @@ class DonationAdapter extends RecyclerView.Adapter<DonationAdapter.DonationViewH
                 FragmentTransaction transaction = ((FragmentActivity) context)
                         .getSupportFragmentManager()
                         .beginTransaction();
-                transaction.replace(R.id.fragmentContainerView, new DonationDonateFragment());
+                transaction.replace(R.id.fragmentContainerView, new DonationFormFragment());
                 transaction.addToBackStack(null);
                 transaction.commit();
 

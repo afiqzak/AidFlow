@@ -1,66 +1,68 @@
 package com.example.aidflow;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class DonationDonateFragment extends Fragment {
 
+    @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View view =  inflater.inflate(R.layout.fragment_donation_donate, container, false);
-
-//        Button donate_Button = view.findViewById(R.id.donateButton_donate);
-//        donate_Button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Toast.makeText(getContext(), "Donate Request Sent", Toast.LENGTH_LONG).show();
-//                FragmentTransaction fr = requireActivity().getSupportFragmentManager().beginTransaction();
-//                fr.replace(R.id.fragment_container,new DonationFragment());
-//                fr.addToBackStack(null);
-//                fr.commit();
-//            }
-//        });
-//
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_donation_donate, container, false);
 
 
-        ImageView back_button = view.findViewById(R.id.back_icon);
-        back_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FragmentTransaction fr = requireActivity().getSupportFragmentManager().beginTransaction();
-                fr.replace(R.id.fragment_container,new main_donation_Fragment());
-                fr.replace(R.id.FragmentViewMain,new DonationFragment());
-                fr.addToBackStack(null);
-                fr.commit();
-            }
-        });
-
-        LinearLayout donationButton_donate = view.findViewById(R.id.donationButton_donate);
-        donationButton_donate.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getContext(), "Donate Request Sent", Toast.LENGTH_LONG).show();
-                FragmentTransaction fr = requireActivity().getSupportFragmentManager().beginTransaction();
-                fr.replace(R.id.fragment_container,new main_donation_Fragment());
-                fr.replace(R.id.FragmentViewMain,new DonationFragment());
-                fr.addToBackStack(null);
-                fr.commit();
-            }
-        });
 
         return view;
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        // Initialize RecyclerView
+        RecyclerView recyclerView = view.findViewById(R.id.recyclerView);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+
+        // Sample data
+        List<Donation> donationList = new ArrayList<>();
+        donationList.add(new Donation("Funds for Elderly Home", "Community Project", "4 Jan", 20, "medium"));
+        donationList.add(new Donation("Upgrading Clean Water Supply", "Water and Sanitation", "4 Jan", 20, "low"));
+        donationList.add(new Donation("Funds for Elderly Home", "Community Project", "4 Jan", 20, "high"));
+        donationList.add(new Donation("Funds for Elderly Home", "Community Project", "4 Jan", 20, "medium"));
+        donationList.add(new Donation("Upgrading Clean Water Supply", "Water and Sanitation", "4 Jan", 20, "low"));
+        donationList.add(new Donation("Funds for Elderly Home", "Community Project", "4 Jan", 20, "high"));
+        donationList.add(new Donation("Funds for Elderly Home", "Community Project", "4 Jan", 20, "medium"));
+        donationList.add(new Donation("Upgrading Clean Water Supply", "Water and Sanitation", "4 Jan", 20, "low"));
+        donationList.add(new Donation("Funds for Elderly Home", "Community Project", "4 Jan", 20, "high"));
+        donationList.add(new Donation("Funds for Elderly Home", "Community Project", "4 Jan", 20, "medium"));
+        donationList.add(new Donation("Upgrading Clean Water Supply", "Water and Sanitation", "4 Jan", 20, "low"));
+        donationList.add(new Donation("Funds for Elderly Home", "Community Project", "4 Jan", 20, "high"));
+
+
+        // Attach adapter to RecyclerView
+        DonationAdapter adapter = new DonationAdapter(donationList,getContext());
+        recyclerView.setAdapter(adapter);
+
+        // Initialize FloatingActionButton
+//        FloatingActionButton fab = view.findViewById(R.id.fab);
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Toast.makeText(getContext(), "FAB clicked", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+
+
     }
 }

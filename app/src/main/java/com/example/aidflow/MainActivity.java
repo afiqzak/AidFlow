@@ -5,7 +5,6 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.NavigationUI;
 
@@ -26,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(bottomNavMenu, navControl);
 
         navControl.addOnDestinationChangedListener((controller, destination, arguments) -> {
-            if (destination.getId() == R.id.DestRating || destination.getId() == R.id.DestReport) {
+            if (destination.getId() == R.id.waterRating || destination.getId() == R.id.waterReport || destination.getId() == R.id.donationHistFilter) {
                 bottomNavMenu.setVisibility(View.GONE);
             } else {
                 bottomNavMenu.setVisibility(View.VISIBLE);

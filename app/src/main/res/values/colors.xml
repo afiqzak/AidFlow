@@ -10,7 +10,5 @@
     <color name="red">#FF0000</color>
     <color name="yellow">#FFFF00</color>
     <color name="green">#008000</color>
-    <color name="purple">#1D2388</color>
-    <color name="colorapatah">#8BADBB</color>
     <color name="transparent">#00FFFFFF</color>
 </resources>

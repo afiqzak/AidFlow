@@ -42,7 +42,7 @@ public class DoneAdapter extends RecyclerView.Adapter<DoneAdapter.DoneViewHolder
         holder.doneStarButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Navigation.findNavController(v).navigate(R.id.DestRating);
+                Navigation.findNavController(v).navigate(R.id.waterRating);
             }
         });
     }

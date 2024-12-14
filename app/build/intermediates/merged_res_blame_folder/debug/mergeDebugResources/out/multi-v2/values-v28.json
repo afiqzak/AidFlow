@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.aidflow.app-mergeDebugResources-43:/values-v28/values-v28.xml",
+            "outputFile": "com.example.aidflow.app-mergeDebugResources-50:/values-v28/values-v28.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\afiqz\\.gradle\\caches\\8.9\\transforms\\3eff0ba8601a9844ac3c8b40473a5514\\transformed\\appcompat-1.7.0\\res\\values-v28\\values-v28.xml",
+                    "source": "C:\\Users\\afiqz\\.gradle\\caches\\8.9\\transforms\\721a59fae002ab4aba33ba609d8bc8d8\\transformed\\appcompat-1.7.0\\res\\values-v28\\values-v28.xml",
                     "from": {
                         "startLines": "2,3,4,8",
                         "startColumns": "4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\afiqz\\.gradle\\caches\\8.9\\transforms\\73b99b438bb9026d7dc83a229f53ef4a\\transformed\\material-1.12.0\\res\\values-v28\\values-v28.xml",
+                    "source": "C:\\Users\\afiqz\\.gradle\\caches\\8.9\\transforms\\78d3a7232eaf6272e34308b20ef71ca2\\transformed\\material-1.12.0\\res\\values-v28\\values-v28.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",

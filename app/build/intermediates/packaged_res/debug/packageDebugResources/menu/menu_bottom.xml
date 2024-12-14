@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/volunteer"
-        android:icon="@drawable/volunteer_button"
+        android:id="@+id/destVolunteer"
+        android:icon="@drawable/icon_volunteer"
         android:title=""/>
     <item
-        android:id="@+id/WaterQuality"
-        android:icon="@drawable/water_logo"
+        android:id="@+id/destWaterQuality"
+        android:icon="@drawable/icon_water"
         android:title=""/>
     <item
-        android:id="@+id/home"
-        android:icon="@drawable/home_button"
+        android:id="@+id/destHome"
+        android:icon="@drawable/icon_home"
         android:title=""/>
     <item
-        android:id="@+id/donation"
-        android:icon="@drawable/donations_icon"
+        android:id="@+id/destDonation"
+        android:icon="@drawable/icon_donation"
         android:title=""/>
     <item
-        android:id="@+id/profile"
-        android:icon="@drawable/user_icon"
+        android:id="@+id/destProfile"
+        android:icon="@drawable/icon_profile"
         android:title=""/>
 </menu>
