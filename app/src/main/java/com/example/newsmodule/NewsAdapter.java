@@ -1,13 +1,17 @@
 package com.example.newsmodule;
 
 import android.content.Context;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.SeekBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.newsmodule.R;
@@ -17,11 +21,11 @@ import java.util.List;
 public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsViewHolder> {
 
     private Context context;
-    private List<String> newsTitles,newsDesc,newsDate;
+    private List<String> newsTitle,newsDesc,newsDate;
 
-    public NewsAdapter(Context context, List<String> newsTitles, List<String> newsDesc, List<String> newsDate) {
+    public NewsAdapter(Context context, List<String> newsTitle, List<String> newsDesc, List<String> newsDate) {
         this.context = context;
-        this.newsTitles = newsTitles;
+        this.newsTitle = newsTitle;
         this.newsDesc = newsDesc;
         this.newsDate = newsDate;
     }
@@ -35,15 +39,23 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsViewHolder
 
     @Override
     public int getItemCount() {
-        return newsTitles.size();
+        return newsTitle.size();
     }
 
     //onbind ni tak tau do semua sbb den yg buat saya copy je (tanya den)
     @Override
     public void onBindViewHolder(@NonNull NewsViewHolder holder, int position) {
-        holder.newsTitle.setText(newsTitles.get(position));
+        holder.newsTitle.setText(newsTitle.get(position));
         holder.newsDesc.setText(newsDesc.get(position));
         holder.newsDate.setText(newsDate.get(position));
+
+        holder.itemView.setOnClickListener(v -> {
+            NavController navController = Navigation.findNavController(v);
+
+
+            navController.navigate(R.id.action_newsMainPageFragment_to_destNewsFull);
+        });
+
     }
 
 

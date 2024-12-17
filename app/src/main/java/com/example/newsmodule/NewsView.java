@@ -5,6 +5,8 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -64,21 +66,22 @@ public class NewsView extends Fragment {
 
     private RecyclerView recyclerView;
     private NewsAdapter adapter;
-    private List<String> newsTitles, newsDesc, newsDate;
+    private List<String> newsTitle, newsDesc, newsDate;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_news_view, container, false);
 
+
         recyclerView = view.findViewById(R.id.newsList);
 
         // Sample data
-        newsTitles = new ArrayList<>();
-        newsTitles.add("News 1");
-        newsTitles.add("News 2");
-        newsTitles.add("News 3");
-        newsTitles.add("News 4");
+        newsTitle = new ArrayList<>();
+        newsTitle.add("News 1");
+        newsTitle.add("News 2");
+        newsTitle.add("News 3");
+        newsTitle.add("News 4");
 
 
         newsDesc = new ArrayList<>();
@@ -94,10 +97,11 @@ public class NewsView extends Fragment {
         newsDate.add("Date 4");
 
         // takyah kacau
-        adapter = new NewsAdapter(getContext(), newsTitles, newsDesc, newsDate);
+        adapter = new NewsAdapter(getContext(), newsTitle, newsDesc, newsDate);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(adapter);
 
         return view;
     }
+
 }
