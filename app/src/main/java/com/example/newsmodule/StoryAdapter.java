@@ -9,6 +9,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
@@ -40,8 +42,11 @@ public class StoryAdapter extends RecyclerView.Adapter<StoryAdapter.StoryViewHol
     public void onBindViewHolder(@NonNull StoryViewHolder holder, int position) {
         holder.storyImage.setImageResource(storyImage.get(position));
 
-        holder.storyImage.setOnClickListener( v -> {
-            Toast.makeText(context, "Story " + (position + 1), Toast.LENGTH_SHORT).show();
+        holder.itemView.setOnClickListener(v -> {
+            NavController navController = Navigation.findNavController(v);
+
+
+            navController.navigate(R.id.action_newsMainPageFragment_to_storyFullFragment);
         });
     }
 

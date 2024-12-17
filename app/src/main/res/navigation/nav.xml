@@ -9,5 +9,29 @@
         android:id="@+id/newsMainPageFragment"
         android:name="com.example.newsmodule.NewsMainPageFragment"
         android:label="fragment_news_main_page"
-        tools:layout="@layout/fragment_news_main_page" />
+        tools:layout="@layout/fragment_news_main_page" >
+        <action
+            android:id="@+id/action_newsMainPageFragment_to_destNewsFull"
+            app:destination="@id/destNewsFull" />
+        <action
+            android:id="@+id/action_newsMainPageFragment_to_storyFullFragment"
+            app:destination="@id/destStoryFull" />
+    </fragment>
+    <fragment
+        android:id="@+id/destNewsFull"
+        android:name="com.example.newsmodule.NewsFullPage"
+        android:label="fragment_news_full_page"
+        tools:layout="@layout/fragment_news_full_page" >
+        <argument
+            android:name="newsTitle"
+            app:argType="string" />
+        <argument
+            android:name="newsDesc"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/destStoryFull"
+        android:name="com.example.newsmodule.StoryFullFragment"
+        android:label="fragment_story_full"
+        tools:layout="@layout/fragment_story_full" />
 </navigation>
