@@ -52,7 +52,6 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsViewHolder
         holder.itemView.setOnClickListener(v -> {
             NavController navController = Navigation.findNavController(v);
 
-
             navController.navigate(R.id.action_newsMainPageFragment_to_destNewsFull);
         });
 

@@ -4,10 +4,12 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.RadioGroup;
 
 /**
@@ -69,6 +71,11 @@ public class NewsMainPageFragment extends Fragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        Button cameraButton = view.findViewById(R.id.cameraButton);
+        cameraButton.setOnClickListener(v -> {
+            Navigation.findNavController(v).navigate(R.id.action_newsMainPageFragment_to_camFragment);
+        });
 
         toggleGroup = view.findViewById(R.id.toggleNews);
 

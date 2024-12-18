@@ -4,12 +4,15 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.newsmodule.R;
@@ -50,6 +53,11 @@ public class ProjectsAdapter extends RecyclerView.Adapter<ProjectsAdapter.Projec
         holder.projectDate.setText(projectDate.get(position));
         holder.projectImages.setImageResource(projectImages.get(position));
         holder.progressBar.setProgress(75);
+
+        holder.ProjectButton.setOnClickListener(v -> {
+            NavController navController = Navigation.findNavController(v);
+            navController.navigate(R.id.action_newsMainPageFragment_to_projectsFullPage);
+        });
     }
 
 
@@ -58,6 +66,7 @@ public class ProjectsAdapter extends RecyclerView.Adapter<ProjectsAdapter.Projec
         TextView projectTitles, projectDesc, projectDate;
         ImageView projectImages;
         ProgressBar progressBar;
+        ImageButton ProjectButton;
 
         public ProjectsViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -66,6 +75,7 @@ public class ProjectsAdapter extends RecyclerView.Adapter<ProjectsAdapter.Projec
             projectDate = itemView.findViewById(R.id.ProjectsDate);
             progressBar =itemView.findViewById(R.id.progressBar);
             projectImages = itemView.findViewById(R.id.ProjectsImage);
+            ProjectButton = itemView.findViewById(R.id.ProjectButton);
         }
     }
 }
