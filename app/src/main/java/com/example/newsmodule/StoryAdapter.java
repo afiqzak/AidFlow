@@ -44,8 +44,6 @@ public class StoryAdapter extends RecyclerView.Adapter<StoryAdapter.StoryViewHol
 
         holder.itemView.setOnClickListener(v -> {
             NavController navController = Navigation.findNavController(v);
-
-
             navController.navigate(R.id.action_newsMainPageFragment_to_storyFullFragment);
         });
     }

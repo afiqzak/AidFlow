@@ -16,6 +16,15 @@
         <action
             android:id="@+id/action_newsMainPageFragment_to_storyFullFragment"
             app:destination="@id/destStoryFull" />
+        <action
+            android:id="@+id/action_newsMainPageFragment_to_projectsFullPage"
+            app:destination="@id/destProjectFull" />
+        <action
+            android:id="@+id/action_newsMainPageFragment_to_mainActivity"
+            app:destination="@id/destCam" />
+        <action
+            android:id="@+id/action_newsMainPageFragment_to_camFragment"
+            app:destination="@id/destCam" />
     </fragment>
     <fragment
         android:id="@+id/destNewsFull"
@@ -34,4 +43,14 @@
         android:name="com.example.newsmodule.StoryFullFragment"
         android:label="fragment_story_full"
         tools:layout="@layout/fragment_story_full" />
+    <fragment
+        android:id="@+id/destProjectFull"
+        android:name="com.example.newsmodule.ProjectsFullPage"
+        android:label="fragment_projects_full_page"
+        tools:layout="@layout/fragment_projects_full_page" />
+    <fragment
+        android:id="@+id/destCam"
+        android:name="com.example.newsmodule.CamFragment"
+        android:label="fragment_cam"
+        tools:layout="@layout/fragment_cam" />
 </navigation>
