@@ -13,7 +13,9 @@ color white
 color yellow
 drawable back_icon
 drawable bottom_nav
+drawable box_login
 drawable button_design_line
+drawable button_login
 drawable checkbox_selector
 drawable checkbox_true
 drawable circle
@@ -52,6 +54,10 @@ drawable slider_rating
 drawable toggle_widget_background
 drawable yellow_urgency
 drawable yucar_studios_cfr_v1quekw_unsplash
+font poppins
+font poppins_medium
+font poppins_semibold
+id BTSign
 id DLMain
 id Donation_button
 id DuitNow_method
@@ -61,6 +67,11 @@ id History_button
 id LLDonationTitle
 id PageFragment
 id RelatedReportImage
+id TVNoAcc
+id TVSIngTitle
+id TVSingup
+id TVTitle
+id TVWelcome
 id address
 id amount_1
 id amount_10
@@ -111,6 +122,8 @@ id dueDate
 id dueDate_donate
 id duration_radio_group
 id editText
+id editTextText
+id editTextText2
 id email
 id fab_donatefilter
 id fab_history
@@ -118,6 +131,7 @@ id first_name
 id fpx_method
 id fragmentContainerNoti
 id fragmentContainerView
+id fragmentContainerView2
 id last_name
 id linear_layout
 id linear_layout1
@@ -155,6 +169,9 @@ id scrollView2
 id submit
 id submitRating
 id subtitle
+id textView
+id textView2
+id textView3
 id time
 id title
 id title_donate
@@ -165,6 +182,7 @@ id urgencyIndicator_donate
 id waterRating
 id waterReport
 id water_quality_image
+layout activity_login_signup
 layout activity_main
 layout donation_recylcleview
 layout done_card
@@ -174,8 +192,10 @@ layout fragment_donation_donate_filter
 layout fragment_donation_form
 layout fragment_donation_hist_filter
 layout fragment_donation_history
+layout fragment_login
 layout fragment_recycle_view_done
 layout fragment_recycle_view_pending
+layout fragment_singup
 layout fragment_water
 layout fragment_water_notifications
 layout fragment_water_rating

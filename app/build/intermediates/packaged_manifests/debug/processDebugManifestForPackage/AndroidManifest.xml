@@ -37,13 +37,17 @@
         android:testOnly="true"
         android:theme="@style/Theme.AidFlow" >
         <activity
-            android:name="com.example.aidflow.MainActivity"
+            android:name="com.example.aidflow.LoginSignupActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.aidflow.MainActivity"
+            android:exported="false" >
         </activity>
 
         <receiver

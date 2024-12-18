@@ -1,374 +1,410 @@
 [
     {
-        "merged": "com.example.aidflow.app-debug-52:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.aidflow.app-main-54:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\drawable_checkbox_selector.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\drawable\\checkbox_selector.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/layout_fragment_donation_form.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/layout/fragment_donation_form.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\drawable_edit_text_background.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\drawable\\edit_text_background.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/drawable_icon_volunteer.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/drawable/icon_volunteer.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/drawable_person_outline.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/drawable/person_outline.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\drawable_filter_icon.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\drawable\\filter_icon.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/drawable_checkbox_true.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/drawable/checkbox_true.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/xml_data_extraction_rules.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/xml/data_extraction_rules.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\drawable_box_login.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\drawable\\box_login.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/drawable_circle.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/drawable/circle.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/drawable_rating_bar.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/drawable/rating_bar.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\drawable_close.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\drawable\\close.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/mipmap-mdpi_circle_baru.webp.flat",
-        "source": "com.example.aidflow.app-main-54:/mipmap-mdpi/circle_baru.webp"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\mipmap-xxxhdpi_circle_baru_foreground.webp.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\mipmap-xxxhdpi\\circle_baru_foreground.webp"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/mipmap-xxhdpi_circle_baru_round.webp.flat",
-        "source": "com.example.aidflow.app-main-54:/mipmap-xxhdpi/circle_baru_round.webp"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\mipmap-mdpi_circle_baru_round.webp.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\mipmap-mdpi\\circle_baru_round.webp"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/drawable_checkbox_selector.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/drawable/checkbox_selector.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\layout_fragment_singup.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\layout\\fragment_singup.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/drawable_donation_title.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/drawable/donation_title.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/drawable_icon_water.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/drawable/icon_water.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\mipmap-xhdpi_circle_baru_foreground.webp.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\mipmap-xhdpi\\circle_baru_foreground.webp"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/layout_done_card.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/layout/done_card.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\drawable_back_icon.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\drawable\\back_icon.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/xml_backup_rules.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/xml/backup_rules.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\menu_menu_bottom.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\menu\\menu_bottom.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/mipmap-mdpi_circle_baru_round.webp.flat",
-        "source": "com.example.aidflow.app-main-54:/mipmap-mdpi/circle_baru_round.webp"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\drawable_icon_home.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\drawable\\icon_home.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/drawable_rate_icon.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/drawable/rate_icon.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\drawable_round_shape.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\drawable\\round_shape.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/drawable_red_urgency.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/drawable/red_urgency.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\drawable_roundbox_filter.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\drawable\\roundbox_filter.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/drawable_round_edittext_box.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/drawable/round_edittext_box.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/drawable_filter_icon.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/drawable/filter_icon.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\drawable_icon_water.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\drawable\\icon_water.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/mipmap-xxxhdpi_circle_baru_foreground.webp.flat",
-        "source": "com.example.aidflow.app-main-54:/mipmap-xxxhdpi/circle_baru_foreground.webp"
+        "merged": "com.example.aidflow.app-debug-52:/layout_activity_login_signup.xml.flat",
+        "source": "com.example.aidflow.app-main-54:/layout/activity_login_signup.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/layout_noti_card.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/layout/noti_card.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\drawable_circle.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\drawable\\circle.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/mipmap-anydpi-v26_circle_baru_round.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/mipmap-anydpi-v26/circle_baru_round.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\layout_done_card.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\layout\\done_card.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/drawable_nav_icon_color.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/drawable/nav_icon_color.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\layout_noti_card.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\layout\\noti_card.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/drawable_button_design_line.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/drawable/button_design_line.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\layout_donation_recylcleview.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\layout\\donation_recylcleview.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.aidflow.app-main-54:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\drawable_progress_bar_custom.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\drawable\\progress_bar_custom.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/layout_fragment_donation_hist_filter.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/layout/fragment_donation_hist_filter.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\layout_fragment_donation_donate_filter.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\layout\\fragment_donation_donate_filter.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.example.aidflow.app-main-54:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\drawable_rounded_corners.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\drawable\\rounded_corners.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/drawable/ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\drawable_icon_volunteer.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\drawable\\icon_volunteer.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/drawable_rounded_lightblue.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/drawable/rounded_lightblue.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\drawable_bottom_nav.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\drawable\\bottom_nav.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/layout_fragment_donation.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/layout/fragment_donation.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\layout_fragment_recycle_view_pending.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\layout\\fragment_recycle_view_pending.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/layout_fragment_donation_history.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/layout/fragment_donation_history.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\drawable_donation_title.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\drawable\\donation_title.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/drawable_yellow_urgency.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/drawable/yellow_urgency.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\mipmap-xhdpi_circle_baru_round.webp.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\mipmap-xhdpi\\circle_baru_round.webp"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/drawable_edit_text_background.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/drawable/edit_text_background.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\drawable_jouni_rajala_0aiko248fhe_unsplash.jpg.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\drawable\\jouni_rajala_0aiko248fhe_unsplash.jpg"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/mipmap-xxhdpi_circle_baru_foreground.webp.flat",
-        "source": "com.example.aidflow.app-main-54:/mipmap-xxhdpi/circle_baru_foreground.webp"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/layout_fragment_donation_donate_filter.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/layout/fragment_donation_donate_filter.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/layout_fragment_water_notifications.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/layout/fragment_water_notifications.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\mipmap-anydpi-v26_circle_baru.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\mipmap-anydpi-v26\\circle_baru.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/drawable_icon_donation.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/drawable/icon_donation.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\layout_fragment_water_notifications.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\layout\\fragment_water_notifications.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/mipmap-xxxhdpi_circle_baru.webp.flat",
-        "source": "com.example.aidflow.app-main-54:/mipmap-xxxhdpi/circle_baru.webp"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\layout_fragment_water_report.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\layout\\fragment_water_report.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/drawable_green_urgency.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/drawable/green_urgency.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\drawable_filter_icon_putih.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\drawable\\filter_icon_putih.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/layout_donation_recylcleview.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/layout/donation_recylcleview.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\layout_pending_projects_card.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\layout\\pending_projects_card.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.aidflow.app-main-54:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\layout_rating_cardview.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\layout\\rating_cardview.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/layout_activity_main.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/layout/activity_main.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/layout_fragment_donation_donate.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/layout/fragment_donation_donate.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\mipmap-hdpi_circle_baru_round.webp.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\mipmap-hdpi\\circle_baru_round.webp"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/drawable_circle_baru_background.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/drawable/circle_baru_background.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\drawable_icon_donation.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\drawable\\icon_donation.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.example.aidflow.app-main-54:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\drawable_button_design_line.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\drawable\\button_design_line.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/mipmap-xhdpi_circle_baru_foreground.webp.flat",
-        "source": "com.example.aidflow.app-main-54:/mipmap-xhdpi/circle_baru_foreground.webp"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\mipmap-hdpi_circle_baru_foreground.webp.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\mipmap-hdpi\\circle_baru_foreground.webp"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/mipmap-xxxhdpi_circle_baru_round.webp.flat",
-        "source": "com.example.aidflow.app-main-54:/mipmap-xxxhdpi/circle_baru_round.webp"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\font_poppins.ttf.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\font\\poppins.ttf"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/mipmap-xxhdpi_circle_baru.webp.flat",
-        "source": "com.example.aidflow.app-main-54:/mipmap-xxhdpi/circle_baru.webp"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\drawable_button_login.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\drawable\\button_login.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/drawable_icon_profile.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/drawable/icon_profile.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/drawable_back_icon.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/drawable/back_icon.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\layout_history_recycleview.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\layout\\history_recycleview.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/mipmap-xhdpi_circle_baru_round.webp.flat",
-        "source": "com.example.aidflow.app-main-54:/mipmap-xhdpi/circle_baru_round.webp"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\mipmap-xhdpi_circle_baru.webp.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\mipmap-xhdpi\\circle_baru.webp"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/mipmap-hdpi_circle_baru_round.webp.flat",
-        "source": "com.example.aidflow.app-main-54:/mipmap-hdpi/circle_baru_round.webp"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\drawable_round_button_donation.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\drawable\\round_button_donation.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/drawable_progress_bar_custom.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/drawable/progress_bar_custom.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\drawable_rate_icon.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\drawable\\rate_icon.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/drawable_heart_hand.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/drawable/heart_hand.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\drawable_yucar_studios_cfr_v1quekw_unsplash.jpg.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\drawable\\yucar_studios_cfr_v1quekw_unsplash.jpg"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/layout_fragment_recycle_view_pending.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/layout/fragment_recycle_view_pending.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\drawable_rating_bar.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\drawable\\rating_bar.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/drawable_bottom_nav.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/drawable/bottom_nav.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\drawable_red_urgency.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\drawable\\red_urgency.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/layout_fragment_water_report.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/layout/fragment_water_report.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/layout_fragment_recycle_view_done.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/layout/fragment_recycle_view_done.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\drawable_nav_icon_color.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\drawable\\nav_icon_color.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/mipmap-xhdpi_circle_baru.webp.flat",
-        "source": "com.example.aidflow.app-main-54:/mipmap-xhdpi/circle_baru.webp"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\mipmap-mdpi_circle_baru_foreground.webp.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\mipmap-mdpi\\circle_baru_foreground.webp"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/layout_fragment_water_rating.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/layout/fragment_water_rating.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\drawable_circle_baru_background.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\drawable\\circle_baru_background.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/drawable_close.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/drawable/close.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\drawable_yellow_urgency.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\drawable\\yellow_urgency.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/mipmap-anydpi-v26_circle_baru.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/mipmap-anydpi-v26/circle_baru.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\mipmap-xxhdpi_circle_baru_round.webp.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\mipmap-xxhdpi\\circle_baru_round.webp"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/layout_pending_projects_card.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/layout/pending_projects_card.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\mipmap-hdpi_circle_baru.webp.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\mipmap-hdpi\\circle_baru.webp"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\layout_fragment_donation_donate.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\layout\\fragment_donation_donate.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/drawable_ellipse_icon.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/drawable/ellipse_icon.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\drawable_slider_rating.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\drawable\\slider_rating.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/mipmap-mdpi_circle_baru_foreground.webp.flat",
-        "source": "com.example.aidflow.app-main-54:/mipmap-mdpi/circle_baru_foreground.webp"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\layout_fragment_donation.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\layout\\fragment_donation.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/drawable_round_shape.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/drawable/round_shape.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\mipmap-xxhdpi_circle_baru.webp.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\mipmap-xxhdpi\\circle_baru.webp"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/drawable_icon_home.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/drawable/icon_home.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\drawable_person_icon.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\drawable\\person_icon.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/navigation_nav.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/navigation/nav.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\drawable\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/drawable_person_icon.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/drawable/person_icon.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\font_poppins_medium.ttf.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\font\\poppins_medium.ttf"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/drawable_toggle_widget_background.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/drawable/toggle_widget_background.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/drawable_jouni_rajala_0aiko248fhe_unsplash.jpg.flat",
-        "source": "com.example.aidflow.app-main-54:/drawable/jouni_rajala_0aiko248fhe_unsplash.jpg"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\drawable_rounded_lightblue.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\drawable\\rounded_lightblue.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/menu_menu_bottom.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/menu/menu_bottom.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\drawable_nav_background_curved.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\drawable\\nav_background_curved.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/layout_history_recycleview.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/layout/history_recycleview.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\drawable_round_edittext_box.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\drawable\\round_edittext_box.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/drawable_filter_icon_putih.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/drawable/filter_icon_putih.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\mipmap-xxxhdpi_circle_baru_round.webp.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\mipmap-xxxhdpi\\circle_baru_round.webp"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/mipmap-hdpi_circle_baru_foreground.webp.flat",
-        "source": "com.example.aidflow.app-main-54:/mipmap-hdpi/circle_baru_foreground.webp"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\drawable_checkbox_true.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\drawable\\checkbox_true.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/drawable_yucar_studios_cfr_v1quekw_unsplash.jpg.flat",
-        "source": "com.example.aidflow.app-main-54:/drawable/yucar_studios_cfr_v1quekw_unsplash.jpg"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\font_poppins_semibold.ttf.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\font\\poppins_semibold.ttf"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/drawable_round_button_donation.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/drawable/round_button_donation.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\layout_activity_login_signup.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\layout\\activity_login_signup.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/layout_fragment_water.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/layout/fragment_water.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\drawable_toggle_widget_background.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\drawable\\toggle_widget_background.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.aidflow.app-main-54:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\layout_fragment_donation_history.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\layout\\fragment_donation_history.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.aidflow.app-main-54:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.aidflow.app-main-54:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.example.aidflow.app-main-54:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\drawable_heart_hand.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\drawable\\heart_hand.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/mipmap-hdpi_circle_baru.webp.flat",
-        "source": "com.example.aidflow.app-main-54:/mipmap-hdpi/circle_baru.webp"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\drawable_green_urgency.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\drawable\\green_urgency.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.aidflow.app-main-54:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\mipmap-mdpi_circle_baru.webp.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\mipmap-mdpi\\circle_baru.webp"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/drawable_nav_background_curved.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/drawable/nav_background_curved.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\drawable_icon_profile.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\drawable\\icon_profile.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/drawable_rounded_corners.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/drawable/rounded_corners.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\layout_fragment_donation_form.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\layout\\fragment_donation_form.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/drawable/ic_launcher_background.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\layout_fragment_login.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\layout\\fragment_login.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/layout_rating_cardview.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/layout/rating_cardview.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/drawable_roundbox_filter.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/drawable/roundbox_filter.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\mipmap-anydpi-v26_circle_baru_round.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\mipmap-anydpi-v26\\circle_baru_round.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-52:/drawable_slider_rating.xml.flat",
-        "source": "com.example.aidflow.app-main-54:/drawable/slider_rating.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\layout_fragment_water_rating.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\layout\\fragment_water_rating.xml"
+    },
+    {
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\layout_fragment_donation_hist_filter.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\layout\\fragment_donation_hist_filter.xml"
+    },
+    {
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\drawable_person_outline.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\drawable\\person_outline.xml"
+    },
+    {
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\mipmap-xxxhdpi_circle_baru.webp.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\mipmap-xxxhdpi\\circle_baru.webp"
+    },
+    {
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\layout_fragment_recycle_view_done.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\layout\\fragment_recycle_view_done.xml"
+    },
+    {
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\mipmap-xxhdpi_circle_baru_foreground.webp.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\mipmap-xxhdpi\\circle_baru_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\layout_fragment_water.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\layout\\fragment_water.xml"
+    },
+    {
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\drawable_ellipse_icon.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\drawable\\ellipse_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-52:\\navigation_nav.xml.flat",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-54:\\navigation\\nav.xml"
     }
 ]

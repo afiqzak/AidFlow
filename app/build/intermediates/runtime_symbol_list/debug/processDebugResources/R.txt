@@ -3077,6 +3077,7 @@ int drawable avd_hide_password 0x7f070078
 int drawable avd_show_password 0x7f070079
 int drawable back_icon 0x7f07007a
 int drawable bottom_nav 0x7f07007b
+int drawable box_login 0x7f070123
 int drawable btn_checkbox_checked_mtrl 0x7f07007c
 int drawable btn_checkbox_checked_to_unchecked_mtrl_animation 0x7f07007d
 int drawable btn_checkbox_unchecked_mtrl 0x7f07007e
@@ -3086,6 +3087,7 @@ int drawable btn_radio_off_to_on_mtrl_animation 0x7f070081
 int drawable btn_radio_on_mtrl 0x7f070082
 int drawable btn_radio_on_to_off_mtrl_animation 0x7f070083
 int drawable button_design_line 0x7f070084
+int drawable button_login 0x7f070124
 int drawable checkbox_selector 0x7f070085
 int drawable checkbox_true 0x7f070086
 int drawable circle 0x7f070087
@@ -3244,9 +3246,13 @@ int drawable tooltip_frame_dark 0x7f07011f
 int drawable tooltip_frame_light 0x7f070120
 int drawable yellow_urgency 0x7f070121
 int drawable yucar_studios_cfr_v1quekw_unsplash 0x7f070122
+int font poppins 0x7f160000
+int font poppins_medium 0x7f160001
+int font poppins_semibold 0x7f160002
 int id ALT 0x7f080000
 int id BOTTOM_END 0x7f080001
 int id BOTTOM_START 0x7f080002
+int id BTSign 0x7f08027a
 int id CTRL 0x7f080003
 int id DLMain 0x7f080004
 int id Donation_button 0x7f080005
@@ -3267,6 +3273,11 @@ int id SHOW_PROGRESS 0x7f080013
 int id SYM 0x7f080014
 int id TOP_END 0x7f080015
 int id TOP_START 0x7f080016
+int id TVNoAcc 0x7f08027b
+int id TVSIngTitle 0x7f08027c
+int id TVSingup 0x7f08027d
+int id TVTitle 0x7f08027e
+int id TVWelcome 0x7f08027f
 int id above 0x7f080017
 int id accelerate 0x7f080018
 int id accessibility_action_clickable_span 0x7f080019
@@ -3483,6 +3494,8 @@ int id easeOut 0x7f0800eb
 int id east 0x7f0800ec
 int id edge 0x7f0800ed
 int id editText 0x7f0800ee
+int id editTextText 0x7f080280
+int id editTextText2 0x7f080281
 int id edit_query 0x7f0800ef
 int id edit_text_id 0x7f0800f0
 int id elastic 0x7f0800f1
@@ -3517,6 +3530,7 @@ int id forever 0x7f08010d
 int id fpx_method 0x7f08010e
 int id fragmentContainerNoti 0x7f08010f
 int id fragmentContainerView 0x7f080110
+int id fragmentContainerView2 0x7f080282
 int id fragment_container_view_tag 0x7f080111
 int id frost 0x7f080112
 int id fullscreen_header 0x7f080113
@@ -3818,6 +3832,9 @@ int id textSpacerNoButtons 0x7f08023a
 int id textSpacerNoTitle 0x7f08023b
 int id textStart 0x7f08023c
 int id textTop 0x7f08023d
+int id textView 0x7f080283
+int id textView2 0x7f080284
+int id textView3 0x7f080285
 int id text_input_end_icon 0x7f08023e
 int id text_input_error_icon 0x7f08023f
 int id text_input_start_icon 0x7f080240
@@ -3994,6 +4011,7 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0b0018
 int layout abc_search_view 0x7f0b0019
 int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
+int layout activity_login_signup 0x7f0b0087
 int layout activity_main 0x7f0b001c
 int layout custom_dialog 0x7f0b001d
 int layout design_bottom_navigation_item 0x7f0b001e
@@ -4019,8 +4037,10 @@ int layout fragment_donation_donate_filter 0x7f0b0031
 int layout fragment_donation_form 0x7f0b0032
 int layout fragment_donation_hist_filter 0x7f0b0033
 int layout fragment_donation_history 0x7f0b0034
+int layout fragment_login 0x7f0b0088
 int layout fragment_recycle_view_done 0x7f0b0035
 int layout fragment_recycle_view_pending 0x7f0b0036
+int layout fragment_singup 0x7f0b0089
 int layout fragment_water 0x7f0b0037
 int layout fragment_water_notifications 0x7f0b0038
 int layout fragment_water_rating 0x7f0b0039

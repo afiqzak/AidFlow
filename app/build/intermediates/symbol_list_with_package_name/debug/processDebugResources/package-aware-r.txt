@@ -3078,6 +3078,7 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable back_icon
 drawable bottom_nav
+drawable box_login
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -3087,6 +3088,7 @@ drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable button_design_line
+drawable button_login
 drawable checkbox_selector
 drawable checkbox_true
 drawable circle
@@ -3245,9 +3247,13 @@ drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable yellow_urgency
 drawable yucar_studios_cfr_v1quekw_unsplash
+font poppins
+font poppins_medium
+font poppins_semibold
 id ALT
 id BOTTOM_END
 id BOTTOM_START
+id BTSign
 id CTRL
 id DLMain
 id Donation_button
@@ -3268,6 +3274,11 @@ id SHOW_PROGRESS
 id SYM
 id TOP_END
 id TOP_START
+id TVNoAcc
+id TVSIngTitle
+id TVSingup
+id TVTitle
+id TVWelcome
 id above
 id accelerate
 id accessibility_action_clickable_span
@@ -3484,6 +3495,8 @@ id easeOut
 id east
 id edge
 id editText
+id editTextText
+id editTextText2
 id edit_query
 id edit_text_id
 id elastic
@@ -3518,6 +3531,7 @@ id forever
 id fpx_method
 id fragmentContainerNoti
 id fragmentContainerView
+id fragmentContainerView2
 id fragment_container_view_tag
 id frost
 id fullscreen_header
@@ -3819,6 +3833,9 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
+id textView2
+id textView3
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3995,6 +4012,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_login_signup
 layout activity_main
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -4020,8 +4038,10 @@ layout fragment_donation_donate_filter
 layout fragment_donation_form
 layout fragment_donation_hist_filter
 layout fragment_donation_history
+layout fragment_login
 layout fragment_recycle_view_done
 layout fragment_recycle_view_pending
+layout fragment_singup
 layout fragment_water
 layout fragment_water_notifications
 layout fragment_water_rating

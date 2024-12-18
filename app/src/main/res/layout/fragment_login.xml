@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginFragment">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="27dp"
+        android:fontFamily="@font/poppins"
+        android:text="Enter your username or email address"
+        android:textColor="@color/black"
+        android:textColorLink="#9C27B0"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginHorizontal="27dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:hint="   Username or email address"
+        android:inputType="text"
+        android:textColorHint="#808080" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="27dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppins"
+        android:text="Enter your Password"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginHorizontal="27dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:hint="   Password"
+        android:inputType="text"
+        android:textColorHint="#808080" />
+</LinearLayout>
