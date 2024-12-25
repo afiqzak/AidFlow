@@ -41,7 +41,7 @@ public class LoginSignupActivity extends AppCompatActivity {
                     TVNoAcc.setText("Have an \nAccount?");
 
                     Fragment fragment = new SignupFragment();
-                    getSupportFragmentManager().beginTransaction().replace(R.id.FCVLoginSignup, fragment).commit();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.FCVLogin, fragment).commit();
                 }
                 else{
                     TVToggle.setText("Sign up");
@@ -49,7 +49,7 @@ public class LoginSignupActivity extends AppCompatActivity {
                     TVNoAcc.setText("No Account?");
 
                     Fragment fragment = new LoginFragment();
-                    getSupportFragmentManager().beginTransaction().replace(R.id.FCVLoginSignup, fragment).commit();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.FCVLogin, fragment).commit();
                 }
             }
         });

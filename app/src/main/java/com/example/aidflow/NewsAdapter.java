@@ -11,7 +11,7 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.newsmodule.R;
+import com.example.aidflow.R;
 
 import java.util.List;
 

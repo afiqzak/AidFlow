@@ -35,7 +35,7 @@ public class DonationFormFragment extends Fragment {
 //
 
 
-        ImageView back_button = view.findViewById(R.id.back_icon);
+        ImageView back_button = view.findViewById(R.id.IVBack);
         back_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -46,7 +46,7 @@ public class DonationFormFragment extends Fragment {
             }
         });
 
-        LinearLayout donationButton_donate = view.findViewById(R.id.donationButton_donate);
+        LinearLayout donationButton_donate = view.findViewById(R.id.BtnDonate);
         donationButton_donate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
