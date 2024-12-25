@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AppInsightsSettings">
-    <option name="selectedTabId" value="Android Vitals" />
     <option name="tabSettings">
       <map>
         <entry key="Firebase Crashlytics">
@@ -10,7 +9,7 @@
               <option name="connection">
                 <ConnectionSetting>
                   <option name="appId" value="com.example.aidflow" />
-                  <option name="mobileSdkAppId" value="1:1015996066021:android:e65f8a6f90d9eeda658c0c" />
+                  <option name="mobileSdkAppId" value="1:1015996066021:android:dd14122d634f4284658c0c" />
                   <option name="projectId" value="madproject-a9b78" />
                   <option name="projectNumber" value="1015996066021" />
                 </ConnectionSetting>
