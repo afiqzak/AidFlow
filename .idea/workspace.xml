@@ -116,7 +116,16 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0ba9a7a-92cf-49da-a8c8-772e78a9c6d5" name="Changes" comment="" />
+    <list default="true" id="d0ba9a7a-92cf-49da-a8c8-772e78a9c6d5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/aidflow/Donation.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/aidflow/Donation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/aidflow/DonationAdaptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/aidflow/DonationAdaptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/aidflow/DonationDonateFilterFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/aidflow/DonationDonateFilterFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/aidflow/DonationDonateFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/aidflow/DonationDonateFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/aidflow/DonationFormFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/aidflow/DonationFormFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/aidflow/DonationFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/aidflow/DonationFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_donation_form.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_donation_form.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

@@ -375,5 +375,43 @@
             android:textSize="14sp" />
     </RadioGroup>
 
+            <!-- start donate button -->
+            <LinearLayout
+                android:id="@+id/donationButton_donate"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/round_button_donation"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground" android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="80dp"
+                    android:layout_weight="1"
+                    android:text="DONATE"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:paddingRight="75dp"
+                    android:src="@drawable/heart_hand"/>
+            </LinearLayout>
+            <!-- end donate button -->
+        </LinearLayout>
+        <!--  end hold cards  -->
+    </LinearLayout>
+    <!-- end main layout -->
 </androidx.constraintlayout.widget.ConstraintLayout>
 

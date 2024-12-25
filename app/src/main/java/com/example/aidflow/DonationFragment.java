@@ -1,10 +1,12 @@
 package com.example.aidflow;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.Navigation;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,10 +15,13 @@ import android.widget.Button;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import java.util.Set;
+
 
 public class DonationFragment extends Fragment {
 
 
+    private DonationAdapter adapter;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -24,6 +29,7 @@ public class DonationFragment extends Fragment {
 
 
         View view =  inflater.inflate(R.layout.fragment_donation, container, false);
+
 
         Button history_button = view.findViewById(R.id.History_button);
         Button donation_button = (Button) view.findViewById(R.id.Donation_button);
@@ -71,6 +77,7 @@ public class DonationFragment extends Fragment {
                 DonationDonateFilterFragment floatingLayout = new DonationDonateFilterFragment();
                 floatingLayout.show(requireActivity().getSupportFragmentManager().beginTransaction(), "FloatingLayout");
 
+
             }
         });
 
@@ -115,7 +122,4 @@ public class DonationFragment extends Fragment {
 
         return view;
     }
-
-
-
 }
