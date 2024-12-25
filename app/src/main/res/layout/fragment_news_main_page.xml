@@ -49,7 +49,7 @@
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/fragmentContainerViewStory"
-            android:name="com.example.newsmodule.StoryView"
+            android:name="com.example.aidflow.StoryView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:layout="@layout/fragment_story_view" />
@@ -99,7 +99,7 @@
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/fragmentContainerViewNews"
-            android:name="com.example.newsmodule.NewsView"
+            android:name="com.example.aidflow.NewsView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/toggleNews"
