@@ -20,10 +20,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.github.dhaval2404.imagepicker.ImagePicker;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
-import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
@@ -106,7 +103,7 @@ public class SignupFragment extends Fragment {
         TIETConfirmPass = view.findViewById(R.id.TIETConfirmPass);
         btnSignup = view.findViewById(R.id.BtnSignup);
         mAuth = FirebaseAuth.getInstance();
-        IVProfileChoose = view.findViewById(R.id.IVProfileChoose);
+        IVProfileChoose = view.findViewById(R.id.IVProfile);
         imageButton = view.findViewById(R.id.imageButton);
 
         imageButton.setOnClickListener(new View.OnClickListener() {
