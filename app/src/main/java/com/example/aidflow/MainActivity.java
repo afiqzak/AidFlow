@@ -25,7 +25,8 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(bottomNavMenu, navControl);
 
         navControl.addOnDestinationChangedListener((controller, destination, arguments) -> {
-            if (destination.getId() == R.id.waterRating || destination.getId() == R.id.waterReport || destination.getId() == R.id.donationHistFilter) {
+            if (destination.getId() == R.id.waterRating || destination.getId() == R.id.waterReport || destination.getId() == R.id.donationHistFilter || destination.getId() == R.id.volunteerCancel || destination.getId() == R.id.volunteerJoin
+            || destination.getId() == R.id.destNewsFull || destination.getId() == R.id.destCam || destination.getId() == R.id.destStoryFull || destination.getId() == R.id.destProjectFull || destination.getId() == R.id.donationForm) {
                 bottomNavMenu.setVisibility(View.GONE);
             } else {
                 bottomNavMenu.setVisibility(View.VISIBLE);

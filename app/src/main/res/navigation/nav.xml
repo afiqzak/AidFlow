@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav"
-    app:startDestination="@id/destDonation">
+    app:startDestination="@id/destHome">
     <fragment
         android:id="@+id/waterReport"
         android:name="com.example.aidflow.WaterReportFragment"
@@ -29,10 +29,15 @@
         android:name="com.example.aidflow.DonationHistFilterFragment"
         android:label="fragment_history_filter"
         tools:layout="@layout/fragment_donation_hist_filter" />
+    <fragment
+        android:id="@+id/destVolunteer"
+        android:name="com.example.aidflow.VolunteerFragment"
+        android:label="fragment_volunteer"
+        tools:layout="@layout/fragment_volunteer" />
 
     <fragment
-        android:id="@+id/newsMainPageFragment"
-        android:name="com.example.newsmodule.NewsMainPageFragment"
+        android:id="@+id/destHome"
+        android:name="com.example.aidflow.NewsMainPageFragment"
         android:label="fragment_news_main_page"
         tools:layout="@layout/fragment_news_main_page" >
         <action
@@ -65,19 +70,38 @@
     </fragment>
     <fragment
         android:id="@+id/destStoryFull"
-        android:name="com.example.aidflow.StoryFullFragment"
+        android:name="com.example.aidflow.NewsStoryFullFragment"
         android:label="fragment_story_full"
-        tools:layout="@layout/fragment_story_full" />
+        tools:layout="@layout/fragment_news_story_full" />
     <fragment
         android:id="@+id/destProjectFull"
-        android:name="com.example.aidflow.ProjectsFullPage"
+        android:name="com.example.aidflow.NewsProjectsFullPage"
         android:label="fragment_projects_full_page"
-        tools:layout="@layout/fragment_projects_full_page" />
+        tools:layout="@layout/fragment_news_projects_full_page" />
     <fragment
         android:id="@+id/destCam"
-        android:name="com.example.aidflow.CamFragment"
+        android:name="com.example.aidflow.NewsCamFragment"
         android:label="fragment_cam"
         tools:layout="@layout/fragment_cam" />
+
+    <fragment
+        android:id="@+id/volunteerJoin"
+        android:name="com.example.aidflow.VolunteerJoinFragment"
+        android:label="fragment_volunteer_join"
+        tools:layout="@layout/fragment_volunteer_join" />
+
+    <fragment
+        android:id="@+id/volunteerCancel"
+        android:name="com.example.aidflow.VolunteerUpcomingCancelFragment"
+        android:label="fragment_volunteer_cancel"
+        tools:layout="@layout/fragment_volunteer_upcoming_cancel" />
+
+    <fragment
+        android:id="@+id/donationForm"
+        android:name="com.example.aidflow.DonationFormFragment"
+        android:label="fragment_donation_form"
+        tools:layout="@layout/fragment_donation_form" />
+
 
 
 </navigation>

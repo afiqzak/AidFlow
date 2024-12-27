@@ -36,7 +36,7 @@ android {
 }
 
 dependencies {
-
+    implementation(libs.circularprogressbar) // Circular ProgressBar
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)

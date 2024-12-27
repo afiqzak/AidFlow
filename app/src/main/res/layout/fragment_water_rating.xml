@@ -84,7 +84,7 @@
             android:layout_height="660dp"
             android:paddingHorizontal="30dp"
             android:paddingVertical="0dp"
-            tools:listitem="@layout/rating_cardview" />
+            tools:listitem="@layout/fragment_water_rating_cardview" />
     </LinearLayout>
 
     <Button

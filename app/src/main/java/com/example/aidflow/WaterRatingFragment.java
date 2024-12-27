@@ -82,7 +82,7 @@ public class WaterRatingFragment extends Fragment {
     //ni method utk isi rating recycle view tu
     //sama gak ni placeholder sementara je lu
     private RecyclerView recyclerView;
-    private RatingAdapter adapter;
+    private WaterRatingAdapter adapter;
     private List<String> ratingTitles;
 
     @Nullable
@@ -99,7 +99,7 @@ public class WaterRatingFragment extends Fragment {
         ratingTitles.add("Delivery Time");
 
         // takyah kacau
-        adapter = new RatingAdapter(getContext(), ratingTitles);
+        adapter = new WaterRatingAdapter(getContext(), ratingTitles);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(adapter);
 

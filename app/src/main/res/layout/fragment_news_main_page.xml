@@ -49,10 +49,10 @@
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/fragmentContainerViewStory"
-            android:name="com.example.aidflow.StoryView"
+            android:name="com.example.aidflow.NewsStoryView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:layout="@layout/fragment_story_view" />
+            tools:layout="@layout/fragment_news_story_view" />
 
         <RadioGroup
             android:id="@+id/toggleNews"

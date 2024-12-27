@@ -72,7 +72,7 @@ public class NewsFullPage extends Fragment {
         View.OnClickListener OCLBack = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Navigation.findNavController(view).navigate(R.id.newsMainPageFragment);
+                Navigation.findNavController(view).navigate(R.id.destHome);
             }
         };
         btnBack.setOnClickListener(OCLBack);

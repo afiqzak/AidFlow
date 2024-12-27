@@ -18,7 +18,7 @@ import java.util.List;
 public class WaterNotificationsFragment extends Fragment {
 
     private RecyclerView recyclerView;
-    private NotificationsAdapter adapter;
+    private WaterNotificationsAdapter adapter;
     private List<String> notificationTitles;
 
     public WaterNotificationsFragment() {
@@ -40,7 +40,7 @@ public class WaterNotificationsFragment extends Fragment {
         notificationTitles.add("Delivery Time");
 
         // takyah kacau
-        adapter = new NotificationsAdapter(getContext(), notificationTitles);
+        adapter = new WaterNotificationsAdapter(getContext(), notificationTitles);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(adapter);
 

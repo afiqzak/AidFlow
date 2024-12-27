@@ -37,16 +37,16 @@ public class DonationHistoryFragment extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
         // Sample data
-        List<History> historyList = new ArrayList<>();
-        historyList.add(new History("noy","bagi makan kucing","community project","21 Feb", 1000,"cash"))   ;
-        historyList.add(new History("noy","bagi makan kucing","community project","21 Feb", 1000,"cash"))   ;
-        historyList.add(new History("noy","bagi makan kucing","community project","21 Feb", 1000,"cash"))   ;
-        historyList.add(new History("noy","bagi makan kucing","community project","21 Feb", 1000,"cash"))   ;
-        historyList.add(new History("noy","bagi makan kucing","community project","21 Feb", 1000,"cash"))   ;
-        historyList.add(new History("noy","bagi makan kucing","community project","21 Feb", 1000,"cash"))   ;
-        historyList.add(new History("noy","bagi makan kucing","community project","21 Feb", 1000,"cash"))   ;
-        historyList.add(new History("noy","bagi makan kucing","community project","21 Feb", 1000,"cash"))   ;
-        historyList.add(new History("noy","bagi makan kucing","community project","21 Feb", 1000,"cash"))   ;
+        List<DonationHistory> historyList = new ArrayList<>();
+        historyList.add(new DonationHistory("noy","bagi makan kucing","community project","21 Feb", 1000,"cash"))   ;
+        historyList.add(new DonationHistory("noy","bagi makan kucing","community project","21 Feb", 1000,"cash"))   ;
+        historyList.add(new DonationHistory("noy","bagi makan kucing","community project","21 Feb", 1000,"cash"))   ;
+        historyList.add(new DonationHistory("noy","bagi makan kucing","community project","21 Feb", 1000,"cash"))   ;
+        historyList.add(new DonationHistory("noy","bagi makan kucing","community project","21 Feb", 1000,"cash"))   ;
+        historyList.add(new DonationHistory("noy","bagi makan kucing","community project","21 Feb", 1000,"cash"))   ;
+        historyList.add(new DonationHistory("noy","bagi makan kucing","community project","21 Feb", 1000,"cash"))   ;
+        historyList.add(new DonationHistory("noy","bagi makan kucing","community project","21 Feb", 1000,"cash"))   ;
+        historyList.add(new DonationHistory("noy","bagi makan kucing","community project","21 Feb", 1000,"cash"))   ;
 
 
         // Attach adapter to RecyclerView

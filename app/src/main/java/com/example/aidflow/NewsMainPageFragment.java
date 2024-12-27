@@ -82,7 +82,7 @@ public class NewsMainPageFragment extends Fragment {
         toggleGroup.setOnCheckedChangeListener((group, checkedId) -> {
             if (checkedId == R.id.projectButton) {
                 // tukar ke pending
-                switchFragment(new ProjectsFragment());
+                switchFragment(new NewsProjectsFragment());
             } else if (checkedId == R.id.newsButton) {
                 // tukar ke done fragment
                 switchFragment(new NewsView());
@@ -90,7 +90,7 @@ public class NewsMainPageFragment extends Fragment {
         });
 
         // default klau tak pilih pape agi pending
-        switchFragment(new ProjectsFragment());
+        switchFragment(new NewsProjectsFragment());
     }
 
     // ni fragment manager

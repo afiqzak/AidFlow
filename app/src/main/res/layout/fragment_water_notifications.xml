@@ -8,6 +8,6 @@
         android:id="@+id/recyclerViewNoti"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/noti_card" />
+        tools:listitem="@layout/fragment_water_noti_card" />
 
 </FrameLayout>

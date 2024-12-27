@@ -14,22 +14,22 @@ import java.util.List;
 
 class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.HistoryViewHolder> {
 
-    private final List<History> historyList;
+    private final List<DonationHistory> historyList;
 
-    public HistoryAdapter(List<History> historyList) {
+    public HistoryAdapter(List<DonationHistory> historyList) {
         this.historyList = historyList;
     }
 
     @NonNull
     @Override
     public HistoryViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.history_recycleview, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.fragment_donation_history_recycleview, parent, false);
         return new HistoryViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull HistoryViewHolder holder, int position) {
-        History history = historyList.get(position);
+        DonationHistory history = historyList.get(position);
 
         // Bind data to views
 

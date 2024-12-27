@@ -18,6 +18,7 @@ import android.widget.RadioGroup;
  * Use the {@link WaterFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
+
 public class WaterFragment extends Fragment {
 
     // Parameters
@@ -76,15 +77,15 @@ public class WaterFragment extends Fragment {
         toggleGroup.setOnCheckedChangeListener((group, checkedId) -> {
             if (checkedId == R.id.pending_projects) {
                 // tukar ke pending
-                switchFragment(new RecycleViewPending());
+                switchFragment(new WaterRecycleViewPending());
             } else if (checkedId == R.id.done_projects) {
                 // tukar ke done fragment
-                switchFragment(new RecycleViewDone());
+                switchFragment(new WaterRecycleViewDone());
             }
         });
 
         // default klau tak pilih pape agi pending
-        switchFragment(new RecycleViewPending());
+        switchFragment(new WaterRecycleViewPending());
     }
 
     // ni fragment manager
