@@ -3,16 +3,25 @@ package com.example.aidflow;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import java.util.List;
+
 public class DonationHistFilterFragment extends Fragment {
+
+    private RadioGroup durationRadioGroup;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -20,15 +29,21 @@ public class DonationHistFilterFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_donation_hist_filter, container, false);
 
+        durationRadioGroup = view.findViewById(R.id.duration_radio_group);
+
         ImageView close_button = view.findViewById(R.id.close_icon);
+
         close_button.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                FragmentTransaction fr = requireActivity().getSupportFragmentManager().beginTransaction();
-                fr.replace(R.id.FCVDonation,new DonationFragment());
-                fr.addToBackStack(null);
-                fr.commit();
+//                FragmentTransaction fr = requireActivity().getSupportFragmentManager().beginTransaction();
+//                fr.replace(R.id.FCVDonation,new DonationFragment());
+//                fr.addToBackStack(null);
+//                fr.commit();
+
+                NavController navController = Navigation.findNavController(requireView());
+                navController.popBackStack();
 
             }
         });
@@ -37,14 +52,36 @@ public class DonationHistFilterFragment extends Fragment {
         applyFilter_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Filter Applied", Toast.LENGTH_LONG).show();
-                FragmentTransaction fr = requireActivity().getSupportFragmentManager().beginTransaction();
-                fr.replace(R.id.FCVDonation,new DonationFragment());
-                fr.addToBackStack(null);
-                fr.commit();
+                int selectedDurationId = durationRadioGroup.getCheckedRadioButtonId();
+                String selectedDuration = getSelectedDuration(selectedDurationId);
+
+                Fragment fragment = requireActivity().getSupportFragmentManager().findFragmentByTag("DonationHistoryFragment");
+                if (fragment instanceof DonationHistoryFragment) {
+                    ((DonationHistoryFragment) fragment).setHistFilterCriteria(selectedDuration);
+
+                    FragmentTransaction transaction = requireActivity().getSupportFragmentManager().beginTransaction();
+                    transaction.detach(fragment).attach(fragment).commit();
+
+                    NavController navController = Navigation.findNavController(requireView());
+                    navController.popBackStack();
+                }
             }
         });
-
         return view;
     }
+
+    private String getSelectedDuration(int selectedDurationId) {
+        if (selectedDurationId == R.id.rb_30_days) {
+            return "30";
+        } else if (selectedDurationId == R.id.rb_60_days) {
+            return "60";
+        } else if (selectedDurationId == R.id.rb_90_days) {
+            return "90";
+        } else if (selectedDurationId == R.id.rb_1_year) {
+            return "365";
+        } else {
+            return "No duration selected";
+        }
+    }
 }
+
