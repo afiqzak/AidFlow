@@ -10,10 +10,7 @@
 
     <item android:gravity="center">
         <clip> <shape android:shape="rectangle">
-            <gradient
-                android:startColor="#537E9D"
-                android:endColor="#D9D9D9"
-                android:useLevel="true" />
+            <solid android:color="#537E9D" />
             <corners android:radius="10dp" /> </shape>
         </clip>
     </item>
