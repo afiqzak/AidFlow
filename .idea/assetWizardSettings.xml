@@ -35,10 +35,8 @@
                           <map>
                             <entry key="assetSourceType" value="FILE" />
                             <entry key="color" value="5dccfc" />
-                            <entry key="outputName" value="box_login" />
-                            <entry key="sourceFile" value="C:\Users\afiqz\OneDrive\Pictures\box login.svg" />
-                            <entry key="outputName" value="badge__1month" />
-                            <entry key="sourceFile" value="$USER_HOME$/Downloads/Badge (4).svg" />
+                            <entry key="outputName" value="ic_report" />
+                            <entry key="sourceFile" value="C:\Users\afiqz\OneDrive\Pictures\ic_report.svg" />
                           </map>
                         </option>
                       </PersistentState>

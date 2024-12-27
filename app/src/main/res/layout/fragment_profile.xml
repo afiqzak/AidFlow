@@ -49,6 +49,7 @@
         app:strokeColor="@color/light_blue"
         app:strokeWidth="6dp" />
 
+
     <TextView
         android:id="@+id/TVUsername"
         android:layout_width="wrap_content"
@@ -132,5 +133,15 @@
             android:textColor="@color/black" />
 
     </RadioGroup>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView2"
+        android:name="com.example.aidflow.OverviewFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toggleProfile"
+        tools:layout_editor_absoluteX="206dp"
+        tools:layout="@layout/fragment_overview"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
