@@ -48,7 +48,9 @@ class DonationAdapter extends RecyclerView.Adapter<DonationAdapter.DonationViewH
         holder.projectName.setText(donation.getProjectName());
         holder.dueDate.setText(donation.getDueDate());
         holder.progressText.setText(donation.getProgress() + "%");
-        holder.donationProgress.setProgress(donation.getProgress());
+        Log.d("DonationAdapter", "Progress for position " + position + ": " + donation.getProgress());
+        int progress = Math.max(0, Math.min(100, donation.getProgress()));
+        holder.donationProgress.setProgress(progress);
 
         // Set urgency color
         switch (donation.getUrgency()) {
