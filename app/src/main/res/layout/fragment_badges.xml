@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".BadgesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <!-- Circular ProgressBar -->
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+            android:id="@+id/circularProgressBar"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:cpb_background_progressbar_color="#BCC4F9"
+            app:cpb_progressbar_color="#537E9D"
+            app:cpb_progressbar_width="18dp"
+            app:cpb_background_progressbar_width="20dp" />
+
+        <!-- Badge in Center -->
+        <ImageView
+            android:id="@+id/badgeImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/badge_sevenhours"
+            android:layout_gravity="center"
+            android:layout_marginTop="-150dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp">
+
+            <!-- Hours Completed Text -->
+            <TextView
+                android:id="@+id/progressText_numerator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="5"
+                android:textAlignment="textEnd"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="36sp"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:id="@+id/progressText_denominator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:text="/7 hours"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:layout_marginTop="16dp" />
+
+        </LinearLayout>
+
+        <!-- Medal Achievements Layout -->
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center"
+            android:columnCount="3"
+            android:rowCount="2">
+
+            <!-- Medals -->
+            <ImageView
+                android:id="@+id/badge_7hours"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/badge_sevenhours" />
+
+            <ImageView
+                android:id="@+id/badge_12hours"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/badge_twelvehours" />
+
+            <ImageView
+                android:id="@+id/badge_1day"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/badge_oneday" />
+
+            <ImageView
+                android:id="@+id/badge_1week"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/badge_oneweek" />
+
+            <ImageView
+                android:id="@+id/badge_1month"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/badge_onemonth" />
+        </GridLayout>
+
+    </LinearLayout>
+</ScrollView>
