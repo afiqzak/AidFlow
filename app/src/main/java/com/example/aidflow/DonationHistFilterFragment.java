@@ -38,7 +38,7 @@ public class DonationHistFilterFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 //set the argument value(histFilt) to true
-                //to be used in DonationFragment
+                //to be used igi n DonationFragment
                 boolean hist = true;
                 DonationHistFilterFragmentDirections.HistFiltDonate action = DonationHistFilterFragmentDirections.histFiltDonate();
                 action.setHistFilt(hist);

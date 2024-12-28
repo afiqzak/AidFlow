@@ -23,6 +23,7 @@ import android.widget.EditText;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
@@ -32,6 +33,7 @@ import android.widget.Toast;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.Timestamp;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.time.LocalDateTime;
@@ -82,6 +84,7 @@ public class DonationFormFragment extends Fragment {
             TextView dueDateTV = view.findViewById(R.id.TVDate);
             TextView progressTV = view.findViewById(R.id.TVMoneyCollected);
             additionalText = view.findViewById(R.id.ETMeaningful);
+            ProgressBar PBMoney = view.findViewById(R.id.PBMoney);
 
             Log.d("DonationFormFragment", "Target: " + targetDonationAmount + ", Current: " + currentDonationAmount);
 
@@ -103,6 +106,7 @@ public class DonationFormFragment extends Fragment {
             dueDateTV.setText(dueDate);
             urgencyTV.setText(urgency);
             organizerTV.setText(organizationName);
+            PBMoney.setProgress(progress);
             progressTV.setText(String.format("This charity has raised RM%d out of RM%d", currentDonationAmount, targetDonationAmount));
         } else {
             Log.e("DonationFormFragment", "No arguments passed to fragment");
@@ -273,6 +277,8 @@ public class DonationFormFragment extends Fragment {
         db.collection("donationSubmit")
                 .add(donationSubmit)
                 .addOnSuccessListener(documentReference -> {
+
+                    addDonationAmountToDatabase(parsedAmount);
                     Toast.makeText(getContext(), "Donation submitted successfully!", Toast.LENGTH_SHORT).show();
                     clearFields();
                 })
@@ -280,6 +286,49 @@ public class DonationFormFragment extends Fragment {
                     Log.e("FirestoreError", "Failed to submit donation: " + e.getMessage(), e);
                     Toast.makeText(getContext(), "Failed to submit donation: " + e.getMessage(), Toast.LENGTH_SHORT).show();
                 });
+    }
+
+    private void addDonationAmountToDatabase(long parsedAmount) {
+
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+        DocumentReference donationRef = db.collection("donations").document(donationID);
+
+        // Fetch the current amount from Firestore
+        donationRef.get()
+                .addOnSuccessListener(documentSnapshot -> {
+                    if (documentSnapshot.exists()) {
+                        // Get the current donation amount
+                        Long currentAmount = documentSnapshot.getLong("currentDonationAmount");
+                        Long targetAmount = documentSnapshot.getLong("targetDonationAmount");
+                        if (currentAmount == null) {
+                            currentAmount = 0L; // Default to 0 if null
+                        }
+
+                        long updatedAmount = currentAmount + parsedAmount;
+
+                        // Fix progress calculation using double precision
+                        double progressDouble = ((double) updatedAmount / targetAmount) * 100;
+                        long progress = Math.round(progressDouble);
+
+
+                        donationRef.update(
+                                        "currentDonationAmount", updatedAmount,
+                                        "progress", progress
+                                )
+                                .addOnSuccessListener(aVoid -> {
+                                    Log.d("Firestore", "Donation amount successfully updated.");
+                                })
+                                .addOnFailureListener(e -> {
+                                    Log.e("Firestore", "Error updating donation amount", e);
+                                });
+                    } else {
+                        Log.e("Firestore", "Donation document does not exist.");
+                    }
+                })
+                .addOnFailureListener(e -> {
+                    Log.e("Firestore", "Error fetching donation document", e);
+                });
+
     }
 
     private boolean validateDonationForm() {
