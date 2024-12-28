@@ -56,7 +56,7 @@ class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.HistoryViewHold
             donationDate = itemView.findViewById(R.id.donationDate_history);
             donationName = itemView.findViewById(R.id.donationName_history);
             projectName = itemView.findViewById(R.id.projectName_history);
-            donatorName = itemView.findViewById(R.id.donatorName_history);
+            donatorName = itemView.findViewById(R.id.organizerName_history);
             amount = itemView.findViewById(R.id.amount_history);
             paymentMethod = itemView.findViewById(R.id.paymentMethod_history);
         }

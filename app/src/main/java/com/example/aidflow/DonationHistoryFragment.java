@@ -31,7 +31,7 @@ public class DonationHistoryFragment extends Fragment {
 
     private String selectedHistFilter;
     private boolean isHistoryFiltered = false;
-    private ArrayList<History> historyList;
+    private ArrayList<DonationHistory> historyList;
     private RecyclerView recyclerView;
     private FirebaseFirestore db;
     private HistoryAdapter adapter;
@@ -58,7 +58,7 @@ public class DonationHistoryFragment extends Fragment {
 
         db = FirebaseFirestore.getInstance();
 
-        historyList = new ArrayList<History>();
+        historyList = new ArrayList<DonationHistory>();
 
         super.onViewCreated(view, savedInstanceState);
         Log.d("DonationHistoryFragment", "onViewCreated - isHistoryFiltered: " + isHistoryFiltered);
@@ -94,7 +94,7 @@ public class DonationHistoryFragment extends Fragment {
 
     private void updateRecyclerView() {
         if (adapter == null) {
-            adapter = new HistoryAdapter(historyList, getContext());
+            adapter = new HistoryAdapter(historyList);
             recyclerView.setAdapter(adapter);
         } else {
             adapter.notifyDataSetChanged();
@@ -139,7 +139,7 @@ public class DonationHistoryFragment extends Fragment {
 
                         for (DocumentSnapshot document : queryDocumentSnapshots) {
                             Log.d("DonationHistoryFragment", "Fetched document: " + document.getData());
-                            History hist = retrieveHistFromDB(document);
+                            DonationHistory hist = retrieveHistFromDB(document);
                             historyList.add(hist);
                         }
                         updateRecyclerView();
@@ -161,10 +161,10 @@ public class DonationHistoryFragment extends Fragment {
                     Log.d("DonationHistoryFragment", "Data fetched for no filter successfully!");
 
                     if(queryDocumentSnapshots != null) {
-                        List<History> filteredHist = new ArrayList<>(); // Temporary list to store filtered data
+                        List<DonationHistory> filteredHist = new ArrayList<>(); // Temporary list to store filtered data
 
                         for (DocumentSnapshot document : queryDocumentSnapshots) {
-                            History history = retrieveHistFromDB(document);
+                            DonationHistory history = retrieveHistFromDB(document);
                             filteredHist.add(history);
                         }
 
@@ -188,7 +188,7 @@ public class DonationHistoryFragment extends Fragment {
         isHistoryFiltered = true;
     }
 
-    private History retrieveHistFromDB(DocumentSnapshot document){
+    private DonationHistory retrieveHistFromDB(DocumentSnapshot document){
         String userID = FirebaseAuth.getInstance().getUid();
         String orgName = document.get("organizerName", String.class);
         String donationName = document.get("donationName", String.class);
@@ -205,7 +205,7 @@ public class DonationHistoryFragment extends Fragment {
         int amountDonation = amount != null ? amount.intValue() : 0;
         String paymentMethod = document.get("selectedMethod", String.class);
 
-        return new History(userID, orgName, donationName, projectName, transactionDate, amountDonation, paymentMethod);
+        return new DonationHistory(userID, orgName, donationName, projectName, transactionDate, amountDonation, paymentMethod);
     }
 
 }

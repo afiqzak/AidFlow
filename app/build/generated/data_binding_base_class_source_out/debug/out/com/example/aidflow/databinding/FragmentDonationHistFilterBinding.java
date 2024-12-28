@@ -30,9 +30,6 @@ public final class FragmentDonationHistFilterBinding implements ViewBinding {
   public final ImageView closeIcon;
 
   @NonNull
-  public final ConstraintLayout donationHistFilter;
-
-  @NonNull
   public final RadioGroup durationRadioGroup;
 
   @NonNull
@@ -55,13 +52,12 @@ public final class FragmentDonationHistFilterBinding implements ViewBinding {
 
   private FragmentDonationHistFilterBinding(@NonNull ConstraintLayout rootView,
       @NonNull Button applyFilterButton, @NonNull ImageView closeIcon,
-      @NonNull ConstraintLayout donationHistFilter, @NonNull RadioGroup durationRadioGroup,
-      @NonNull RadioButton rb1Year, @NonNull RadioButton rb30Days, @NonNull RadioButton rb60Days,
-      @NonNull RadioButton rb90Days, @NonNull TextView subtitle, @NonNull TextView title) {
+      @NonNull RadioGroup durationRadioGroup, @NonNull RadioButton rb1Year,
+      @NonNull RadioButton rb30Days, @NonNull RadioButton rb60Days, @NonNull RadioButton rb90Days,
+      @NonNull TextView subtitle, @NonNull TextView title) {
     this.rootView = rootView;
     this.applyFilterButton = applyFilterButton;
     this.closeIcon = closeIcon;
-    this.donationHistFilter = donationHistFilter;
     this.durationRadioGroup = durationRadioGroup;
     this.rb1Year = rb1Year;
     this.rb30Days = rb30Days;
@@ -110,8 +106,6 @@ public final class FragmentDonationHistFilterBinding implements ViewBinding {
         break missingId;
       }
 
-      ConstraintLayout donationHistFilter = (ConstraintLayout) rootView;
-
       id = R.id.duration_radio_group;
       RadioGroup durationRadioGroup = ViewBindings.findChildViewById(rootView, id);
       if (durationRadioGroup == null) {
@@ -155,8 +149,7 @@ public final class FragmentDonationHistFilterBinding implements ViewBinding {
       }
 
       return new FragmentDonationHistFilterBinding((ConstraintLayout) rootView, applyFilterButton,
-          closeIcon, donationHistFilter, durationRadioGroup, rb1Year, rb30Days, rb60Days, rb90Days,
-          subtitle, title);
+          closeIcon, durationRadioGroup, rb1Year, rb30Days, rb60Days, rb90Days, subtitle, title);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

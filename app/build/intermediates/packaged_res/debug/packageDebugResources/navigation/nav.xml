@@ -154,4 +154,54 @@
         tools:layout="@layout/fragment_cam" />
 
 
+    <fragment
+        android:id="@+id/newsMainPageFragment"
+        android:name="com.example.newsmodule.NewsMainPageFragment"
+        android:label="fragment_news_main_page"
+        tools:layout="@layout/fragment_news_main_page" >
+        <action
+            android:id="@+id/action_newsMainPageFragment_to_destNewsFull"
+            app:destination="@id/destNewsFull" />
+        <action
+            android:id="@+id/action_newsMainPageFragment_to_storyFullFragment"
+            app:destination="@id/destStoryFull" />
+        <action
+            android:id="@+id/action_newsMainPageFragment_to_projectsFullPage"
+            app:destination="@id/destProjectFull" />
+        <action
+            android:id="@+id/action_newsMainPageFragment_to_mainActivity"
+            app:destination="@id/destCam" />
+        <action
+            android:id="@+id/action_newsMainPageFragment_to_camFragment"
+            app:destination="@id/destCam" />
+    </fragment>
+    <fragment
+        android:id="@+id/destNewsFull"
+        android:name="com.example.aidflow.NewsFullPage"
+        android:label="fragment_news_full_page"
+        tools:layout="@layout/fragment_news_full_page" >
+        <argument
+            android:name="newsTitle"
+            app:argType="string" />
+        <argument
+            android:name="newsDesc"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/destStoryFull"
+        android:name="com.example.aidflow.StoryFullFragment"
+        android:label="fragment_story_full"
+        tools:layout="@layout/fragment_story_full" />
+    <fragment
+        android:id="@+id/destProjectFull"
+        android:name="com.example.aidflow.ProjectsFullPage"
+        android:label="fragment_projects_full_page"
+        tools:layout="@layout/fragment_projects_full_page" />
+    <fragment
+        android:id="@+id/destCam"
+        android:name="com.example.aidflow.CamFragment"
+        android:label="fragment_cam"
+        tools:layout="@layout/fragment_cam" />
+
+
 </navigation>
