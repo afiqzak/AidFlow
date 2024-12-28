@@ -1,0 +1,29 @@
+Index: app/build/intermediates/apk/debug/output-metadata.json
+===================================================================
+diff --git a/app/build/intermediates/apk/debug/output-metadata.json b/app/build/intermediates/apk/debug/output-metadata.json
+deleted file mode 100644
+--- a/app/build/intermediates/apk/debug/output-metadata.json	(revision 29fff8cc1158d831abe91b6e2a7e795ccc25280a)
++++ /dev/null	(revision 29fff8cc1158d831abe91b6e2a7e795ccc25280a)
+@@ -1,21 +0,0 @@
+-{
+-  "version": 3,
+-  "artifactType": {
+-    "type": "APK",
+-    "kind": "Directory"
+-  },
+-  "applicationId": "com.example.aidflow",
+-  "variantName": "debug",
+-  "elements": [
+-    {
+-      "type": "SINGLE",
+-      "filters": [],
+-      "attributes": [],
+-      "versionCode": 1,
+-      "versionName": "1.0",
+-      "outputFile": "app-debug.apk"
+-    }
+-  ],
+-  "elementType": "File",
+-  "minSdkVersionForDexing": 26
+-}
+\ No newline at end of file

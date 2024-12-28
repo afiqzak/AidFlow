@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.aidflow.app-mergeDebugResources-58:/values-zh/values-zh.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\afiqz\\.gradle\\caches\\8.9\\transforms\\00b3e963e8507d15e38ac0b436d74487\\transformed\\ucrop-2.2.6\\res\\values-zh\\values-zh.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,109,163",
+                        "endColumns": "53,53,46",
+                        "endOffsets": "104,158,205"
+                    }
+                }
+            ]
+        }
+    ]
+}

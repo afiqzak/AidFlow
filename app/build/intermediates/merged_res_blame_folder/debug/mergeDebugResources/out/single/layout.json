@@ -1,0 +1,206 @@
+[
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/fragment_volunteer_join.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/fragment_volunteer_join.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/fragment_water_pending_projects_card.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/fragment_water_pending_projects_card.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/volunteer_upcoming_recycleview.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/volunteer_upcoming_recycleview.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/fragment_donation.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/fragment_donation.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/fragment_news_story_card.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/fragment_news_story_card.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/activity_login_signup.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/activity_login_signup.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/fragment_volunteer.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/fragment_volunteer.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/fragment_volunteer_badges.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/fragment_volunteer_badges.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/fragment_water_rating_cardview.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/fragment_water_rating_cardview.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/fragment_water.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/fragment_water.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/fragment_donation_hist_filter.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/fragment_donation_hist_filter.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/fragment_cam.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/fragment_cam.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/fragment_news_projects.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/fragment_news_projects.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/fragment_donation_history.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/fragment_donation_history.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/fragment_signup.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/fragment_signup.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/fragment_water_rating.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/fragment_water_rating.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/fragment_donation_form.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/fragment_donation_form.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/activity_main.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/fragment_news_full_page.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/fragment_news_full_page.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/fragment_water_recycle_view_done.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/fragment_water_recycle_view_done.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/fragment_story_view.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/fragment_story_view.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/fragment_water_notifications.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/fragment_water_notifications.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/fragment_water_report.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/fragment_water_report.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/activity_login_signup1.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/activity_login_signup1.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/fragment_volunteer_upcoming_cancel.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/fragment_volunteer_upcoming_cancel.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/fragment_overview.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/fragment_overview.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/fragment_news_project_card.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/fragment_news_project_card.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/volunteer_recycleview.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/volunteer_recycleview.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/news_card.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/news_card.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/fragment_water_noti_card.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/fragment_water_noti_card.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/fragment_donation_recylcleview.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/fragment_donation_recylcleview.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/fragment_news_story_view.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/fragment_news_story_view.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/fragment_news_view.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/fragment_news_view.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/fragment_story_full.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/fragment_story_full.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/fragment_water_recycle_view_pending.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/fragment_water_recycle_view_pending.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/fragment_donation_donate.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/fragment_donation_donate.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/project_card.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/project_card.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/fragment_volunteer_prog.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/fragment_volunteer_prog.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/fragment_donation_donate_filter.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/fragment_donation_donate_filter.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/fragment_projects_full_page.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/fragment_projects_full_page.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/fragment_water_done_card.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/fragment_water_done_card.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/fragment_profile.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/fragment_profile.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/fragment_news_projects_full_page.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/fragment_news_projects_full_page.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/fragment_volunteer_upcoming.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/fragment_volunteer_upcoming.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/fragment_projects.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/fragment_projects.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/fragment_news_card.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/fragment_news_card.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/story_card.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/story_card.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/fragment_news_main_page.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/fragment_news_main_page.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/fragment_donation_history_recycleview.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/fragment_donation_history_recycleview.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/fragment_login.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/fragment_login.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-59:/layout/fragment_news_story_full.xml",
+        "source": "com.example.aidflow.app-main-62:/layout/fragment_news_story_full.xml"
+    }
+]
