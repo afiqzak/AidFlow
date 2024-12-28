@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/destVolunteer"
+        android:icon="@drawable/icon_volunteer"
+        android:title=""/>
+    <item
+        android:id="@+id/destWaterQuality"
+        android:icon="@drawable/icon_water"
+        android:title=""/>
+    <item
+        android:id="@+id/destHome"
+        android:icon="@drawable/icon_home"
+        android:title=""/>
+    <item
+        android:id="@+id/destDonation"
+        android:icon="@drawable/icon_donation"
+        android:title=""/>
+    <item
+        android:id="@+id/destProfile"
+        android:icon="@drawable/icon_profile"
+        android:title=""/>
+</menu>
