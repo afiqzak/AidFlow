@@ -37,14 +37,12 @@ public class DonationHistFilterFragment extends Fragment {
 
             @Override
             public void onClick(View v) {
-//                FragmentTransaction fr = requireActivity().getSupportFragmentManager().beginTransaction();
-//                fr.replace(R.id.FCVDonation,new DonationFragment());
-//                fr.addToBackStack(null);
-//                fr.commit();
-
-                NavController navController = Navigation.findNavController(requireView());
-                navController.popBackStack();
-
+                //set the argument value(histFilt) to true
+                //to be used igi n DonationFragment
+                boolean hist = true;
+                DonationHistFilterFragmentDirections.HistFiltDonate action = DonationHistFilterFragmentDirections.histFiltDonate();
+                action.setHistFilt(hist);
+                Navigation.findNavController(v).navigate(action);
             }
         });
 
@@ -65,8 +63,15 @@ public class DonationHistFilterFragment extends Fragment {
                     NavController navController = Navigation.findNavController(requireView());
                     navController.popBackStack();
                 }
+
+                //untuk pergi balik kt DonationFragment tapi keluar part history
+//                boolean hist = true;
+//                DonationHistFilterFragmentDirections.HistFiltDonate action = DonationHistFilterFragmentDirections.histFiltDonate();
+//                action.setHistFilt(hist);
+//                Navigation.findNavController(v).navigate(action);
             }
         });
+
         return view;
     }
 

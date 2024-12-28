@@ -28,7 +28,7 @@
             android:id="@+id/badgeImage"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:background="@drawable/badge_sevenhours"
+            android:background="@drawable/badge_7hours"
             android:layout_gravity="center"
             android:layout_marginTop="-150dp" />
 
@@ -78,35 +78,35 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_margin="5dp"
-                android:src="@drawable/badge_sevenhours" />
+                android:src="@drawable/badge_7hours" />
 
             <ImageView
                 android:id="@+id/badge_12hours"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_margin="5dp"
-                android:src="@drawable/badge_twelvehours" />
+                android:src="@drawable/badge_12hours" />
 
             <ImageView
                 android:id="@+id/badge_1day"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_margin="5dp"
-                android:src="@drawable/badge_oneday" />
+                android:src="@drawable/badge_1day" />
 
             <ImageView
                 android:id="@+id/badge_1week"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_margin="5dp"
-                android:src="@drawable/badge_oneweek" />
+                android:src="@drawable/badge_1week" />
 
             <ImageView
                 android:id="@+id/badge_1month"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_margin="5dp"
-                android:src="@drawable/badge_onemonth" />
+                android:src="@drawable/badge_1month" />
         </GridLayout>
 
     </LinearLayout>

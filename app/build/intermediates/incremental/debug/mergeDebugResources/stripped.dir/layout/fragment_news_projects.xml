@@ -11,5 +11,5 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:clipToPadding="false"
-        tools:listitem="@layout/fragment_news_project_card"/>
+        tools:listitem="@layout/single_news_project_card"/>
 </FrameLayout>

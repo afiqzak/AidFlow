@@ -12,6 +12,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingVertical="0dp"
-        tools:listitem="@layout/volunteer_recycleview"/>
+        tools:listitem="@layout/single_volunteer_recycleview"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -33,7 +33,7 @@ public class NewsProjectsAdapter extends RecyclerView.Adapter<NewsProjectsAdapte
     @NonNull
     @Override
     public ProjectsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.fragment_news_project_card, parent, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.single_news_project_card, parent, false);
         return new ProjectsViewHolder(view);
     }
 

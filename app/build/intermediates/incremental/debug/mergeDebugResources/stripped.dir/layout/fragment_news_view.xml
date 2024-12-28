@@ -10,5 +10,5 @@
         android:id="@+id/newsList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/fragment_news_card"/>
+        tools:listitem="@layout/single_news_card"/>
 </FrameLayout>

@@ -16,6 +16,10 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Button;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -145,14 +149,8 @@ public class DonationFormFragment extends Fragment {
         back_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FragmentTransaction fr = requireActivity().getSupportFragmentManager().beginTransaction();
-//                fr.replace(R.id.FCVDonation,new DonationFragment());
-                fr.replace(R.id.FCVDonation,new DonationFragment());
-                fr.addToBackStack(null);
-                fr.commit();
-                BottomNavigationView bottomNav = getActivity().findViewById(R.id.bottomNavigationView);
-                if (bottomNav != null) {
-                    bottomNav.setVisibility(View.VISIBLE);
+                if (getFragmentManager() != null) {
+                    getFragmentManager().popBackStack(); // Go back in the fragment transaction stack
                 }
             }
         });
@@ -216,14 +214,8 @@ public class DonationFormFragment extends Fragment {
             public void onClick(View v) {
                 if (validateDonationForm()) {
                     submitDonation(donationID);
-                    FragmentTransaction fr = requireActivity().getSupportFragmentManager().beginTransaction();
-//                    fr.replace(R.id.FragmentViewMain, new DonationFragment());
-                    fr.replace(R.id.FCVDonation, new DonationFragment());
-                    fr.addToBackStack(null);
-                    fr.commit();
-                    BottomNavigationView bottomNav = getActivity().findViewById(R.id.bottomNavigationView);
-                    if (bottomNav != null) {
-                        bottomNav.setVisibility(View.VISIBLE);
+                    if (getFragmentManager() != null) {
+                        getFragmentManager().popBackStack(); // Go back in the fragment transaction stack
                     }
                 }
             }

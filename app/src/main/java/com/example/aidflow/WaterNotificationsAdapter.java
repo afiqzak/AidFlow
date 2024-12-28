@@ -24,7 +24,7 @@ public class WaterNotificationsAdapter extends RecyclerView.Adapter<WaterNotific
     @NonNull
     @Override
     public NotificationsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.fragment_water_noti_card, parent, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.single_water_noti_card, parent, false);
         return new NotificationsViewHolder(view);
     }
 

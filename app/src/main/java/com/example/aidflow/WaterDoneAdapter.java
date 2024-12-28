@@ -25,7 +25,7 @@ public class WaterDoneAdapter extends RecyclerView.Adapter<WaterDoneAdapter.Done
     @NonNull
     @Override
     public DoneViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.fragment_water_done_card, parent, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.single_water_done_card, parent, false);
         return new DoneViewHolder(view);
     }
 

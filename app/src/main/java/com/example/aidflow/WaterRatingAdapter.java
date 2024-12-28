@@ -24,7 +24,7 @@ public class WaterRatingAdapter extends RecyclerView.Adapter<WaterRatingAdapter.
     @NonNull
     @Override
     public RatingViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.fragment_water_rating_cardview, parent, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.single_water_rating_cardview, parent, false);
         return new RatingViewHolder(view);
     }
 

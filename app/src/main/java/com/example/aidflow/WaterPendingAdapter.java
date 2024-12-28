@@ -23,7 +23,7 @@ public class WaterPendingAdapter extends RecyclerView.Adapter<WaterPendingAdapte
     @NonNull
     @Override
     public PendingViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.fragment_water_pending_projects_card, parent, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.single_water_pending_projects_card, parent, false);
         return new PendingViewHolder(view);
     }
 

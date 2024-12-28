@@ -94,7 +94,7 @@ public class DonationHistoryFragment extends Fragment {
 
     private void updateRecyclerView() {
         if (adapter == null) {
-            adapter = new HistoryAdapter(historyList);
+            adapter = new HistoryAdapter(historyList, getContext());
             recyclerView.setAdapter(adapter);
         } else {
             adapter.notifyDataSetChanged();

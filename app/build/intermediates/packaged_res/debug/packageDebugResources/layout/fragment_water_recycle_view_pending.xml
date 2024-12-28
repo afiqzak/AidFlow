@@ -10,6 +10,6 @@
         android:id="@+id/recyclerViewPending"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/fragment_water_pending_projects_card" />
+        tools:listitem="@layout/single_water_pending_projects_card" />
 
 </FrameLayout>

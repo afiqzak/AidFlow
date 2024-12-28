@@ -4,14 +4,11 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
-import androidx.fragment.app.FragmentActivity;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
@@ -29,7 +26,7 @@ class VolunteerAdapter extends RecyclerView.Adapter<VolunteerAdapter.VolunteerVi
     @NonNull
     @Override
     public VolunteerViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.volunteer_recycleview, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.single_volunteer_recycleview, parent, false);
         return new VolunteerViewHolder(view);
     }
 

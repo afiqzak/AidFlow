@@ -34,7 +34,7 @@ public class NewsCamFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_cam, container, false);
+        return inflater.inflate(R.layout.fragment_news_cam, container, false);
     }
 
     @Override

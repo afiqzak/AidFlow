@@ -8,8 +8,6 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
-import androidx.fragment.app.FragmentActivity;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -28,7 +26,7 @@ class VolunteerUpcomingAdapter extends RecyclerView.Adapter<VolunteerUpcomingAda
     @NonNull
     @Override
     public UpcomingViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.volunteer_upcoming_recycleview, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.single_volunteer_upcoming_recycleview, parent, false);
         return new UpcomingViewHolder(view);
     }
 

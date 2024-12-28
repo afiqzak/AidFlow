@@ -13,7 +13,7 @@
         android:layout_height="match_parent"
         android:paddingVertical="0dp"
         android:paddingHorizontal="0dp"
-        tools:listitem="@layout/fragment_donation_history_recycleview"/>
+        tools:listitem="@layout/single_donation_history_recycleview"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

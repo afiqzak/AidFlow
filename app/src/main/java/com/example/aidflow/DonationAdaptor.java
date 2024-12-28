@@ -10,17 +10,11 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
-import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
 
 class DonationAdapter extends RecyclerView.Adapter<DonationAdapter.DonationViewHolder> {
 
@@ -35,7 +29,7 @@ class DonationAdapter extends RecyclerView.Adapter<DonationAdapter.DonationViewH
     @NonNull
     @Override
     public DonationViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.fragment_donation_recylcleview, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.single_donation_recylcleview, parent, false);
         return new DonationViewHolder(view);
     }
 
@@ -91,6 +85,7 @@ class DonationAdapter extends RecyclerView.Adapter<DonationAdapter.DonationViewH
                 //transaction.replace(R.id.FragmentViewMain, donationFormFragment);
                 transaction.addToBackStack(null);
                 transaction.commit();
+                //Navigation.findNavController(v).navigate(R.id.donationForm);
 
 //                FragmentTransaction transaction = ((FragmentActivity) context)
 //                        .getSupportFragmentManager()

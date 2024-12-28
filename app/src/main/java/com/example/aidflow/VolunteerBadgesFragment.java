@@ -52,17 +52,17 @@ public class VolunteerBadgesFragment extends Fragment {
 
         // Change badge based on progress
         if (completedHours <= 7) {
-            badgeImage.setImageResource(R.drawable.badge_sevenhours);
+            badgeImage.setImageResource(R.drawable.badge_7hours);
         } else if (completedHours > 7 && completedHours <= 12) {
-            badgeImage.setImageResource(R.drawable.badge_twelvehours);
+            badgeImage.setImageResource(R.drawable.badge_12hours);
         } else if (completedHours > 12 && completedHours <= 24) {
-            badgeImage.setImageResource(R.drawable.badge_oneday);
+            badgeImage.setImageResource(R.drawable.badge_1day);
         } else if (completedHours > 24 && completedHours <= 168) {
-            badgeImage.setImageResource(R.drawable.badge_oneweek);
+            badgeImage.setImageResource(R.drawable.badge_1week);
         } else if (completedHours > 168 && completedHours <= 672) {
-            badgeImage.setImageResource(R.drawable.badge_onemonth);
+            badgeImage.setImageResource(R.drawable.badge_1month);
         } else {
-            badgeImage.setImageResource(R.drawable.badge_sevenhours);
+            badgeImage.setImageResource(R.drawable.badge_7hours);
         }
 
     }
