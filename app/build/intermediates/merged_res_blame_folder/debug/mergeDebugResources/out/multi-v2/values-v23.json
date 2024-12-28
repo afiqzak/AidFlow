@@ -4,7 +4,7 @@
             "outputFile": "com.example.aidflow.app-mergeDebugResources-58:/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\afiqz\\.gradle\\caches\\8.9\\transforms\\f68adb2f94b3e6642ec45d3544ccda50\\transformed\\appcompat-1.7.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\afiqz\\.gradle\\caches\\8.9\\transforms\\c6d69ff19f73b37a668bcbd4f92168b0\\transformed\\appcompat-1.7.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -15,7 +15,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\afiqz\\.gradle\\caches\\8.9\\transforms\\4787d2a0e54bbe005e7ffb3e846154e7\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\afiqz\\.gradle\\caches\\8.9\\transforms\\9e077f72d3d22b809ea4dc37ac8d73ce\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -34,7 +34,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\afiqz\\.gradle\\caches\\8.9\\transforms\\cf234323f7c54f2f294d1efa34decbb8\\transformed\\material-1.12.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\afiqz\\.gradle\\caches\\8.9\\transforms\\64370e406cfeb441203383e0a7d8323f\\transformed\\material-1.12.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,5,9,13,16,19,22,25,28,32",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",

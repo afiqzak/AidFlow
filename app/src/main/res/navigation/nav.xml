@@ -13,7 +13,14 @@
         android:id="@+id/destWaterQuality"
         android:name="com.example.aidflow.WaterFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_water" />
+        tools:layout="@layout/fragment_water" >
+        <action
+            android:id="@+id/toRating"
+            app:destination="@id/waterRating" />
+        <action
+            android:id="@+id/toReport"
+            app:destination="@id/waterReport" />
+    </fragment>
     <fragment
         android:id="@+id/waterRating"
         android:name="com.example.aidflow.WaterRatingFragment"
@@ -23,12 +30,24 @@
         android:id="@+id/destDonation"
         android:name="com.example.aidflow.DonationFragment"
         android:label="fragment_main_donation_"
-        tools:layout="@layout/fragment_donation" />
+        tools:layout="@layout/fragment_donation" >
+        <action
+            android:id="@+id/toFrom"
+            app:destination="@id/donationForm" />
+        <argument
+            android:name="histFilt"
+            app:argType="boolean"
+            android:defaultValue="false" />
+    </fragment>
     <fragment
         android:id="@+id/donationHistFilter"
         android:name="com.example.aidflow.DonationHistFilterFragment"
         android:label="fragment_history_filter"
-        tools:layout="@layout/fragment_donation_hist_filter" />
+        tools:layout="@layout/fragment_donation_hist_filter" >
+        <action
+            android:id="@+id/histFiltDonate"
+            app:destination="@id/destDonation" />
+    </fragment>
     <fragment
         android:id="@+id/destVolunteer"
         android:name="com.example.aidflow.VolunteerFragment"
@@ -101,7 +120,6 @@
         android:name="com.example.aidflow.DonationFormFragment"
         android:label="fragment_donation_form"
         tools:layout="@layout/fragment_donation_form" />
-
 
 
 </navigation>

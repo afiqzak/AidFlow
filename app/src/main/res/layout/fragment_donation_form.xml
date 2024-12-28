@@ -282,13 +282,27 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
 
-    <Spinner
+<!--    <Spinner-->
+<!--        android:id="@+id/SpPayMethod"-->
+<!--        android:layout_width="358dp"-->
+<!--        android:layout_height="24dp"-->
+<!--        android:background="@drawable/dropdown_arrow"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/TVPayMehtod" />-->
+
+    <TextView
         android:id="@+id/SpPayMethod"
-        android:layout_width="358dp"
-        android:layout_height="24dp"
+        android:layout_width= "wrap_content"
+        android:layout_height= "wrap_content"
         android:background="@drawable/dropdown_arrow"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Select Payment Method"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TVPayMehtod" />
 
     <Button
@@ -311,7 +325,7 @@
     <EditText
         android:id="@+id/ETMeaningful"
         android:layout_width="358dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="5dp"
         android:background="@drawable/edit_text_background"
@@ -330,10 +344,11 @@
         android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="5dp"
         android:src="@drawable/donate_person"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ETMeaningful" />
+        app:layout_constraintTop_toTopOf="@+id/ETMeaningful" />
 
     <TextView
         android:id="@+id/textView2"

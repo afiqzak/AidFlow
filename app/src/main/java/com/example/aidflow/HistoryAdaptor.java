@@ -4,6 +4,7 @@ package com.example.aidflow;
 import androidx.recyclerview.widget.RecyclerView;
 
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,9 +16,11 @@ import java.util.List;
 class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.HistoryViewHolder> {
 
     private final List<DonationHistory> historyList;
+    private Context context;
 
-    public HistoryAdapter(List<DonationHistory> historyList) {
+    public HistoryAdapter(List<DonationHistory> historyList, Context context) {
         this.historyList = historyList;
+        this.context = context;
     }
 
     @NonNull
@@ -32,12 +35,11 @@ class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.HistoryViewHold
         DonationHistory history = historyList.get(position);
 
         // Bind data to views
-
         holder.donationDate.setText(history.getTransactionDate());
         holder.donationName.setText(history.getDonationName());
         holder.projectName.setText(history.getProjectName());
-        holder.donatorName.setText(history.getDonatorName());
-        holder.amount.setText("RM"+history.getAmount());
+        holder.organizername.setText(history.getDonatorName());
+        holder.amount.setText("RM" + history.getAmount());
         holder.paymentMethod.setText(history.getPaymentMethod());
 
     }
@@ -48,7 +50,7 @@ class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.HistoryViewHold
     }
 
     static class HistoryViewHolder extends RecyclerView.ViewHolder {
-        TextView donationDate,donationName, projectName, donatorName, amount,paymentMethod;
+        TextView donationDate,donationName, projectName, organizername, amount,paymentMethod;
 
 
         public HistoryViewHolder(@NonNull View itemView) {
@@ -56,7 +58,7 @@ class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.HistoryViewHold
             donationDate = itemView.findViewById(R.id.donationDate_history);
             donationName = itemView.findViewById(R.id.donationName_history);
             projectName = itemView.findViewById(R.id.projectName_history);
-            donatorName = itemView.findViewById(R.id.donatorName_history);
+            organizername = itemView.findViewById(R.id.organizerName_history);
             amount = itemView.findViewById(R.id.amount_history);
             paymentMethod = itemView.findViewById(R.id.paymentMethod_history);
         }

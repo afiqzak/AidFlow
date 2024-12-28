@@ -90,6 +90,7 @@ animator nav_default_pop_exit_anim
 array com_google_android_gms_fonts_certs
 array com_google_android_gms_fonts_certs_dev
 array com_google_android_gms_fonts_certs_prod
+array payment_methods
 array preloaded_fonts
 array state_array
 attr SharedValue
@@ -3264,6 +3265,7 @@ drawable ic_launcher_foreground
 drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
+drawable ic_money
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
@@ -3274,8 +3276,10 @@ drawable ic_passkey
 drawable ic_password
 drawable ic_photo_black_48dp
 drawable ic_photo_camera_black_48dp
+drawable ic_report
 drawable ic_search_black_24
 drawable ic_show_pass
+drawable ic_time
 drawable icon_donation
 drawable icon_home
 drawable icon_profile
@@ -3379,6 +3383,7 @@ drawable round_box_white
 drawable round_button
 drawable round_button_donation
 drawable round_edittext_box
+drawable round_rectangle
 drawable round_shape
 drawable roundbox_filter
 drawable rounded_blue
@@ -3451,7 +3456,10 @@ id FUNCTION
 id FragmentViewMain
 id History_button
 id IVBack
+id IVMoney
 id IVProfile
+id IVReport
+id IVTime
 id IVUsername
 id LLDonationTitle
 id META
@@ -3481,6 +3489,9 @@ id TILConfirmPass
 id TILPassword
 id TOP_END
 id TOP_START
+id TVAmounrDonate
+id TVAmounrReport
+id TVAmounrTime
 id TVAmount
 id TVCategory
 id TVConfirmPass
@@ -3501,6 +3512,9 @@ id TVPhone
 id TVTitle
 id TVTitleDonForm
 id TVToggle
+id TVTotDonate
+id TVTotReport
+id TVTotTime
 id TVUrgency
 id TVUserEmail
 id TVUserPhone
@@ -3731,7 +3745,6 @@ id donationName_history
 id donationProgress
 id donation_cardView
 id donations
-id donatorName_history
 id doneStarButton
 id done_place
 id done_projects
@@ -3788,6 +3801,7 @@ id footerLayout
 id forever
 id fragmentContainerNoti
 id fragmentContainerView
+id fragmentContainerView2
 id fragmentContainerViewNews
 id fragmentContainerViewStory
 id fragment_button
@@ -3810,6 +3824,7 @@ id groups
 id header_title
 id hide_ime_id
 id hideable
+id histFiltDonate
 id home
 id homeAsUp
 id honorRequest
@@ -3975,6 +3990,7 @@ id open_search_view_search_prefix
 id open_search_view_status_bar_spacer
 id open_search_view_toolbar
 id open_search_view_toolbar_container
+id organizerName_history
 id organizer_upcoming
 id organizer_volunteer
 id outline
@@ -4037,6 +4053,8 @@ id recyclerView_history
 id recyclerView_upcoming
 id recyclerView_volunteer
 id relativeLayout
+id relativeLayout2
+id relativeLayout3
 id report_drawn
 id reportbutton
 id reverseSawtooth
@@ -4171,6 +4189,9 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+id toFrom
+id toRating
+id toReport
 id to_left
 id to_right
 id toggle
@@ -4360,6 +4381,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_login_signup
+layout activity_login_signup1
 layout activity_main
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
@@ -4400,8 +4422,13 @@ layout fragment_news_story_card
 layout fragment_news_story_full
 layout fragment_news_story_view
 layout fragment_news_view
+layout fragment_overview
 layout fragment_profile
+layout fragment_projects
+layout fragment_projects_full_page
 layout fragment_signup
+layout fragment_story_full
+layout fragment_story_view
 layout fragment_volunteer
 layout fragment_volunteer_badges
 layout fragment_volunteer_join
@@ -4471,6 +4498,7 @@ layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
 layout mtrl_search_bar
 layout mtrl_search_view
+layout news_card
 layout notification_action
 layout notification_action_tombstone
 layout notification_media_action
@@ -4486,9 +4514,11 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout project_card
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
+layout story_card
 layout support_simple_spinner_dropdown_item
 layout ucrop_activity_photobox
 layout ucrop_aspect_ratio

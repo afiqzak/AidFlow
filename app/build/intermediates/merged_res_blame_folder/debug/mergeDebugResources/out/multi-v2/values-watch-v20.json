@@ -4,7 +4,7 @@
             "outputFile": "com.example.aidflow.app-mergeDebugResources-58:/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\afiqz\\.gradle\\caches\\8.9\\transforms\\f68adb2f94b3e6642ec45d3544ccda50\\transformed\\appcompat-1.7.0\\res\\values-watch-v20\\values-watch-v20.xml",
+                    "source": "C:\\Users\\afiqz\\.gradle\\caches\\8.9\\transforms\\c6d69ff19f73b37a668bcbd4f92168b0\\transformed\\appcompat-1.7.0\\res\\values-watch-v20\\values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\afiqz\\.gradle\\caches\\8.9\\transforms\\843e2dfadd57d70431096c685db050a5\\transformed\\play-services-auth-20.7.0\\res\\values-watch-v20\\values.xml",
+                    "source": "C:\\Users\\afiqz\\.gradle\\caches\\8.9\\transforms\\5e9e906590a7cc08dd3b64d8bfc6d522\\transformed\\play-services-auth-20.7.0\\res\\values-watch-v20\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11",
                         "startColumns": "0,0,0,0,0,0,0,0",

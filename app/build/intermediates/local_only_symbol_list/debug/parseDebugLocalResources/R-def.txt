@@ -3,6 +3,7 @@ local
 array com_google_android_gms_fonts_certs
 array com_google_android_gms_fonts_certs_dev
 array com_google_android_gms_fonts_certs_prod
+array payment_methods
 array preloaded_fonts
 array state_array
 color black
@@ -61,8 +62,11 @@ drawable ic_donate
 drawable ic_hide_pass
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_money
 drawable ic_pass
+drawable ic_report
 drawable ic_show_pass
+drawable ic_time
 drawable icon_donation
 drawable icon_home
 drawable icon_profile
@@ -93,6 +97,7 @@ drawable round_box_white
 drawable round_button
 drawable round_button_donation
 drawable round_edittext_box
+drawable round_rectangle
 drawable round_shape
 drawable roundbox_filter
 drawable rounded_blue
@@ -138,7 +143,10 @@ id FCVLogin
 id FragmentViewMain
 id History_button
 id IVBack
+id IVMoney
 id IVProfile
+id IVReport
+id IVTime
 id IVUsername
 id LLDonationTitle
 id NewsTopTitle
@@ -159,6 +167,9 @@ id TIETConfirmPass
 id TIETPassword
 id TILConfirmPass
 id TILPassword
+id TVAmounrDonate
+id TVAmounrReport
+id TVAmounrTime
 id TVAmount
 id TVCategory
 id TVConfirmPass
@@ -179,6 +190,9 @@ id TVPhone
 id TVTitle
 id TVTitleDonForm
 id TVToggle
+id TVTotDonate
+id TVTotReport
+id TVTotTime
 id TVUrgency
 id TVUserEmail
 id TVUserPhone
@@ -249,7 +263,6 @@ id donationName_history
 id donationProgress
 id donation_cardView
 id donations
-id donatorName_history
 id doneStarButton
 id done_place
 id done_projects
@@ -265,6 +278,7 @@ id first_name
 id footerLayout
 id fragmentContainerNoti
 id fragmentContainerView
+id fragmentContainerView2
 id fragmentContainerViewNews
 id fragmentContainerViewStory
 id fragment_button
@@ -273,6 +287,7 @@ id frameLayout2
 id frameLayout3
 id frameLayout4
 id frameLayout5
+id histFiltDonate
 id home
 id imageButton
 id imageView
@@ -293,6 +308,7 @@ id newsList
 id newsTitle
 id noti_text
 id noti_title
+id organizerName_history
 id organizer_upcoming
 id organizer_volunteer
 id paymentMethod_history
@@ -332,6 +348,8 @@ id recyclerView_history
 id recyclerView_upcoming
 id recyclerView_volunteer
 id relativeLayout
+id relativeLayout2
+id relativeLayout3
 id reportbutton
 id scrollView2
 id scrollView3
@@ -352,6 +370,9 @@ id textView2
 id textView3
 id time
 id title
+id toFrom
+id toRating
+id toReport
 id toggle
 id toggleNews
 id toggleProfile
@@ -372,6 +393,7 @@ id waterRating
 id waterReport
 id water_quality_image
 layout activity_login_signup
+layout activity_login_signup1
 layout activity_main
 layout fragment_cam
 layout fragment_donation
@@ -393,8 +415,13 @@ layout fragment_news_story_card
 layout fragment_news_story_full
 layout fragment_news_story_view
 layout fragment_news_view
+layout fragment_overview
 layout fragment_profile
+layout fragment_projects
+layout fragment_projects_full_page
 layout fragment_signup
+layout fragment_story_full
+layout fragment_story_view
 layout fragment_volunteer
 layout fragment_volunteer_badges
 layout fragment_volunteer_join
@@ -411,6 +438,9 @@ layout fragment_water_rating_cardview
 layout fragment_water_recycle_view_done
 layout fragment_water_recycle_view_pending
 layout fragment_water_report
+layout news_card
+layout project_card
+layout story_card
 layout volunteer_recycleview
 layout volunteer_upcoming_recycleview
 menu bottom_nav
@@ -430,6 +460,7 @@ mipmap story_1
 mipmap story_1_foreground
 mipmap story_1_round
 navigation nav
+string app_name
 string gcm_defaultSenderId
 string google_api_key
 string google_app_id

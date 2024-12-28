@@ -2,6 +2,7 @@ package com.example.aidflow;
 
 
 public class DonationHistory {
+    private final String UserID;
     private final String donatorName;
     private final String donationName;
     private final String projectName;
@@ -9,7 +10,8 @@ public class DonationHistory {
     private final int amount;
     private final String paymentMethod;
 
-    public DonationHistory(String donatorName, String donationName, String projectName, String transactionDate, int amount, String paymentMethod) {
+    public DonationHistory(String userID, String donatorName, String donationName, String projectName, String transactionDate, int amount, String paymentMethod) {
+        UserID = userID;
         this.donatorName = donatorName;
         this.donationName = donationName;
         this.projectName = projectName;
@@ -19,6 +21,7 @@ public class DonationHistory {
     }
 
 
+    public String getUserID() { return UserID;}
 
     public String getDonatorName() {
         return donatorName;

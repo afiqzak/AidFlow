@@ -8,10 +8,13 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -26,13 +29,10 @@ public class DonationFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-
-
         View view =  inflater.inflate(R.layout.fragment_donation, container, false);
 
-
         Button history_button = view.findViewById(R.id.History_button);
-        Button donation_button = (Button) view.findViewById(R.id.Donation_button);
+        Button donation_button = view.findViewById(R.id.Donation_button);
 
         FloatingActionButton fab_donate;
         FloatingActionButton fab_history;
@@ -43,15 +43,39 @@ public class DonationFragment extends Fragment {
         Fragment donate = new DonationDonateFragment();
         Fragment history = new DonationHistoryFragment();
 
-        donation_button.setAlpha(0.5F);
-        history_button.setAlpha(1.0F);
+        //get arguments(histfilt) from bundle
+        boolean hist = DonationFragmentArgs.fromBundle(getArguments()).getHistFilt();
+        if(hist) {
+            donation_button.setAlpha(1.0F);
+            history_button.setAlpha(0.5F);
 
-        fab_history.setVisibility(View.GONE);
-        fab_donate.setVisibility(View.VISIBLE);
+            // Make FAB2 visible, FAB1 invisible
+            fab_donate.setVisibility(View.GONE);
+            fab_history.setVisibility(View.VISIBLE);
 
-        FragmentTransaction transaction = requireActivity().getSupportFragmentManager().beginTransaction();
-        transaction.add(R.id.FCVDonation, donate);
-        transaction.commit();
+            FragmentTransaction fr = requireActivity().getSupportFragmentManager().beginTransaction();
+            fr.replace(R.id.FCVDonation,history);
+            fr.addToBackStack(null);
+            fr.commit();
+
+            //reset the value of argument (histFilt) to false
+            Bundle newArgs = new Bundle();
+            newArgs.putBoolean("histFilt", false);
+            setArguments(newArgs);
+        } else {
+            history_button.setAlpha(1.0F);
+            donation_button.setAlpha(0.5F);
+
+            // Make FAB2 visible, FAB1 invisible
+            fab_history.setVisibility(View.GONE);
+            fab_donate.setVisibility(View.VISIBLE);
+
+            FragmentTransaction fr = requireActivity().getSupportFragmentManager().beginTransaction();
+            fr.replace(R.id.FCVDonation,donate);
+            fr.addToBackStack(null);
+            fr.commit();
+        }
+
 
         history_button.setOnClickListener(new View.OnClickListener() {
             @Override
