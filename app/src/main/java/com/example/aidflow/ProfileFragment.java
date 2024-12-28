@@ -2,11 +2,15 @@ package com.example.aidflow;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RadioGroup;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -14,6 +18,8 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class ProfileFragment extends Fragment {
+
+    private RadioGroup toggleProfile;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -60,5 +66,33 @@ public class ProfileFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_profile, container, false);
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+
+
+        toggleProfile = view.findViewById(R.id.toggleProfile);
+
+        toggleProfile.setOnCheckedChangeListener((group, checkedId) -> {
+            if (checkedId == R.id.RBOverview) {
+                // tukar ke pending
+                switchFragment(new ProfileOverviewFragment());
+            } else if (checkedId == R.id.RBBadges) {
+                // tukar ke done fragment
+                switchFragment(new ProfileBadgesFragment());
+            }
+        });
+
+        // default klau tak pilih pape agi pending
+        switchFragment(new ProfileOverviewFragment());
+    }
+
+    private void switchFragment(Fragment fragment) {
+        FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
+        transaction.replace(R.id.FCVProfile, fragment);
+        transaction.commit();
     }
 }

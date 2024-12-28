@@ -5,6 +5,8 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -71,9 +73,22 @@ public class ProfileBadgesFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        setUpBadges();
+
+        ProfileBadgesAdaptor adapter = new ProfileBadgesAdaptor(getContext(), badges);
+        RecyclerView recyclerView = view.findViewById(R.id.RVBadges);
+        recyclerView.setAdapter(adapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
     }
 
     private void setUpBadges(){
-
+        badges.add(new ProfileBadges("Complete 7 total volunteer hours", "hour >= 7", R.drawable.badge_7hours));
+        badges.add(new ProfileBadges("Complete 12 total volunteer hours", "hour >= 12", R.drawable.badge_12hours));
+        badges.add(new ProfileBadges("Complete 24 total volunteer hours", "hour >= 24", R.drawable.badge_1day));
+        badges.add(new ProfileBadges("Complete 168 total volunteer hours", "hour >= 168", R.drawable.badge_1week));
+        badges.add(new ProfileBadges("Complete 720 total volunteer hours", "hour >= 720", R.drawable.badge_1month));
+        badges.add(new ProfileBadges("Submitted 10 reports", "report >= 10", R.drawable.badge_10reports));
+        badges.add(new ProfileBadges("Make a total donation of RM50", "donation >= 50", R.drawable.badge_rm50donate));
     }
 }

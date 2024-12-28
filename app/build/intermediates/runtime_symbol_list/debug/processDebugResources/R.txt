@@ -3175,11 +3175,13 @@ int drawable arrow_icon 0x7f0800a7
 int drawable avd_hide_password 0x7f0800a8
 int drawable avd_show_password 0x7f0800a9
 int drawable back_icon 0x7f0800aa
-int drawable badge_oneday 0x7f0800ab
-int drawable badge_onemonth 0x7f0800ac
-int drawable badge_oneweek 0x7f0800ad
-int drawable badge_sevenhours 0x7f0800ae
-int drawable badge_twelvehours 0x7f0800af
+int drawable badge_10reports 0x7f0801a1
+int drawable badge_12hours 0x7f0801a2
+int drawable badge_1day 0x7f0801a3
+int drawable badge_1month 0x7f0801a4
+int drawable badge_1week 0x7f0801a5
+int drawable badge_7hours 0x7f0801a6
+int drawable badge_rm50donate 0x7f0801a7
 int drawable bottom_nav 0x7f0800b0
 int drawable box_login 0x7f0800b1
 int drawable btn_checkbox_checked_mtrl 0x7f0800b2
@@ -3451,10 +3453,12 @@ int id ETPhone 0x7f0a0013
 int id ETUsername 0x7f0a0014
 int id FCVDonation 0x7f0a0015
 int id FCVLogin 0x7f0a0016
+int id FCVProfile 0x7f0a0345
 int id FUNCTION 0x7f0a0017
 int id FragmentViewMain 0x7f0a0018
 int id History_button 0x7f0a0019
 int id IVBack 0x7f0a001a
+int id IVBadge 0x7f0a0342
 int id IVMoney 0x7f0a001b
 int id IVProfile 0x7f0a001c
 int id IVReport 0x7f0a001d
@@ -3475,6 +3479,7 @@ int id RBBadges 0x7f0a002b
 int id RBNo 0x7f0a002c
 int id RBOverview 0x7f0a002d
 int id RBYes 0x7f0a002e
+int id RVBadges 0x7f0a0343
 int id RelatedReportImage 0x7f0a002f
 int id SHIFT 0x7f0a0030
 int id SHOW_ALL 0x7f0a0031
@@ -3508,6 +3513,7 @@ int id TVPassRequi 0x7f0a004c
 int id TVPassword 0x7f0a004d
 int id TVPayMehtod 0x7f0a004e
 int id TVPhone 0x7f0a004f
+int id TVRequirement 0x7f0a0344
 int id TVTitle 0x7f0a0050
 int id TVTitleDonForm 0x7f0a0051
 int id TVToggle 0x7f0a0052
@@ -3800,7 +3806,6 @@ int id footerLayout 0x7f0a0170
 int id forever 0x7f0a0171
 int id fragmentContainerNoti 0x7f0a0172
 int id fragmentContainerView 0x7f0a0173
-int id fragmentContainerView2 0x7f0a0174
 int id fragmentContainerViewNews 0x7f0a0175
 int id fragmentContainerViewStory 0x7f0a0176
 int id fragment_button 0x7f0a0177
@@ -4416,6 +4421,7 @@ int layout fragment_news_story_full 0x7f0d003d
 int layout fragment_news_story_view 0x7f0d003e
 int layout fragment_news_view 0x7f0d003f
 int layout fragment_profile 0x7f0d0040
+int layout fragment_profile_badges 0x7f0d00a9
 int layout fragment_profile_overview 0x7f0d0041
 int layout fragment_signup 0x7f0d0042
 int layout fragment_volunteer 0x7f0d0043
@@ -4506,6 +4512,7 @@ int layout single_donation_recylcleview 0x7f0d0097
 int layout single_news_card 0x7f0d0098
 int layout single_news_project_card 0x7f0d0099
 int layout single_news_story_card 0x7f0d009a
+int layout single_profile_badge 0x7f0d00aa
 int layout single_volunteer_recycleview 0x7f0d009b
 int layout single_volunteer_upcoming_recycleview 0x7f0d009c
 int layout single_water_done_card 0x7f0d009d

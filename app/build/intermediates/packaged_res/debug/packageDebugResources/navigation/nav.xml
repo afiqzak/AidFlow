@@ -120,7 +120,11 @@
         android:name="com.example.aidflow.DonationFormFragment"
         android:label="fragment_donation_form"
         tools:layout="@layout/fragment_donation_form" />
-
+    <fragment
+        android:id="@+id/destProfile"
+        android:name="com.example.aidflow.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
 
 
 </navigation>

@@ -3176,11 +3176,13 @@ drawable arrow_icon
 drawable avd_hide_password
 drawable avd_show_password
 drawable back_icon
-drawable badge_oneday
-drawable badge_onemonth
-drawable badge_oneweek
-drawable badge_sevenhours
-drawable badge_twelvehours
+drawable badge_10reports
+drawable badge_12hours
+drawable badge_1day
+drawable badge_1month
+drawable badge_1week
+drawable badge_7hours
+drawable badge_rm50donate
 drawable bottom_nav
 drawable box_login
 drawable btn_checkbox_checked_mtrl
@@ -3452,10 +3454,12 @@ id ETPhone
 id ETUsername
 id FCVDonation
 id FCVLogin
+id FCVProfile
 id FUNCTION
 id FragmentViewMain
 id History_button
 id IVBack
+id IVBadge
 id IVMoney
 id IVProfile
 id IVReport
@@ -3476,6 +3480,7 @@ id RBBadges
 id RBNo
 id RBOverview
 id RBYes
+id RVBadges
 id RelatedReportImage
 id SHIFT
 id SHOW_ALL
@@ -3509,6 +3514,7 @@ id TVPassRequi
 id TVPassword
 id TVPayMehtod
 id TVPhone
+id TVRequirement
 id TVTitle
 id TVTitleDonForm
 id TVToggle
@@ -3801,7 +3807,6 @@ id footerLayout
 id forever
 id fragmentContainerNoti
 id fragmentContainerView
-id fragmentContainerView2
 id fragmentContainerViewNews
 id fragmentContainerViewStory
 id fragment_button
@@ -4417,6 +4422,7 @@ layout fragment_news_story_full
 layout fragment_news_story_view
 layout fragment_news_view
 layout fragment_profile
+layout fragment_profile_badges
 layout fragment_profile_overview
 layout fragment_signup
 layout fragment_volunteer
@@ -4507,6 +4513,7 @@ layout single_donation_recylcleview
 layout single_news_card
 layout single_news_project_card
 layout single_news_story_card
+layout single_profile_badge
 layout single_volunteer_recycleview
 layout single_volunteer_upcoming_recycleview
 layout single_water_done_card

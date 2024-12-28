@@ -24,6 +24,9 @@ public final class FragmentProfileBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final FragmentContainerView FCVProfile;
+
+  @NonNull
   public final ShapeableImageView IVProfile;
 
   @NonNull
@@ -48,21 +51,19 @@ public final class FragmentProfileBinding implements ViewBinding {
   public final TextView TVUsername;
 
   @NonNull
-  public final FragmentContainerView fragmentContainerView2;
-
-  @NonNull
   public final ConstraintLayout frameLayout5;
 
   @NonNull
   public final RadioGroup toggleProfile;
 
   private FragmentProfileBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ShapeableImageView IVProfile, @NonNull RadioButton RBBadges,
-      @NonNull RadioButton RBOverview, @NonNull TextView TVFName, @NonNull TextView TVLName,
-      @NonNull TextView TVUserEmail, @NonNull TextView TVUserPhone, @NonNull TextView TVUsername,
-      @NonNull FragmentContainerView fragmentContainerView2, @NonNull ConstraintLayout frameLayout5,
+      @NonNull FragmentContainerView FCVProfile, @NonNull ShapeableImageView IVProfile,
+      @NonNull RadioButton RBBadges, @NonNull RadioButton RBOverview, @NonNull TextView TVFName,
+      @NonNull TextView TVLName, @NonNull TextView TVUserEmail, @NonNull TextView TVUserPhone,
+      @NonNull TextView TVUsername, @NonNull ConstraintLayout frameLayout5,
       @NonNull RadioGroup toggleProfile) {
     this.rootView = rootView;
+    this.FCVProfile = FCVProfile;
     this.IVProfile = IVProfile;
     this.RBBadges = RBBadges;
     this.RBOverview = RBOverview;
@@ -71,7 +72,6 @@ public final class FragmentProfileBinding implements ViewBinding {
     this.TVUserEmail = TVUserEmail;
     this.TVUserPhone = TVUserPhone;
     this.TVUsername = TVUsername;
-    this.fragmentContainerView2 = fragmentContainerView2;
     this.frameLayout5 = frameLayout5;
     this.toggleProfile = toggleProfile;
   }
@@ -103,6 +103,12 @@ public final class FragmentProfileBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.FCVProfile;
+      FragmentContainerView FCVProfile = ViewBindings.findChildViewById(rootView, id);
+      if (FCVProfile == null) {
+        break missingId;
+      }
+
       id = R.id.IVProfile;
       ShapeableImageView IVProfile = ViewBindings.findChildViewById(rootView, id);
       if (IVProfile == null) {
@@ -151,12 +157,6 @@ public final class FragmentProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.fragmentContainerView2;
-      FragmentContainerView fragmentContainerView2 = ViewBindings.findChildViewById(rootView, id);
-      if (fragmentContainerView2 == null) {
-        break missingId;
-      }
-
       ConstraintLayout frameLayout5 = (ConstraintLayout) rootView;
 
       id = R.id.toggleProfile;
@@ -165,9 +165,9 @@ public final class FragmentProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentProfileBinding((ConstraintLayout) rootView, IVProfile, RBBadges,
-          RBOverview, TVFName, TVLName, TVUserEmail, TVUserPhone, TVUsername,
-          fragmentContainerView2, frameLayout5, toggleProfile);
+      return new FragmentProfileBinding((ConstraintLayout) rootView, FCVProfile, IVProfile,
+          RBBadges, RBOverview, TVFName, TVLName, TVUserEmail, TVUserPhone, TVUsername,
+          frameLayout5, toggleProfile);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
