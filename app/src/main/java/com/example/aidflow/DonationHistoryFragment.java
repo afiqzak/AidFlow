@@ -49,8 +49,6 @@ public class DonationHistoryFragment extends Fragment {
 
     }
 
-
-
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -207,6 +205,8 @@ public class DonationHistoryFragment extends Fragment {
 
         return new DonationHistory(userID, orgName, donationName, projectName, transactionDate, amountDonation, paymentMethod);
     }
+
+
 
 }
 

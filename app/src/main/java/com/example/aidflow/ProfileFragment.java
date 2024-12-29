@@ -6,11 +6,18 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.lifecycle.ViewModelProvider;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RadioGroup;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -20,6 +27,8 @@ import android.widget.RadioGroup;
 public class ProfileFragment extends Fragment {
 
     private RadioGroup toggleProfile;
+    private FirebaseFirestore db;
+    private User user;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -72,21 +81,29 @@ public class ProfileFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        //observe view model for real time updates on user data
+        UserViewModel userViewModel = new ViewModelProvider(requireActivity()).get(UserViewModel.class);
+        userViewModel.getUser().observe(getViewLifecycleOwner(), user -> {
+                    if (user != null) {
+                        this.user = user;
+                        bindData(view);
+                    }
+                });
+
 
 
         toggleProfile = view.findViewById(R.id.toggleProfile);
 
         toggleProfile.setOnCheckedChangeListener((group, checkedId) -> {
             if (checkedId == R.id.RBOverview) {
-                // tukar ke pending
+                // tukar ke overview
                 switchFragment(new ProfileOverviewFragment());
             } else if (checkedId == R.id.RBBadges) {
-                // tukar ke done fragment
+                // tukar ke badges
                 switchFragment(new ProfileBadgesFragment());
             }
         });
 
-        // default klau tak pilih pape agi pending
         switchFragment(new ProfileOverviewFragment());
     }
 
@@ -95,4 +112,20 @@ public class ProfileFragment extends Fragment {
         transaction.replace(R.id.FCVProfile, fragment);
         transaction.commit();
     }
+
+    //bind all view in fragment_profile.xml
+    private void bindData(View v){
+        TextView TVUsername = v.findViewById(R.id.TVUsername);
+        TextView TVFname = v.findViewById(R.id.TVFName);
+        TextView TVLname = v.findViewById(R.id.TVLName);
+        TextView TVEmail = v.findViewById(R.id.TVUserEmail);
+        TextView TVPhone = v.findViewById(R.id.TVUserPhone);
+
+        TVUsername.setText(user.getUsername());
+        TVFname.setText(user.getFirstName());
+        TVLname.setText(user.getLastName());
+        TVEmail.setText(user.getEmail());
+        TVPhone.setText(user.getPhone());
+    }
+
 }

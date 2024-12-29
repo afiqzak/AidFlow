@@ -5,9 +5,11 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,6 +24,8 @@ import java.util.ArrayList;
 public class ProfileBadgesFragment extends Fragment {
 
     ArrayList<ProfileBadges> badges = new ArrayList<>();
+    private User user;
+    private ProfileBadgesAdaptor adapter;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -74,12 +78,20 @@ public class ProfileBadgesFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        setUpBadges();
+        UserViewModel userViewModel = new ViewModelProvider(requireActivity()).get(UserViewModel.class);
 
-        ProfileBadgesAdaptor adapter = new ProfileBadgesAdaptor(getContext(), badges);
-        RecyclerView recyclerView = view.findViewById(R.id.RVBadges);
-        recyclerView.setAdapter(adapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        userViewModel.getUser().observe(getViewLifecycleOwner(), user -> {
+            if (user != null) {
+                this.user = user;
+                setUpBadges();
+                adapter = new ProfileBadgesAdaptor(getContext(), badges, user);
+                RecyclerView recyclerView = view.findViewById(R.id.RVBadges);
+                recyclerView.setAdapter(adapter);
+                recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+            }
+        });
+
+
     }
 
     private void setUpBadges(){

@@ -15,10 +15,12 @@ import java.util.ArrayList;
 public class ProfileBadgesAdaptor extends RecyclerView.Adapter<ProfileBadgesAdaptor.ViewHolder>{
     Context context;
     ArrayList<ProfileBadges> badges;
+    private User user;
 
-    public ProfileBadgesAdaptor(Context context, ArrayList<ProfileBadges> badges) {
+    public ProfileBadgesAdaptor(Context context, ArrayList<ProfileBadges> badges, User user) {
         this.context = context;
         this.badges = badges;
+        this.user = user;
     }
     @NonNull
     @Override
@@ -34,6 +36,21 @@ public class ProfileBadgesAdaptor extends RecyclerView.Adapter<ProfileBadgesAdap
         //assign value to the views in single_profile_badges.xml
         holder.TVRequirement.setText(badges.get(position).getRequirement());
         holder.IVBadge.setImageResource(badges.get(position).getImg());
+
+        String condition = badges.get(position).getCondition();
+        String[] parts = condition.split(" >= ");
+        int value = Integer.parseInt(parts[1]);
+
+        if(condition.contains("hour")){
+            if (!(user.getVolunteerHours() >= value))
+                holder.IVBadge.setAlpha(0.5F);
+        } else if(condition.contains("report")){
+            if (!(user.getReportSubmitted() >= value))
+                holder.IVBadge.setAlpha(0.5F);
+        } else {
+            if (!(user.getTotalDonate() >= value))
+                holder.IVBadge.setAlpha(0.5F);
+        }
     }
 
     @Override

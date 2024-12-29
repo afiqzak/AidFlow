@@ -29,8 +29,8 @@ public class LoginSignupActivity extends AppCompatActivity {
         TVToggle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TextView TVTitle = (TextView) findViewById(R.id.TVTitle);
-                TextView TVNoAcc = (TextView) findViewById(R.id.TVNoAcc);
+                TextView TVTitle = findViewById(R.id.TVTitle);
+                TextView TVNoAcc = findViewById(R.id.TVNoAcc);
 
                 String current = TVToggle.getText().toString();
 

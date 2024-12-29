@@ -236,6 +236,9 @@ public class SignupFragment extends Fragment {
         user.put("lastName", lastName);
         user.put("phone", phone);
         user.put("username", username);
+        user.put("totalDonate", 0);
+        user.put("volunteerHours", 0);
+        user.put("reportSubmitted", 0);
 
         //store the mapping of the user data into users collection
         db.collection("users").document(uid)

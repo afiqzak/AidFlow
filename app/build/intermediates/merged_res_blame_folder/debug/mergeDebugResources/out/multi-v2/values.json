@@ -334,12 +334,12 @@
                 {
                     "source": "C:\\Users\\afiqz\\AndroidStudioProjects\\AidFlow\\app\\src\\main\\res\\values\\strings.xml",
                     "from": {
-                        "startLines": "25,5,1,3",
+                        "startLines": "24,5,1,3",
                         "startColumns": "4,4,4,4",
-                        "startOffsets": "664,195,17,122",
-                        "endLines": "30,21,1,3",
+                        "startOffsets": "638,190,16,119",
+                        "endLines": "29,21,1,3",
                         "endColumns": "19,19,44,69",
-                        "endOffsets": "836,652,57,187"
+                        "endOffsets": "805,631,56,184"
                     },
                     "to": {
                         "startLines": "16,26,2120,2180",
