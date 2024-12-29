@@ -1,0 +1,794 @@
+[
+    {
+        "merged": "com.example.aidflow.app-debug-63:/layout_fragment_projects_full_page.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/layout/fragment_projects_full_page.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/layout_activity_main.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/layout_fragment_water.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/layout/fragment_water.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-xxhdpi_story_1.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-xxhdpi/story_1.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-hdpi_story_1.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-hdpi/story_1.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-hdpi_story3_round.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-hdpi/story3_round.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_water_logo.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/water_logo.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_donation_title.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/donation_title.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_rate_icon.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/rate_icon.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_filter_icon_putih.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/filter_icon_putih.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/layout_fragment_water_rating.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/layout/fragment_water_rating.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_user_icon.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/user_icon.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-mdpi_story3_foreground.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-mdpi/story3_foreground.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_jouni_rajala_0aiko248fhe_unsplash.jpg.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/jouni_rajala_0aiko248fhe_unsplash.jpg"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_story2.png.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/story2.png"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/navigation_nav.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/navigation/nav.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/layout_fragment_news_view.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/layout/fragment_news_view.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_circle.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/circle.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-xxhdpi_story3_round.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-xxhdpi/story3_round.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/layout_fragment_donation_history.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/layout/fragment_donation_history.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/layout_fragment_signup.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/layout/fragment_signup.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-anydpi-v26_story_1.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-anydpi-v26/story_1.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_filter_icon.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/filter_icon.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/layout_fragment_story_view.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/layout/fragment_story_view.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-hdpi_story2_foreground.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-hdpi/story2_foreground.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_dropdown_box.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/dropdown_box.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_title_box.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/title_box.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_rounded_blue.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/rounded_blue.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_ic_camera.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/ic_camera.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-anydpi-v26_story2_round.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-anydpi-v26/story2_round.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-hdpi_circle_baru_round.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-hdpi/circle_baru_round.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_back_icon.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/back_icon.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_green_urgency.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/green_urgency.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_ic_donate.png.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/ic_donate.png"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-xxxhdpi_story2.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-xxxhdpi/story2.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-xhdpi_story2.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-xhdpi/story2.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-xxxhdpi_story_1_round.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-xxxhdpi/story_1_round.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_donations_icon.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/donations_icon.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_button_login.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/button_login.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-mdpi_story_1_foreground.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-mdpi/story_1_foreground.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-xhdpi_story_1_foreground.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-xhdpi/story_1_foreground.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_toggle_widget_background.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/toggle_widget_background.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-xxxhdpi_circle_baru.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-xxxhdpi/circle_baru.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-xxxhdpi_story2_round.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-xxxhdpi/story2_round.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-hdpi_story_1_round.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-hdpi/story_1_round.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_rating_bar.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/rating_bar.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/layout_history_recycleview.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/layout/history_recycleview.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-xhdpi_story3_foreground.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-xhdpi/story3_foreground.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_round_edittext_box.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/round_edittext_box.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_nav_background_curved.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/nav_background_curved.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/layout_fragment_donation_donate_filter.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/layout/fragment_donation_donate_filter.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-xxhdpi_story2_round.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-xxhdpi/story2_round.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-hdpi_story2.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-hdpi/story2.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-xhdpi_circle_baru_round.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-xhdpi/circle_baru_round.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_bottom_nav.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/bottom_nav.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_dropdown_arrow.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/dropdown_arrow.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/xml_backup_rules.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-xxxhdpi_story_1_foreground.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-xxxhdpi/story_1_foreground.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_edit_text_background.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/edit_text_background.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/layout_news_card.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/layout/news_card.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/layout_rating_cardview.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/layout/rating_cardview.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-anydpi-v26_story3.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-anydpi-v26/story3.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-xxhdpi_story2_foreground.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-xxhdpi/story2_foreground.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_person_icon.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/person_icon.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-hdpi_story_1_foreground.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-hdpi/story_1_foreground.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/font_poppins_light.ttf.flat",
+        "source": "com.example.aidflow.app-main-65:/font/poppins_light.ttf"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_icon_volunteer.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/icon_volunteer.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/layout_activity_login_signup1.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/layout/activity_login_signup1.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_progress_bar_style.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/progress_bar_style.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/layout_activity_login_signup.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/layout/activity_login_signup.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_icon_water.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/icon_water.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_ellipse_icon.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/ellipse_icon.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-anydpi-v26_story3_round.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-anydpi-v26/story3_round.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_icon_home.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/icon_home.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-xxhdpi_story3.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-xxhdpi/story3.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/layout_fragment_recycle_view_done.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/layout/fragment_recycle_view_done.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/layout_fragment_donation_form.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/layout/fragment_donation_form.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-xhdpi_circle_baru.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-xhdpi/circle_baru.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_roundbox_filter.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/roundbox_filter.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-anydpi-v26_story2.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-anydpi-v26/story2.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/layout_donation_recylcleview.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/layout/donation_recylcleview.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_progress_bar_custom.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/progress_bar_custom.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-xhdpi_story3_round.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-xhdpi/story3_round.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_ic_pass.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/ic_pass.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_red_urgency.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/red_urgency.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-hdpi_story2_round.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-hdpi/story2_round.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-mdpi_story2.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-mdpi/story2.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/layout_story_card.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/layout/story_card.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_arrow_down.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/arrow_down.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/layout_fragment_login.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/layout/fragment_login.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-xhdpi_story_1_round.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-xhdpi/story_1_round.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/layout_fragment_cam.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/layout/fragment_cam.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/layout_fragment_news_full_page.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/layout/fragment_news_full_page.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_round_shape.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/round_shape.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-mdpi_circle_baru_round.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-mdpi/circle_baru_round.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-xxxhdpi_story3_round.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-xxxhdpi/story3_round.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-xhdpi_story_1.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-xhdpi/story_1.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_btn_donate.png.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/btn_donate.png"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-xhdpi_circle_baru_foreground.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-xhdpi/circle_baru_foreground.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/layout_fragment_story_full.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/layout/fragment_story_full.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_checkbox_selector.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/checkbox_selector.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_yellow_urgency.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/yellow_urgency.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-hdpi_story3.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-hdpi/story3.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_person_outline.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/person_outline.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-mdpi_circle_baru_foreground.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-mdpi/circle_baru_foreground.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-mdpi_story2_foreground.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-mdpi/story2_foreground.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_slider_rating.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/slider_rating.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_ic_hide_pass.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/ic_hide_pass.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_story3.jpg.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/story3.jpg"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/layout_noti_card.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/layout/noti_card.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/layout_done_card.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/layout/done_card.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_circle_baru_background.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/circle_baru_background.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_button_design_line.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/button_design_line.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-xxhdpi_story3_foreground.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-xxhdpi/story3_foreground.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-mdpi_story3_round.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-mdpi/story3_round.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/font_poppins_extralight.ttf.flat",
+        "source": "com.example.aidflow.app-main-65:/font/poppins_extralight.ttf"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_profile_text_box.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/profile_text_box.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_ic_show_pass.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/ic_show_pass.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-xxxhdpi_story2_foreground.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-xxxhdpi/story2_foreground.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_password_box.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/password_box.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_edit_text_small.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/edit_text_small.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-xxxhdpi_circle_baru_foreground.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-xxxhdpi/circle_baru_foreground.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-xxxhdpi_story3.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-xxxhdpi/story3.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_nav_icon_color.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/nav_icon_color.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-mdpi_story_1.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-mdpi/story_1.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-anydpi-v26_circle_baru.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-anydpi-v26/circle_baru.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/layout_project_card.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/layout/project_card.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-xhdpi_story3.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-xhdpi/story3.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/font_poppins_medium.ttf.flat",
+        "source": "com.example.aidflow.app-main-65:/font/poppins_medium.ttf"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/layout_fragment_water_report.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/layout/fragment_water_report.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-anydpi-v26_circle_baru_round.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-anydpi-v26/circle_baru_round.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_story1.jpg.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/story1.jpg"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-xxhdpi_circle_baru.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-xxhdpi/circle_baru.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-hdpi_circle_baru.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-hdpi/circle_baru.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/layout_fragment_donation_donate.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/layout/fragment_donation_donate.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-xxhdpi_circle_baru_round.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-xxhdpi/circle_baru_round.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-xxxhdpi_circle_baru_round.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-xxxhdpi/circle_baru_round.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-mdpi_story3.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-mdpi/story3.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_yucar_studios_cfr_v1quekw_unsplash.jpg.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/yucar_studios_cfr_v1quekw_unsplash.jpg"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_checkbox_true.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/checkbox_true.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_round_button_donation.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/round_button_donation.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/layout_fragment_donation_hist_filter.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/layout/fragment_donation_hist_filter.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_donate_person.png.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/donate_person.png"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-hdpi_circle_baru_foreground.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-hdpi/circle_baru_foreground.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/font_poppins_black.ttf.flat",
+        "source": "com.example.aidflow.app-main-65:/font/poppins_black.ttf"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-xxhdpi_story_1_foreground.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-xxhdpi/story_1_foreground.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_arrow_icon.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/arrow_icon.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_profile2.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/profile2.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-mdpi_story_1_round.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-mdpi/story_1_round.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_calander.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/calander.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/font_poppins_bold.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/font/poppins_bold.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/layout_fragment_recycle_view_pending.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/layout/fragment_recycle_view_pending.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-xhdpi_story2_round.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-xhdpi/story2_round.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-xxhdpi_story_1_round.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-xxhdpi/story_1_round.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/layout_pending_projects_card.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/layout/pending_projects_card.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-anydpi-v26_story_1_round.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-anydpi-v26/story_1_round.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-xxhdpi_circle_baru_foreground.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-xxhdpi/circle_baru_foreground.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-xhdpi_story2_foreground.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-xhdpi/story2_foreground.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_home_button.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/home_button.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/layout_fragment_donation.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/layout/fragment_donation.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/menu_menu_bottom.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/menu/menu_bottom.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_close.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/close.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-mdpi_circle_baru.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-mdpi/circle_baru.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/layout_fragment_projects.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/layout/fragment_projects.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-xxxhdpi_story3_foreground.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-xxxhdpi/story3_foreground.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-mdpi_story2_round.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-mdpi/story2_round.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_camera.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/camera.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_icon_profile.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/icon_profile.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_icon_donation.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/icon_donation.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_rounded_corners.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/rounded_corners.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_box_login.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/box_login.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_rounded_lightblue.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/rounded_lightblue.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/layout_fragment_profile.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/layout/fragment_profile.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/font_poppins.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/font/poppins.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_volunteer_button.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/volunteer_button.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/font_poppins_semibold.ttf.flat",
+        "source": "com.example.aidflow.app-main-65:/font/poppins_semibold.ttf"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_circle_shape.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/circle_shape.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-hdpi_story3_foreground.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-hdpi/story3_foreground.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/layout_fragment_news_main_page.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/layout/fragment_news_main_page.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/layout_fragment_water_notifications.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/layout/fragment_water_notifications.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-xxhdpi_story2.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-xxhdpi/story2.webp"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/drawable_button_amount.xml.flat",
+        "source": "com.example.aidflow.app-main-65:/drawable/button_amount.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-debug-63:/mipmap-xxxhdpi_story_1.webp.flat",
+        "source": "com.example.aidflow.app-main-65:/mipmap-xxxhdpi/story_1.webp"
+    }
+]
