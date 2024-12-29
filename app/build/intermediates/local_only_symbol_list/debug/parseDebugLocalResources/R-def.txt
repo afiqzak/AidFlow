@@ -461,6 +461,7 @@ mipmap story_1_foreground
 mipmap story_1_round
 navigation nav
 string app_name
+string firebase_database_url
 string gcm_defaultSenderId
 string google_api_key
 string google_app_id

@@ -1,30 +1,21 @@
 package com.example.aidflow;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.Navigation;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-import java.util.Set;
-
-
 public class DonationFragment extends Fragment {
 
-
-    private DonationAdapter adapter;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -54,15 +45,19 @@ public class DonationFragment extends Fragment {
             fab_history.setVisibility(View.VISIBLE);
 
             FragmentTransaction fr = requireActivity().getSupportFragmentManager().beginTransaction();
-            fr.replace(R.id.FCVDonation,history);
+            fr.replace(R.id.FCVDonation, history, "DonationHistoryFragment");
+            Log.d("DonationFragment", "FragmentTransaction 1 initiated");
             fr.addToBackStack(null);
             fr.commit();
+
+            // Debug to check if fragment is properly added
 
             //reset the value of argument (histFilt) to false
             Bundle newArgs = new Bundle();
             newArgs.putBoolean("histFilt", false);
             setArguments(newArgs);
-        } else {
+
+        } else if (savedInstanceState == null) {
             history_button.setAlpha(1.0F);
             donation_button.setAlpha(0.5F);
 
@@ -71,7 +66,7 @@ public class DonationFragment extends Fragment {
             fab_donate.setVisibility(View.VISIBLE);
 
             FragmentTransaction fr = requireActivity().getSupportFragmentManager().beginTransaction();
-            fr.replace(R.id.FCVDonation,donate);
+            fr.replace(R.id.FCVDonation, donate, "DonationDonateFragment");
             fr.addToBackStack(null);
             fr.commit();
         }
@@ -88,9 +83,16 @@ public class DonationFragment extends Fragment {
                 fab_history.setVisibility(View.VISIBLE);
 
                 FragmentTransaction fr = requireActivity().getSupportFragmentManager().beginTransaction();
-                fr.replace(R.id.FCVDonation,history);
+                fr.replace(R.id.FCVDonation, history, "DonationHistoryFragment");
+                Log.d("DonationFragment", "FragmentTransaction 2 initiated");
                 fr.addToBackStack(null);
                 fr.commit();
+
+                // Debug to check if fragment is properly added
+                Fragment fragment = requireActivity().getSupportFragmentManager().findFragmentByTag("DonationHistoryFragment");
+                if (fragment != null) {
+                    Log.d("DonationFragment", "DonationHistoryFragment added successfully!");
+                }
             }
         });
 
@@ -100,14 +102,11 @@ public class DonationFragment extends Fragment {
             public void onClick(View v) {
                 DonationDonateFilterFragment floatingLayout = new DonationDonateFilterFragment();
                 floatingLayout.show(requireActivity().getSupportFragmentManager().beginTransaction(), "FloatingLayout");
-
-
             }
         });
 
 
         donation_button.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View v) {
                 history_button.setAlpha(1.0F);
@@ -118,7 +117,7 @@ public class DonationFragment extends Fragment {
                 fab_donate.setVisibility(View.VISIBLE);
 
                 FragmentTransaction fr = requireActivity().getSupportFragmentManager().beginTransaction();
-                fr.replace(R.id.FCVDonation,donate);
+                fr.replace(R.id.FCVDonation, donate, "DonationDonateFragment");
                 fr.addToBackStack(null);
                 fr.commit();
             }
@@ -147,3 +146,4 @@ public class DonationFragment extends Fragment {
         return view;
     }
 }
+

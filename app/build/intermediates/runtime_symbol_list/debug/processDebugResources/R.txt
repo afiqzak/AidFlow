@@ -4632,6 +4632,7 @@ int string fab_transformation_sheet_behavior 0x7f140050
 int string fallback_menu_item_copy_link 0x7f140051
 int string fallback_menu_item_open_in_browser 0x7f140052
 int string fallback_menu_item_share_link 0x7f140053
+int string firebase_database_url 0x7f1400dd
 int string gcm_defaultSenderId 0x7f140054
 int string google_api_key 0x7f140055
 int string google_app_id 0x7f140056

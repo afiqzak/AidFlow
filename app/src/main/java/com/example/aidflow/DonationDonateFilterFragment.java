@@ -70,6 +70,8 @@ public class DonationDonateFilterFragment extends DialogFragment {
         Fragment fragment = requireActivity().getSupportFragmentManager().findFragmentByTag("DonationDonateFragment");
         if (fragment instanceof DonationDonateFragment) {
             ((DonationDonateFragment) fragment).setFilterCriteria(selectedUrgencies, selectedProjects);
+        } else {
+            Log.d("DonationDonateFilterFragment", "Fragment is no instance of DonationDonateFragment");
         }
     }
 

@@ -10,6 +10,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -29,12 +30,14 @@ import java.util.Locale;
 
 public class DonationHistoryFragment extends Fragment {
 
-    private String selectedHistFilter;
-    private boolean isHistoryFiltered = false;
+    private int selectedHistFilter;
+    private boolean isHistoryFiltered=false;
     private ArrayList<DonationHistory> historyList;
     private RecyclerView recyclerView;
     private FirebaseFirestore db;
     private HistoryAdapter adapter;
+
+    ViewModel viewModel;
 
     @Nullable
     @Override
@@ -55,41 +58,29 @@ public class DonationHistoryFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-
         db = FirebaseFirestore.getInstance();
-
         historyList = new ArrayList<DonationHistory>();
 
-        super.onViewCreated(view, savedInstanceState);
-        Log.d("DonationHistoryFragment", "onViewCreated - isHistoryFiltered: " + isHistoryFiltered);
+        // Log the state to ensure it's restored correctly
+        Log.d("DonationHistoryFragment", "Restored filter criteria: " + selectedHistFilter);
+        Log.d("DonationHistoryFragment", "Restored isHistoryFiltered: " + isHistoryFiltered);
 
-        if (isHistoryFiltered==true) {
-            Log.d("DonationHistoryFragment", "Fetching filtered history donations...");
-            fetchFilteredHistDonation();
-        } else {
-            Log.d("DonationHistoryFragment", "Fetching non-filtered history donations...");
-            fetchHistDonations();
-        }
+        viewModel = new ViewModelProvider(requireActivity()).get(ViewModel.class);
 
-        // Sample data
-//        List<History> historyList = new ArrayList<>();
-//        historyList.add(new History("noy","bagi makan kucing","community project","21 Feb", 1000,"cash"))   ;
-//        historyList.add(new History("noy","bagi makan kucing","community project","21 Feb", 1000,"cash"))   ;
-//        historyList.add(new History("noy","bagi makan kucing","community project","21 Feb", 1000,"cash"))   ;
-//        historyList.add(new History("noy","bagi makan kucing","community project","21 Feb", 1000,"cash"))   ;
-//        historyList.add(new History("noy","bagi makan kucing","community project","21 Feb", 1000,"cash"))   ;
-//        historyList.add(new History("noy","bagi makan kucing","community project","21 Feb", 1000,"cash"))   ;
-//        historyList.add(new History("noy","bagi makan kucing","community project","21 Feb", 1000,"cash"))   ;
-//        historyList.add(new History("noy","bagi makan kucing","community project","21 Feb", 1000,"cash"))   ;
-//        historyList.add(new History("noy","bagi makan kucing","community project","21 Feb", 1000,"cash"))   ;
+        // Observe changes
+        viewModel.getIsHistoryFiltered().observe(getViewLifecycleOwner(), isFiltered -> {
+            if (isFiltered) {
+                viewModel.getSelectedHistFilter().observe(getViewLifecycleOwner(), filter -> {
+                    this.selectedHistFilter = filter;
+                    Log.d("DonationHistoryFragment", "Fetching filtered history donations...");
+                    fetchFilteredHistDonation();
 
-
-//        // Attach adapter to RecyclerView
-//        HistoryAdapter adapter = new HistoryAdapter(historyList);
-//        recyclerView.setAdapter(adapter);
-
-
-
+                });
+            } else {
+                Log.d("DonationHistoryFragment", "Fetching non-filtered history donations...");
+                fetchHistDonations();
+            }
+        });
     }
 
     private void updateRecyclerView() {
@@ -102,13 +93,9 @@ public class DonationHistoryFragment extends Fragment {
     }
 
     private void fetchFilteredHistDonation() {
-        String selectedDay = selectedHistFilter;
-        int days = Integer.parseInt(selectedDay);
+        int selectedDay = selectedHistFilter;
+        int days = selectedDay;
 
-        if (selectedHistFilter == null || selectedHistFilter.isEmpty()) {
-            Log.e("DonationHistoryFragment", "Filter duration not set.");
-            return;
-        }
 
         LocalDateTime currentDateTime = LocalDateTime.now();
         LocalDateTime startDateTime = currentDateTime.minusDays(days);
@@ -126,7 +113,7 @@ public class DonationHistoryFragment extends Fragment {
         String currentUserId = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
         Query query = db.collection("donationSubmit")
-                .whereEqualTo("userId", currentUserId)
+                .whereEqualTo("userId", "dHMSCBDRGNcKWbKJZm46HIN2OjC2")
                 .whereGreaterThanOrEqualTo("transactionDate", startTimestamp)
                 .whereLessThanOrEqualTo("transactionDate", endTimestamp);
 
@@ -155,7 +142,7 @@ public class DonationHistoryFragment extends Fragment {
         String currentUserId = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
         Query query = db.collection("donationSubmit")
-                .whereEqualTo("userId", currentUserId);
+                .whereEqualTo("userId", "dHMSCBDRGNcKWbKJZm46HIN2OjC2");
         query.get()
                 .addOnSuccessListener(queryDocumentSnapshots -> {
                     Log.d("DonationHistoryFragment", "Data fetched for no filter successfully!");
@@ -182,10 +169,11 @@ public class DonationHistoryFragment extends Fragment {
                 });
     }
 
-    public void setHistFilterCriteria(String selectedHistFilter) {
+    public void setHistFilterCriteria(int selectedHistFilter) {
         Log.d("DonationHistoryFragment", "Filter criteria set: " + selectedHistFilter);
         this.selectedHistFilter = selectedHistFilter;
-        isHistoryFiltered = true;
+        Log.d("DonationHistoryFragment", "Filter criteria set 2: " + this.selectedHistFilter);
+        this.isHistoryFiltered = true;
     }
 
     private DonationHistory retrieveHistFromDB(DocumentSnapshot document){

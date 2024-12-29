@@ -53,13 +53,14 @@
     <color name="white">#FFFFFF</color>
     <color name="yellow">#FFAE00</color>
     <string name="app_name">AidFlow</string>
-    <string name="gcm_defaultSenderId" translatable="false">1015996066021</string>
-    <string name="google_api_key" translatable="false">AIzaSyBEgQFSBpbp4jS-yf-VzQHAWIBtbksExos</string>
-    <string name="google_app_id" translatable="false">1:1015996066021:android:e65f8a6f90d9eeda658c0c</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBEgQFSBpbp4jS-yf-VzQHAWIBtbksExos</string>
-    <string name="google_storage_bucket" translatable="false">madproject-a9b78.firebasestorage.app</string>
+    <string name="firebase_database_url" translatable="false">https://aidflow-fffa8-default-rtdb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">885926838162</string>
+    <string name="google_api_key" translatable="false">AIzaSyBBi0NV7dx67Lbefbd0gCI6WhAnlhhIetc</string>
+    <string name="google_app_id" translatable="false">1:885926838162:android:3317ebf7031872c8a5cb4b</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBBi0NV7dx67Lbefbd0gCI6WhAnlhhIetc</string>
+    <string name="google_storage_bucket" translatable="false">aidflow-fffa8.firebasestorage.app</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="project_id" translatable="false">madproject-a9b78</string>
+    <string name="project_id" translatable="false">aidflow-fffa8</string>
     <style name="Base.Theme.AidFlow" parent="Theme.Material3.DayNight.NoActionBar">
         
         
