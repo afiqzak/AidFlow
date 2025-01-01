@@ -31,7 +31,7 @@
             >
             <!-- Volunteer Name -->
             <TextView
-                android:id="@+id/volunteerName_upcoming"
+                android:id="@+id/TVUpcomingTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -62,7 +62,7 @@
 
             <!-- Due Date -->
             <TextView
-                android:id="@+id/dueDate_upcoming"
+                android:id="@+id/TVUpcomingDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
@@ -90,7 +90,7 @@
 
             <!-- address -->
             <TextView
-                android:id="@+id/address_upcoming"
+                android:id="@+id/TVUpcomingLoc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
@@ -118,7 +118,7 @@
 
             <!-- contactnum -->
             <TextView
-                android:id="@+id/contactnum_upcoming"
+                android:id="@+id/TVUpcomingContact"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"

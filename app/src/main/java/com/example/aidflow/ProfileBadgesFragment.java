@@ -14,6 +14,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 import java.util.ArrayList;
 
 /**
@@ -77,21 +79,28 @@ public class ProfileBadgesFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        setUpBadges();
 
+        //get current user id
+        String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
+
+        //observe view model for real time updates on user data
         UserViewModel userViewModel = new ViewModelProvider(requireActivity()).get(UserViewModel.class);
+        userViewModel.fetchUserData(userId);
 
         userViewModel.getUser().observe(getViewLifecycleOwner(), user -> {
             if (user != null) {
-                this.user = user;
-                setUpBadges();
+                // Update UI with user data
+                Log.d("Fragment", user.toString());
                 adapter = new ProfileBadgesAdaptor(getContext(), badges, user);
-                RecyclerView recyclerView = view.findViewById(R.id.RVBadges);
+                RecyclerView recyclerView = view.findViewById(R.id.RVPBadges);
                 recyclerView.setAdapter(adapter);
                 recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+            } else {
+                // Handle the case where user data is null (e.g., show an error message)
+                Log.d("Fragment", "User is null");
             }
         });
-
-
     }
 
     private void setUpBadges(){

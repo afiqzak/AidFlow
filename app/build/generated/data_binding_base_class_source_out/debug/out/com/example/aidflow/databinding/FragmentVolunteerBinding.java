@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -26,13 +27,19 @@ public final class FragmentVolunteerBinding implements ViewBinding {
   public final MaterialButton BadgesButton;
 
   @NonNull
+  public final Spinner SPRegion;
+
+  @NonNull
+  public final Spinner SPState;
+
+  @NonNull
+  public final TextView TVVolunteer;
+
+  @NonNull
   public final MaterialButton UpcomingButton;
 
   @NonNull
   public final MaterialButton VolunteerButton;
-
-  @NonNull
-  public final Spinner districtSpinner;
 
   @NonNull
   public final FrameLayout fragmentButton;
@@ -46,25 +53,23 @@ public final class FragmentVolunteerBinding implements ViewBinding {
   @NonNull
   public final LinearLayout selectLayout;
 
-  @NonNull
-  public final Spinner stateSpinner;
-
   private FragmentVolunteerBinding(@NonNull ConstraintLayout rootView,
-      @NonNull MaterialButton BadgesButton, @NonNull MaterialButton UpcomingButton,
-      @NonNull MaterialButton VolunteerButton, @NonNull Spinner districtSpinner,
-      @NonNull FrameLayout fragmentButton, @NonNull LinearLayout linearLayout,
-      @NonNull LinearLayout linearLayout1, @NonNull LinearLayout selectLayout,
-      @NonNull Spinner stateSpinner) {
+      @NonNull MaterialButton BadgesButton, @NonNull Spinner SPRegion, @NonNull Spinner SPState,
+      @NonNull TextView TVVolunteer, @NonNull MaterialButton UpcomingButton,
+      @NonNull MaterialButton VolunteerButton, @NonNull FrameLayout fragmentButton,
+      @NonNull LinearLayout linearLayout, @NonNull LinearLayout linearLayout1,
+      @NonNull LinearLayout selectLayout) {
     this.rootView = rootView;
     this.BadgesButton = BadgesButton;
+    this.SPRegion = SPRegion;
+    this.SPState = SPState;
+    this.TVVolunteer = TVVolunteer;
     this.UpcomingButton = UpcomingButton;
     this.VolunteerButton = VolunteerButton;
-    this.districtSpinner = districtSpinner;
     this.fragmentButton = fragmentButton;
     this.linearLayout = linearLayout;
     this.linearLayout1 = linearLayout1;
     this.selectLayout = selectLayout;
-    this.stateSpinner = stateSpinner;
   }
 
   @Override
@@ -100,6 +105,24 @@ public final class FragmentVolunteerBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.SPRegion;
+      Spinner SPRegion = ViewBindings.findChildViewById(rootView, id);
+      if (SPRegion == null) {
+        break missingId;
+      }
+
+      id = R.id.SPState;
+      Spinner SPState = ViewBindings.findChildViewById(rootView, id);
+      if (SPState == null) {
+        break missingId;
+      }
+
+      id = R.id.TVVolunteer;
+      TextView TVVolunteer = ViewBindings.findChildViewById(rootView, id);
+      if (TVVolunteer == null) {
+        break missingId;
+      }
+
       id = R.id.Upcoming_button;
       MaterialButton UpcomingButton = ViewBindings.findChildViewById(rootView, id);
       if (UpcomingButton == null) {
@@ -109,12 +132,6 @@ public final class FragmentVolunteerBinding implements ViewBinding {
       id = R.id.Volunteer_button;
       MaterialButton VolunteerButton = ViewBindings.findChildViewById(rootView, id);
       if (VolunteerButton == null) {
-        break missingId;
-      }
-
-      id = R.id.district_spinner;
-      Spinner districtSpinner = ViewBindings.findChildViewById(rootView, id);
-      if (districtSpinner == null) {
         break missingId;
       }
 
@@ -142,15 +159,9 @@ public final class FragmentVolunteerBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.state_spinner;
-      Spinner stateSpinner = ViewBindings.findChildViewById(rootView, id);
-      if (stateSpinner == null) {
-        break missingId;
-      }
-
-      return new FragmentVolunteerBinding((ConstraintLayout) rootView, BadgesButton, UpcomingButton,
-          VolunteerButton, districtSpinner, fragmentButton, linearLayout, linearLayout1,
-          selectLayout, stateSpinner);
+      return new FragmentVolunteerBinding((ConstraintLayout) rootView, BadgesButton, SPRegion,
+          SPState, TVVolunteer, UpcomingButton, VolunteerButton, fragmentButton, linearLayout,
+          linearLayout1, selectLayout);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

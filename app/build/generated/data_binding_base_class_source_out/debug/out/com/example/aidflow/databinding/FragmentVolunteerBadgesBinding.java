@@ -9,6 +9,7 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.aidflow.R;
@@ -22,19 +23,7 @@ public final class FragmentVolunteerBadgesBinding implements ViewBinding {
   private final ScrollView rootView;
 
   @NonNull
-  public final ImageView badge12hours;
-
-  @NonNull
-  public final ImageView badge1day;
-
-  @NonNull
-  public final ImageView badge1month;
-
-  @NonNull
-  public final ImageView badge1week;
-
-  @NonNull
-  public final ImageView badge7hours;
+  public final RecyclerView RVVBadges;
 
   @NonNull
   public final ImageView badgeImage;
@@ -49,16 +38,11 @@ public final class FragmentVolunteerBadgesBinding implements ViewBinding {
   public final TextView progressTextNumerator;
 
   private FragmentVolunteerBadgesBinding(@NonNull ScrollView rootView,
-      @NonNull ImageView badge12hours, @NonNull ImageView badge1day, @NonNull ImageView badge1month,
-      @NonNull ImageView badge1week, @NonNull ImageView badge7hours, @NonNull ImageView badgeImage,
+      @NonNull RecyclerView RVVBadges, @NonNull ImageView badgeImage,
       @NonNull CircularProgressBar circularProgressBar, @NonNull TextView progressTextDenominator,
       @NonNull TextView progressTextNumerator) {
     this.rootView = rootView;
-    this.badge12hours = badge12hours;
-    this.badge1day = badge1day;
-    this.badge1month = badge1month;
-    this.badge1week = badge1week;
-    this.badge7hours = badge7hours;
+    this.RVVBadges = RVVBadges;
     this.badgeImage = badgeImage;
     this.circularProgressBar = circularProgressBar;
     this.progressTextDenominator = progressTextDenominator;
@@ -92,33 +76,9 @@ public final class FragmentVolunteerBadgesBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.badge_12hours;
-      ImageView badge12hours = ViewBindings.findChildViewById(rootView, id);
-      if (badge12hours == null) {
-        break missingId;
-      }
-
-      id = R.id.badge_1day;
-      ImageView badge1day = ViewBindings.findChildViewById(rootView, id);
-      if (badge1day == null) {
-        break missingId;
-      }
-
-      id = R.id.badge_1month;
-      ImageView badge1month = ViewBindings.findChildViewById(rootView, id);
-      if (badge1month == null) {
-        break missingId;
-      }
-
-      id = R.id.badge_1week;
-      ImageView badge1week = ViewBindings.findChildViewById(rootView, id);
-      if (badge1week == null) {
-        break missingId;
-      }
-
-      id = R.id.badge_7hours;
-      ImageView badge7hours = ViewBindings.findChildViewById(rootView, id);
-      if (badge7hours == null) {
+      id = R.id.RVVBadges;
+      RecyclerView RVVBadges = ViewBindings.findChildViewById(rootView, id);
+      if (RVVBadges == null) {
         break missingId;
       }
 
@@ -146,9 +106,8 @@ public final class FragmentVolunteerBadgesBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentVolunteerBadgesBinding((ScrollView) rootView, badge12hours, badge1day,
-          badge1month, badge1week, badge7hours, badgeImage, circularProgressBar,
-          progressTextDenominator, progressTextNumerator);
+      return new FragmentVolunteerBadgesBinding((ScrollView) rootView, RVVBadges, badgeImage,
+          circularProgressBar, progressTextDenominator, progressTextNumerator);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

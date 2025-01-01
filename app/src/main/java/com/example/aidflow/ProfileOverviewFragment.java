@@ -13,6 +13,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 import java.util.ArrayList;
 
 /**
@@ -69,26 +71,31 @@ public class ProfileOverviewFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_profile_overview, container, false);
     }
 
-
-    private User user;
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        //get current user id
+        String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
         //observe view model for real time updates on user data
         UserViewModel userViewModel = new ViewModelProvider(requireActivity()).get(UserViewModel.class);
+        userViewModel.fetchUserData(userId);
 
         userViewModel.getUser().observe(getViewLifecycleOwner(), user -> {
             if (user != null) {
-                this.user = user;
-                bindData(view);
+                // Update UI with user data
+                Log.d("Fragment", user.toString());
+                bindData(view, user);
+            } else {
+                // Handle the case where user data is null (e.g., show an error message)
+                Log.d("Fragment", "User is null");
+                TextView TVUsername = view.findViewById(R.id.TVAmounrDonate);
+                TVUsername.setText("user not found");
             }
         });
-
-
     }
 
-    private void bindData(View v){
+    private void bindData(View v, User user){
         TextView TVAmountDonate = v.findViewById(R.id.TVAmounrDonate);
         TextView TVAmountTime = v.findViewById(R.id.TVAmounrTime);
         TextView TVAmountReport = v.findViewById(R.id.TVAmounrReport);

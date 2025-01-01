@@ -39,16 +39,17 @@
                 >
 
                 <TextView
+                    android:id="@+id/TVVolunteer"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:paddingTop="3dp"
                     android:text="volunteer needed"
+                    android:textAlignment="center"
                     android:textAllCaps="true"
                     android:textColor="#000"
                     android:textSize="23sp"
-                    android:textStyle="bold"
-                    android:textAlignment="center"/>
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -147,7 +148,7 @@
 
                     <!-- Spinner for selecting state -->
                     <Spinner
-                        android:id="@+id/state_spinner"
+                        android:id="@+id/SPState"
                         android:layout_width="match_parent"
                         android:layout_height="35dp"
                         android:layout_weight="1"
@@ -163,13 +164,12 @@
                     android:layout_marginLeft="10dp"
                     android:background="@drawable/round_box_select">
 
-                    <!-- Spinner for selecting district -->
+                    <!-- Spinner for selecting location -->
                     <Spinner
-                        android:id="@+id/district_spinner"
+                        android:id="@+id/SPRegion"
                         android:layout_width="match_parent"
                         android:layout_height="35dp"
-                        android:layout_weight="1"
-                        />
+                        android:layout_weight="1" />
 
                 </LinearLayout>
 

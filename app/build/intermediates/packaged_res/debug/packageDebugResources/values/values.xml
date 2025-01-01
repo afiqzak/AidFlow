@@ -24,23 +24,6 @@
         <item>@font/poppins</item>
         <item>@font/poppins_bold</item>
     </array>
-    <string-array name="state_array">
-
-        <item>Selangor</item>
-        <item>Melaka</item>
-        <item>Johor</item>
-        <item>Terengganu</item>
-        <item>Kelantan</item>
-        <item>Pahang</item>
-        <item>Kuala Lumpur</item>
-        <item>Perlis</item>
-        <item>Perak</item>
-        <item>Negeri Sembilan</item>
-        <item>Wilayah</item>
-        <item>Sabah</item>
-        <item>Sarawak</item>
-
-    </string-array>
     <color name="black">#FF000000</color>
     <color name="dark_blue">#1D2388</color>
     <color name="green">#008000</color>

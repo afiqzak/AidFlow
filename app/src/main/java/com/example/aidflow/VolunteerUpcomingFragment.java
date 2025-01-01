@@ -5,17 +5,24 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class VolunteerUpcomingFragment extends Fragment {
+
+    private VolunteerViewModel volunteerViewModel;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -30,42 +37,24 @@ public class VolunteerUpcomingFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        String userID = FirebaseAuth.getInstance().getCurrentUser().getUid();
+
+        volunteerViewModel = new ViewModelProvider(requireActivity()).get(VolunteerViewModel.class);
+
         // Initialize RecyclerView
         RecyclerView recyclerView = view.findViewById(R.id.recyclerView_upcoming);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
-//        // Sample data
-        List<VolunteerUpcoming> upcomingList = new ArrayList<>();
-//
-        upcomingList.add(new VolunteerUpcoming("Beach Cleaning","2 May",
-                "The Agathians Shelter, No. 22, Jalan Kelah 8/6, Seksyen 8, 46050 Petaling Jaya, Selangor, Malaysia","03-1234-5678","Abu Siddiq"));
-        upcomingList.add(new VolunteerUpcoming("Beach Cleaning","2 May",
-                "The Agathians Shelter, No. 22, Jalan Kelah 8/6, Seksyen 8, 46050 Petaling Jaya, Selangor, Malaysia","03-1234-5678","Abu Siddiq"));
-        upcomingList.add(new VolunteerUpcoming("Beach Cleaning","2 May",
-                "The Agathians Shelter, No. 22, Jalan Kelah 8/6, Seksyen 8, 46050 Petaling Jaya, Selangor, Malaysia","03-1234-5678","Abu Siddiq"));
-        upcomingList.add(new VolunteerUpcoming("Beach Cleaning","2 May",
-                "The Agathians Shelter, No. 22, Jalan Kelah 8/6, Seksyen 8, 46050 Petaling Jaya, Selangor, Malaysia","03-1234-5678","Abu Siddiq"));
-        upcomingList.add(new VolunteerUpcoming("Beach Cleaning","2 May",
-                "The Agathians Shelter, No. 22, Jalan Kelah 8/6, Seksyen 8, 46050 Petaling Jaya, Selangor, Malaysia","03-1234-5678","Abu Siddiq"));
-        upcomingList.add(new VolunteerUpcoming("Beach Cleaning","2 May",
-                "The Agathians Shelter, No. 22, Jalan Kelah 8/6, Seksyen 8, 46050 Petaling Jaya, Selangor, Malaysia","03-1234-5678","Abu Siddiq"));
-        upcomingList.add(new VolunteerUpcoming("Beach Cleaning","2 May",
-                "The Agathians Shelter, No. 22, Jalan Kelah 8/6, Seksyen 8, 46050 Petaling Jaya, Selangor, Malaysia","03-1234-5678","Abu Siddiq"));
-        upcomingList.add(new VolunteerUpcoming("Beach Cleaning","2 May",
-                "The Agathians Shelter, No. 22, Jalan Kelah 8/6, Seksyen 8, 46050 Petaling Jaya, Selangor, Malaysia","03-1234-5678","Abu Siddiq"));
-        upcomingList.add(new VolunteerUpcoming("Beach Cleaning","2 May",
-                "The Agathians Shelter, No. 22, Jalan Kelah 8/6, Seksyen 8, 46050 Petaling Jaya, Selangor, Malaysia","03-1234-5678","Abu Siddiq"));
-        upcomingList.add(new VolunteerUpcoming("Beach Cleaning","2 May",
-                "The Agathians Shelter, No. 22, Jalan Kelah 8/6, Seksyen 8, 46050 Petaling Jaya, Selangor, Malaysia","03-1234-5678","Abu Siddiq"));
-        upcomingList.add(new VolunteerUpcoming("Beach Cleaning","2 May",
-                "The Agathians Shelter, No. 22, Jalan Kelah 8/6, Seksyen 8, 46050 Petaling Jaya, Selangor, Malaysia","03-1234-5678","Abu Siddiq"));
-
-
-//        // Attach adapter to RecyclerView
-        VolunteerUpcomingAdapter adapter = new VolunteerUpcomingAdapter(upcomingList,getContext());
-        recyclerView.setAdapter(adapter);
-
-
-
+        volunteerViewModel.getFilteredJoinedVolunteers().observe(getViewLifecycleOwner(), joinedVolunteers -> {
+            if (joinedVolunteers != null) {
+                Log.d("Fragment", joinedVolunteers.toString());
+                // Attach adapter to RecyclerView
+                VolunteerUpcomingAdapter adapter = new VolunteerUpcomingAdapter(joinedVolunteers,getContext(), volunteerViewModel);
+                recyclerView.setAdapter(adapter);
+            } else {
+                // Handle the case where user data is null (e.g., show an error message)
+                Toast.makeText(requireContext(), "No data found", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }

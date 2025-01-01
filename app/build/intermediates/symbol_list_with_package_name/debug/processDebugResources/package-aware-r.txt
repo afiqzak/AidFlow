@@ -92,7 +92,6 @@ array com_google_android_gms_fonts_certs_dev
 array com_google_android_gms_fonts_certs_prod
 array payment_methods
 array preloaded_fonts
-array state_array
 attr SharedValue
 attr SharedValueId
 attr action
@@ -3436,6 +3435,7 @@ id BOTTOM_END
 id BOTTOM_START
 id Badges_button
 id BtnDonate
+id BtnJoinCancel
 id BtnRM10
 id BtnRM20
 id BtnRM5
@@ -3460,6 +3460,7 @@ id FragmentViewMain
 id History_button
 id IVBack
 id IVBadge
+id IVBadgeV
 id IVMoney
 id IVProfile
 id IVReport
@@ -3480,12 +3481,15 @@ id RBBadges
 id RBNo
 id RBOverview
 id RBYes
-id RVBadges
+id RVPBadges
+id RVVBadges
 id RelatedReportImage
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
 id SHOW_PROGRESS
+id SPRegion
+id SPState
 id SYM
 id SpPayMethod
 id TIETConfirmPass
@@ -3503,6 +3507,11 @@ id TVConfirmPass
 id TVDate
 id TVDesc
 id TVEmail
+id TVEventContact
+id TVEventDate
+id TVEventDesc
+id TVEventLocation
+id TVEventTitle
 id TVFName
 id TVFirstName
 id TVLName
@@ -3510,6 +3519,7 @@ id TVLastName
 id TVMoneyCollected
 id TVNoAcc
 id TVOrgName
+id TVPIC
 id TVPassRequi
 id TVPassword
 id TVPayMehtod
@@ -3521,10 +3531,15 @@ id TVToggle
 id TVTotDonate
 id TVTotReport
 id TVTotTime
+id TVUpcomingContact
+id TVUpcomingDate
+id TVUpcomingLoc
+id TVUpcomingTitle
 id TVUrgency
 id TVUserEmail
 id TVUserPhone
 id TVUsername
+id TVVolunteer
 id TVWelcome
 id Upcoming_button
 id Volunteer_button
@@ -3593,8 +3608,6 @@ id actions
 id activity_chooser_view_content
 id add
 id address
-id address_upcoming
-id address_volunteer
 id adjust_height
 id adjust_width
 id air
@@ -3621,11 +3634,6 @@ id axisRelative
 id back_icon_upcoming
 id back_icon_volunteer
 id badgeImage
-id badge_12hours
-id badge_1day
-id badge_1month
-id badge_1week
-id badge_7hours
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3692,8 +3700,6 @@ id confirm_button
 id constraint
 id constraintLayout
 id constraintLayout2
-id contactnum_upcoming
-id contactnum_volunteer
 id container
 id content
 id contentPanel
@@ -3741,7 +3747,6 @@ id disablePostScroll
 id disableScroll
 id disjoint
 id districtName
-id district_spinner
 id donate
 id donationDate_history
 id donationForm
@@ -3764,9 +3769,6 @@ id dragRight
 id dragStart
 id dragUp
 id dropdown_menu
-id dueDate
-id dueDate_upcoming
-id dueDate_volunteer
 id duration_radio_group
 id easeIn
 id easeInOut
@@ -3860,7 +3862,6 @@ id invisible
 id inward
 id italic
 id item_touch_helper_previous_elevation
-id join_button
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -3997,7 +3998,6 @@ id open_search_view_toolbar
 id open_search_view_toolbar_container
 id organizerName_history
 id organizer_upcoming
-id organizer_volunteer
 id outline
 id outward
 id overshoot
@@ -4135,7 +4135,6 @@ id startVertical
 id state_aspect_ratio
 id state_rotate
 id state_scale
-id state_spinner
 id staticLayout
 id staticPostLayout
 id status_bar_latest_event_content
@@ -4244,10 +4243,7 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
-id volunteerCancel
-id volunteerJoin
-id volunteerName
-id volunteerName_upcoming
+id volunteerDetails
 id volunteerProgress
 id volunteerProgressBar
 id volunteer_cardView
@@ -4427,7 +4423,7 @@ layout fragment_profile_overview
 layout fragment_signup
 layout fragment_volunteer
 layout fragment_volunteer_badges
-layout fragment_volunteer_join
+layout fragment_volunteer_details
 layout fragment_volunteer_prog
 layout fragment_volunteer_upcoming
 layout fragment_volunteer_upcoming_cancel
@@ -4514,6 +4510,7 @@ layout single_news_card
 layout single_news_project_card
 layout single_news_story_card
 layout single_profile_badge
+layout single_volunteer_badge
 layout single_volunteer_recycleview
 layout single_volunteer_upcoming_recycleview
 layout single_water_done_card

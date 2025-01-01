@@ -1,0 +1,52 @@
+{
+  "states": [
+    {
+      "name": "Johor",
+      "regions": ["Southern Johor", "Northern Johor", "Eastern Johor", "Western Johor"]
+    },
+    {
+      "name": "Selangor",
+      "regions": ["Klang Valley", "Northern Selangor", "Southern Selangor"]
+    },
+    {
+      "name": "Perlis",
+      "regions": ["Perlis"]
+    },
+    {
+      "name": "Sabah",
+      "regions": ["West Coast Division", "Interior Division", "Kudat Division", "Sandakan Division", "Tawau Division"]
+    },
+    {
+      "name": "Sarawak",
+      "regions": ["Kuching Division", "Samarahan Division", "Sri Aman Division", "Betong Division", "Sarikei Division", "Sibu Division", "Mukah Division", "Bintulu Division", "Miri Division", "Limbang Division"]
+    },
+    {
+      "name": "Kedah",
+      "regions": ["Central Kedah", "Inland Kedah"]
+    },
+    {
+      "name": "Melaka",
+      "regions": ["Melaka"]
+    },
+    {
+      "name": "Negeri Sembilan",
+      "regions": ["Seremban District", "Jelebu", "Jempol", "Rembau"]
+    },
+    {
+      "name": "Pahang",
+      "regions": ["West Pahang", "Central Pahang", "East Coast Pahang"]
+    },
+    {
+      "name": "Penang",
+      "regions": ["Penang Island", "Seberang Perai"]
+    },
+    {
+      "name": "Perak",
+      "regions": ["Northern Perak", "Central Perak", "Southern Perak"]
+    },
+    {
+      "name": "Terengganu",
+      "regions": ["Coastal Terengganu", "Inland Terengganu"]
+    }
+  ]
+}

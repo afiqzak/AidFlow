@@ -104,16 +104,10 @@
         tools:layout="@layout/fragment_news_cam" />
 
     <fragment
-        android:id="@+id/volunteerJoin"
-        android:name="com.example.aidflow.VolunteerJoinFragment"
+        android:id="@+id/volunteerDetails"
+        android:name="com.example.aidflow.VolunteerDetailsFragment"
         android:label="fragment_volunteer_join"
-        tools:layout="@layout/fragment_volunteer_join" />
-
-    <fragment
-        android:id="@+id/volunteerCancel"
-        android:name="com.example.aidflow.VolunteerUpcomingCancelFragment"
-        android:label="fragment_volunteer_cancel"
-        tools:layout="@layout/fragment_volunteer_upcoming_cancel" />
+        tools:layout="@layout/fragment_volunteer_details" />
 
     <fragment
         android:id="@+id/donationForm"

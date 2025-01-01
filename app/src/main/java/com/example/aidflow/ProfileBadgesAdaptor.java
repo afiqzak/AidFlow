@@ -43,13 +43,13 @@ public class ProfileBadgesAdaptor extends RecyclerView.Adapter<ProfileBadgesAdap
 
         if(condition.contains("hour")){
             if (!(user.getVolunteerHours() >= value))
-                holder.IVBadge.setAlpha(0.5F);
+                holder.IVBadge.setAlpha(0.3F);
         } else if(condition.contains("report")){
             if (!(user.getReportSubmitted() >= value))
-                holder.IVBadge.setAlpha(0.5F);
+                holder.IVBadge.setAlpha(0.3F);
         } else {
             if (!(user.getTotalDonate() >= value))
-                holder.IVBadge.setAlpha(0.5F);
+                holder.IVBadge.setAlpha(0.3F);
         }
     }
 

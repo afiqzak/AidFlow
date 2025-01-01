@@ -23,7 +23,16 @@ public final class FragmentVolunteerUpcomingCancelBinding implements ViewBinding
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final TextView addressUpcoming;
+  public final TextView TVUpcomingContact;
+
+  @NonNull
+  public final TextView TVUpcomingDate;
+
+  @NonNull
+  public final TextView TVUpcomingLoc;
+
+  @NonNull
+  public final TextView TVUpcomingTitle;
 
   @NonNull
   public final ImageView backIconUpcoming;
@@ -32,34 +41,25 @@ public final class FragmentVolunteerUpcomingCancelBinding implements ViewBinding
   public final MaterialButton cancelButtonUpcoming;
 
   @NonNull
-  public final TextView contactnumUpcoming;
-
-  @NonNull
-  public final TextView dueDateUpcoming;
-
-  @NonNull
   public final TextView organizerUpcoming;
 
   @NonNull
   public final CardView volunteerCardView;
 
-  @NonNull
-  public final TextView volunteerNameUpcoming;
-
   private FragmentVolunteerUpcomingCancelBinding(@NonNull ConstraintLayout rootView,
-      @NonNull TextView addressUpcoming, @NonNull ImageView backIconUpcoming,
-      @NonNull MaterialButton cancelButtonUpcoming, @NonNull TextView contactnumUpcoming,
-      @NonNull TextView dueDateUpcoming, @NonNull TextView organizerUpcoming,
-      @NonNull CardView volunteerCardView, @NonNull TextView volunteerNameUpcoming) {
+      @NonNull TextView TVUpcomingContact, @NonNull TextView TVUpcomingDate,
+      @NonNull TextView TVUpcomingLoc, @NonNull TextView TVUpcomingTitle,
+      @NonNull ImageView backIconUpcoming, @NonNull MaterialButton cancelButtonUpcoming,
+      @NonNull TextView organizerUpcoming, @NonNull CardView volunteerCardView) {
     this.rootView = rootView;
-    this.addressUpcoming = addressUpcoming;
+    this.TVUpcomingContact = TVUpcomingContact;
+    this.TVUpcomingDate = TVUpcomingDate;
+    this.TVUpcomingLoc = TVUpcomingLoc;
+    this.TVUpcomingTitle = TVUpcomingTitle;
     this.backIconUpcoming = backIconUpcoming;
     this.cancelButtonUpcoming = cancelButtonUpcoming;
-    this.contactnumUpcoming = contactnumUpcoming;
-    this.dueDateUpcoming = dueDateUpcoming;
     this.organizerUpcoming = organizerUpcoming;
     this.volunteerCardView = volunteerCardView;
-    this.volunteerNameUpcoming = volunteerNameUpcoming;
   }
 
   @Override
@@ -89,9 +89,27 @@ public final class FragmentVolunteerUpcomingCancelBinding implements ViewBinding
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.address_upcoming;
-      TextView addressUpcoming = ViewBindings.findChildViewById(rootView, id);
-      if (addressUpcoming == null) {
+      id = R.id.TVUpcomingContact;
+      TextView TVUpcomingContact = ViewBindings.findChildViewById(rootView, id);
+      if (TVUpcomingContact == null) {
+        break missingId;
+      }
+
+      id = R.id.TVUpcomingDate;
+      TextView TVUpcomingDate = ViewBindings.findChildViewById(rootView, id);
+      if (TVUpcomingDate == null) {
+        break missingId;
+      }
+
+      id = R.id.TVUpcomingLoc;
+      TextView TVUpcomingLoc = ViewBindings.findChildViewById(rootView, id);
+      if (TVUpcomingLoc == null) {
+        break missingId;
+      }
+
+      id = R.id.TVUpcomingTitle;
+      TextView TVUpcomingTitle = ViewBindings.findChildViewById(rootView, id);
+      if (TVUpcomingTitle == null) {
         break missingId;
       }
 
@@ -107,18 +125,6 @@ public final class FragmentVolunteerUpcomingCancelBinding implements ViewBinding
         break missingId;
       }
 
-      id = R.id.contactnum_upcoming;
-      TextView contactnumUpcoming = ViewBindings.findChildViewById(rootView, id);
-      if (contactnumUpcoming == null) {
-        break missingId;
-      }
-
-      id = R.id.dueDate_upcoming;
-      TextView dueDateUpcoming = ViewBindings.findChildViewById(rootView, id);
-      if (dueDateUpcoming == null) {
-        break missingId;
-      }
-
       id = R.id.organizer_upcoming;
       TextView organizerUpcoming = ViewBindings.findChildViewById(rootView, id);
       if (organizerUpcoming == null) {
@@ -131,15 +137,9 @@ public final class FragmentVolunteerUpcomingCancelBinding implements ViewBinding
         break missingId;
       }
 
-      id = R.id.volunteerName_upcoming;
-      TextView volunteerNameUpcoming = ViewBindings.findChildViewById(rootView, id);
-      if (volunteerNameUpcoming == null) {
-        break missingId;
-      }
-
       return new FragmentVolunteerUpcomingCancelBinding((ConstraintLayout) rootView,
-          addressUpcoming, backIconUpcoming, cancelButtonUpcoming, contactnumUpcoming,
-          dueDateUpcoming, organizerUpcoming, volunteerCardView, volunteerNameUpcoming);
+          TVUpcomingContact, TVUpcomingDate, TVUpcomingLoc, TVUpcomingTitle, backIconUpcoming,
+          cancelButtonUpcoming, organizerUpcoming, volunteerCardView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -27,8 +27,6 @@ import com.google.firebase.firestore.FirebaseFirestore;
 public class ProfileFragment extends Fragment {
 
     private RadioGroup toggleProfile;
-    private FirebaseFirestore db;
-    private User user;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -81,16 +79,25 @@ public class ProfileFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        //observe view model for real time updates on user data
+        //get current user id
+        String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
+
+        //observe view model
         UserViewModel userViewModel = new ViewModelProvider(requireActivity()).get(UserViewModel.class);
+        userViewModel.fetchUserData(userId);
+
         userViewModel.getUser().observe(getViewLifecycleOwner(), user -> {
-                    if (user != null) {
-                        this.user = user;
-                        bindData(view);
-                    }
-                });
-
-
+            if (user != null) {
+                // Update UI with user data
+                Log.d("Fragment", user.toString());
+                bindData(view, user);
+            } else {
+                // Handle the case where user data is null (e.g., show an error message)
+                Log.d("Fragment", "User is null");
+                TextView TVUsername = view.findViewById(R.id.TVUsername);
+                TVUsername.setText("user not found");
+            }
+        });
 
         toggleProfile = view.findViewById(R.id.toggleProfile);
 
@@ -114,7 +121,7 @@ public class ProfileFragment extends Fragment {
     }
 
     //bind all view in fragment_profile.xml
-    private void bindData(View v){
+    private void bindData(View v, User user){
         TextView TVUsername = v.findViewById(R.id.TVUsername);
         TextView TVFname = v.findViewById(R.id.TVFName);
         TextView TVLname = v.findViewById(R.id.TVLName);

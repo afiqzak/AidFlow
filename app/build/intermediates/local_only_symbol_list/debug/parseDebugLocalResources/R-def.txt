@@ -5,7 +5,6 @@ array com_google_android_gms_fonts_certs_dev
 array com_google_android_gms_fonts_certs_prod
 array payment_methods
 array preloaded_fonts
-array state_array
 color black
 color dark_blue
 color green
@@ -125,6 +124,7 @@ font poppins_medium
 font poppins_semibold
 id Badges_button
 id BtnDonate
+id BtnJoinCancel
 id BtnRM10
 id BtnRM20
 id BtnRM5
@@ -147,6 +147,7 @@ id FragmentViewMain
 id History_button
 id IVBack
 id IVBadge
+id IVBadgeV
 id IVMoney
 id IVProfile
 id IVReport
@@ -165,8 +166,11 @@ id RBBadges
 id RBNo
 id RBOverview
 id RBYes
-id RVBadges
+id RVPBadges
+id RVVBadges
 id RelatedReportImage
+id SPRegion
+id SPState
 id SpPayMethod
 id TIETConfirmPass
 id TIETPassword
@@ -181,6 +185,11 @@ id TVConfirmPass
 id TVDate
 id TVDesc
 id TVEmail
+id TVEventContact
+id TVEventDate
+id TVEventDesc
+id TVEventLocation
+id TVEventTitle
 id TVFName
 id TVFirstName
 id TVLName
@@ -188,6 +197,7 @@ id TVLastName
 id TVMoneyCollected
 id TVNoAcc
 id TVOrgName
+id TVPIC
 id TVPassRequi
 id TVPassword
 id TVPayMehtod
@@ -199,10 +209,15 @@ id TVToggle
 id TVTotDonate
 id TVTotReport
 id TVTotTime
+id TVUpcomingContact
+id TVUpcomingDate
+id TVUpcomingLoc
+id TVUpcomingTitle
 id TVUrgency
 id TVUserEmail
 id TVUserPhone
 id TVUsername
+id TVVolunteer
 id TVWelcome
 id Upcoming_button
 id Volunteer_button
@@ -212,19 +227,12 @@ id action_newsMainPageFragment_to_mainActivity
 id action_newsMainPageFragment_to_projectsFullPage
 id action_newsMainPageFragment_to_storyFullFragment
 id address
-id address_upcoming
-id address_volunteer
 id air
 id amount_history
 id apply_filter_button
 id back_icon_upcoming
 id back_icon_volunteer
 id badgeImage
-id badge_12hours
-id badge_1day
-id badge_1month
-id badge_1week
-id badge_7hours
 id bottomNavigationView
 id btnBack
 id btnBack2
@@ -246,8 +254,6 @@ id close_icon
 id complaint
 id constraintLayout
 id constraintLayout2
-id contactnum_upcoming
-id contactnum_volunteer
 id date
 id destCam
 id destDonation
@@ -259,7 +265,6 @@ id destStoryFull
 id destVolunteer
 id destWaterQuality
 id districtName
-id district_spinner
 id donate
 id donationDate_history
 id donationForm
@@ -273,9 +278,6 @@ id doneStarButton
 id done_place
 id done_projects
 id done_title
-id dueDate
-id dueDate_upcoming
-id dueDate_volunteer
 id duration_radio_group
 id email
 id fab_donatefilter
@@ -299,7 +301,6 @@ id imageView
 id imageView2
 id imageView3
 id imageView4
-id join_button
 id last_name
 id linearLayout
 id linearLayout3
@@ -315,7 +316,6 @@ id noti_text
 id noti_title
 id organizerName_history
 id organizer_upcoming
-id organizer_volunteer
 id paymentMethod_history
 id pending_place
 id pending_projects
@@ -359,7 +359,6 @@ id reportbutton
 id scrollView2
 id scrollView3
 id select_layout
-id state_spinner
 id storyList
 id story_desc
 id story_image
@@ -387,10 +386,7 @@ id urgencyIndicator
 id userCaption
 id user_image
 id user_name
-id volunteerCancel
-id volunteerJoin
-id volunteerName
-id volunteerName_upcoming
+id volunteerDetails
 id volunteerProgress
 id volunteerProgressBar
 id volunteer_cardView
@@ -420,7 +416,7 @@ layout fragment_profile_overview
 layout fragment_signup
 layout fragment_volunteer
 layout fragment_volunteer_badges
-layout fragment_volunteer_join
+layout fragment_volunteer_details
 layout fragment_volunteer_prog
 layout fragment_volunteer_upcoming
 layout fragment_volunteer_upcoming_cancel
@@ -436,6 +432,7 @@ layout single_news_card
 layout single_news_project_card
 layout single_news_story_card
 layout single_profile_badge
+layout single_volunteer_badge
 layout single_volunteer_recycleview
 layout single_volunteer_upcoming_recycleview
 layout single_water_done_card

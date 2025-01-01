@@ -231,6 +231,7 @@ public class SignupFragment extends Fragment {
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         //map user data
         Map<String, Object> user = new HashMap<>();
+        user.put("userID", uid);
         user.put("email", email);
         user.put("firstName", firstName);
         user.put("lastName", lastName);

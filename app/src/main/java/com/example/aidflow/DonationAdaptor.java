@@ -114,7 +114,7 @@ class DonationAdapter extends RecyclerView.Adapter<DonationAdapter.DonationViewH
             super(itemView);
             donationName = itemView.findViewById(R.id.donationName);
             projectName = itemView.findViewById(R.id.projectName);
-            dueDate = itemView.findViewById(R.id.dueDate);
+            dueDate = itemView.findViewById(R.id.date);
             progressText = itemView.findViewById(R.id.progressText);
             donationProgress = itemView.findViewById(R.id.donationProgress);
             urgencyIndicator = itemView.findViewById(R.id.urgencyIndicator);

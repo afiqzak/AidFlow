@@ -54,6 +54,7 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+    implementation (libs.gson)
     implementation(platform("com.google.firebase:firebase-bom:33.7.0"))
     implementation ("com.google.android.gms:play-services-auth:20.5.0")
     implementation ("com.google.android.gms:play-services-basement:18.2.1")

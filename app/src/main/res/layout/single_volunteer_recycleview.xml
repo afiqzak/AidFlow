@@ -31,7 +31,7 @@
                 >
                 <!-- Volunteer Name -->
                 <TextView
-                    android:id="@+id/volunteerName"
+                    android:id="@+id/TVEventTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -67,7 +67,7 @@
 
             <!-- Due Date -->
             <TextView
-                android:id="@+id/dueDate_volunteer"
+                android:id="@+id/TVEventDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
