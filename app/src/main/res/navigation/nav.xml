@@ -31,22 +31,12 @@
         android:name="com.example.aidflow.DonationFragment"
         android:label="fragment_main_donation_"
         tools:layout="@layout/fragment_donation" >
-        <action
-            android:id="@+id/toFrom"
-            app:destination="@id/donationForm" />
-        <argument
-            android:name="histFilt"
-            app:argType="boolean"
-            android:defaultValue="false" />
     </fragment>
     <fragment
         android:id="@+id/donationHistFilter"
         android:name="com.example.aidflow.DonationHistFilterFragment"
         android:label="fragment_history_filter"
         tools:layout="@layout/fragment_donation_hist_filter" >
-        <action
-            android:id="@+id/histFiltDonate"
-            app:destination="@id/destDonation" />
     </fragment>
     <fragment
         android:id="@+id/destVolunteer"

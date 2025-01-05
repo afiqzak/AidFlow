@@ -8,6 +8,8 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.lifecycle.ViewModelProvider;
 
 import android.util.Log;
 import android.view.Gravity;
@@ -28,11 +30,15 @@ public class DonationDonateFilterFragment extends DialogFragment {
     private CheckBox checkBoxOrphanage, checkBoxDisasterRelief, checkBoxCommunityProject,
             checkBoxHealthCare, checkBoxCleanWater, checkBoxHighPriority, checkBoxModerate, checkBoxLowPriority;
 
+    private DonationViewModel donationViewModel;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_donation_donate_filter, container, false);
+
+        donationViewModel = new ViewModelProvider(requireActivity()).get(DonationViewModel.class);
 
         checkBoxOrphanage = view.findViewById(R.id.checkBox_orphanage);
         checkBoxDisasterRelief = view.findViewById(R.id.checkBox_disasterRelief);
@@ -54,23 +60,23 @@ public class DonationDonateFilterFragment extends DialogFragment {
 
         // Collect selected filters
         Set<String> selectedUrgencies = new HashSet<>();
-        Set<String> selectedProjects = new HashSet<>();
+        Set<String> selectedCategorys = new HashSet<>();
 
-        if (checkBoxHighPriority.isChecked()) selectedUrgencies.add("high");
-        if (checkBoxModerate.isChecked()) selectedUrgencies.add("moderate");
-        if (checkBoxLowPriority.isChecked()) selectedUrgencies.add("low");
+        if (checkBoxHighPriority.isChecked()) selectedUrgencies.add("High Priority");
+        if (checkBoxModerate.isChecked()) selectedUrgencies.add("Moderate");
+        if (checkBoxLowPriority.isChecked()) selectedUrgencies.add("Low Priority");
 
-        if (checkBoxOrphanage.isChecked()) selectedProjects.add("Orphanage");
-        if (checkBoxDisasterRelief.isChecked()) selectedProjects.add("Disaster Relief");
-        if (checkBoxCommunityProject.isChecked()) selectedProjects.add("Community Project");
-        if (checkBoxHealthCare.isChecked()) selectedProjects.add("Health Care");
-        if (checkBoxCleanWater.isChecked()) selectedProjects.add("Clean Water");
+        if (checkBoxOrphanage.isChecked()) selectedCategorys.add("Orphanage");
+        if (checkBoxDisasterRelief.isChecked()) selectedCategorys.add("Disaster Relief");
+        if (checkBoxCommunityProject.isChecked()) selectedCategorys.add("Community Project");
+        if (checkBoxHealthCare.isChecked()) selectedCategorys.add("Health Care");
+        if (checkBoxCleanWater.isChecked()) selectedCategorys.add("Clean Water");
 
-        //Fragment fragment = getActivity().getSupportFragmentManager().findFragmentByTag("DonationDonateFragment");
-        Fragment fragment = requireActivity().getSupportFragmentManager().findFragmentByTag("DonationDonateFragment");
-        if (fragment instanceof DonationDonateFragment) {
-            ((DonationDonateFragment) fragment).setFilterCriteria(selectedUrgencies, selectedProjects);
-        }
+        donationViewModel.filterDonations(selectedUrgencies, selectedCategorys);
+
+        FragmentTransaction transaction = requireActivity().getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.FCVDonation, new DonationDonateFragment());
+        transaction.commit();
     }
 
 

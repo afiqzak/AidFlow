@@ -1,5 +1,6 @@
 package com.example.aidflow;
 import android.content.Context;
+import android.content.res.ColorStateList;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
@@ -20,10 +22,12 @@ class DonationAdapter extends RecyclerView.Adapter<DonationAdapter.DonationViewH
 
     private final List<Donation> donationList;
     private Context context;
+    private DonationViewModel donationViewModel;
 
-    public DonationAdapter(List<Donation> donationList, Context context) {
+    public DonationAdapter(List<Donation> donationList, Context context, DonationViewModel donationViewModel) {
         this.donationList = donationList;
         this.context = context;
+        this.donationViewModel = donationViewModel;
     }
 
     @NonNull
@@ -37,63 +41,34 @@ class DonationAdapter extends RecyclerView.Adapter<DonationAdapter.DonationViewH
     public void onBindViewHolder(@NonNull DonationViewHolder holder, int position) {
         Donation donation = donationList.get(position);
 
+        double progress = donation.getCurrentAmount()/donation.getTargetAmount()*100;
+
         // Bind data to views
-        holder.donationName.setText(donation.getName());
-        holder.projectName.setText(donation.getProjectName());
-        holder.dueDate.setText(donation.getDueDate());
-        holder.progressText.setText(donation.getProgress() + "%");
-        Log.d("DonationAdapter", "Progress for position " + position + ": " + donation.getProgress());
-        int progress = Math.max(0, Math.min(100, donation.getProgress()));
-        holder.donationProgress.setProgress(progress);
+        holder.TVDonationTitle.setText(donation.getDonationTitle());
+        holder.TVDonationCategory.setText(donation.getCategory());
+        holder.TVDonationDueDate.setText(donation.getDueDate());
+        holder.TVDonationProgress.setText(Math.round(progress) + "%");
+        Log.d("DonationAdapter", "Progress for position " + position + ": " + progress);
+        holder.PBDonation.setProgress((int) Math.round(progress));
 
         // Set urgency color
         switch (donation.getUrgency()) {
-            case "high":
-                holder.urgencyIndicator.setBackgroundResource(R.color.red);
+            case "High Priority":
+                holder.urgencyIndicator.setBackgroundTintList(ColorStateList.valueOf(context.getResources().getColor(R.color.red)));
                 break;
-            case "moderate":
-                holder.urgencyIndicator.setBackgroundResource(R.color.green);
+            case "Moderate":
+                holder.urgencyIndicator.setBackgroundTintList(ColorStateList.valueOf(context.getResources().getColor(R.color.yellow)));
                 break;
-            case "low":
-                holder.urgencyIndicator.setBackgroundResource(R.color.yellow);
+            case "Low Priority":
+                holder.urgencyIndicator.setBackgroundTintList(ColorStateList.valueOf(context.getResources().getColor(R.color.green)));
                 break;
         }
 
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Bundle bundle = new Bundle();
-                bundle.putString("donationID", donation.getDonationID());
-                bundle.putString("name", donation.getName());
-                bundle.putString("projectName", donation.getProjectName());
-                bundle.putString("description", donation.getDescription());
-                bundle.putString("dueDate", donation.getDueDate());
-                bundle.putInt("progress", donation.getProgress());
-                bundle.putString("urgency", donation.getUrgency());
-                bundle.putString("organizationName", donation.getOrganizationName());
-                bundle.putLong("targetDonationAmount", donation.getTargetDonationAmount());
-                bundle.putLong("currentDonationAmount", donation.getCurrentDonationAmount());
-
-
-                DonationFormFragment donationFormFragment = new DonationFormFragment();
-                donationFormFragment.setArguments(bundle);
-
-                FragmentTransaction transaction = ((FragmentActivity) context)
-                        .getSupportFragmentManager()
-                        .beginTransaction();
-                transaction.replace(R.id.FCVDonation, donationFormFragment);
-                //transaction.replace(R.id.FragmentViewMain, donationFormFragment);
-                transaction.addToBackStack(null);
-                transaction.commit();
-                //Navigation.findNavController(v).navigate(R.id.donationForm);
-
-//                FragmentTransaction transaction = ((FragmentActivity) context)
-//                        .getSupportFragmentManager()
-//                        .beginTransaction();
-//                transaction.replace(R.id.fragmentContainerView, new DonationFormFragment());
-//                transaction.addToBackStack(null);
-//                transaction.commit();
-
+                donationViewModel.setSelectedDonation(donation);
+                Navigation.findNavController(v).navigate(R.id.donationForm);
             }
         });
     }
@@ -105,18 +80,18 @@ class DonationAdapter extends RecyclerView.Adapter<DonationAdapter.DonationViewH
     }
 
     static class DonationViewHolder extends RecyclerView.ViewHolder {
-        TextView donationName, projectName, dueDate, progressText;
-        ProgressBar donationProgress;
+        TextView TVDonationTitle, TVDonationCategory, TVDonationDueDate, TVDonationProgress;
+        ProgressBar PBDonation;
         View urgencyIndicator;
         CardView cardView;
 
         public DonationViewHolder(@NonNull View itemView) {
             super(itemView);
-            donationName = itemView.findViewById(R.id.donationName);
-            projectName = itemView.findViewById(R.id.projectName);
-            dueDate = itemView.findViewById(R.id.date);
-            progressText = itemView.findViewById(R.id.progressText);
-            donationProgress = itemView.findViewById(R.id.donationProgress);
+            TVDonationTitle = itemView.findViewById(R.id.TVDonationTitle);
+            TVDonationCategory = itemView.findViewById(R.id.TVDonationCategory);
+            TVDonationDueDate = itemView.findViewById(R.id.TVDonationDueDate);
+            TVDonationProgress = itemView.findViewById(R.id.TVDonationProgress);
+            PBDonation = itemView.findViewById(R.id.PBDonation);
             urgencyIndicator = itemView.findViewById(R.id.urgencyIndicator);
             cardView = itemView.findViewById(R.id.donation_cardView);
         }

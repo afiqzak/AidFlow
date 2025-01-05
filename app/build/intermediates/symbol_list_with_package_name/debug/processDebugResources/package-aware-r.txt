@@ -3470,7 +3470,9 @@ id LLDonationTitle
 id META
 id NO_DEBUG
 id NewsTopTitle
+id PBDonation
 id PBMoney
+id PIC_history
 id PageFragment
 id ProjectButton
 id ProjectsDate
@@ -3481,6 +3483,7 @@ id RBBadges
 id RBNo
 id RBOverview
 id RBYes
+id RVListHistory
 id RVPBadges
 id RVVBadges
 id RelatedReportImage
@@ -3506,6 +3509,10 @@ id TVCategory
 id TVConfirmPass
 id TVDate
 id TVDesc
+id TVDonationCategory
+id TVDonationDueDate
+id TVDonationProgress
+id TVDonationTitle
 id TVEmail
 id TVEventContact
 id TVEventDate
@@ -3514,12 +3521,13 @@ id TVEventLocation
 id TVEventTitle
 id TVFName
 id TVFirstName
+id TVHistoryDate
 id TVLName
 id TVLastName
 id TVMoneyCollected
 id TVNoAcc
-id TVOrgName
 id TVPIC
+id TVPICDonation
 id TVPassRequi
 id TVPassword
 id TVPayMehtod
@@ -3665,6 +3673,7 @@ id cancel_button
 id cancel_button_upcoming
 id carryVelocity
 id category_donateFilter
+id category_history
 id center
 id centerCrop
 id centerInside
@@ -3716,7 +3725,6 @@ id custom
 id customPanel
 id cut
 id dark
-id date
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -3748,12 +3756,9 @@ id disableScroll
 id disjoint
 id districtName
 id donate
-id donationDate_history
 id donationForm
 id donationHistFilter
-id donationName
 id donationName_history
-id donationProgress
 id donation_cardView
 id donations
 id doneStarButton
@@ -3831,7 +3836,6 @@ id groups
 id header_title
 id hide_ime_id
 id hideable
-id histFiltDonate
 id home
 id homeAsUp
 id honorRequest
@@ -3996,7 +4000,6 @@ id open_search_view_search_prefix
 id open_search_view_status_bar_spacer
 id open_search_view_toolbar
 id open_search_view_toolbar_container
-id organizerName_history
 id organizer_upcoming
 id outline
 id outward
@@ -4023,7 +4026,6 @@ id postLayout
 id pressed
 id profile
 id progressBar
-id progressText
 id progressText_denominator
 id progressText_numerator
 id progress_circular
@@ -4032,8 +4034,6 @@ id projectButton
 id projectFullDesc
 id projectImage
 id projectList
-id projectName
-id projectName_history
 id projectProgressBar
 id projectTitle
 id projects_toggle
@@ -4193,7 +4193,6 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
-id toFrom
 id toRating
 id toReport
 id to_left
@@ -4504,6 +4503,7 @@ layout notification_template_part_time
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
+layout single_donation_history_grouped
 layout single_donation_history_recycleview
 layout single_donation_recylcleview
 layout single_news_card

@@ -1,0 +1,74 @@
+[
+  {
+    "amount": 10,
+    "anonymous": false,
+    "donatedDate": "2024-01-04T00:44:23Z",
+    "donationID": "4uYIGDjVOMuJduh5HsiG",
+    "extraNote": "Supporting education",
+    "paymentMethod": "Credit Card",
+    "userID": "IKB3kbJstvfhz71Hs9YBM3T1Ddu1"
+  },
+  {
+    "amount": 20,
+    "anonymous": true,
+    "donatedDate": "2024-04-04T12:00:00Z",
+    "donationID": "lopKSfaTYozmtLKvbMYz",
+    "extraNote": "For disaster relief",
+    "paymentMethod": "PayPal",
+    "userID": "IKB3kbJstvfhz71Hs9YBM3T1Ddu1"
+  },
+  {
+    "amount": 5,
+    "anonymous": true,
+    "donatedDate": "2024-07-04T18:30:00Z",
+    "donationID": "4uYIGDjVOMuJduh5HsiG",
+    "extraNote": "test",
+    "paymentMethod": "Bank Transfer",
+    "userID": "IKB3kbJstvfhz71Hs9YBM3T1Ddu1"
+  },
+  {
+    "amount": 15,
+    "anonymous": false,
+    "donatedDate": "2024-10-04T08:00:00Z",
+    "donationID": "MDZQMx1qTIXzIe7Br60l",
+    "extraNote": "Animal welfare",
+    "paymentMethod": "Debit Card",
+    "userID": "IKB3kbJstvfhz71Hs9YBM3T1Ddu1"
+  },
+  {
+    "amount": 25,
+    "anonymous": true,
+    "donatedDate": "2025-01-04T00:44:23Z", // Same date as your example
+    "donationID": "jz2rJ5qREE9m625xCC7c",
+    "extraNote": "Medical research",
+    "paymentMethod": "Bank Transfer",
+    "userID": "IKB3kbJstvfhz71Hs9YBM3T1Ddu1"
+  },
+  {
+    "amount": 30,
+    "anonymous": false,
+    "donatedDate": "2025-01-04T10:00:00Z", // Same date as your example but different time
+    "donationID": "BfHF3sk7Ffw2Vy0fo2tr",
+    "extraNote": "Environmental protection",
+    "paymentMethod": "Credit Card",
+    "userID": "IKB3kbJstvfhz71Hs9YBM3T1Ddu1"
+  },
+  {
+    "amount": 7,
+    "anonymous": true,
+    "donatedDate": "2025-01-03T10:00:00Z", // Yesterday
+    "donationID": "jz2rJ5qREE9m625xCC7c",
+    "extraNote": "test2",
+    "paymentMethod": "Bank Transfer",
+    "userID": "IKB3kbJstvfhz71Hs9YBM3T1Ddu1"
+  },
+  {
+    "amount": 12,
+    "anonymous": false,
+    "donatedDate": "2025-01-02T10:00:00Z", // 2 days ago
+    "donationID": "BfHF3sk7Ffw2Vy0fo2tr",
+    "extraNote": "test3",
+    "paymentMethod": "Bank Transfer",
+    "userID": "IKB3kbJstvfhz71Hs9YBM3T1Ddu1"
+  }
+]

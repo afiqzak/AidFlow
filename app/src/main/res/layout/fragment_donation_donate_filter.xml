@@ -156,7 +156,7 @@
                         android:button="@drawable/checkbox_selector"
                         android:paddingHorizontal="10dp"
                         android:text="Low Priority"
-                        android:textColor="@color/yellow" />
+                        android:textColor="@color/green" />
 
 
                 </LinearLayout>
@@ -177,7 +177,7 @@
                         android:button="@drawable/checkbox_selector"
                         android:paddingHorizontal="10dp"
                         android:text="Moderate"
-                        android:textColor="@color/green" />
+                        android:textColor="@color/yellow" />
 
                 </LinearLayout>
 

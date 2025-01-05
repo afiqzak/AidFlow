@@ -36,7 +36,7 @@ public final class FragmentDonationBinding implements ViewBinding {
   public final LinearLayout LLDonationTitle;
 
   @NonNull
-  public final TextView donationName;
+  public final TextView TVDonationTitle;
 
   @NonNull
   public final FloatingActionButton fabDonatefilter;
@@ -50,14 +50,14 @@ public final class FragmentDonationBinding implements ViewBinding {
   private FragmentDonationBinding(@NonNull ConstraintLayout rootView,
       @NonNull Button DonationButton, @NonNull FrameLayout FCVDonation,
       @NonNull Button HistoryButton, @NonNull LinearLayout LLDonationTitle,
-      @NonNull TextView donationName, @NonNull FloatingActionButton fabDonatefilter,
+      @NonNull TextView TVDonationTitle, @NonNull FloatingActionButton fabDonatefilter,
       @NonNull FloatingActionButton fabHistory, @NonNull LinearLayout linearLayout) {
     this.rootView = rootView;
     this.DonationButton = DonationButton;
     this.FCVDonation = FCVDonation;
     this.HistoryButton = HistoryButton;
     this.LLDonationTitle = LLDonationTitle;
-    this.donationName = donationName;
+    this.TVDonationTitle = TVDonationTitle;
     this.fabDonatefilter = fabDonatefilter;
     this.fabHistory = fabHistory;
     this.linearLayout = linearLayout;
@@ -114,9 +114,9 @@ public final class FragmentDonationBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.donationName;
-      TextView donationName = ViewBindings.findChildViewById(rootView, id);
-      if (donationName == null) {
+      id = R.id.TVDonationTitle;
+      TextView TVDonationTitle = ViewBindings.findChildViewById(rootView, id);
+      if (TVDonationTitle == null) {
         break missingId;
       }
 
@@ -139,7 +139,8 @@ public final class FragmentDonationBinding implements ViewBinding {
       }
 
       return new FragmentDonationBinding((ConstraintLayout) rootView, DonationButton, FCVDonation,
-          HistoryButton, LLDonationTitle, donationName, fabDonatefilter, fabHistory, linearLayout);
+          HistoryButton, LLDonationTitle, TVDonationTitle, fabDonatefilter, fabHistory,
+          linearLayout);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

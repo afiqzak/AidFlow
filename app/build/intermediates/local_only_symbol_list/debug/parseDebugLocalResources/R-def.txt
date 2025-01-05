@@ -155,7 +155,9 @@ id IVTime
 id IVUsername
 id LLDonationTitle
 id NewsTopTitle
+id PBDonation
 id PBMoney
+id PIC_history
 id PageFragment
 id ProjectButton
 id ProjectsDate
@@ -166,6 +168,7 @@ id RBBadges
 id RBNo
 id RBOverview
 id RBYes
+id RVListHistory
 id RVPBadges
 id RVVBadges
 id RelatedReportImage
@@ -184,6 +187,10 @@ id TVCategory
 id TVConfirmPass
 id TVDate
 id TVDesc
+id TVDonationCategory
+id TVDonationDueDate
+id TVDonationProgress
+id TVDonationTitle
 id TVEmail
 id TVEventContact
 id TVEventDate
@@ -192,12 +199,13 @@ id TVEventLocation
 id TVEventTitle
 id TVFName
 id TVFirstName
+id TVHistoryDate
 id TVLName
 id TVLastName
 id TVMoneyCollected
 id TVNoAcc
-id TVOrgName
 id TVPIC
+id TVPICDonation
 id TVPassRequi
 id TVPassword
 id TVPayMehtod
@@ -240,6 +248,7 @@ id cameraButton
 id camera_button
 id cancel_button_upcoming
 id category_donateFilter
+id category_history
 id checkBox_cleanWater
 id checkBox_communityProject
 id checkBox_disasterRelief
@@ -254,7 +263,6 @@ id close_icon
 id complaint
 id constraintLayout
 id constraintLayout2
-id date
 id destCam
 id destDonation
 id destHome
@@ -266,12 +274,9 @@ id destVolunteer
 id destWaterQuality
 id districtName
 id donate
-id donationDate_history
 id donationForm
 id donationHistFilter
-id donationName
 id donationName_history
-id donationProgress
 id donation_cardView
 id donations
 id doneStarButton
@@ -294,7 +299,6 @@ id frameLayout2
 id frameLayout3
 id frameLayout4
 id frameLayout5
-id histFiltDonate
 id home
 id imageButton
 id imageView
@@ -314,7 +318,6 @@ id newsList
 id newsTitle
 id noti_text
 id noti_title
-id organizerName_history
 id organizer_upcoming
 id paymentMethod_history
 id pending_place
@@ -323,15 +326,12 @@ id pending_title
 id phone_number
 id profile
 id progressBar
-id progressText
 id progressText_denominator
 id progressText_numerator
 id projectButton
 id projectFullDesc
 id projectImage
 id projectList
-id projectName
-id projectName_history
 id projectProgressBar
 id projectTitle
 id projects_toggle
@@ -374,7 +374,6 @@ id textView2
 id textView3
 id time
 id title
-id toFrom
 id toRating
 id toReport
 id toggle
@@ -426,6 +425,7 @@ layout fragment_water_rating
 layout fragment_water_recycle_view_done
 layout fragment_water_recycle_view_pending
 layout fragment_water_report
+layout single_donation_history_grouped
 layout single_donation_history_recycleview
 layout single_donation_recylcleview
 layout single_news_card

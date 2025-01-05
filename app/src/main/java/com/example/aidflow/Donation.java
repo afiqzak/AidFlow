@@ -1,54 +1,86 @@
 package com.example.aidflow;
 
 public class Donation {
-    private final String donationID;
-    private final String name;
-    private final String projectName;
-    private final String description;
-    private final String dueDate;
-    private final int progress;
-    private final String urgency;
-    private final String organizationName;
-    private final long targetDonationAmount;
-    private final long currentDonationAmount;
+    private String donationID;
+    private  String donationTitle;
+    private  String description;
+    private  String dueDate;
+    private  String category;
+    private  String urgency;
+    private  boolean status;
+    private  double targetAmount;
+    private  double currentAmount;
+    private String PIC;
+    private String contactPic;
 
-    public Donation(String donationID, String name, String projectName, String description, String dueDate, int progress, String urgency, String organizationName, long targetDonationAmount, long currentDonationAmount) {
+    public Donation(String donationID, String donationTitle, String description, String dueDate,
+                    String category, String urgency, boolean status, int targetAmount, int currentAmount, String PIC, String contactPic) {
         this.donationID = donationID;
-        this.name = name;
-        this.projectName = projectName;
+        this.donationTitle = donationTitle;
         this.description = description;
         this.dueDate = dueDate;
-        this.progress = progress;
+        this.category = category;
         this.urgency = urgency;
-        this.organizationName = organizationName;
-        this.targetDonationAmount = targetDonationAmount;
-        this.currentDonationAmount = currentDonationAmount;
+        this.status = status;
+        this.targetAmount = targetAmount;
+        this.currentAmount = currentAmount;
+        this.PIC = PIC;
+        this.contactPic = contactPic;
     }
 
+    public Donation () {}
 
-    public String getDonationID() { return donationID; }
+    public String getDonationID() {
+        return donationID;
+    }
 
-    public String getName() { return name;}
+    public String getDonationTitle() {
+        return donationTitle;
+    }
 
-    public String getProjectName() { return projectName;}
+    public String getDescription() {
+        return description;
+    }
 
-    public String getDescription() {return description;}
+    public String getDueDate() {
+        return dueDate;
+    }
 
-    public String getDueDate() { return dueDate;}
+    public String getCategory() {
+        return category;
+    }
 
-    public int getProgress() { return progress;}
+    public String getUrgency() {
+        return urgency;
+    }
 
-    public String getUrgency() { return urgency;}
+    public boolean isStatus() {
+        return status;
+    }
 
-    public String getOrganizationName(){ return organizationName;}
+    public double getTargetAmount() {
+        return targetAmount;
+    }
 
-    public long getTargetDonationAmount(){ return targetDonationAmount;}
+    public double getCurrentAmount() {
+        return currentAmount;
+    }
 
-    public long getCurrentDonationAmount(){return currentDonationAmount;}
+    public String getPIC() {
+        return PIC;
+    }
 
+    public String getContactPic() {
+        return contactPic;
+    }
 
+    public void setDonationID(String donationID) {
+        this.donationID = donationID;
+    }
 
-
+    public void setDueDate(String dueDate) {
+        this.dueDate = dueDate;
+    }
 }
 
 

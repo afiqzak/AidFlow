@@ -76,6 +76,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/toggle_widget_background"
                 android:button="@null"
+                android:checked="true"
                 android:gravity="center"
                 android:text="Projects"
                 android:textColor="@color/black" />

@@ -78,7 +78,7 @@ public final class FragmentDonationFormBinding implements ViewBinding {
   public final TextView TVMoneyCollected;
 
   @NonNull
-  public final TextView TVOrgName;
+  public final TextView TVPICDonation;
 
   @NonNull
   public final TextView TVPayMehtod;
@@ -116,7 +116,7 @@ public final class FragmentDonationFormBinding implements ViewBinding {
       @NonNull ImageButton IVBack, @NonNull ProgressBar PBMoney, @NonNull RadioButton RBNo,
       @NonNull RadioButton RBYes, @NonNull TextView SpPayMethod, @NonNull TextView TVAmount,
       @NonNull TextView TVCategory, @NonNull TextView TVDate, @NonNull TextView TVDesc,
-      @NonNull TextView TVMoneyCollected, @NonNull TextView TVOrgName,
+      @NonNull TextView TVMoneyCollected, @NonNull TextView TVPICDonation,
       @NonNull TextView TVPayMehtod, @NonNull TextView TVTitleDonForm, @NonNull TextView TVUrgency,
       @NonNull ConstraintLayout constraintLayout, @NonNull ConstraintLayout constraintLayout2,
       @NonNull ImageView imageView2, @NonNull ImageView imageView3, @NonNull ImageView imageView4,
@@ -139,7 +139,7 @@ public final class FragmentDonationFormBinding implements ViewBinding {
     this.TVDate = TVDate;
     this.TVDesc = TVDesc;
     this.TVMoneyCollected = TVMoneyCollected;
-    this.TVOrgName = TVOrgName;
+    this.TVPICDonation = TVPICDonation;
     this.TVPayMehtod = TVPayMehtod;
     this.TVTitleDonForm = TVTitleDonForm;
     this.TVUrgency = TVUrgency;
@@ -281,9 +281,9 @@ public final class FragmentDonationFormBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.TVOrgName;
-      TextView TVOrgName = ViewBindings.findChildViewById(rootView, id);
-      if (TVOrgName == null) {
+      id = R.id.TVPICDonation;
+      TextView TVPICDonation = ViewBindings.findChildViewById(rootView, id);
+      if (TVPICDonation == null) {
         break missingId;
       }
 
@@ -349,7 +349,7 @@ public final class FragmentDonationFormBinding implements ViewBinding {
 
       return new FragmentDonationFormBinding((ConstraintLayout) rootView, BtnDonate, BtnRM10,
           BtnRM20, BtnRM5, BtnRM50, ETAmount, ETMeaningful, IVBack, PBMoney, RBNo, RBYes,
-          SpPayMethod, TVAmount, TVCategory, TVDate, TVDesc, TVMoneyCollected, TVOrgName,
+          SpPayMethod, TVAmount, TVCategory, TVDate, TVDesc, TVMoneyCollected, TVPICDonation,
           TVPayMehtod, TVTitleDonForm, TVUrgency, constraintLayout, constraintLayout2, imageView2,
           imageView3, imageView4, radioGroup, textView2);
     }

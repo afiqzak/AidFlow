@@ -17,42 +17,6 @@
         android:background="#FFFFFF">
 
         <!-- Top Section -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical">
-
-
-            <LinearLayout
-
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_margin="0dp"
-                android:background="@color/navy_blue"
-
-                >
-                 <!-- Donation Name -->
-                <TextView
-                    android:id="@+id/donationDate_history"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:paddingLeft="7dp"
-                    android:paddingTop="3dp"
-                    android:paddingBottom="3dp"
-                    android:text="Date Transaction"
-                    android:textColor="#000"
-                    android:textStyle="bold"
-                    android:textSize="16sp"
-                    />
-
-            </LinearLayout>
-
-
-        </LinearLayout>
-
 
 
         <LinearLayout
@@ -78,7 +42,7 @@
                 android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/projectName_history"
+                    android:id="@+id/category_history"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
@@ -102,7 +66,7 @@
 
                      <!-- Donator Name -->
                         <TextView
-                            android:id="@+id/organizerName_history"
+                            android:id="@+id/PIC_history"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"

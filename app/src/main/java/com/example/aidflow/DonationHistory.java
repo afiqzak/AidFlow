@@ -2,44 +2,47 @@ package com.example.aidflow;
 
 
 public class DonationHistory {
-    private final String UserID;
-    private final String donatorName;
-    private final String donationName;
-    private final String projectName;
-    private final String transactionDate;
-    private final int amount;
-    private final String paymentMethod;
+    private String donationID;
+    private String donationTitle;
+    private String category;
+    private String PIC;
+    private String date;
+    private double amount;
+    private String paymentMethod;
 
-    public DonationHistory(String userID, String donatorName, String donationName, String projectName, String transactionDate, int amount, String paymentMethod) {
-        UserID = userID;
-        this.donatorName = donatorName;
-        this.donationName = donationName;
-        this.projectName = projectName;
-        this.transactionDate = transactionDate;
+    public DonationHistory(String donationID, String donationTitle, String category, String PIC, String date, int amount, String paymentMethod) {
+        this.donationID = donationID;
+        this.donationTitle = donationTitle;
+        this.category = category;
+        this.PIC = PIC;
+        this.date = date;
         this.amount = amount;
         this.paymentMethod = paymentMethod;
     }
 
+    public DonationHistory() {}
 
-    public String getUserID() { return UserID;}
-
-    public String getDonatorName() {
-        return donatorName;
+    public String getDonationID() {
+        return donationID;
     }
 
-    public String getDonationName() {
-        return donationName;
+    public String getDonationTitle() {
+        return donationTitle;
     }
 
-    public String getProjectName() {
-        return projectName;
+    public String getCategory() {
+        return category;
     }
 
-    public String getTransactionDate() {
-        return transactionDate;
+    public String getPIC() {
+        return PIC;
     }
 
-    public int getAmount() {
+    public String getDate() {
+        return date;
+    }
+
+    public double getAmount() {
         return amount;
     }
 
@@ -47,6 +50,19 @@ public class DonationHistory {
         return paymentMethod;
     }
 
+    public void setDate(String date) {
+        this.date = date;
+    }
 
+    public void setDonationTitle(String donationTitle) {
+        this.donationTitle = donationTitle;
+    }
 
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public void setPIC(String PIC) {
+        this.PIC = PIC;
+    }
 }

@@ -5,8 +5,11 @@ import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -14,14 +17,18 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.List;
 
 public class DonationHistFilterFragment extends Fragment {
 
     private RadioGroup durationRadioGroup;
+    private DonationViewModel donationViewModel;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -30,19 +37,31 @@ public class DonationHistFilterFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_donation_hist_filter, container, false);
 
         durationRadioGroup = view.findViewById(R.id.duration_radio_group);
-
         ImageView close_button = view.findViewById(R.id.close_icon);
 
-        close_button.setOnClickListener(new View.OnClickListener() {
+        donationViewModel = new ViewModelProvider(requireActivity()).get(DonationViewModel.class);
 
+        donationViewModel.getSelectedFilter().observe(getViewLifecycleOwner(), selectedFilter -> {
+            if (selectedFilter != null) {
+                durationRadioGroup.check(selectedFilter);
+            }
+        });
+
+        //get current user id
+        String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
+
+        close_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //set the argument value(histFilt) to true
-                //to be used igi n DonationFragment
-                boolean hist = true;
-                DonationHistFilterFragmentDirections.HistFiltDonate action = DonationHistFilterFragmentDirections.histFiltDonate();
-                action.setHistFilt(hist);
-                Navigation.findNavController(v).navigate(action);
+
+                // Optionally, reset the ViewModel state if needed
+                donationViewModel.fetchDonationHistory(userId, 0);// Reset selected filter value
+                donationViewModel.getFromHistFilter().setValue(true);
+                donationViewModel.getSelectedFilter().setValue(R.id.rb_30_days);
+
+                if (getFragmentManager() != null) {
+                    getFragmentManager().popBackStack(); // Go back in the fragment transaction stack
+                }
             }
         });
 
@@ -51,42 +70,35 @@ public class DonationHistFilterFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 int selectedDurationId = durationRadioGroup.getCheckedRadioButtonId();
-                String selectedDuration = getSelectedDuration(selectedDurationId);
+                int selectedDuration = getSelectedDuration(selectedDurationId, v);
 
-                Fragment fragment = requireActivity().getSupportFragmentManager().findFragmentByTag("DonationHistoryFragment");
-                if (fragment instanceof DonationHistoryFragment) {
-                    ((DonationHistoryFragment) fragment).setHistFilterCriteria(selectedDuration);
+                // Optionally, reset the ViewModel state if needed
+                donationViewModel.fetchDonationHistory(userId, selectedDuration);// Reset selected filter value
+                donationViewModel.getFromHistFilter().setValue(true);
 
-                    FragmentTransaction transaction = requireActivity().getSupportFragmentManager().beginTransaction();
-                    transaction.detach(fragment).attach(fragment).commit();
-
-                    NavController navController = Navigation.findNavController(requireView());
-                    navController.popBackStack();
+                if (getFragmentManager() != null) {
+                    getFragmentManager().popBackStack(); // Go back in the fragment transaction stack
                 }
 
-                //untuk pergi balik kt DonationFragment tapi keluar part history
-//                boolean hist = true;
-//                DonationHistFilterFragmentDirections.HistFiltDonate action = DonationHistFilterFragmentDirections.histFiltDonate();
-//                action.setHistFilt(hist);
-//                Navigation.findNavController(v).navigate(action);
+                Log.d("DonationHistFilterFragment", "fromHistFilter changed:" + donationViewModel.getFromHistFilter().getValue());
             }
         });
 
         return view;
     }
 
-    private String getSelectedDuration(int selectedDurationId) {
+    private int getSelectedDuration(int selectedDurationId, View view) {
+        donationViewModel.getSelectedFilter().setValue(selectedDurationId);
         if (selectedDurationId == R.id.rb_30_days) {
-            return "30";
+            return 30;
         } else if (selectedDurationId == R.id.rb_60_days) {
-            return "60";
+            return 60;
         } else if (selectedDurationId == R.id.rb_90_days) {
-            return "90";
+            return 90;
         } else if (selectedDurationId == R.id.rb_1_year) {
-            return "365";
-        } else {
-            return "No duration selected";
+            return 365;
         }
+        return selectedDurationId;
     }
 }
 

@@ -34,7 +34,7 @@
                 android:background="@drawable/donation_title">
 
                 <TextView
-                    android:id="@+id/donationName"
+                    android:id="@+id/TVDonationTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
