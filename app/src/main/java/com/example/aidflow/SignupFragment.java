@@ -20,6 +20,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.github.dhaval2404.imagepicker.ImagePicker;
+import com.google.android.gms.common.util.IOUtils;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
@@ -27,8 +28,11 @@ import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Map;
+import com.cloudinary.Cloudinary;
+import com.cloudinary.utils.ObjectUtils;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -42,6 +46,7 @@ public class SignupFragment extends Fragment {
     private FirebaseAuth mAuth;
     private ImageView IVProfileChoose;
     private ImageView imageButton;
+    private Uri selectedImageUri = null;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -158,8 +163,39 @@ public class SignupFragment extends Fragment {
                 return;
             }
 
-            registerUser(email, firstName, lastName, phone, username, password);
+            if (selectedImageUri != null) {
+                // If an image is selected, upload it to Cloudinary
+                uploadImageToCloudinaryAndRegister(email, firstName, lastName, phone, username, password);
+            } else {
+                // If no image is selected, register the user with a null profile image
+                registerUser(email, firstName, lastName, phone, username, password, null);
+            }
+
         });
+    }
+
+    private void uploadImageToCloudinaryAndRegister(String email, String firstName, String lastName, String phone, String username, String password) {
+        try {
+            InputStream inputStream = requireContext().getContentResolver().openInputStream(selectedImageUri);
+            byte[] inputData = IOUtils.toByteArray(inputStream);
+
+            Cloudinary cloudinary = new Cloudinary(CloudinaryConfig.getCloudinaryConfig());
+
+            new Thread(() -> {
+                try {
+                    Map uploadResult = cloudinary.uploader().upload(inputData, ObjectUtils.emptyMap());
+                    String imageUrl = (String) uploadResult.get("secure_url");
+
+                    requireActivity().runOnUiThread(() -> registerUser(email, firstName, lastName, phone, username, password, imageUrl));
+                } catch (Exception e) {
+                    requireActivity().runOnUiThread(() ->
+                            Toast.makeText(requireContext(), "Image upload failed: " + e.getMessage(), Toast.LENGTH_LONG).show()
+                    );
+                }
+            }).start();
+        } catch (Exception e) {
+            Toast.makeText(requireContext(), "Error processing image: " + e.getMessage(), Toast.LENGTH_LONG).show();
+        }
     }
 
 
@@ -167,12 +203,12 @@ public class SignupFragment extends Fragment {
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         //get uri of the image
-        Uri uri = data.getData();
-        IVProfileChoose.setImageURI(uri);
-        //uploadImageToFirebase(uri);
+        selectedImageUri = data.getData();
+        IVProfileChoose.setImageURI(selectedImageUri);
     }
 
-    private void registerUser(String email, String firstName, String lastName, String phone, String username, String password) {
+
+    private void registerUser(String email, String firstName, String lastName, String phone, String username, String password, @Nullable String imageUrl) {
         // Register the user with Firebase Authentication
         mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(requireActivity(), task -> {
@@ -185,7 +221,7 @@ public class SignupFragment extends Fragment {
                                     .addOnCompleteListener(verificationTask -> {
                                         if (verificationTask.isSuccessful()) {
                                             // Email verification sent successfully, NOW store user data
-                                            storeUserData(firebaseUser.getUid(), email, firstName, lastName, phone, username);
+                                            storeUserData(firebaseUser.getUid(), email, firstName, lastName, phone, username, imageUrl);
 
                                             Toast.makeText(requireContext(), "Registration successful. Please check your email for verification.", Toast.LENGTH_LONG).show();
 
@@ -227,7 +263,7 @@ public class SignupFragment extends Fragment {
                 });
     }
 
-    private void storeUserData(String uid, String email, String firstName, String lastName, String phone, String username) {
+    private void storeUserData(String uid, String email, String firstName, String lastName, String phone, String username, @Nullable String imageUrl) {
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         //map user data
         Map<String, Object> user = new HashMap<>();
@@ -237,6 +273,7 @@ public class SignupFragment extends Fragment {
         user.put("lastName", lastName);
         user.put("phone", phone);
         user.put("username", username);
+        user.put("profileImage", imageUrl);
         user.put("totalDonate", 0);
         user.put("volunteerHours", 0);
         user.put("reportSubmitted", 0);

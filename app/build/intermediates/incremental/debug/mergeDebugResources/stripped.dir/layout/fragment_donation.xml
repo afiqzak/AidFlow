@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DonationFragment">
+
+    <LinearLayout
+        android:id="@+id/LLDonationTitle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="70dp"
+                android:layout_weight="1"
+
+                android:background="@drawable/donation_title">
+
+                <TextView
+                    android:id="@+id/TVDonationTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="3dp"
+                    android:text="Donate for the need"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <!--        <LinearLayout-->
+
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:orientation="horizontal"-->
+        <!--            android:layout_margin="30dp"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:background="@drawable/round_shape"-->
+
+        <!--            >-->
+
+        <!--            <TextView-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:layout_weight="1"-->
+        <!--                android:text="Donation for the need"-->
+        <!--                android:gravity="center_horizontal"-->
+        <!--                android:textAllCaps="true"-->
+        <!--                android:textColor="#000"-->
+        <!--                android:textSize="16sp"-->
+        <!--                android:textStyle="bold" />-->
+
+        <!--        </LinearLayout>-->
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <Button
+                android:id="@+id/Donation_button"
+                android:layout_width="95dp"
+                android:layout_height="33dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_button_donation"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="Donation"
+                android:textColor="#000"
+                android:textSize="11dp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/light_blue">
+
+            </Button>
+
+            <Button
+
+                android:id="@+id/History_button"
+                android:layout_width="95dp"
+                android:layout_height="33dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_button_donation"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="History"
+                android:textColor="#000"
+                android:textSize="11dp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/light_blue">
+
+            </Button>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/FCVDonation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_donatefilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:srcCompat="@drawable/filter_icon_putih"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:backgroundTint="@color/dark_blue" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:layout_marginRight="20dp"
+        app:backgroundTint="@color/white"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/filter_icon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
