@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.cloudinary:cloudinary-android-preprocess:3.0.2@aar" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/8.9/transforms/0b3ec2e8a0e4e927bdd21f6b21b78769/transformed/cloudinary-android-preprocess-3.0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/8.9/transforms/0b3ec2e8a0e4e927bdd21f6b21b78769/transformed/cloudinary-android-preprocess-3.0.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/8.9/transforms/0b3ec2e8a0e4e927bdd21f6b21b78769/transformed/cloudinary-android-preprocess-3.0.2/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.cloudinary/cloudinary-android-preprocess/3.0.2/2ae79db87f69667831d8bd13abd6a86f78af2815/cloudinary-android-preprocess-3.0.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.cloudinary/cloudinary-android-preprocess/3.0.2/413ef1f6181ceea78141e20406d7e58faa7c7181/cloudinary-android-preprocess-3.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

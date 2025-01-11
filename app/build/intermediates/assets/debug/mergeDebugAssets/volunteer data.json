@@ -1,0 +1,86 @@
+[
+  {
+    "eventTitle": "Beach Cleanup",
+    "location": "Pantai Klebang",
+    "date": "2024-03-10",
+    "numOfHours": 4,
+    "state": "Melaka",
+    "region": "Melaka",
+    "description": "Cleaning up the beach",
+    "numOfVolunteersNeeded": 20,
+    "numOfVolunteersApplied": 15,
+    "status": true
+  },
+  {
+    "eventTitle": "Tree Planting",
+    "location": "Taman Negara",
+    "date": "2024-03-17",
+    "numOfHours": 6,
+    "state": "Pahang",
+    "region": "Central Pahang",
+    "description": "Planting trees in the national park",
+    "numOfVolunteersNeeded": 30,
+    "numOfVolunteersApplied": 25,
+    "status": true
+  },
+  {
+    "eventTitle": "Food Distribution",
+    "location": "Kuala Lumpur City Centre",
+    "date": "2024-03-24",
+    "numOfHours": 3,
+    "state": "Selangor",
+    "region": "Klang Valley",
+    "description": "Distributing food to the homeless",
+    "numOfVolunteersNeeded": 50,
+    "numOfVolunteersApplied": 50,
+    "status": false
+  },
+  {
+    "eventTitle": "Community Garden",
+    "location": "Shah Alam",
+    "date": "2024-04-01",
+    "numOfHours": 5,
+    "state": "Selangor",
+    "region": "Klang Valley",
+    "description": "Maintaining a community garden",
+    "numOfVolunteersNeeded": 15,
+    "numOfVolunteersApplied": 10,
+    "status": true
+  },
+  {
+    "eventTitle": "River Cleanup",
+    "location": "Sungai Gombak",
+    "date": "2024-04-07",
+    "numOfHours": 4,
+    "state": "Selangor",
+    "region": "Sourthen Selangor",
+    "description": "Cleaning up the river",
+    "numOfVolunteersNeeded": 25,
+    "numOfVolunteersApplied": 20,
+    "status": true
+  },
+  {
+    "eventTitle": "Donation Drive",
+    "location": "Penang Island",
+    "date": "2024-04-14",
+    "numOfHours": 2,
+    "state": "Penang",
+    "region": "Penang Island",
+    "description": "Collecting donations for charity",
+    "numOfVolunteersNeeded": 40,
+    "numOfVolunteersApplied": 35,
+    "status": true
+  },
+  {
+    "eventTitle": "Elderly Care",
+    "location": "Ipoh",
+    "date": "2024-04-21",
+    "numOfHours": 4,
+    "state": "Perak",
+    "region": "Central Perak",
+    "description": "Spending time with elderly residents",
+    "numOfVolunteersNeeded": 10,
+    "numOfVolunteersApplied": 5,
+    "status": true
+  }
+]
