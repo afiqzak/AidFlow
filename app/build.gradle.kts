@@ -54,6 +54,8 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+    implementation("com.cloudinary:cloudinary-android:2.0.0")
+    implementation ("com.squareup.okhttp3:okhttp:4.9.0")
     implementation (libs.gson)
     implementation(platform("com.google.firebase:firebase-bom:33.7.0"))
     implementation ("com.google.android.gms:play-services-auth:20.5.0")

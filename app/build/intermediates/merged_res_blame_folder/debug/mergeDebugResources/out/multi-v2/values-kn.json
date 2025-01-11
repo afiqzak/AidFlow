@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.aidflow.app-mergeDebugResources-58:/values-kn/values-kn.xml",
+            "outputFile": "com.example.aidflow.app-mergeDebugResources-62:/values-kn/values-kn.xml",
             "map": [
                 {
                     "source": "C:\\Users\\afiqz\\.gradle\\caches\\8.9\\transforms\\8025aabf96763d23546be3f879820cd4\\transformed\\play-services-base-18.5.0\\res\\values-kn\\values.xml",

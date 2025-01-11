@@ -15,11 +15,11 @@ import java.util.List;
 public class WaterDoneAdapter extends RecyclerView.Adapter<WaterDoneAdapter.DoneViewHolder> {
 
     private Context context;
-    private List<String> doneTitles; // list utk project2 yg done
+    private List<WaterReport> doneReport;
 
-    public WaterDoneAdapter(Context context, List<String> doneTitles) {
+    public WaterDoneAdapter(Context context, List<WaterReport> doneReport) {
         this.context = context;
-        this.doneTitles = doneTitles;
+        this.doneReport = doneReport;
     }
 
     @NonNull
@@ -31,14 +31,14 @@ public class WaterDoneAdapter extends RecyclerView.Adapter<WaterDoneAdapter.Done
 
     @Override
     public int getItemCount() {
-        return doneTitles.size();
+        return doneReport.size();
     }
 
     @Override
     public void onBindViewHolder(@NonNull DoneViewHolder holder, int position) {
-        String title = doneTitles.get(position);
-        holder.doneTitle.setText(title);
-        holder.donePlace.setText("Place " + (position + 1)); // Example: Dynamically set the place
+        WaterReport done = doneReport.get(position);
+        holder.doneTitle.setText(done.getComplaint());
+        holder.donePlace.setText(done.getAddress()); // Example: Dynamically set the place
         holder.doneStarButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

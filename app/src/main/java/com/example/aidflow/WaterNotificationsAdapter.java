@@ -45,7 +45,7 @@ public class WaterNotificationsAdapter extends RecyclerView.Adapter<WaterNotific
 
         public NotificationsViewHolder(@NonNull View itemView) {
             super(itemView);
-            notiText = itemView.findViewById(R.id.noti_text);
+            notiText = itemView.findViewById(R.id.TVNoti);
         }
     }
 }

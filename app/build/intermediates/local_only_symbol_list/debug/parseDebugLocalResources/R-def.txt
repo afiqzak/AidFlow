@@ -204,6 +204,7 @@ id TVLName
 id TVLastName
 id TVMoneyCollected
 id TVNoAcc
+id TVNoti
 id TVPIC
 id TVPICDonation
 id TVPassRequi
@@ -289,7 +290,6 @@ id fab_donatefilter
 id fab_history
 id first_name
 id footerLayout
-id fragmentContainerNoti
 id fragmentContainerView
 id fragmentContainerViewNews
 id fragmentContainerViewStory
@@ -316,7 +316,6 @@ id newsDate
 id newsDesc
 id newsList
 id newsTitle
-id noti_text
 id noti_title
 id organizer_upcoming
 id paymentMethod_history

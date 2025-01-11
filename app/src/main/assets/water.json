@@ -1,0 +1,113 @@
+[
+  {
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "johndoe@example.com",
+    "phoneNum": "1234567890",
+    "address": "123 Main Street, City, Country",
+    "reportDate": "2023-10-27",
+    "doneDate": "2023-11-25",
+    "complaint": "Water supply interrupted for three days.",
+    "status": false
+  },
+  {
+    "firstName": "Jane",
+    "lastName": "Smith",
+    "email": "janesmith@example.com",
+    "phoneNum": "0987654321",
+    "address": "456 Side Street, City, Country",
+    "reportDate": "2023-12-01",
+    "doneDate": "2023-12-31",
+    "complaint": "Pipe leakage causing flooding in the backyard.",
+    "status": true
+  },
+  {
+    "firstName": "Alice",
+    "lastName": "Johnson",
+    "email": "alicejohnson@example.com",
+    "phoneNum": "1122334455",
+    "address": "789 Hill Road, City, Country",
+    "reportDate": "2023-11-15",
+    "doneDate": "2023-12-10",
+    "complaint": "No water pressure in the upper floors of the building.",
+    "status": false
+  },
+  {
+    "firstName": "Bob",
+    "lastName": "Williams",
+    "email": "bobwilliams@example.com",
+    "phoneNum": "2233445566",
+    "address": "101 Valley Lane, City, Country",
+    "reportDate": "2023-09-20",
+    "doneDate": "2023-10-05",
+    "complaint": "Contaminated water with a foul smell.",
+    "status": true
+  },
+  {
+    "firstName": "Cathy",
+    "lastName": "Brown",
+    "email": "cathybrown@example.com",
+    "phoneNum": "3344556677",
+    "address": "303 Elm Street, City, Country",
+    "reportDate": "2023-10-10",
+    "doneDate": "2023-10-30",
+    "complaint": "Broken water meter resulting in an overcharge.",
+    "status": true
+  },
+  {
+    "firstName": "David",
+    "lastName": "Taylor",
+    "email": "davidtaylor@example.com",
+    "phoneNum": "4455667788",
+    "address": "505 Oak Avenue, City, Country",
+    "reportDate": "2023-08-01",
+    "doneDate": "2023-08-20",
+    "complaint": "Rusty water from the tap in the kitchen.",
+    "status": false
+  },
+  {
+    "firstName": "Emma",
+    "lastName": "Moore",
+    "email": "emmamoore@example.com",
+    "phoneNum": "5566778899",
+    "address": "606 Birch Boulevard, City, Country",
+    "reportDate": "2023-11-25",
+    "doneDate": "2023-12-15",
+    "complaint": "Erratic water supply, with no water during peak hours.",
+    "status": true
+  },
+  {
+    "firstName": "Frank",
+    "lastName": "Clark",
+    "email": "frankclark@example.com",
+    "phoneNum": "6677889900",
+    "address": "707 Cedar Circle, City, Country",
+    "reportDate": "2023-09-12",
+    "doneDate": "2023-10-01",
+    "complaint": "Frequent pipeline bursts causing water loss.",
+    "status": false
+  },
+  {
+    "firstName": "Grace",
+    "lastName": "Lewis",
+    "email": "gracelewis@example.com",
+    "phoneNum": "7788990011",
+    "address": "808 Pine Drive, City, Country",
+    "reportDate": "2023-10-05",
+    "doneDate": "2023-10-25",
+    "complaint": "High levels of sedimentation in tap water.",
+    "status": true
+  },
+  {
+    "firstName": "Henry",
+    "lastName": "Walker",
+    "email": "henrywalker@example.com",
+    "phoneNum": "8899001122",
+    "address": "909 Maple Street, City, Country",
+    "reportDate": "2023-07-15",
+    "doneDate": "2023-08-05",
+    "complaint": "Water billing system glitch resulting in incorrect charges.",
+    "status": false
+  }
+]
+

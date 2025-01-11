@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //FireStoreHelper.addDataFromJsonToFirestore(this, "donation_payment", "donation data.json");
+        //FireStoreHelper.addDataFromJsonToFirestore(this, "report", "water.json");
         BottomNavigationView bottomNavMenu = findViewById(R.id.bottomNavigationView);
 
         NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.FragmentViewMain);

@@ -6,6 +6,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -15,6 +16,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,6 +36,9 @@ public class WaterRecycleViewPending extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    private RecyclerView recyclerView;
+    private WaterPendingAdapter adapter;
+    private WaterViewModel waterViewModel;
 
     public WaterRecycleViewPending() {
         // Required empty public constructor
@@ -66,141 +71,27 @@ public class WaterRecycleViewPending extends Fragment {
         }
     }
 
-    //ni method utk isi rating recycle view tu
-    //sama gak ni placeholder sementara je lu
-    private RecyclerView recyclerView;
-    private WaterPendingAdapter adapter;
-    private List<String> pendingTitles;
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_water_recycle_view_pending, container, false);
 
+        //get current user id
+        String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
+
         recyclerView = view.findViewById(R.id.recyclerViewPending);
 
-        // Sample data
-        pendingTitles = new ArrayList<>();
-        pendingTitles.add("Resolution Effectiveness");
-        pendingTitles.add("Service Quality");
-        pendingTitles.add("Delivery Time");
+        waterViewModel = new ViewModelProvider(this).get(WaterViewModel.class);
 
-        // takyah kacau
-        adapter = new WaterPendingAdapter(getContext(), pendingTitles);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        recyclerView.setAdapter(adapter);
+        waterViewModel.fetchPendingReport(userId);
+
+        waterViewModel.getPendingReport().observe(getViewLifecycleOwner(), pendingReport -> {
+            adapter = new WaterPendingAdapter(getContext(), pendingReport);
+            recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+            recyclerView.setAdapter(adapter);
+        });
 
         return view;
     }
 
-    public static class main_donation_Fragment extends Fragment {
-
-
-        @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                                 Bundle savedInstanceState) {
-            // Inflate the layout for this fragment
-
-
-            View view =  inflater.inflate(R.layout.fragment_donation, container, false);
-
-            Button history_button = view.findViewById(R.id.History_button);
-            Button donation_button = (Button) view.findViewById(R.id.Donation_button);
-            history_button.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-
-                    FloatingActionButton fab_donate;
-                    FloatingActionButton fab_history;
-                    donation_button.setAlpha(0.5F);
-                    history_button.setAlpha(1.0F);
-
-
-                    fab_donate = view.findViewById(R.id.fab_donatefilter);
-                    fab_history = view.findViewById(R.id.fab_history);
-
-                    // Make FAB2 visible, FAB1 invisible
-                    fab_donate.setVisibility(View.GONE);
-                    fab_history.setVisibility(View.VISIBLE);
-
-                    FragmentTransaction fr = requireActivity().getSupportFragmentManager().beginTransaction();
-                    fr.replace(R.id.FCVDonation,new DonationHistoryFragment());
-                    fr.addToBackStack(null);
-                    fr.commit();
-                }
-            });
-
-            FloatingActionButton fab = view.findViewById(R.id.fab_donatefilter);
-            fab.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    DonationDonateFilterFragment floatingLayout = new DonationDonateFilterFragment();
-                    floatingLayout.show(requireActivity().getSupportFragmentManager().beginTransaction(), "FloatingLayout");
-
-
-                }
-            });
-
-
-            donation_button.setOnClickListener(new View.OnClickListener() {
-
-                @Override
-                public void onClick(View v) {
-
-                    FloatingActionButton fab_donate;
-                    FloatingActionButton fab_history;
-                    history_button.setAlpha(0.5F);
-                    donation_button.setAlpha(1.0F);
-
-
-                    fab_donate = view.findViewById(R.id.fab_donatefilter);
-                    fab_history = view.findViewById(R.id.fab_history);
-
-                    // Make FAB2 visible, FAB1 invisible
-                    fab_history.setVisibility(View.GONE);
-                    fab_donate.setVisibility(View.VISIBLE);
-
-                    FragmentTransaction fr = requireActivity().getSupportFragmentManager().beginTransaction();
-                    fr.replace(R.id.FCVDonation,new DonationDonateFragment());
-                    fr.addToBackStack(null);
-                    fr.commit();
-                }
-            });
-
-            FloatingActionButton fab1 = view.findViewById(R.id.fab_history);
-            fab1.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    FragmentTransaction fr = requireActivity().getSupportFragmentManager().beginTransaction();
-                    fr.replace(R.id.FCVDonation,new DonationHistFilterFragment());
-                    fr.addToBackStack(null);
-                    fr.commit();            }
-            });
-
-
-            if (savedInstanceState == null) {
-                FragmentTransaction transaction = requireActivity().getSupportFragmentManager().beginTransaction();
-                transaction.replace(R.id.FCVDonation, new DonationDonateFragment());
-                transaction.commit();
-
-                FloatingActionButton fab_donate;
-                FloatingActionButton fab_history;
-                history_button.setAlpha(0.5F);
-                donation_button.setAlpha(1.0F);
-
-                fab_donate = view.findViewById(R.id.fab_donatefilter);
-                fab_history = view.findViewById(R.id.fab_history);
-
-                // Make FAB2 visible, FAB1 invisible
-                fab_donate.setVisibility(View.VISIBLE);
-                fab_history.setVisibility(View.GONE);
-
-            }
-
-            return view;
-        }
-
-
-
-    }
 }

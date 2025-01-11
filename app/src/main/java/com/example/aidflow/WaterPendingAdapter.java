@@ -13,11 +13,11 @@ import java.util.List;
 public class WaterPendingAdapter extends RecyclerView.Adapter<WaterPendingAdapter.PendingViewHolder> {
 
     private Context context;
-    private List<String> pendingTitles; // list pending projects
+    private List<WaterReport> reports; // list pending projects
 
-    public WaterPendingAdapter(Context context, List<String> ratingTitles) {
+    public WaterPendingAdapter(Context context, List<WaterReport> reports) {
         this.context = context;
-        this.pendingTitles = ratingTitles;
+        this.reports = reports;
     }
 
     @NonNull
@@ -29,15 +29,14 @@ public class WaterPendingAdapter extends RecyclerView.Adapter<WaterPendingAdapte
 
     @Override
     public int getItemCount() {
-        return pendingTitles.size();
+        return reports.size();
     }
 
     //onbind ni tak tau do semua sbb den yg buat saya copy je (tanya den)
     @Override
     public void onBindViewHolder(@NonNull PendingViewHolder holder, int position) {
-        String title = pendingTitles.get(position);
-        holder.pendingTitle.setText(title);
-        holder.pendingPlace.setText("Place " + (position + 1)); // Example: Dynamically set the place
+        holder.pendingTitle.setText(reports.get(position).getComplaint());
+        holder.pendingPlace.setText(reports.get(position).getAddress());
     }
 
 

@@ -5,12 +5,16 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -66,25 +70,27 @@ public class WaterRecycleViewDone extends Fragment {
     //sama gak ni placeholder sementara je lu
     private RecyclerView recyclerView;
     private WaterDoneAdapter adapter;
-    private List<String> pendingTitles;
+    private WaterViewModel waterViewModel;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_water_recycle_view_done, container, false);
 
+        //get current user id
+        String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
+
         recyclerView = view.findViewById(R.id.recyclerViewDone);
 
-        // ni tempat isi data for cards
-        pendingTitles = new ArrayList<>();
-        pendingTitles.add("Resolution Effectiveness");
-        pendingTitles.add("Service Quality");
-        pendingTitles.add("Delivery Time");
+        waterViewModel = new ViewModelProvider(this).get(WaterViewModel.class);
 
-        // ni utk adapter class java
-        adapter = new WaterDoneAdapter(getContext(), pendingTitles);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        recyclerView.setAdapter(adapter);
+        waterViewModel.fetchDoneReport(userId);
+
+        waterViewModel.getDoneReport().observe(getViewLifecycleOwner(), doneReport -> {
+            adapter = new WaterDoneAdapter(getContext(), doneReport);
+            recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+            recyclerView.setAdapter(adapter);
+        });
 
         return view;
     }

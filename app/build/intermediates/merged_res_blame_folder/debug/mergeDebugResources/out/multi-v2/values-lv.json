@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.aidflow.app-mergeDebugResources-58:/values-lv/values-lv.xml",
+            "outputFile": "com.example.aidflow.app-mergeDebugResources-62:/values-lv/values-lv.xml",
             "map": [
                 {
                     "source": "C:\\Users\\afiqz\\.gradle\\caches\\8.9\\transforms\\11ff87b693c2433cc71006a6f84988a4\\transformed\\core-1.13.0\\res\\values-lv\\values-lv.xml",

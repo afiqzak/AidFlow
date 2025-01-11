@@ -1,15 +1,20 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:2:1-40:12
+ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:2:1-42:12
 MERGED from [androidx.databinding:viewbinding:8.7.3] C:\Users\afiqz\.gradle\caches\8.9\transforms\40b07a0fa0648c70de782be7137564b8\transformed\viewbinding-8.7.3\AndroidManifest.xml:2:1-7:12
 MERGED from [com.mikhaellopez:circularprogressbar:3.1.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\8a0e9fa6b3e92a5c4fe5c64453ae6723\transformed\circularprogressbar-3.1.0\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.navigation:navigation-common:2.8.4] C:\Users\afiqz\.gradle\caches\8.9\transforms\c790c9738d6ae5189c835c4bfd11a38c\transformed\navigation-common-2.8.4\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-runtime:2.8.4] C:\Users\afiqz\.gradle\caches\8.9\transforms\0031f4a8da2cbb7f7204b19e284a9b6a\transformed\navigation-runtime-2.8.4\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-fragment:2.8.4] C:\Users\afiqz\.gradle\caches\8.9\transforms\e08d16e855c3784bd8dac105ca708867\transformed\navigation-fragment-2.8.4\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-ui:2.8.4] C:\Users\afiqz\.gradle\caches\8.9\transforms\cc35c64f1ec9837fbe92d9237506a8b0\transformed\navigation-ui-2.8.4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.cloudinary:cloudinary-android:2.0.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\36c493afd07f944da885a7f56693b633\transformed\cloudinary-android-2.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.cloudinary:cloudinary-android-ui:2.0.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\00834be2e67c24261058b857cea1f368\transformed\cloudinary-android-ui-2.0.0\AndroidManifest.xml:2:1-16:12
+MERGED from [com.cloudinary:cloudinary-android-preprocess:2.0.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\b2ed9ddce715e6004d159259433a22a2\transformed\cloudinary-android-preprocess-2.0.0\AndroidManifest.xml:2:1-11:12
+MERGED from [com.cloudinary:cloudinary-android-download:2.0.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\4d08767c517595a6fc4b88a3df27cf51\transformed\cloudinary-android-download-2.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.cloudinary:cloudinary-android-core:2.0.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\f72cd75cfc99270aa47cfd095c56c614\transformed\cloudinary-android-core-2.0.0\AndroidManifest.xml:2:1-13:12
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\f723914dd2a6c693af17419f3f4bb914\transformed\material-1.12.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\0c0241490035968c8fdad00fd04ef37b\transformed\constraintlayout-2.2.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.github.dhaval2404:imagepicker:2.1] C:\Users\afiqz\.gradle\caches\8.9\transforms\c6e738a0425bf2be80bdf71228780166\transformed\imagepicker-2.1\AndroidManifest.xml:2:1-42:12
@@ -38,6 +43,7 @@ MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] C:\Users\afiq
 MERGED from [com.google.android.gms:play-services-fido:20.1.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\f9faa2980a541afc13a6d7e20e2a9659\transformed\play-services-fido-20.1.0\AndroidManifest.xml:2:1-10:12
 MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\fb61a2b0657c6ced03d8daa686b4cd50\transformed\emoji2-views-helper-1.3.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\4529ed26e229acff27d2613e2b85a9b8\transformed\emoji2-1.3.0\AndroidManifest.xml:17:1-35:12
+MERGED from [com.linkedin.android.litr:litr:1.4.16] C:\Users\afiqz\.gradle\caches\8.9\transforms\a9916131cad6bf61c97ab945cded814f\transformed\litr-1.4.16\AndroidManifest.xml:7:1-16:12
 MERGED from [androidx.activity:activity-ktx:1.9.3] C:\Users\afiqz\.gradle\caches\8.9\transforms\079e29c026dc873b09248e6dc22d1e68\transformed\activity-ktx-1.9.3\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-measurement:22.1.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\4e1acccf4761737add0149bf06a35340\transformed\play-services-measurement-22.1.2\AndroidManifest.xml:17:1-46:12
 MERGED from [com.google.android.gms:play-services-measurement-sdk:22.1.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\78ce3bbb322d1ab39f7665bbc2c8029a\transformed\play-services-measurement-sdk-22.1.2\AndroidManifest.xml:17:1-25:12
@@ -64,6 +70,7 @@ MERGED from [androidx.loader:loader:1.0.0] C:\Users\afiqz\.gradle\caches\8.9\tra
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\9b7fdf519a65bf17d9dbecf1c5505022\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\9211690232afb6ff7d753414f251ae50\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.window:window:1.0.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\1f791427e44f59e304cb3a71077641db\transformed\window-1.0.0\AndroidManifest.xml:17:1-33:12
+MERGED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:2:1-65:12
 MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\afiqz\.gradle\caches\8.9\transforms\b208d97fc6723b8ec5359248dd06e76c\transformed\firebase-database-collection-18.0.1\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] C:\Users\afiqz\.gradle\caches\8.9\transforms\511f70e259bc47f5d8cf752992b40d67\transformed\play-services-auth-base-18.0.4\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-base:18.5.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\8025aabf96763d23546be3f879820cd4\transformed\play-services-base-18.5.0\AndroidManifest.xml:2:1-7:12
@@ -108,6 +115,21 @@ MERGED from [androidx.annotation:annotation-experimental:1.4.1] C:\Users\afiqz\.
 MERGED from [com.google.android.libraries.identity.googleid:googleid:1.1.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\e54965e235931aef88211439448e3dc2\transformed\googleid-1.1.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\86c640b5cd144367bab4ba911c73a556\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.play:core-common:2.0.3] C:\Users\afiqz\.gradle\caches\8.9\transforms\c560c885441857dccd242d542f05d816\transformed\core-common-2.0.3\AndroidManifest.xml:2:1-21:12
+MERGED from [com.facebook.fresco:fresco:2.6.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\6a77e25dacd27b5d9448bef4a8aea3a7\transformed\fresco-2.6.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:2.6.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\5ab92eb2251a1d6868af78502e2a421c\transformed\drawee-2.6.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagefilters:2.6.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\08bd18894a97e03ee9de97884f88fb26\transformed\nativeimagefilters-2.6.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:memory-type-native:2.6.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\f7a8a6288c4d3f0ca0d526495e9435cf\transformed\memory-type-native-2.6.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:memory-type-java:2.6.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\dd21528fe79060050976bcd01b2e126d\transformed\memory-type-java-2.6.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-native:2.6.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\a5207f69a9b46fe62284a7a10aec86d0\transformed\imagepipeline-native-2.6.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:memory-type-ashmem:2.6.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\244e2e8932be3de110e275e52e7e3b22\transformed\memory-type-ashmem-2.6.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:2.6.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\b658638a8f04dba2ea827b60abaa0e45\transformed\imagepipeline-2.6.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.6.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\e277766facb4e778c1959ec50fff68c9\transformed\nativeimagetranscoder-2.6.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:2.6.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\4127253ac7791323c22991d212539bfe\transformed\imagepipeline-base-2.6.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:soloader:2.6.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\45270043736205d104d533f3e71feb6a\transformed\soloader-2.6.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.10.1] C:\Users\afiqz\.gradle\caches\8.9\transforms\97c80498d709e024ad73ee5f0226cb30\transformed\soloader-0.10.1\AndroidManifest.xml:2:1-13:12
+MERGED from [com.facebook.fresco:middleware:2.6.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\af99e89335435512d92711948297bb26\transformed\middleware-2.6.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:ui-common:2.6.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\266baf1527644f29f5d2856f40988a60\transformed\ui-common-2.6.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:fbcore:2.6.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\3fb1b0b505fa2eb147f4d47da348a35f\transformed\fbcore-2.6.0\AndroidManifest.xml:2:1-9:12
 	package
 		INJECTED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml
 	android:versionName
@@ -124,6 +146,8 @@ ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidMani
 		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:5:22-62
 uses-permission#android.permission.INTERNET
 ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:7:5-67
+MERGED from [com.cloudinary:cloudinary-android-core:2.0.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\f72cd75cfc99270aa47cfd095c56c614\transformed\cloudinary-android-core-2.0.0\AndroidManifest.xml:9:5-67
+MERGED from [com.cloudinary:cloudinary-android-core:2.0.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\f72cd75cfc99270aa47cfd095c56c614\transformed\cloudinary-android-core-2.0.0\AndroidManifest.xml:9:5-67
 MERGED from [com.google.firebase:firebase-auth:23.1.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\b22cd01466c57c34106231537cb48f11\transformed\firebase-auth-23.1.0\AndroidManifest.xml:25:5-67
 MERGED from [com.google.firebase:firebase-auth:23.1.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\b22cd01466c57c34106231537cb48f11\transformed\firebase-auth-23.1.0\AndroidManifest.xml:25:5-67
 MERGED from [com.google.firebase:firebase-firestore:25.1.1] C:\Users\afiqz\.gradle\caches\8.9\transforms\7fd2afa322911ece02301ab481c1039c\transformed\firebase-firestore-25.1.1\AndroidManifest.xml:11:5-67
@@ -162,15 +186,25 @@ MERGED from [com.google.android.gms:play-services-measurement:22.1.2] C:\Users\a
 MERGED from [com.google.android.gms:play-services-measurement:22.1.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\4e1acccf4761737add0149bf06a35340\transformed\play-services-measurement-22.1.2\AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement-impl:22.1.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\20b3241f661833702307b86fcfddf744\transformed\play-services-measurement-impl-22.1.2\AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement-impl:22.1.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\20b3241f661833702307b86fcfddf744\transformed\play-services-measurement-impl-22.1.2\AndroidManifest.xml:24:5-79
+MERGED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:13:5-79
+MERGED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:13:5-79
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:22.1.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\d72b387d6a2f9b5b2eff2b8f5dca6803\transformed\play-services-measurement-sdk-api-22.1.2\AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:22.1.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\d72b387d6a2f9b5b2eff2b8f5dca6803\transformed\play-services-measurement-sdk-api-22.1.2\AndroidManifest.xml:24:5-79
 MERGED from [io.grpc:grpc-android:1.62.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ed28ff6f103161a6af7e85d3a051a5de\transformed\grpc-android-1.62.2\AndroidManifest.xml:7:5-79
 MERGED from [io.grpc:grpc-android:1.62.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ed28ff6f103161a6af7e85d3a051a5de\transformed\grpc-android-1.62.2\AndroidManifest.xml:7:5-79
 	android:name
 		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:8:22-76
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:9:5-79
+	android:name
+		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:9:22-77
 application
-ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:10:5-38:19
-INJECTED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:10:5-38:19
+ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:11:5-40:19
+INJECTED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:11:5-40:19
+MERGED from [com.cloudinary:cloudinary-android-ui:2.0.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\00834be2e67c24261058b857cea1f368\transformed\cloudinary-android-ui-2.0.0\AndroidManifest.xml:9:5-14:19
+MERGED from [com.cloudinary:cloudinary-android-ui:2.0.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\00834be2e67c24261058b857cea1f368\transformed\cloudinary-android-ui-2.0.0\AndroidManifest.xml:9:5-14:19
+MERGED from [com.cloudinary:cloudinary-android-core:2.0.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\f72cd75cfc99270aa47cfd095c56c614\transformed\cloudinary-android-core-2.0.0\AndroidManifest.xml:11:5-67
+MERGED from [com.cloudinary:cloudinary-android-core:2.0.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\f72cd75cfc99270aa47cfd095c56c614\transformed\cloudinary-android-core-2.0.0\AndroidManifest.xml:11:5-67
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\f723914dd2a6c693af17419f3f4bb914\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\f723914dd2a6c693af17419f3f4bb914\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\0c0241490035968c8fdad00fd04ef37b\transformed\constraintlayout-2.2.0\AndroidManifest.xml:7:5-20
@@ -207,6 +241,8 @@ MERGED from [com.google.android.gms:play-services-fido:20.1.0] C:\Users\afiqz\.g
 MERGED from [com.google.android.gms:play-services-fido:20.1.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\f9faa2980a541afc13a6d7e20e2a9659\transformed\play-services-fido-20.1.0\AndroidManifest.xml:7:5-8:19
 MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\4529ed26e229acff27d2613e2b85a9b8\transformed\emoji2-1.3.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\4529ed26e229acff27d2613e2b85a9b8\transformed\emoji2-1.3.0\AndroidManifest.xml:23:5-33:19
+MERGED from [com.linkedin.android.litr:litr:1.4.16] C:\Users\afiqz\.gradle\caches\8.9\transforms\a9916131cad6bf61c97ab945cded814f\transformed\litr-1.4.16\AndroidManifest.xml:14:5-20
+MERGED from [com.linkedin.android.litr:litr:1.4.16] C:\Users\afiqz\.gradle\caches\8.9\transforms\a9916131cad6bf61c97ab945cded814f\transformed\litr-1.4.16\AndroidManifest.xml:14:5-20
 MERGED from [com.google.android.gms:play-services-measurement:22.1.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\4e1acccf4761737add0149bf06a35340\transformed\play-services-measurement-22.1.2\AndroidManifest.xml:28:5-44:19
 MERGED from [com.google.android.gms:play-services-measurement:22.1.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\4e1acccf4761737add0149bf06a35340\transformed\play-services-measurement-22.1.2\AndroidManifest.xml:28:5-44:19
 MERGED from [com.google.android.gms:play-services-measurement-sdk:22.1.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\78ce3bbb322d1ab39f7665bbc2c8029a\transformed\play-services-measurement-sdk-22.1.2\AndroidManifest.xml:22:5-23:19
@@ -219,6 +255,8 @@ MERGED from [com.google.android.gms:play-services-stats:17.0.2] C:\Users\afiqz\.
 MERGED from [com.google.android.gms:play-services-stats:17.0.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\080d76f5531af5cad887cdd06e9d430e\transformed\play-services-stats-17.0.2\AndroidManifest.xml:7:5-20
 MERGED from [androidx.window:window:1.0.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\1f791427e44f59e304cb3a71077641db\transformed\window-1.0.0\AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.window:window:1.0.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\1f791427e44f59e304cb3a71077641db\transformed\window-1.0.0\AndroidManifest.xml:24:5-31:19
+MERGED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:16:5-63:19
+MERGED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:16:5-63:19
 MERGED from [com.google.android.gms:play-services-base:18.5.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\8025aabf96763d23546be3f879820cd4\transformed\play-services-base-18.5.0\AndroidManifest.xml:4:5-6:19
 MERGED from [com.google.android.gms:play-services-base:18.5.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\8025aabf96763d23546be3f879820cd4\transformed\play-services-base-18.5.0\AndroidManifest.xml:4:5-6:19
 MERGED from [androidx.core:core:1.13.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\11ff87b693c2433cc71006a6f84988a4\transformed\core-1.13.0\AndroidManifest.xml:28:5-89
@@ -243,56 +281,63 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\af
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\afiqz\.gradle\caches\8.9\transforms\cffd3bb7f6d4a1966c939ed8d9cc6937\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [com.google.android.play:core-common:2.0.3] C:\Users\afiqz\.gradle\caches\8.9\transforms\c560c885441857dccd242d542f05d816\transformed\core-common-2.0.3\AndroidManifest.xml:11:5-19:19
 MERGED from [com.google.android.play:core-common:2.0.3] C:\Users\afiqz\.gradle\caches\8.9\transforms\c560c885441857dccd242d542f05d816\transformed\core-common-2.0.3\AndroidManifest.xml:11:5-19:19
+MERGED from [com.facebook.soloader:soloader:0.10.1] C:\Users\afiqz\.gradle\caches\8.9\transforms\97c80498d709e024ad73ee5f0226cb30\transformed\soloader-0.10.1\AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.10.1] C:\Users\afiqz\.gradle\caches\8.9\transforms\97c80498d709e024ad73ee5f0226cb30\transformed\soloader-0.10.1\AndroidManifest.xml:11:5-20
 	android:extractNativeLibs
 		INJECTED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\11ff87b693c2433cc71006a6f84988a4\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:17:9-35
+		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:18:9-35
 	android:label
-		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:15:9-41
+		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:16:9-41
 	android:fullBackupContent
-		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:13:9-54
+		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:14:9-54
+		REJECTED from [com.cloudinary:cloudinary-android-core:2.0.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\f72cd75cfc99270aa47cfd095c56c614\transformed\cloudinary-android-core-2.0.0\AndroidManifest.xml:11:18-64
+	tools:ignore
+		ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:16:18-44
 	android:roundIcon
-		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:16:9-54
+		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:17:9-54
 	tools:targetApi
-		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:19:9-29
+		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:20:9-29
 	android:icon
-		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:14:9-43
+		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:15:9-43
 	android:allowBackup
-		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:11:9-35
+		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:12:9-35
 	android:theme
-		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:18:9-45
+		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:19:9-45
 	android:dataExtractionRules
-		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:12:9-65
+		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:13:9-65
+	tools:replace
+		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:21:9-50
 activity#com.example.aidflow.LoginSignupActivity
-ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:20:9-24:20
+ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:22:9-26:20
 	android:exported
-		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:22:13-37
+		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:24:13-37
 	android:name
-		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:21:13-48
+		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:23:13-48
 activity#com.example.aidflow.MainActivity
-ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:25:9-33:20
+ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:27:9-35:20
 	android:exported
-		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:27:13-36
+		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:29:13-36
 	android:name
-		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:26:13-41
+		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:28:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:28:13-32:29
+ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:30:13-34:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:29:17-69
+ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:31:17-69
 	android:name
-		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:29:25-66
+		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:31:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:31:17-77
+ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:33:17-77
 	android:name
-		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:31:27-74
+		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:33:27-74
 meta-data#preloaded_fonts
-ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:35:9-37:57
+ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:37:9-39:57
 	android:resource
-		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:37:13-54
+		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:39:13-54
 	android:name
-		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:36:13-43
+		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:38:13-43
 uses-sdk
 INJECTED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml
@@ -309,6 +354,16 @@ MERGED from [androidx.navigation:navigation-fragment:2.8.4] C:\Users\afiqz\.grad
 MERGED from [androidx.navigation:navigation-fragment:2.8.4] C:\Users\afiqz\.gradle\caches\8.9\transforms\e08d16e855c3784bd8dac105ca708867\transformed\navigation-fragment-2.8.4\AndroidManifest.xml:20:5-44
 MERGED from [androidx.navigation:navigation-ui:2.8.4] C:\Users\afiqz\.gradle\caches\8.9\transforms\cc35c64f1ec9837fbe92d9237506a8b0\transformed\navigation-ui-2.8.4\AndroidManifest.xml:20:5-44
 MERGED from [androidx.navigation:navigation-ui:2.8.4] C:\Users\afiqz\.gradle\caches\8.9\transforms\cc35c64f1ec9837fbe92d9237506a8b0\transformed\navigation-ui-2.8.4\AndroidManifest.xml:20:5-44
+MERGED from [com.cloudinary:cloudinary-android:2.0.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\36c493afd07f944da885a7f56693b633\transformed\cloudinary-android-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.cloudinary:cloudinary-android:2.0.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\36c493afd07f944da885a7f56693b633\transformed\cloudinary-android-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.cloudinary:cloudinary-android-ui:2.0.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\00834be2e67c24261058b857cea1f368\transformed\cloudinary-android-ui-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.cloudinary:cloudinary-android-ui:2.0.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\00834be2e67c24261058b857cea1f368\transformed\cloudinary-android-ui-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.cloudinary:cloudinary-android-preprocess:2.0.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\b2ed9ddce715e6004d159259433a22a2\transformed\cloudinary-android-preprocess-2.0.0\AndroidManifest.xml:6:5-9:61
+MERGED from [com.cloudinary:cloudinary-android-preprocess:2.0.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\b2ed9ddce715e6004d159259433a22a2\transformed\cloudinary-android-preprocess-2.0.0\AndroidManifest.xml:6:5-9:61
+MERGED from [com.cloudinary:cloudinary-android-download:2.0.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\4d08767c517595a6fc4b88a3df27cf51\transformed\cloudinary-android-download-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.cloudinary:cloudinary-android-download:2.0.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\4d08767c517595a6fc4b88a3df27cf51\transformed\cloudinary-android-download-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.cloudinary:cloudinary-android-core:2.0.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\f72cd75cfc99270aa47cfd095c56c614\transformed\cloudinary-android-core-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.cloudinary:cloudinary-android-core:2.0.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\f72cd75cfc99270aa47cfd095c56c614\transformed\cloudinary-android-core-2.0.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\f723914dd2a6c693af17419f3f4bb914\transformed\material-1.12.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\f723914dd2a6c693af17419f3f4bb914\transformed\material-1.12.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\0c0241490035968c8fdad00fd04ef37b\transformed\constraintlayout-2.2.0\AndroidManifest.xml:5:5-44
@@ -365,6 +420,8 @@ MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] C:\Users\afiqz\.gradle\c
 MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\fb61a2b0657c6ced03d8daa686b4cd50\transformed\emoji2-views-helper-1.3.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\4529ed26e229acff27d2613e2b85a9b8\transformed\emoji2-1.3.0\AndroidManifest.xml:21:5-44
 MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\4529ed26e229acff27d2613e2b85a9b8\transformed\emoji2-1.3.0\AndroidManifest.xml:21:5-44
+MERGED from [com.linkedin.android.litr:litr:1.4.16] C:\Users\afiqz\.gradle\caches\8.9\transforms\a9916131cad6bf61c97ab945cded814f\transformed\litr-1.4.16\AndroidManifest.xml:10:5-12:41
+MERGED from [com.linkedin.android.litr:litr:1.4.16] C:\Users\afiqz\.gradle\caches\8.9\transforms\a9916131cad6bf61c97ab945cded814f\transformed\litr-1.4.16\AndroidManifest.xml:10:5-12:41
 MERGED from [androidx.activity:activity-ktx:1.9.3] C:\Users\afiqz\.gradle\caches\8.9\transforms\079e29c026dc873b09248e6dc22d1e68\transformed\activity-ktx-1.9.3\AndroidManifest.xml:5:5-44
 MERGED from [androidx.activity:activity-ktx:1.9.3] C:\Users\afiqz\.gradle\caches\8.9\transforms\079e29c026dc873b09248e6dc22d1e68\transformed\activity-ktx-1.9.3\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-measurement:22.1.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\4e1acccf4761737add0149bf06a35340\transformed\play-services-measurement-22.1.2\AndroidManifest.xml:20:5-44
@@ -417,6 +474,8 @@ MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\af
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\9211690232afb6ff7d753414f251ae50\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.window:window:1.0.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\1f791427e44f59e304cb3a71077641db\transformed\window-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.window:window:1.0.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\1f791427e44f59e304cb3a71077641db\transformed\window-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:8:5-10:41
+MERGED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:8:5-10:41
 MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\afiqz\.gradle\caches\8.9\transforms\b208d97fc6723b8ec5359248dd06e76c\transformed\firebase-database-collection-18.0.1\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\afiqz\.gradle\caches\8.9\transforms\b208d97fc6723b8ec5359248dd06e76c\transformed\firebase-database-collection-18.0.1\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] C:\Users\afiqz\.gradle\caches\8.9\transforms\511f70e259bc47f5d8cf752992b40d67\transformed\play-services-auth-base-18.0.4\AndroidManifest.xml:5:5-44
@@ -505,12 +564,50 @@ MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\afi
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\86c640b5cd144367bab4ba911c73a556\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android.play:core-common:2.0.3] C:\Users\afiqz\.gradle\caches\8.9\transforms\c560c885441857dccd242d542f05d816\transformed\core-common-2.0.3\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android.play:core-common:2.0.3] C:\Users\afiqz\.gradle\caches\8.9\transforms\c560c885441857dccd242d542f05d816\transformed\core-common-2.0.3\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.fresco:fresco:2.6.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\6a77e25dacd27b5d9448bef4a8aea3a7\transformed\fresco-2.6.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:2.6.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\6a77e25dacd27b5d9448bef4a8aea3a7\transformed\fresco-2.6.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.6.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\5ab92eb2251a1d6868af78502e2a421c\transformed\drawee-2.6.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.6.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\5ab92eb2251a1d6868af78502e2a421c\transformed\drawee-2.6.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.6.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\08bd18894a97e03ee9de97884f88fb26\transformed\nativeimagefilters-2.6.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.6.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\08bd18894a97e03ee9de97884f88fb26\transformed\nativeimagefilters-2.6.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-native:2.6.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\f7a8a6288c4d3f0ca0d526495e9435cf\transformed\memory-type-native-2.6.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-native:2.6.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\f7a8a6288c4d3f0ca0d526495e9435cf\transformed\memory-type-native-2.6.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-java:2.6.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\dd21528fe79060050976bcd01b2e126d\transformed\memory-type-java-2.6.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-java:2.6.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\dd21528fe79060050976bcd01b2e126d\transformed\memory-type-java-2.6.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-native:2.6.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\a5207f69a9b46fe62284a7a10aec86d0\transformed\imagepipeline-native-2.6.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-native:2.6.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\a5207f69a9b46fe62284a7a10aec86d0\transformed\imagepipeline-native-2.6.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-ashmem:2.6.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\244e2e8932be3de110e275e52e7e3b22\transformed\memory-type-ashmem-2.6.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-ashmem:2.6.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\244e2e8932be3de110e275e52e7e3b22\transformed\memory-type-ashmem-2.6.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.6.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\b658638a8f04dba2ea827b60abaa0e45\transformed\imagepipeline-2.6.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.6.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\b658638a8f04dba2ea827b60abaa0e45\transformed\imagepipeline-2.6.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.6.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\e277766facb4e778c1959ec50fff68c9\transformed\nativeimagetranscoder-2.6.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.6.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\e277766facb4e778c1959ec50fff68c9\transformed\nativeimagetranscoder-2.6.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.6.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\4127253ac7791323c22991d212539bfe\transformed\imagepipeline-base-2.6.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.6.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\4127253ac7791323c22991d212539bfe\transformed\imagepipeline-base-2.6.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:soloader:2.6.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\45270043736205d104d533f3e71feb6a\transformed\soloader-2.6.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:soloader:2.6.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\45270043736205d104d533f3e71feb6a\transformed\soloader-2.6.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.10.1] C:\Users\afiqz\.gradle\caches\8.9\transforms\97c80498d709e024ad73ee5f0226cb30\transformed\soloader-0.10.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.10.1] C:\Users\afiqz\.gradle\caches\8.9\transforms\97c80498d709e024ad73ee5f0226cb30\transformed\soloader-0.10.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.fresco:middleware:2.6.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\af99e89335435512d92711948297bb26\transformed\middleware-2.6.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:middleware:2.6.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\af99e89335435512d92711948297bb26\transformed\middleware-2.6.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:ui-common:2.6.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\266baf1527644f29f5d2856f40988a60\transformed\ui-common-2.6.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:ui-common:2.6.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\266baf1527644f29f5d2856f40988a60\transformed\ui-common-2.6.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.6.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\3fb1b0b505fa2eb147f4d47da348a35f\transformed\fbcore-2.6.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.6.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\3fb1b0b505fa2eb147f4d47da348a35f\transformed\fbcore-2.6.0\AndroidManifest.xml:5:5-7:41
 	tools:overrideLibrary
-		ADDED from [com.google.firebase:firebase-auth:23.1.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\b22cd01466c57c34106231537cb48f11\transformed\firebase-auth-23.1.0\AndroidManifest.xml:23:9-148
+		ADDED from [com.cloudinary:cloudinary-android-preprocess:2.0.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\b2ed9ddce715e6004d159259433a22a2\transformed\cloudinary-android-preprocess-2.0.0\AndroidManifest.xml:9:9-58
 	android:targetSdkVersion
 		INJECTED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml
+activity#com.cloudinary.android.uploadwidget.ui.UploadWidgetActivity
+ADDED from [com.cloudinary:cloudinary-android-ui:2.0.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\00834be2e67c24261058b857cea1f368\transformed\cloudinary-android-ui-2.0.0\AndroidManifest.xml:10:9-13:56
+	android:configChanges
+		ADDED from [com.cloudinary:cloudinary-android-ui:2.0.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\00834be2e67c24261058b857cea1f368\transformed\cloudinary-android-ui-2.0.0\AndroidManifest.xml:12:13-48
+	android:theme
+		ADDED from [com.cloudinary:cloudinary-android-ui:2.0.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\00834be2e67c24261058b857cea1f368\transformed\cloudinary-android-ui-2.0.0\AndroidManifest.xml:13:13-53
+	android:name
+		ADDED from [com.cloudinary:cloudinary-android-ui:2.0.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\00834be2e67c24261058b857cea1f368\transformed\cloudinary-android-ui-2.0.0\AndroidManifest.xml:11:13-87
 queries
 ADDED from [com.github.dhaval2404:imagepicker:2.1] C:\Users\afiqz\.gradle\caches\8.9\transforms\c6e738a0425bf2be80bdf71228780166\transformed\imagepicker-2.1\AndroidManifest.xml:9:5-19:15
 intent#action:name:android.media.action.IMAGE_CAPTURE
@@ -717,6 +814,8 @@ MERGED from [com.google.android.gms:play-services-measurement:22.1.2] C:\Users\a
 MERGED from [com.google.android.gms:play-services-measurement:22.1.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\4e1acccf4761737add0149bf06a35340\transformed\play-services-measurement-22.1.2\AndroidManifest.xml:25:5-68
 MERGED from [com.google.android.gms:play-services-measurement-impl:22.1.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\20b3241f661833702307b86fcfddf744\transformed\play-services-measurement-impl-22.1.2\AndroidManifest.xml:25:5-68
 MERGED from [com.google.android.gms:play-services-measurement-impl:22.1.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\20b3241f661833702307b86fcfddf744\transformed\play-services-measurement-impl-22.1.2\AndroidManifest.xml:25:5-68
+MERGED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:12:5-68
+MERGED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:12:5-68
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:22.1.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\d72b387d6a2f9b5b2eff2b8f5dca6803\transformed\play-services-measurement-sdk-api-22.1.2\AndroidManifest.xml:25:5-68
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:22.1.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\d72b387d6a2f9b5b2eff2b8f5dca6803\transformed\play-services-measurement-sdk-api-22.1.2\AndroidManifest.xml:25:5-68
 	android:name
@@ -863,6 +962,96 @@ ADDED from [androidx.window:window:1.0.0] C:\Users\afiqz\.gradle\caches\8.9\tran
 		ADDED from [androidx.window:window:1.0.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\1f791427e44f59e304cb3a71077641db\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
 	android:name
 		ADDED from [androidx.window:window:1.0.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\1f791427e44f59e304cb3a71077641db\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:14:5-81
+	android:name
+		ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:14:22-78
+service#com.evernote.android.job.v21.PlatformJobService
+ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:17:9-20:72
+	android:exported
+		ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:19:13-37
+	android:permission
+		ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:20:13-69
+	android:name
+		ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:18:13-75
+service#com.evernote.android.job.v14.PlatformAlarmService
+ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:21:9-24:72
+	android:exported
+		ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:23:13-37
+	android:permission
+		ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:24:13-69
+	android:name
+		ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:22:13-77
+service#com.evernote.android.job.v14.PlatformAlarmServiceExact
+ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:25:9-27:40
+	android:exported
+		ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:26:13-82
+receiver#com.evernote.android.job.v14.PlatformAlarmReceiver
+ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:29:9-38:20
+	android:exported
+		ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:31:13-37
+	android:name
+		ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:30:13-78
+intent-filter#action:name:com.evernote.android.job.v14.RUN_JOB+action:name:net.vrallev.android.job.v14.RUN_JOB
+ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:32:13-37:29
+action#com.evernote.android.job.v14.RUN_JOB
+ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:35:17-79
+	android:name
+		ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:35:25-76
+action#net.vrallev.android.job.v14.RUN_JOB
+ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:36:17-78
+	android:name
+		ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:36:25-75
+receiver#com.evernote.android.job.JobBootReceiver
+ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:39:9-48:20
+	android:exported
+		ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:41:13-37
+	android:name
+		ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:40:13-68
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.MY_PACKAGE_REPLACED+action:name:android.intent.action.QUICKBOOT_POWERON+action:name:com.htc.intent.action.QUICKBOOT_POWERON
+ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:42:13-47:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:43:17-79
+	android:name
+		ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:43:25-76
+action#android.intent.action.QUICKBOOT_POWERON
+ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:44:17-82
+	android:name
+		ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:44:25-79
+action#com.htc.intent.action.QUICKBOOT_POWERON
+ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:45:17-82
+	android:name
+		ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:45:25-79
+action#android.intent.action.MY_PACKAGE_REPLACED
+ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:46:17-84
+	android:name
+		ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:46:25-81
+service#com.evernote.android.job.gcm.PlatformGcmService
+ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:50:9-58:19
+	android:enabled
+		ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:52:13-36
+	android:exported
+		ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:53:13-36
+	android:permission
+		ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:54:13-93
+	android:name
+		ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:51:13-75
+intent-filter#action:name:com.google.android.gms.gcm.ACTION_TASK_READY
+ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:55:13-57:29
+action#com.google.android.gms.gcm.ACTION_TASK_READY
+ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:56:17-87
+	android:name
+		ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:56:25-84
+service#com.evernote.android.job.JobRescheduleService
+ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:59:9-62:72
+	android:exported
+		ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:61:13-37
+	android:permission
+		ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:62:13-69
+	android:name
+		ADDED from [com.evernote:android-job:1.4.2] C:\Users\afiqz\.gradle\caches\8.9\transforms\ab0f5fdd5290a3339e6c8f0622b5a4e0\transformed\android-job-1.4.2\AndroidManifest.xml:60:13-73
 activity#com.google.android.gms.common.api.GoogleApiActivity
 ADDED from [com.google.android.gms:play-services-base:18.5.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\8025aabf96763d23546be3f879820cd4\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:9-173
 	android:exported

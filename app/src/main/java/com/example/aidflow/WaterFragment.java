@@ -5,6 +5,7 @@ import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
@@ -12,6 +13,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.RadioGroup;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -21,6 +24,8 @@ import android.widget.RadioGroup;
 
 public class WaterFragment extends Fragment {
 
+    private RadioGroup toggleGroup; //radiogroup ni yg toggle pending ke done project
+    private WaterViewModel waterViewModel;
     // Parameters
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
@@ -57,13 +62,18 @@ public class WaterFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_water, container, false);
     }
 
-
-    private RadioGroup toggleGroup; //radiogroup ni yg toggle pending ke done project
-
     //ni method tekan2 butang semua
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        //get current user id
+        String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
+
+        waterViewModel = new ViewModelProvider(this).get(WaterViewModel.class);
+
+        waterViewModel.fetchDoneReport(userId);
+        waterViewModel.fetchPendingReport(userId);
 
         // gi report fragment
         Button btnReport = view.findViewById(R.id.reportbutton);

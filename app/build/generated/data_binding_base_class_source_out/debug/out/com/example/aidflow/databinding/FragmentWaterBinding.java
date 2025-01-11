@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -28,13 +29,16 @@ public final class FragmentWaterBinding implements ViewBinding {
   public final RelativeLayout PageFragment;
 
   @NonNull
+  public final TextView TVNoti;
+
+  @NonNull
   public final RadioButton doneProjects;
 
   @NonNull
-  public final FragmentContainerView fragmentContainerNoti;
+  public final FragmentContainerView fragmentContainerView;
 
   @NonNull
-  public final FragmentContainerView fragmentContainerView;
+  public final TextView notiTitle;
 
   @NonNull
   public final RadioButton pendingProjects;
@@ -49,16 +53,17 @@ public final class FragmentWaterBinding implements ViewBinding {
   public final ImageView waterQualityImage;
 
   private FragmentWaterBinding(@NonNull ConstraintLayout rootView,
-      @NonNull RelativeLayout PageFragment, @NonNull RadioButton doneProjects,
-      @NonNull FragmentContainerView fragmentContainerNoti,
-      @NonNull FragmentContainerView fragmentContainerView, @NonNull RadioButton pendingProjects,
+      @NonNull RelativeLayout PageFragment, @NonNull TextView TVNoti,
+      @NonNull RadioButton doneProjects, @NonNull FragmentContainerView fragmentContainerView,
+      @NonNull TextView notiTitle, @NonNull RadioButton pendingProjects,
       @NonNull Button reportbutton, @NonNull RadioGroup toggle,
       @NonNull ImageView waterQualityImage) {
     this.rootView = rootView;
     this.PageFragment = PageFragment;
+    this.TVNoti = TVNoti;
     this.doneProjects = doneProjects;
-    this.fragmentContainerNoti = fragmentContainerNoti;
     this.fragmentContainerView = fragmentContainerView;
+    this.notiTitle = notiTitle;
     this.pendingProjects = pendingProjects;
     this.reportbutton = reportbutton;
     this.toggle = toggle;
@@ -98,21 +103,27 @@ public final class FragmentWaterBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.TVNoti;
+      TextView TVNoti = ViewBindings.findChildViewById(rootView, id);
+      if (TVNoti == null) {
+        break missingId;
+      }
+
       id = R.id.done_projects;
       RadioButton doneProjects = ViewBindings.findChildViewById(rootView, id);
       if (doneProjects == null) {
         break missingId;
       }
 
-      id = R.id.fragmentContainerNoti;
-      FragmentContainerView fragmentContainerNoti = ViewBindings.findChildViewById(rootView, id);
-      if (fragmentContainerNoti == null) {
-        break missingId;
-      }
-
       id = R.id.fragmentContainerView;
       FragmentContainerView fragmentContainerView = ViewBindings.findChildViewById(rootView, id);
       if (fragmentContainerView == null) {
+        break missingId;
+      }
+
+      id = R.id.noti_title;
+      TextView notiTitle = ViewBindings.findChildViewById(rootView, id);
+      if (notiTitle == null) {
         break missingId;
       }
 
@@ -140,8 +151,8 @@ public final class FragmentWaterBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentWaterBinding((ConstraintLayout) rootView, PageFragment, doneProjects,
-          fragmentContainerNoti, fragmentContainerView, pendingProjects, reportbutton, toggle,
+      return new FragmentWaterBinding((ConstraintLayout) rootView, PageFragment, TVNoti,
+          doneProjects, fragmentContainerView, notiTitle, pendingProjects, reportbutton, toggle,
           waterQualityImage);
     }
     String missingId = rootView.getResources().getResourceName(id);
