@@ -20,15 +20,15 @@ public final class SingleWaterNotiCardBinding implements ViewBinding {
   private final CardView rootView;
 
   @NonNull
-  public final TextView notiText;
+  public final TextView TVNoti;
 
   @NonNull
   public final TextView notiTitle;
 
-  private SingleWaterNotiCardBinding(@NonNull CardView rootView, @NonNull TextView notiText,
+  private SingleWaterNotiCardBinding(@NonNull CardView rootView, @NonNull TextView TVNoti,
       @NonNull TextView notiTitle) {
     this.rootView = rootView;
-    this.notiText = notiText;
+    this.TVNoti = TVNoti;
     this.notiTitle = notiTitle;
   }
 
@@ -59,9 +59,9 @@ public final class SingleWaterNotiCardBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.noti_text;
-      TextView notiText = ViewBindings.findChildViewById(rootView, id);
-      if (notiText == null) {
+      id = R.id.TVNoti;
+      TextView TVNoti = ViewBindings.findChildViewById(rootView, id);
+      if (TVNoti == null) {
         break missingId;
       }
 
@@ -71,7 +71,7 @@ public final class SingleWaterNotiCardBinding implements ViewBinding {
         break missingId;
       }
 
-      return new SingleWaterNotiCardBinding((CardView) rootView, notiText, notiTitle);
+      return new SingleWaterNotiCardBinding((CardView) rootView, TVNoti, notiTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

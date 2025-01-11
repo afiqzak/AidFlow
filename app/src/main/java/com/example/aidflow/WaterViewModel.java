@@ -62,6 +62,7 @@ public class WaterViewModel extends ViewModel {
         db.collection("report")
                 .whereEqualTo("status", true)
                 .whereEqualTo("userID", userID)
+                .whereEqualTo("rate", false)
                 .orderBy("doneDate", Query.Direction.DESCENDING)
                 .get()
                 .addOnSuccessListener(querySnapshot -> {
@@ -75,7 +76,7 @@ public class WaterViewModel extends ViewModel {
                     }
 
                     // Update LiveData on the main thread
-                    pendingReport.postValue(allPending);
+                    doneReport.postValue(allPending);
 
                     Log.d("Firestore", "done report available: " + allPending.size());
                 })
