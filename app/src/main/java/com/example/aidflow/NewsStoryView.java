@@ -1,16 +1,16 @@
 package com.example.aidflow;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -64,27 +64,30 @@ public class NewsStoryView extends Fragment {
 
     private RecyclerView recyclerView;
     private NewsStoryAdapter adapter;
-    private List<Integer> storyImages;
+    private NewsStoryViewModel storyViewModel;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_news_story_view, container, false);
+        return view;
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
 
         recyclerView = view.findViewById(R.id.storyList);
 
-        // Sample data
-        storyImages = new ArrayList<>();
-        storyImages.add(R.drawable.story1);
-        storyImages.add(R.drawable.story2);
-        storyImages.add(R.drawable.story3);
+        storyViewModel = new ViewModelProvider(requireActivity()).get(NewsStoryViewModel.class);
 
+        storyViewModel.getStoryList().observe(getViewLifecycleOwner(), stories -> {
+            adapter = new NewsStoryAdapter(getContext(), stories);
+            recyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
+            recyclerView.setAdapter(adapter);
+                });
 
         // takyah kacau
-        adapter = new NewsStoryAdapter(getContext(), storyImages);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
-        recyclerView.setAdapter(adapter);
 
-        return view;
     }
 }

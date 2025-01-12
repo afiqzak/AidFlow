@@ -4,6 +4,7 @@ package com.example.aidflow.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -26,13 +27,17 @@ public final class SingleNewsCardBinding implements ViewBinding {
   public final TextView newsDesc;
 
   @NonNull
+  public final ImageView newsImageCard;
+
+  @NonNull
   public final TextView newsTitle;
 
   private SingleNewsCardBinding(@NonNull CardView rootView, @NonNull TextView newsDate,
-      @NonNull TextView newsDesc, @NonNull TextView newsTitle) {
+      @NonNull TextView newsDesc, @NonNull ImageView newsImageCard, @NonNull TextView newsTitle) {
     this.rootView = rootView;
     this.newsDate = newsDate;
     this.newsDesc = newsDesc;
+    this.newsImageCard = newsImageCard;
     this.newsTitle = newsTitle;
   }
 
@@ -75,13 +80,20 @@ public final class SingleNewsCardBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.newsImageCard;
+      ImageView newsImageCard = ViewBindings.findChildViewById(rootView, id);
+      if (newsImageCard == null) {
+        break missingId;
+      }
+
       id = R.id.newsTitle;
       TextView newsTitle = ViewBindings.findChildViewById(rootView, id);
       if (newsTitle == null) {
         break missingId;
       }
 
-      return new SingleNewsCardBinding((CardView) rootView, newsDate, newsDesc, newsTitle);
+      return new SingleNewsCardBinding((CardView) rootView, newsDate, newsDesc, newsImageCard,
+          newsTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

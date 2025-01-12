@@ -1,3 +1,0 @@
-com.example.aidflow.test
-style WhiteBackgroundDialogTheme
-style WhiteBackgroundTheme

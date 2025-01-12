@@ -50,7 +50,7 @@ public class WaterRecycleViewPending extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment RecycleViewPending.
+     * @return A new instance of fragment WaterRecycleViewPending.
      */
     // TODO: Rename and change types and number of parameters
     public static WaterRecycleViewPending newInstance(String param1, String param2) {

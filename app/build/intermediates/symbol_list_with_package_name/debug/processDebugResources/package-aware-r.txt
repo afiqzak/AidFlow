@@ -3523,6 +3523,7 @@ id IVBack
 id IVBadge
 id IVBadgeV
 id IVMoney
+id IVNewsFull
 id IVProfile
 id IVRating
 id IVReport
@@ -3593,6 +3594,7 @@ id TVHistoryDate
 id TVLName
 id TVLastName
 id TVMoneyCollected
+id TVNewsDesc
 id TVNoAcc
 id TVNoti
 id TVPIC
@@ -3601,11 +3603,13 @@ id TVPassRequi
 id TVPassword
 id TVPayMehtod
 id TVPhone
+id TVPublisherName
 id TVRequirement
 id TVService
 id TVTime
 id TVTitle
 id TVTitleDonForm
+id TVTitleNews
 id TVToggle
 id TVTotDonate
 id TVTotReport
@@ -3907,6 +3911,7 @@ id frost
 id fullscreen_header
 id ghost_view
 id ghost_view_holder
+id glide_custom_view_target_tag
 id gone
 id graph
 id graph_wrap
@@ -3945,6 +3950,7 @@ id indeterminate
 id info
 id invisible
 id inward
+id is_pooling_container_tag
 id italic
 id item_touch_helper_previous_elevation
 id jumpToEnd
@@ -4053,6 +4059,7 @@ id neverCompleteToStart
 id newsButton
 id newsDate
 id newsDesc
+id newsImageCard
 id newsList
 id newsTitle
 id noScroll
@@ -4102,6 +4109,7 @@ id pending_title
 id percent
 id phone_number
 id pin
+id pooling_container_listener_holder_tag
 id position
 id postLayout
 id pressed
@@ -4243,14 +4251,11 @@ id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
 id text
 id text2
-id textDesc
 id textEnd
 id textLayout
-id textPost
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
-id textTitle
 id textTop
 id textView
 id textView2

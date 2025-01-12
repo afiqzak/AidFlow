@@ -22,8 +22,6 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
 public class NewsCamFragment extends Fragment {
-
-
     private ImageButton cameraButton;
     private ImageView capturedImageView;
 

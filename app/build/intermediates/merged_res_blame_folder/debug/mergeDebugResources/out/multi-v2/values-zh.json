@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.aidflow.app-mergeDebugResources-62:/values-zh/values-zh.xml",
+            "outputFile": "com.example.aidflow.app-mergeDebugResources-64:/values-zh/values-zh.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Asus\\.gradle\\caches\\8.9\\transforms\\467c34a99a2a46f91ef2f4eff487fe6f\\transformed\\ucrop-2.2.6\\res\\values-zh\\values-zh.xml",
+                    "source": "C:\\Users\\Asus\\.gradle\\caches\\8.9\\transforms\\c63c37bbcc97b0aa461e83abda3cf49d\\transformed\\ucrop-2.2.6\\res\\values-zh\\values-zh.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",

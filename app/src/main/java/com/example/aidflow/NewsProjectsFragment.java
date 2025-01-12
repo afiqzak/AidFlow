@@ -8,12 +8,20 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.Query;
+
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -64,8 +72,8 @@ public class NewsProjectsFragment extends Fragment {
 
     private RecyclerView recyclerView;
     private NewsProjectsAdapter adapter;
-    private List<String> projectTitles, projectDesc, projectDate;
-    private List<Integer> projectImages;
+    private ArrayList<NewsProjects> projectsList;
+    private FirebaseFirestore db;
 
     @Nullable
     @Override
@@ -73,39 +81,76 @@ public class NewsProjectsFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_news_projects, container, false);
 
         recyclerView = view.findViewById(R.id.projectList);
-
-        // Sample data
-        projectTitles = new ArrayList<>();
-        projectTitles.add("Project 1");
-        projectTitles.add("Project 2");
-        projectTitles.add("Project 3");
-        projectTitles.add("Project 4");
-
-
-        projectDesc = new ArrayList<>();
-        projectDesc.add("Description 1");
-        projectDesc.add("Description 2");
-        projectDesc.add("Description 3");
-        projectDesc.add("Description 4");
-
-        projectDate = new ArrayList<>();
-        projectDate.add("March 7 - March 10");
-        projectDate.add("March 7 - March 10");
-        projectDate.add("March 7 - March 10");
-        projectDate.add("March 7 - March 10");
-
-        projectImages = new ArrayList<>();
-        projectImages.add(R.drawable.story1);
-        projectImages.add(R.drawable.story2);
-        projectImages.add(R.drawable.story3);
-        projectImages.add(R.drawable.story1);
-
-
-        // takyah kacau
-        adapter = new NewsProjectsAdapter(getContext(), projectTitles, projectDesc, projectDate, projectImages);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        recyclerView.setAdapter(adapter);
+
+        projectsList = new ArrayList<NewsProjects>();
+
+        db = FirebaseFirestore.getInstance();
+
+        fetchProjects();
 
         return view;
     }
+
+    private void fetchProjects() {
+        Query query = db.collection("projects");
+
+        query.get()
+                .addOnSuccessListener(queryDocumentSnapshots -> {
+                    if (queryDocumentSnapshots != null) {
+                        projectsList.clear();
+
+                        for (DocumentSnapshot document : queryDocumentSnapshots) {
+                            NewsProjects projects = retrieveFromDB(document);
+                            projectsList.add(projects);
+
+                        }
+                        updateRecyclerView();
+                    }
+                })
+                .addOnFailureListener(e -> {
+                    Log.e("ProjectsFragment", "Error fetching projects data", e);
+                    Toast.makeText(getContext(), "Error fetching data: " + e.getMessage(), Toast.LENGTH_SHORT).show();
+                });
+
+    }
+
+    private void updateRecyclerView() {
+        if (adapter == null) {
+            adapter = new NewsProjectsAdapter(projectsList, getContext());
+            recyclerView.setAdapter(adapter);
+        } else {
+            adapter.notifyDataSetChanged();
+        }
+    }
+
+    private NewsProjects retrieveFromDB(DocumentSnapshot document) {
+        String projectsName = document.get("projectsName", String.class);
+        String projectsDesc = document.get("projectsDesc", String.class);
+        String projectsGoal = document.get("projectsGoals", String.class);
+        String imageUrl = document.get("imageUrl", String.class);
+
+        // Retrieve Timestamps
+        com.google.firebase.Timestamp startTimestamp = document.getTimestamp("startDate");
+        com.google.firebase.Timestamp endTimestamp = document.getTimestamp("endDate");
+
+        // Convert Timestamps to Strings (if needed)
+        String startDate = formatTimestamp(startTimestamp);
+        String endDate = formatTimestamp(endTimestamp);
+
+        Long progressLong = document.getLong("progressRate");
+        int progress = progressLong != null ? progressLong.intValue() : 0;
+
+        return new NewsProjects(projectsName, projectsDesc, projectsGoal, startDate, endDate, progress, imageUrl);
+
+    }
+
+    private String formatTimestamp(com.google.firebase.Timestamp timestamp) {
+        if (timestamp == null) {
+            return null;
+        }
+        SimpleDateFormat sdf = new SimpleDateFormat("d MMM yyyy", Locale.getDefault());
+        return sdf.format(timestamp.toDate());
+    }
+
 }

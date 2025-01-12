@@ -150,6 +150,7 @@ id IVBack
 id IVBadge
 id IVBadgeV
 id IVMoney
+id IVNewsFull
 id IVProfile
 id IVRating
 id IVReport
@@ -211,6 +212,7 @@ id TVHistoryDate
 id TVLName
 id TVLastName
 id TVMoneyCollected
+id TVNewsDesc
 id TVNoAcc
 id TVNoti
 id TVPIC
@@ -219,11 +221,13 @@ id TVPassRequi
 id TVPassword
 id TVPayMehtod
 id TVPhone
+id TVPublisherName
 id TVRequirement
 id TVService
 id TVTime
 id TVTitle
 id TVTitleDonForm
+id TVTitleNews
 id TVToggle
 id TVTotDonate
 id TVTotReport
@@ -311,7 +315,6 @@ id frameLayout4
 id frameLayout5
 id home
 id imageButton
-id imageView
 id imageView2
 id imageView3
 id imageView4
@@ -324,6 +327,7 @@ id nav
 id newsButton
 id newsDate
 id newsDesc
+id newsImageCard
 id newsList
 id newsTitle
 id noti_title
@@ -370,10 +374,7 @@ id story_image
 id submit
 id submitRating
 id subtitle
-id textDesc
 id textLayout
-id textPost
-id textTitle
 id textView
 id textView2
 id textView3

@@ -6,10 +6,16 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.bitmap.CircleCrop;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -68,10 +74,40 @@ public class NewsStoryFullFragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         Button btnBack = view.findViewById(R.id.btnBack);
+        TextView username = view.findViewById(R.id.user_name);
+        TextView description = view.findViewById(R.id.story_desc);
+        ImageView profileIV = view.findViewById(R.id.user_image);
+        ImageView storyIV = view.findViewById(R.id.story_image);
+
+        Bundle bundle = getArguments();
+        if (bundle != null) {
+            String storyUsername = bundle.getString("username");
+            String storyDesc = bundle.getString("description");
+            String imageUrl = bundle.getString("imageUrl");
+            String userImageUrl = bundle.getString("userImageUrl");
+
+            Glide.with(this)
+                    .load(imageUrl)
+                    .placeholder(R.drawable.default_image_news)
+                    .into(storyIV);
+
+            Glide.with(this)
+                    .load(userImageUrl)
+                    .placeholder(R.drawable.default_image_news)
+                    .transform(new CircleCrop())
+                    .into(profileIV);
+
+            username.setText("  " + storyUsername);
+            description.setText(storyDesc);
+        } else {
+            Log.d("StoryFullFragment", "Bundle is null");
+        }
+
+
         View.OnClickListener OCLBack = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Navigation.findNavController(view).navigate(R.id.destHome);
+                Navigation.findNavController(v).navigate(R.id.destHome);
             }
         };
         btnBack.setOnClickListener(OCLBack);

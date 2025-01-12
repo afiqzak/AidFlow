@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
@@ -18,6 +19,8 @@ import android.widget.RadioGroup;
  * create an instance of this fragment.
  */
 public class NewsMainPageFragment extends Fragment {
+
+    private NewsStoryViewModel newsStoryViewModel;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -77,14 +80,20 @@ public class NewsMainPageFragment extends Fragment {
             Navigation.findNavController(v).navigate(R.id.action_newsMainPageFragment_to_camFragment);
         });
 
+        newsStoryViewModel = new ViewModelProvider(requireActivity()).get(NewsStoryViewModel.class);
+
+        newsStoryViewModel.fetchStoryList();
+
         toggleGroup = view.findViewById(R.id.toggleNews);
 
         toggleGroup.setOnCheckedChangeListener((group, checkedId) -> {
             if (checkedId == R.id.projectButton) {
                 // tukar ke pending
+
                 switchFragment(new NewsProjectsFragment());
             } else if (checkedId == R.id.newsButton) {
                 // tukar ke done fragment
+
                 switchFragment(new NewsView());
             }
         });
@@ -99,6 +108,5 @@ public class NewsMainPageFragment extends Fragment {
         transaction.replace(R.id.fragmentContainerViewNews, fragment);
         transaction.commit();
     }
-
 
 }
