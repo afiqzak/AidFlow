@@ -3277,6 +3277,7 @@ drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
 drawable crop_rotate
+drawable default_image_news
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -3523,6 +3524,7 @@ id IVBadge
 id IVBadgeV
 id IVMoney
 id IVProfile
+id IVRating
 id IVReport
 id IVTime
 id IVUsername
@@ -3543,10 +3545,15 @@ id RBBadges
 id RBNo
 id RBOverview
 id RBYes
+id RLEffective
+id RLService
+id RLTime
 id RVListHistory
 id RVPBadges
 id RVVBadges
-id RelatedReportImage
+id SBEffective
+id SBService
+id SBTime
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
@@ -3573,6 +3580,7 @@ id TVDonationCategory
 id TVDonationDueDate
 id TVDonationProgress
 id TVDonationTitle
+id TVEffective
 id TVEmail
 id TVEventContact
 id TVEventDate
@@ -3594,6 +3602,8 @@ id TVPassword
 id TVPayMehtod
 id TVPhone
 id TVRequirement
+id TVService
+id TVTime
 id TVTitle
 id TVTitleDonForm
 id TVToggle
@@ -4112,8 +4122,6 @@ id publisherpic
 id radio
 id radioGroup
 id rating_labels
-id rating_seekbar
-id rating_title
 id ratio
 id rb_1_year
 id rb_30_days
@@ -4122,9 +4130,7 @@ id rb_90_days
 id rectangles
 id recyclerView
 id recyclerViewDone
-id recyclerViewNoti
 id recyclerViewPending
-id recyclerViewRate
 id recyclerView_history
 id recyclerView_upcoming
 id recyclerView_volunteer
@@ -4506,7 +4512,6 @@ layout fragment_volunteer_prog
 layout fragment_volunteer_upcoming
 layout fragment_volunteer_upcoming_cancel
 layout fragment_water
-layout fragment_water_notifications
 layout fragment_water_rating
 layout fragment_water_recycle_view_done
 layout fragment_water_recycle_view_pending
@@ -4593,7 +4598,6 @@ layout single_volunteer_badge
 layout single_volunteer_recycleview
 layout single_volunteer_upcoming_recycleview
 layout single_water_done_card
-layout single_water_noti_card
 layout single_water_pending_projects_card
 layout single_water_rating_cardview
 layout support_simple_spinner_dropdown_item
@@ -4613,7 +4617,9 @@ menu upload_widget_menu
 mipmap circle_baru
 mipmap circle_baru_foreground
 mipmap circle_baru_round
+mipmap default_image_news
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 mipmap story2
 mipmap story2_foreground

@@ -87,7 +87,7 @@ public class WaterRecycleViewDone extends Fragment {
         waterViewModel.fetchDoneReport(userId);
 
         waterViewModel.getDoneReport().observe(getViewLifecycleOwner(), doneReport -> {
-            adapter = new WaterDoneAdapter(getContext(), doneReport);
+            adapter = new WaterDoneAdapter(getContext(), doneReport, waterViewModel);
             recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
             recyclerView.setAdapter(adapter);
         });

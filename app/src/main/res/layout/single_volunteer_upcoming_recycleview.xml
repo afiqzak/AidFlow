@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/upcoming_cardView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginBottom="20dp"
+    android:background="#E1EAF5"
     android:clickable="true"
     android:focusable="true"
-    android:background="#E1EAF5"
+    android:foreground="?android:attr/selectableItemBackground"
     app:cardCornerRadius="20dp"
-    app:cardElevation="8dp"
-    android:foreground="?android:attr/selectableItemBackground">
+    app:cardElevation="4dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#8BADBB"
         android:orientation="vertical"
-        android:padding="14dp"
-        android:background="#8BADBB">
+        android:padding="14dp">
 
         <!-- Top Section -->
         <LinearLayout
@@ -27,8 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/round_box_white"
-            >
+            android:background="@drawable/round_box_white">
             <!-- Volunteer Name -->
             <TextView
                 android:id="@+id/TVUpcomingTitle"
@@ -40,9 +38,8 @@
                 android:paddingBottom="3dp"
                 android:text="Volunteer Name"
                 android:textColor="#000"
-                android:textStyle="bold"
                 android:textSize="16sp"
-                />
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -50,26 +47,26 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
             android:gravity="center_vertical"
-            android:layout_marginTop="15dp">
+            android:orientation="horizontal">
 
             <!-- icon -->
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/calendar_icon"/>
+                android:background="@drawable/calendar_icon" />
 
             <!-- Due Date -->
             <TextView
                 android:id="@+id/TVUpcomingDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:text="4 Jan"
                 android:layout_marginStart="8dp"
+                android:text="4 Jan"
                 android:textColor="#FFC107"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -77,27 +74,27 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_marginTop="4dp"
             android:gravity="center_vertical"
-            android:layout_marginTop="4dp">
+            android:orientation="horizontal">
 
             <!-- icon -->
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="top"
-                android:background="@drawable/pinpoint_icon"/>
+                android:background="@drawable/pinpoint_icon" />
 
             <!-- address -->
             <TextView
                 android:id="@+id/TVUpcomingLoc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
+                android:layout_marginStart="8dp"
                 android:text="The Agathians Shelter, No. 22, Jalan Kelah 8/6, Seksyen 8, 46050 Petaling Jaya, Selangor, Malaysia"
                 android:textColor="#FFFFFF"
-                android:layout_marginStart="8dp"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -105,27 +102,27 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_marginTop="4dp"
             android:gravity="center_vertical"
-            android:layout_marginTop="4dp">
+            android:orientation="horizontal">
 
             <!-- icon -->
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="top"
-                android:background="@drawable/phone_icon"/>
+                android:background="@drawable/phone_icon" />
 
             <!-- contactnum -->
             <TextView
                 android:id="@+id/TVUpcomingContact"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
+                android:layout_marginStart="8dp"
                 android:text="03-1234-9876"
                 android:textColor="#FFFFFF"
-                android:layout_marginStart="8dp"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -133,27 +130,27 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_marginTop="4dp"
             android:gravity="center_vertical"
-            android:layout_marginTop="4dp">
+            android:orientation="horizontal">
 
             <!-- icon -->
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="top"
-                android:background="@drawable/person_icon_1"/>
+                android:background="@drawable/person_icon_1" />
 
             <!-- organizer -->
             <TextView
                 android:id="@+id/organizer_upcoming"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
+                android:layout_marginStart="8dp"
                 android:text="Abu Siddiq"
                 android:textColor="#FFFFFF"
-                android:layout_marginStart="8dp"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 

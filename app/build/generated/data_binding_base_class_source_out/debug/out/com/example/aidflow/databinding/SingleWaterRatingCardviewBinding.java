@@ -22,21 +22,20 @@ public final class SingleWaterRatingCardviewBinding implements ViewBinding {
   private final CardView rootView;
 
   @NonNull
+  public final SeekBar SBTime;
+
+  @NonNull
+  public final TextView TVService;
+
+  @NonNull
   public final LinearLayout ratingLabels;
 
-  @NonNull
-  public final SeekBar ratingSeekbar;
-
-  @NonNull
-  public final TextView ratingTitle;
-
-  private SingleWaterRatingCardviewBinding(@NonNull CardView rootView,
-      @NonNull LinearLayout ratingLabels, @NonNull SeekBar ratingSeekbar,
-      @NonNull TextView ratingTitle) {
+  private SingleWaterRatingCardviewBinding(@NonNull CardView rootView, @NonNull SeekBar SBTime,
+      @NonNull TextView TVService, @NonNull LinearLayout ratingLabels) {
     this.rootView = rootView;
+    this.SBTime = SBTime;
+    this.TVService = TVService;
     this.ratingLabels = ratingLabels;
-    this.ratingSeekbar = ratingSeekbar;
-    this.ratingTitle = ratingTitle;
   }
 
   @Override
@@ -66,26 +65,26 @@ public final class SingleWaterRatingCardviewBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.SBTime;
+      SeekBar SBTime = ViewBindings.findChildViewById(rootView, id);
+      if (SBTime == null) {
+        break missingId;
+      }
+
+      id = R.id.TVService;
+      TextView TVService = ViewBindings.findChildViewById(rootView, id);
+      if (TVService == null) {
+        break missingId;
+      }
+
       id = R.id.rating_labels;
       LinearLayout ratingLabels = ViewBindings.findChildViewById(rootView, id);
       if (ratingLabels == null) {
         break missingId;
       }
 
-      id = R.id.rating_seekbar;
-      SeekBar ratingSeekbar = ViewBindings.findChildViewById(rootView, id);
-      if (ratingSeekbar == null) {
-        break missingId;
-      }
-
-      id = R.id.rating_title;
-      TextView ratingTitle = ViewBindings.findChildViewById(rootView, id);
-      if (ratingTitle == null) {
-        break missingId;
-      }
-
-      return new SingleWaterRatingCardviewBinding((CardView) rootView, ratingLabels, ratingSeekbar,
-          ratingTitle);
+      return new SingleWaterRatingCardviewBinding((CardView) rootView, SBTime, TVService,
+          ratingLabels);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

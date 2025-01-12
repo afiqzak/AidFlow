@@ -62,8 +62,8 @@ public class WaterRatingAdapter extends RecyclerView.Adapter<WaterRatingAdapter.
 
         public RatingViewHolder(@NonNull View itemView) {
             super(itemView);
-            ratingTitle = itemView.findViewById(R.id.rating_title);
-            seekBar = itemView.findViewById(R.id.rating_seekbar);
+            ratingTitle = itemView.findViewById(R.id.TVService);
+            seekBar = itemView.findViewById(R.id.SBTime);
         }
     }
 }

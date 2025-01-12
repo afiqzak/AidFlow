@@ -17,7 +17,7 @@
 
         <!-- Title -->
         <TextView
-            android:id="@+id/rating_title"
+            android:id="@+id/TVService"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Resolution Effectiveness"
@@ -33,7 +33,7 @@
 
             <!-- SeekBar -->
             <SeekBar
-                android:id="@+id/rating_seekbar"
+                android:id="@+id/SBTime"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:progress="3"
@@ -47,7 +47,7 @@
                 android:id="@+id/rating_labels"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/rating_seekbar"
+                android:layout_below="@id/SBTime"
                 android:orientation="horizontal"
                 android:weightSum="6"
                 android:layout_marginTop="6dp">

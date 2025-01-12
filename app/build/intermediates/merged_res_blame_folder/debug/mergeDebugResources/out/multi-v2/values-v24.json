@@ -4,17 +4,7 @@
             "outputFile": "com.example.aidflow.app-mergeDebugResources-62:/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Asus\\.gradle\\caches\\8.9\\transforms\\d5bfabc55bc503e0a162f5c6df418273\\transformed\\appcompat-1.7.0\\res\\values-v24\\values-v24.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,212",
-                        "endColumns": "156,134",
-                        "endOffsets": "207,342"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Asus\\.gradle\\caches\\8.9\\transforms\\f723914dd2a6c693af17419f3f4bb914\\transformed\\material-1.12.0\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\Asus\\.gradle\\caches\\8.9\\transforms\\b8bedd80a3f98bb97960f5021ef470e5\\transformed\\material-1.12.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,9,12,15",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -33,7 +23,17 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Asus\\.gradle\\caches\\8.9\\transforms\\c79c78b6ea37f081240fa6d50ef551e2\\transformed\\media-1.0.0\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\Asus\\.gradle\\caches\\8.9\\transforms\\7d22cff4b4cc4b39b42ea32be419d0f5\\transformed\\appcompat-1.7.0\\res\\values-v24\\values-v24.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,212",
+                        "endColumns": "156,134",
+                        "endOffsets": "207,342"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Asus\\.gradle\\caches\\8.9\\transforms\\bf532201d0697cd2743a5cece969d0ac\\transformed\\media-1.0.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

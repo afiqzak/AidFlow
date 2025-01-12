@@ -16,10 +16,12 @@ public class WaterDoneAdapter extends RecyclerView.Adapter<WaterDoneAdapter.Done
 
     private Context context;
     private List<WaterReport> doneReport;
+    private WaterViewModel waterViewModel;
 
-    public WaterDoneAdapter(Context context, List<WaterReport> doneReport) {
+    public WaterDoneAdapter(Context context, List<WaterReport> doneReport, WaterViewModel waterViewModel) {
         this.context = context;
         this.doneReport = doneReport;
+        this.waterViewModel = waterViewModel;
     }
 
     @NonNull
@@ -42,6 +44,7 @@ public class WaterDoneAdapter extends RecyclerView.Adapter<WaterDoneAdapter.Done
         holder.doneStarButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                waterViewModel.getSelectedReport().setValue(done);
                 Navigation.findNavController(v).navigate(R.id.waterRating);
             }
         });

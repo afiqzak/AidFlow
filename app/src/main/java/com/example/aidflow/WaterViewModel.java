@@ -17,6 +17,7 @@ import java.util.List;
 public class WaterViewModel extends ViewModel {
     private MutableLiveData<List<WaterReport>> pendingReport = new MutableLiveData<>();
     private MutableLiveData<List<WaterReport>> doneReport = new MutableLiveData<>();
+    private MutableLiveData<WaterReport> selectedReport = new MutableLiveData<>();
 
     public MutableLiveData<List<WaterReport>> getPendingReport() {
         return pendingReport;
@@ -24,6 +25,10 @@ public class WaterViewModel extends ViewModel {
 
     public MutableLiveData<List<WaterReport>> getDoneReport() {
         return doneReport;
+    }
+
+    public MutableLiveData<WaterReport> getSelectedReport() {
+        return selectedReport;
     }
 
     public void fetchPendingReport(String userID) {
