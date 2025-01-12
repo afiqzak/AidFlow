@@ -4,8 +4,8 @@ package com.example.aidflow.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -26,26 +26,26 @@ public final class FragmentNewsCamBinding implements ViewBinding {
   public final MaterialButton btnBack;
 
   @NonNull
-  public final ImageButton cameraButton;
-
-  @NonNull
   public final ImageView clickImage;
 
   @NonNull
   public final ConstraintLayout frameLayout2;
 
   @NonNull
+  public final Button postButton;
+
+  @NonNull
   public final EditText userCaption;
 
   private FragmentNewsCamBinding(@NonNull ConstraintLayout rootView,
-      @NonNull MaterialButton btnBack, @NonNull ImageButton cameraButton,
-      @NonNull ImageView clickImage, @NonNull ConstraintLayout frameLayout2,
+      @NonNull MaterialButton btnBack, @NonNull ImageView clickImage,
+      @NonNull ConstraintLayout frameLayout2, @NonNull Button postButton,
       @NonNull EditText userCaption) {
     this.rootView = rootView;
     this.btnBack = btnBack;
-    this.cameraButton = cameraButton;
     this.clickImage = clickImage;
     this.frameLayout2 = frameLayout2;
+    this.postButton = postButton;
     this.userCaption = userCaption;
   }
 
@@ -82,12 +82,6 @@ public final class FragmentNewsCamBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.camera_button;
-      ImageButton cameraButton = ViewBindings.findChildViewById(rootView, id);
-      if (cameraButton == null) {
-        break missingId;
-      }
-
       id = R.id.click_image;
       ImageView clickImage = ViewBindings.findChildViewById(rootView, id);
       if (clickImage == null) {
@@ -96,14 +90,20 @@ public final class FragmentNewsCamBinding implements ViewBinding {
 
       ConstraintLayout frameLayout2 = (ConstraintLayout) rootView;
 
+      id = R.id.post_button;
+      Button postButton = ViewBindings.findChildViewById(rootView, id);
+      if (postButton == null) {
+        break missingId;
+      }
+
       id = R.id.userCaption;
       EditText userCaption = ViewBindings.findChildViewById(rootView, id);
       if (userCaption == null) {
         break missingId;
       }
 
-      return new FragmentNewsCamBinding((ConstraintLayout) rootView, btnBack, cameraButton,
-          clickImage, frameLayout2, userCaption);
+      return new FragmentNewsCamBinding((ConstraintLayout) rootView, btnBack, clickImage,
+          frameLayout2, postButton, userCaption);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

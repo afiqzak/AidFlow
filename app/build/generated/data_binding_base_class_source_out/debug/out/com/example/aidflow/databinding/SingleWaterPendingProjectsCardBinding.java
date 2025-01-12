@@ -4,6 +4,7 @@ package com.example.aidflow.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,14 +21,18 @@ public final class SingleWaterPendingProjectsCardBinding implements ViewBinding 
   private final CardView rootView;
 
   @NonNull
+  public final ImageView IVReport;
+
+  @NonNull
   public final TextView pendingPlace;
 
   @NonNull
   public final TextView pendingTitle;
 
   private SingleWaterPendingProjectsCardBinding(@NonNull CardView rootView,
-      @NonNull TextView pendingPlace, @NonNull TextView pendingTitle) {
+      @NonNull ImageView IVReport, @NonNull TextView pendingPlace, @NonNull TextView pendingTitle) {
     this.rootView = rootView;
+    this.IVReport = IVReport;
     this.pendingPlace = pendingPlace;
     this.pendingTitle = pendingTitle;
   }
@@ -59,6 +64,12 @@ public final class SingleWaterPendingProjectsCardBinding implements ViewBinding 
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.IVReport;
+      ImageView IVReport = ViewBindings.findChildViewById(rootView, id);
+      if (IVReport == null) {
+        break missingId;
+      }
+
       id = R.id.pending_place;
       TextView pendingPlace = ViewBindings.findChildViewById(rootView, id);
       if (pendingPlace == null) {
@@ -71,7 +82,7 @@ public final class SingleWaterPendingProjectsCardBinding implements ViewBinding 
         break missingId;
       }
 
-      return new SingleWaterPendingProjectsCardBinding((CardView) rootView, pendingPlace,
+      return new SingleWaterPendingProjectsCardBinding((CardView) rootView, IVReport, pendingPlace,
           pendingTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);

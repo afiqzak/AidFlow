@@ -45,7 +45,7 @@ public class WaterRecycleViewDone extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment RecycleViewDone.
+     * @return A new instance of fragment WaterRecycleViewDone.
      */
     // TODO: Rename and change types and number of parameters
     public static WaterRecycleViewDone newInstance(String param1, String param2) {
@@ -87,7 +87,7 @@ public class WaterRecycleViewDone extends Fragment {
         waterViewModel.fetchDoneReport(userId);
 
         waterViewModel.getDoneReport().observe(getViewLifecycleOwner(), doneReport -> {
-            adapter = new WaterDoneAdapter(getContext(), doneReport);
+            adapter = new WaterDoneAdapter(getContext(), doneReport, waterViewModel);
             recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
             recyclerView.setAdapter(adapter);
         });

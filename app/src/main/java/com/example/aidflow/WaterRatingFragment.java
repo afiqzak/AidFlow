@@ -90,19 +90,6 @@ public class WaterRatingFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_water_rating, container, false);
 
-        recyclerView = view.findViewById(R.id.recyclerViewRate);
-
-        // Sample data
-        ratingTitles = new ArrayList<>();
-        ratingTitles.add("Resolution Effectiveness");
-        ratingTitles.add("Service Quality");
-        ratingTitles.add("Delivery Time");
-
-        // takyah kacau
-        adapter = new WaterRatingAdapter(getContext(), ratingTitles);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        recyclerView.setAdapter(adapter);
-
         return view;
     }
 }

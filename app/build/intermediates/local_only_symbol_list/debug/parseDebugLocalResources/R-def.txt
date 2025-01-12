@@ -41,6 +41,7 @@ drawable circle
 drawable circle_baru_background
 drawable circle_shape
 drawable close
+drawable default_image_news
 drawable donate_person
 drawable donation_title
 drawable donations_icon
@@ -53,6 +54,7 @@ drawable edit_text_small
 drawable ellipse_icon
 drawable filter_icon
 drawable filter_icon_putih
+drawable flip_camera
 drawable green_urgency
 drawable hand_donate_icon
 drawable heart_hand_icon
@@ -149,7 +151,9 @@ id IVBack
 id IVBadge
 id IVBadgeV
 id IVMoney
+id IVNewsFull
 id IVProfile
+id IVRating
 id IVReport
 id IVTime
 id IVUsername
@@ -168,10 +172,15 @@ id RBBadges
 id RBNo
 id RBOverview
 id RBYes
+id RLEffective
+id RLService
+id RLTime
 id RVListHistory
 id RVPBadges
 id RVVBadges
-id RelatedReportImage
+id SBEffective
+id SBService
+id SBTime
 id SPRegion
 id SPState
 id SpPayMethod
@@ -191,6 +200,7 @@ id TVDonationCategory
 id TVDonationDueDate
 id TVDonationProgress
 id TVDonationTitle
+id TVEffective
 id TVEmail
 id TVEventContact
 id TVEventDate
@@ -203,6 +213,7 @@ id TVHistoryDate
 id TVLName
 id TVLastName
 id TVMoneyCollected
+id TVNewsDesc
 id TVNoAcc
 id TVNoti
 id TVPIC
@@ -211,9 +222,13 @@ id TVPassRequi
 id TVPassword
 id TVPayMehtod
 id TVPhone
+id TVPublisherName
 id TVRequirement
+id TVService
+id TVTime
 id TVTitle
 id TVTitleDonForm
+id TVTitleNews
 id TVToggle
 id TVTotDonate
 id TVTotReport
@@ -230,6 +245,7 @@ id TVVolunteer
 id TVWelcome
 id Upcoming_button
 id Volunteer_button
+id action_newsCamFragment_to_newsMainPageFragment
 id action_newsMainPageFragment_to_camFragment
 id action_newsMainPageFragment_to_destNewsFull
 id action_newsMainPageFragment_to_mainActivity
@@ -301,7 +317,6 @@ id frameLayout4
 id frameLayout5
 id home
 id imageButton
-id imageView
 id imageView2
 id imageView3
 id imageView4
@@ -314,6 +329,7 @@ id nav
 id newsButton
 id newsDate
 id newsDesc
+id newsImageCard
 id newsList
 id newsTitle
 id noti_title
@@ -323,6 +339,7 @@ id pending_place
 id pending_projects
 id pending_title
 id phone_number
+id post_button
 id profile
 id progressBar
 id progressText_denominator
@@ -337,17 +354,13 @@ id projects_toggle
 id publisherpic
 id radioGroup
 id rating_labels
-id rating_seekbar
-id rating_title
 id rb_1_year
 id rb_30_days
 id rb_60_days
 id rb_90_days
 id recyclerView
 id recyclerViewDone
-id recyclerViewNoti
 id recyclerViewPending
-id recyclerViewRate
 id recyclerView_history
 id recyclerView_upcoming
 id recyclerView_volunteer
@@ -364,10 +377,7 @@ id story_image
 id submit
 id submitRating
 id subtitle
-id textDesc
 id textLayout
-id textPost
-id textTitle
 id textView
 id textView2
 id textView3
@@ -419,7 +429,6 @@ layout fragment_volunteer_prog
 layout fragment_volunteer_upcoming
 layout fragment_volunteer_upcoming_cancel
 layout fragment_water
-layout fragment_water_notifications
 layout fragment_water_rating
 layout fragment_water_recycle_view_done
 layout fragment_water_recycle_view_pending
@@ -435,7 +444,6 @@ layout single_volunteer_badge
 layout single_volunteer_recycleview
 layout single_volunteer_upcoming_recycleview
 layout single_water_done_card
-layout single_water_noti_card
 layout single_water_pending_projects_card
 layout single_water_rating_cardview
 menu bottom_nav
@@ -443,7 +451,9 @@ menu menu_bottom
 mipmap circle_baru
 mipmap circle_baru_foreground
 mipmap circle_baru_round
+mipmap default_image_news
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 mipmap story2
 mipmap story2_foreground

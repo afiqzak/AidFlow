@@ -17,6 +17,7 @@ import java.util.List;
 public class WaterViewModel extends ViewModel {
     private MutableLiveData<List<WaterReport>> pendingReport = new MutableLiveData<>();
     private MutableLiveData<List<WaterReport>> doneReport = new MutableLiveData<>();
+    private MutableLiveData<WaterReport> selectedReport = new MutableLiveData<>();
 
     public MutableLiveData<List<WaterReport>> getPendingReport() {
         return pendingReport;
@@ -24,6 +25,10 @@ public class WaterViewModel extends ViewModel {
 
     public MutableLiveData<List<WaterReport>> getDoneReport() {
         return doneReport;
+    }
+
+    public MutableLiveData<WaterReport> getSelectedReport() {
+        return selectedReport;
     }
 
     public void fetchPendingReport(String userID) {
@@ -62,6 +67,7 @@ public class WaterViewModel extends ViewModel {
         db.collection("report")
                 .whereEqualTo("status", true)
                 .whereEqualTo("userID", userID)
+                .whereEqualTo("rate", false)
                 .orderBy("doneDate", Query.Direction.DESCENDING)
                 .get()
                 .addOnSuccessListener(querySnapshot -> {
@@ -75,7 +81,7 @@ public class WaterViewModel extends ViewModel {
                     }
 
                     // Update LiveData on the main thread
-                    pendingReport.postValue(allPending);
+                    doneReport.postValue(allPending);
 
                     Log.d("Firestore", "done report available: " + allPending.size());
                 })

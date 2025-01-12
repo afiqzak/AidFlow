@@ -23,16 +23,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/camera_button"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+    <Button
+        android:id="@+id/post_button"
+        android:layout_width="117dp"
+        android:layout_height="54dp"
         android:layout_marginBottom="16dp"
-        android:background="@drawable/circle_shape"
+        android:text="Post"
+        android:backgroundTint="#5DCCFC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"></ImageButton>
+        app:layout_constraintStart_toStartOf="parent"></Button>
 
     <EditText
         android:id="@+id/userCaption"

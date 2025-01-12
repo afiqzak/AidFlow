@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -26,6 +27,7 @@ public class WaterFragment extends Fragment {
 
     private RadioGroup toggleGroup; //radiogroup ni yg toggle pending ke done project
     private WaterViewModel waterViewModel;
+    private TextView TVNoti;
     // Parameters
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
@@ -67,13 +69,19 @@ public class WaterFragment extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        TVNoti = view.findViewById(R.id.TVNoti);
+
         //get current user id
         String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
         waterViewModel = new ViewModelProvider(this).get(WaterViewModel.class);
 
         waterViewModel.fetchDoneReport(userId);
-        waterViewModel.fetchPendingReport(userId);
+
+        waterViewModel.getDoneReport().observe(getViewLifecycleOwner(), reports -> {
+            WaterReport latest = reports.get(0);
+            TVNoti.setText(latest.getComplaint() + " at " + latest.getAddress() + " has been solved");
+        });
 
         // gi report fragment
         Button btnReport = view.findViewById(R.id.reportbutton);
@@ -86,6 +94,7 @@ public class WaterFragment extends Fragment {
 
         toggleGroup.setOnCheckedChangeListener((group, checkedId) -> {
             if (checkedId == R.id.pending_projects) {
+                waterViewModel.fetchPendingReport(userId);
                 // tukar ke pending
                 switchFragment(new WaterRecycleViewPending());
             } else if (checkedId == R.id.done_projects) {

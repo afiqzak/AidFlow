@@ -23,10 +23,19 @@ public final class FragmentNewsFullPageBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final MaterialButton btnBack;
+  public final ImageView IVNewsFull;
 
   @NonNull
-  public final ImageView imageView;
+  public final TextView TVNewsDesc;
+
+  @NonNull
+  public final TextView TVPublisherName;
+
+  @NonNull
+  public final TextView TVTitleNews;
+
+  @NonNull
+  public final MaterialButton btnBack;
 
   @NonNull
   public final ImageView publisherpic;
@@ -34,27 +43,19 @@ public final class FragmentNewsFullPageBinding implements ViewBinding {
   @NonNull
   public final ScrollView scrollView2;
 
-  @NonNull
-  public final TextView textDesc;
-
-  @NonNull
-  public final TextView textPost;
-
-  @NonNull
-  public final TextView textTitle;
-
   private FragmentNewsFullPageBinding(@NonNull ConstraintLayout rootView,
-      @NonNull MaterialButton btnBack, @NonNull ImageView imageView,
-      @NonNull ImageView publisherpic, @NonNull ScrollView scrollView2, @NonNull TextView textDesc,
-      @NonNull TextView textPost, @NonNull TextView textTitle) {
+      @NonNull ImageView IVNewsFull, @NonNull TextView TVNewsDesc,
+      @NonNull TextView TVPublisherName, @NonNull TextView TVTitleNews,
+      @NonNull MaterialButton btnBack, @NonNull ImageView publisherpic,
+      @NonNull ScrollView scrollView2) {
     this.rootView = rootView;
+    this.IVNewsFull = IVNewsFull;
+    this.TVNewsDesc = TVNewsDesc;
+    this.TVPublisherName = TVPublisherName;
+    this.TVTitleNews = TVTitleNews;
     this.btnBack = btnBack;
-    this.imageView = imageView;
     this.publisherpic = publisherpic;
     this.scrollView2 = scrollView2;
-    this.textDesc = textDesc;
-    this.textPost = textPost;
-    this.textTitle = textTitle;
   }
 
   @Override
@@ -84,15 +85,33 @@ public final class FragmentNewsFullPageBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btnBack;
-      MaterialButton btnBack = ViewBindings.findChildViewById(rootView, id);
-      if (btnBack == null) {
+      id = R.id.IVNewsFull;
+      ImageView IVNewsFull = ViewBindings.findChildViewById(rootView, id);
+      if (IVNewsFull == null) {
         break missingId;
       }
 
-      id = R.id.imageView;
-      ImageView imageView = ViewBindings.findChildViewById(rootView, id);
-      if (imageView == null) {
+      id = R.id.TVNewsDesc;
+      TextView TVNewsDesc = ViewBindings.findChildViewById(rootView, id);
+      if (TVNewsDesc == null) {
+        break missingId;
+      }
+
+      id = R.id.TVPublisherName;
+      TextView TVPublisherName = ViewBindings.findChildViewById(rootView, id);
+      if (TVPublisherName == null) {
+        break missingId;
+      }
+
+      id = R.id.TVTitleNews;
+      TextView TVTitleNews = ViewBindings.findChildViewById(rootView, id);
+      if (TVTitleNews == null) {
+        break missingId;
+      }
+
+      id = R.id.btnBack;
+      MaterialButton btnBack = ViewBindings.findChildViewById(rootView, id);
+      if (btnBack == null) {
         break missingId;
       }
 
@@ -108,26 +127,8 @@ public final class FragmentNewsFullPageBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textDesc;
-      TextView textDesc = ViewBindings.findChildViewById(rootView, id);
-      if (textDesc == null) {
-        break missingId;
-      }
-
-      id = R.id.textPost;
-      TextView textPost = ViewBindings.findChildViewById(rootView, id);
-      if (textPost == null) {
-        break missingId;
-      }
-
-      id = R.id.textTitle;
-      TextView textTitle = ViewBindings.findChildViewById(rootView, id);
-      if (textTitle == null) {
-        break missingId;
-      }
-
-      return new FragmentNewsFullPageBinding((ConstraintLayout) rootView, btnBack, imageView,
-          publisherpic, scrollView2, textDesc, textPost, textTitle);
+      return new FragmentNewsFullPageBinding((ConstraintLayout) rootView, IVNewsFull, TVNewsDesc,
+          TVPublisherName, TVTitleNews, btnBack, publisherpic, scrollView2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

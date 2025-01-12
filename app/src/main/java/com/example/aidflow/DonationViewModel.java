@@ -15,6 +15,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Locale;
@@ -120,6 +121,7 @@ public class DonationViewModel extends ViewModel {
 
     public void fetchDonationHistory(String userID, int days) {
         FirebaseFirestore db = FirebaseFirestore.getInstance();
+        Map<String, Donation> donationCache = new HashMap<>(); // Cache for donation data
 
         // Default to 30 days if an invalid value is passed
         if (days <= 0) days = 30;
@@ -148,25 +150,44 @@ public class DonationViewModel extends ViewModel {
                                 Date date = timestamp.toDate();
                                 history.setDate(formatDate(date));
 
-                                Donation donation = donationMap.get(history.getDonationID());
-                                if (donation != null) {
-                                    history.setPIC(donation.getPIC());
-                                    history.setCategory(donation.getCategory());
-                                    history.setDonationTitle(donation.getDonationTitle());
-                                } else {
-                                    Log.d("firestore", "donation is null");
-                                }
+                                String donationID = history.getDonationID();
 
-                                groupedHistory.putIfAbsent(formatDate(date), new ArrayList<>());
-                                groupedHistory.get(formatDate(date)).add(history);
+                                if (donationCache.containsKey(donationID)) {
+                                    // Use cached donation details
+                                    Donation donation = donationCache.get(donationID);
+                                    populateDonationHistory(history, donation);
+
+                                    groupedHistory.putIfAbsent(formatDate(date), new ArrayList<>());
+                                    groupedHistory.get(formatDate(date)).add(history);
+                                } else {
+                                    // Fetch from Firebase for uncached donation IDs
+                                    db.collection("donation")
+                                            .document(donationID)
+                                            .get()
+                                            .addOnSuccessListener(donationDoc -> {
+                                                if (donationDoc.exists()) {
+                                                    Donation donation = donationDoc.toObject(Donation.class);
+                                                    if (donation != null) {
+                                                        donationCache.put(donationID, donation); // Cache the donation
+                                                        populateDonationHistory(history, donation);
+                                                    }
+                                                } else {
+                                                    Log.d("Firestore", "Donation not found for ID: " + donationID);
+                                                }
+
+                                                groupedHistory.putIfAbsent(formatDate(date), new ArrayList<>());
+                                                groupedHistory.get(formatDate(date)).add(history);
+
+                                                // Update LiveData
+                                                filteredDonationHistory.postValue(groupedHistory);
+                                            })
+                                            .addOnFailureListener(e -> Log.e("Firestore", "Error fetching donation details", e));
+                                }
                             }
                         }
                     }
 
-                    // Update LiveData on the main thread
-                    filteredDonationHistory.postValue(groupedHistory);
-
-                    Log.d("Firestore", "history available: " + querySnapshot.getDocuments().size());
+                    Log.d("Firestore", "Fetched donation history.");
                 })
                 .addOnFailureListener(e -> Log.e("Firestore", "Error fetching donation history", e));
     }
@@ -178,5 +199,11 @@ public class DonationViewModel extends ViewModel {
 
         SimpleDateFormat outputFormat = new SimpleDateFormat("d MMM", Locale.getDefault()); //format date to d mmm, e.g. 1 JAN
         return outputFormat.format(date);
+    }
+
+    private void populateDonationHistory(DonationHistory history, Donation donation) {
+        history.setPIC(donation.getPIC());
+        history.setCategory(donation.getCategory());
+        history.setDonationTitle(donation.getDonationTitle());
     }
 }

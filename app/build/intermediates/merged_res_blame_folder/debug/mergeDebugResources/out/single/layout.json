@@ -1,194 +1,186 @@
 [
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\fragment_news_cam.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\fragment_news_cam.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\fragment_donation_hist_filter.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_donation_hist_filter.xml"
     },
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\fragment_water.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\fragment_water.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\fragment_donation_form.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_donation_form.xml"
     },
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\fragment_profile.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\fragment_profile.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\activity_login_signup.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\activity_login_signup.xml"
     },
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\fragment_news_story_view.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\fragment_news_story_view.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\fragment_news_main_page.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_news_main_page.xml"
     },
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\fragment_donation_history.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\fragment_donation_history.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\single_donation_history_recycleview.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\single_donation_history_recycleview.xml"
     },
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\single_news_project_card.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\single_news_project_card.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\fragment_news_story_view.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_news_story_view.xml"
     },
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\fragment_water_recycle_view_done.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\fragment_water_recycle_view_done.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\fragment_volunteer_badges.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_volunteer_badges.xml"
     },
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\fragment_profile_overview.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\fragment_profile_overview.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\fragment_water_report.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_water_report.xml"
     },
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\single_donation_history_grouped.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\single_donation_history_grouped.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\single_water_done_card.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\single_water_done_card.xml"
     },
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\fragment_signup.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\fragment_signup.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\fragment_login.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_login.xml"
     },
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\fragment_water_rating.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\fragment_water_rating.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\fragment_water.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_water.xml"
     },
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\fragment_news_projects_full_page.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\fragment_news_projects_full_page.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\fragment_news_story_full.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_news_story_full.xml"
     },
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\single_water_noti_card.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\single_water_noti_card.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\fragment_water_recycle_view_done.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_water_recycle_view_done.xml"
     },
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\fragment_news_story_full.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\fragment_news_story_full.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\fragment_water_recycle_view_pending.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_water_recycle_view_pending.xml"
     },
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\fragment_login.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\fragment_login.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\single_volunteer_upcoming_recycleview.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\single_volunteer_upcoming_recycleview.xml"
     },
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\fragment_donation_form.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\fragment_donation_form.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\single_news_story_card.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\single_news_story_card.xml"
     },
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\single_volunteer_badge.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\single_volunteer_badge.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\single_donation_history_grouped.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\single_donation_history_grouped.xml"
     },
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\single_volunteer_upcoming_recycleview.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\single_volunteer_upcoming_recycleview.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\single_news_card.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\single_news_card.xml"
     },
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\fragment_volunteer_upcoming.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\fragment_volunteer_upcoming.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\single_profile_badge.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\single_profile_badge.xml"
     },
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\fragment_donation_hist_filter.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\fragment_donation_hist_filter.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\single_water_pending_projects_card.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\single_water_pending_projects_card.xml"
     },
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\fragment_news_full_page.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\fragment_news_full_page.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\fragment_volunteer_upcoming.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_volunteer_upcoming.xml"
     },
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\fragment_news_projects.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\fragment_news_projects.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\fragment_news_view.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_news_view.xml"
     },
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\single_water_pending_projects_card.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\single_water_pending_projects_card.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\fragment_profile_overview.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_profile_overview.xml"
     },
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\fragment_donation.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\fragment_donation.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\fragment_news_projects_full_page.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_news_projects_full_page.xml"
     },
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\fragment_volunteer_badges.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\fragment_volunteer_badges.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\fragment_news_full_page.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_news_full_page.xml"
     },
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\fragment_water_report.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\fragment_water_report.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\fragment_volunteer_upcoming_cancel.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_volunteer_upcoming_cancel.xml"
     },
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\single_water_rating_cardview.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\single_water_rating_cardview.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\fragment_signup.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_signup.xml"
     },
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\fragment_profile_badges.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\fragment_profile_badges.xml"
+        "merged": "com.example.aidflow.app-mergeDebugResources-73:/layout/fragment_news_cam.xml",
+        "source": "com.example.aidflow.app-main-76:/layout/fragment_news_cam.xml"
     },
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\fragment_donation_donate.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\fragment_donation_donate.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\single_donation_recylcleview.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\single_donation_recylcleview.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\single_volunteer_badge.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\single_volunteer_badge.xml"
     },
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\fragment_volunteer_prog.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\fragment_volunteer_prog.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\fragment_donation_donate_filter.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_donation_donate_filter.xml"
     },
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\fragment_volunteer_details.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\fragment_volunteer_details.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\fragment_profile.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_profile.xml"
     },
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\fragment_water_recycle_view_pending.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\fragment_water_recycle_view_pending.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\fragment_volunteer_prog.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_volunteer_prog.xml"
     },
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\fragment_news_main_page.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\fragment_news_main_page.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\fragment_volunteer_details.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_volunteer_details.xml"
     },
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\single_volunteer_recycleview.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\single_volunteer_recycleview.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\fragment_donation_donate.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_donation_donate.xml"
     },
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\single_news_card.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\single_news_card.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\fragment_profile_badges.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_profile_badges.xml"
     },
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\single_news_story_card.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\single_news_story_card.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\fragment_news_projects.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_news_projects.xml"
     },
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\fragment_news_view.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\fragment_news_view.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\fragment_volunteer.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_volunteer.xml"
     },
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\fragment_donation_donate_filter.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\fragment_donation_donate_filter.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\single_news_project_card.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\single_news_project_card.xml"
     },
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\activity_login_signup.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\activity_login_signup.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\single_donation_recylcleview.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\single_donation_recylcleview.xml"
     },
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\fragment_volunteer.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\fragment_volunteer.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\fragment_donation.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_donation.xml"
     },
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\single_donation_history_recycleview.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\single_donation_history_recycleview.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\single_water_rating_cardview.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\single_water_rating_cardview.xml"
     },
     {
-        "merged": "com.example.aidflow.app-mergeDebugResources-63:/layout/single_water_pending_projects_card.xml",
-        "source": "com.example.aidflow.app-main-66:/layout/single_water_pending_projects_card.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\fragment_donation_history.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_donation_history.xml"
     },
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\fragment_water_notifications.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\fragment_water_notifications.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\fragment_water_rating.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_water_rating.xml"
     },
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\single_volunteer_recycleview.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\single_volunteer_recycleview.xml"
     },
     {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\fragment_volunteer_upcoming_cancel.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\fragment_volunteer_upcoming_cancel.xml"
-    },
-    {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\single_profile_badge.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\single_profile_badge.xml"
-    },
-    {
-        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-63:\\layout\\single_water_done_card.xml",
-        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-66:\\layout\\single_water_done_card.xml"
+        "merged": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-73:\\layout\\fragment_news_cam.xml",
+        "source": "C:\\Users\\afiqz\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_news_cam.xml"
     }
 ]

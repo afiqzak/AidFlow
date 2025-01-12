@@ -1,32 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/donation_cardView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginBottom="8dp"
+    android:background="#E1EAF5"
     android:clickable="true"
     android:focusable="true"
-    android:background="#E1EAF5"
+    android:foreground="?android:attr/selectableItemBackground"
     app:cardCornerRadius="20dp"
-    app:cardElevation="8dp"
-    android:foreground="?android:attr/selectableItemBackground">>
+    app:cardElevation="4dp">>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#8BADBB"
         android:orientation="vertical"
-        android:padding="14dp"
-        android:background="#8BADBB">
+        android:padding="14dp">
 
         <!-- Top Section -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical">
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
             <!-- Circle (Urgency) -->
             <View
@@ -40,13 +39,13 @@
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_margin="8dp"
+                android:layout_weight="1"
                 android:background="@drawable/round_shape"
 
                 >
 
-            <!-- Donation Name -->
+                <!-- Donation Name -->
                 <TextView
                     android:id="@+id/TVDonationTitle"
                     android:layout_width="wrap_content"
@@ -58,7 +57,7 @@
                     android:paddingBottom="3dp"
                     android:text="Donation Name"
                     android:textColor="#000"
-                    android:textSize="16sp"/>
+                    android:textSize="16sp" />
 
             </LinearLayout>
 
@@ -69,9 +68,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_marginTop="4dp"
             android:gravity="center_vertical"
-            android:layout_marginTop="4dp">
+            android:orientation="horizontal">
 
             <!-- Project Name -->
             <TextView
@@ -101,8 +100,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="8dp">
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/TVDonationProgress"
@@ -118,11 +117,11 @@
                 style="@android:style/Widget.DeviceDefault.ProgressBar.Horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="10dp"
+                android:layout_marginTop="4dp"
                 android:max="100"
-                android:progress="0"
                 android:paddingHorizontal="15dp"
-                android:progressDrawable="@drawable/progress_bar_custom"
-                android:layout_marginTop="4dp" />
+                android:progress="0"
+                android:progressDrawable="@drawable/progress_bar_custom" />
         </LinearLayout>
     </LinearLayout>
 </androidx.cardview.widget.CardView>

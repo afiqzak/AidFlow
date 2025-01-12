@@ -10,6 +10,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.ProgressBar;
+import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -17,6 +22,7 @@ import android.widget.Button;
  * create an instance of this fragment.
  */
 public class NewsProjectsFullPage extends Fragment {
+
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -67,10 +73,35 @@ public class NewsProjectsFullPage extends Fragment {
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        TextView projectsTitle = view.findViewById(R.id.ProjectsTitle);
+        TextView projectsDesc = view.findViewById(R.id.projectFullDesc);
+        ProgressBar projectProgress = view.findViewById(R.id.projectProgressBar);
+        ImageView projectIV = view.findViewById(R.id.projectImage);
+
+        // Retrieve the Bundle data
+        Bundle bundle = getArguments();
+        if (bundle != null) {
+            String projectsName = bundle.getString("projectsTitle");
+            String projectsGoals = bundle.getString("projectsGoals");
+            int progress = bundle.getInt("progressRate");
+            String imageUrl = bundle.getString("imageUrl");
+
+            Glide.with(this)
+                    .load(imageUrl)
+                    .into(projectIV);
+
+            projectsTitle.setText(projectsName);
+            projectsDesc.setText(projectsGoals);
+            projectProgress.setProgress(progress);
+        }
+
+
+        // Back Button Setup
         Button btnBack = view.findViewById(R.id.btnBack);
         View.OnClickListener OCLBack = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //Navigation.findNavController(view).navigate(R.id.newsMainPageFragment);
                 Navigation.findNavController(view).navigate(R.id.destHome);
             }
         };
