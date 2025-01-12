@@ -8,10 +8,14 @@
         android:minSdkVersion="26"
         android:targetSdkVersion="34" />
 
-    <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera.any" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <queries>
 
@@ -22,6 +26,9 @@
         <!-- Query Open Document -->
         <intent>
             <action android:name="android.intent.action.OPEN_DOCUMENT_TREE" />
+        </intent>
+        <intent>
+            <action android:name="androidx.camera.extensions.action.VENDOR_ACTION" />
         </intent>
     </queries>
 
@@ -54,11 +61,6 @@
         android:theme="@style/Theme.AidFlow" > <!-- Add this line -->
         <activity
             android:name="com.example.aidflow.LoginSignupActivity"
-            android:exported="false"
-            android:windowSoftInputMode="stateHidden|adjustPan" >
-        </activity>
-        <activity
-            android:name="com.example.aidflow.MainActivity"
             android:exported="true"
             android:windowSoftInputMode="stateHidden|adjustPan" >
             <intent-filter>
@@ -66,6 +68,11 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.aidflow.MainActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
         </activity>
 
         <meta-data
@@ -94,6 +101,19 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/image_picker_provider_paths" />
         </provider>
+
+        <uses-library
+            android:name="androidx.camera.extensions.impl"
+            android:required="false" />
+
+        <service
+            android:name="androidx.camera.core.impl.MetadataHolderService"
+            android:enabled="false"
+            android:exported="false" >
+            <meta-data
+                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+        </service>
 
         <activity
             android:name="com.google.firebase.auth.internal.GenericIdpActivity"

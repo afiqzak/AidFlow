@@ -23,7 +23,7 @@ public class UserViewModel extends ViewModel {
                 .addOnSuccessListener(documentSnapshot -> {
                     if (documentSnapshot.exists()) {
                         User fetchedUser = documentSnapshot.toObject(User.class);
-                        Log.d("UserViewModel", "User data: " + fetchedUser);
+                        Log.d("UserViewModel", "User data: " + fetchedUser.getImageUrl());
                         user.setValue(fetchedUser);
                     } else {
                         // Handle the case where the document doesn't exist

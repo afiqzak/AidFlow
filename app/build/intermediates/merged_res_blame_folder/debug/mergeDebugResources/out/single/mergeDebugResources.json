@@ -1,1062 +1,998 @@
 [
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xxxhdpi_story_1.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xxxhdpi\\story_1.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-anydpi-v26_story3_round.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-anydpi-v26\\story3_round.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_single_volunteer_recycleview.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\single_volunteer_recycleview.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_round_box_title.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\round_box_title.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_droplet_icon.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\droplet_icon.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-anydpi-v26_circle_baru_round.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-anydpi-v26\\circle_baru_round.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_person_icon_1.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\person_icon_1.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_progress_bar_custom.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\progress_bar_custom.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_fragment_profile_badges.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\fragment_profile_badges.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_bottom_nav.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\bottom_nav.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\font_poppins_medium.ttf.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\font\\poppins_medium.ttf"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_profile_text_box.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\profile_text_box.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_done_card.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\done_card.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_fragment_water_report.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_water_report.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_fragment_profile_overview.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\fragment_profile_overview.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_home_icon.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\home_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xxhdpi_circle_baru.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xxhdpi\\circle_baru.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_fragment_news_projects_full_page.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_news_projects_full_page.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_icon_profile.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\icon_profile.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_round_box_nav.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\round_box_nav.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xxhdpi_story3_foreground.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xxhdpi\\story3_foreground.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_fragment_water.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_water.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xhdpi_story2_round.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xhdpi\\story2_round.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-hdpi_story2.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-hdpi\\story2.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_box_login.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\box_login.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xxhdpi_story3_round.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xxhdpi\\story3_round.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-hdpi_story_1_round.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-hdpi\\story_1_round.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xxhdpi_circle_baru_foreground.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xxhdpi\\circle_baru_foreground.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_fragment_signup.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_signup.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_ic_time.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\ic_time.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_donate_person.png.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\donate_person.png"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xxhdpi_story_1_round.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xxhdpi\\story_1_round.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_badge_1month.png.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\badge_1month.png"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-mdpi_story3.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-mdpi\\story3.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_dropdown_arrow.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\dropdown_arrow.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_badge_1day.png.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\badge_1day.png"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_single_profile_badge.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\single_profile_badge.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-mdpi_story2_foreground.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-mdpi\\story2_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_icon_home.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\icon_home.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_dropdown_box.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\dropdown_box.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_fragment_volunteer_upcoming.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\fragment_volunteer_upcoming.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_back_icon.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\back_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_ic_hide_pass.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\ic_hide_pass.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-hdpi_circle_baru.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-hdpi\\circle_baru.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_noti_card.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\noti_card.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-mdpi_story_1_round.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-mdpi\\story_1_round.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xhdpi_circle_baru.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xhdpi\\circle_baru.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_single_donation_recylcleview.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\single_donation_recylcleview.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_edit_text_small.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\edit_text_small.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\font_poppins_extralight.ttf.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\font\\poppins_extralight.ttf"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_yucar_studios_cfr_v1quekw_unsplash.jpg.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\yucar_studios_cfr_v1quekw_unsplash.jpg"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xhdpi_story2.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xhdpi\\story2.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\font_poppins_bold.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\font\\poppins_bold.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_arrow_icon.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\arrow_icon.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_rating_bar.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\rating_bar.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_fragment_volunteer_badges.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\fragment_volunteer_badges.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_single_news_card.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\single_news_card.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_password_box.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\password_box.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xhdpi_story_1_round.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xhdpi\\story_1_round.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_fragment_news_full_page.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\fragment_news_full_page.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xxhdpi_story3.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xxhdpi\\story3.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_fragment_news_view.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\fragment_news_view.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_single_volunteer_recycleview.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\single_volunteer_recycleview.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_fragment_water_recycle_view_done.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\fragment_water_recycle_view_done.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\font_poppins_black.ttf.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\font\\poppins_black.ttf"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_heart_hand_icon.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\heart_hand_icon.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_fragment_profile_overview.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_profile_overview.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_fragment_news_main_page.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\fragment_news_main_page.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-hdpi_story_1_foreground.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-hdpi\\story_1_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_badge_rm50donate.png.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\badge_rm50donate.png"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_ic_show_pass.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\ic_show_pass.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xxxhdpi_story2_round.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xxxhdpi\\story2_round.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_person_icon.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\person_icon.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xxxhdpi_story_1.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xxxhdpi\\story_1.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_fragment_profile.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\fragment_profile.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_round_button.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\round_button.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_progress_bar_circle.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\progress_bar_circle.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xxhdpi_default_image_news.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xxhdpi\\default_image_news.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_slider_rating.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\slider_rating.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_fragment_news_projects.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_news_projects.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xxxhdpi_story_1_round.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xxxhdpi\\story_1_round.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-mdpi_story3_round.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-mdpi\\story3_round.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_progress_bar_style.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\progress_bar_style.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xhdpi_story3_foreground.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xhdpi\\story3_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_fragment_donation_hist_filter.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\fragment_donation_hist_filter.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_single_news_card.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\single_news_card.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\font_poppins_light.ttf.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\font\\poppins_light.ttf"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_round_rectangle.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\round_rectangle.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_fragment_donation_form.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_donation_form.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_volunteer_button.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\volunteer_button.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_user_icon.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\user_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-mdpi_circle_baru_foreground.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-mdpi\\circle_baru_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_activity_login_signup1.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\activity_login_signup1.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_green_urgency.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\green_urgency.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_fragment_news_full_page.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_news_full_page.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_filter_icon_putih.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\filter_icon_putih.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_ic_time.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\ic_time.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-hdpi_story3.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-hdpi\\story3.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_rate_icon.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\rate_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-hdpi_story_1.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-hdpi\\story_1.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_fragment_profile_badges.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_profile_badges.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-hdpi_ic_launcher_foreground.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-hdpi\\ic_launcher_foreground.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xhdpi_story2_foreground.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xhdpi\\story2_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_fragment_news_projects.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\fragment_news_projects.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_fragment_water_recycle_view_done.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_water_recycle_view_done.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xhdpi_default_image_news.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xhdpi\\default_image_news.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_rounded_blue.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\rounded_blue.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_round_box_title.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\round_box_title.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_fragment_volunteer_details.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_volunteer_details.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xhdpi_story3_round.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xhdpi\\story3_round.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_fragment_news_view.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_news_view.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xxxhdpi_story3_foreground.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xxxhdpi\\story3_foreground.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xhdpi_story3.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xhdpi\\story3.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-mdpi_story2_foreground.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-mdpi\\story2_foreground.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_calendar_icon.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\calendar_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_story3.jpg.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\story3.jpg"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_story1.jpg.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\story1.jpg"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xxhdpi\\ic_launcher_foreground.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_fragment_volunteer_upcoming_cancel.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_volunteer_upcoming_cancel.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-mdpi_circle_baru_round.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-mdpi\\circle_baru_round.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_dropdown_arrow.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\dropdown_arrow.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xxxhdpi_circle_baru_foreground.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xxxhdpi\\circle_baru_foreground.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_fragment_profile.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_profile.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xxhdpi_story_1_foreground.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xxhdpi\\story_1_foreground.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_jouni_rajala_0aiko248fhe_unsplash.jpg.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\jouni_rajala_0aiko248fhe_unsplash.jpg"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-hdpi_story2_round.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-hdpi\\story2_round.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\font_poppins.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\font\\poppins.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_dropdownarrow_icon.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\dropdownarrow_icon.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-mdpi_story_1.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-mdpi\\story_1.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_fragment_donation_form.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\fragment_donation_form.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-anydpi-v26_story_1.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-anydpi-v26\\story_1.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-mdpi_circle_baru.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-mdpi\\circle_baru.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_title_box.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\title_box.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_calendar_icon.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\calendar_icon.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xxhdpi_circle_baru_foreground.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xxhdpi\\circle_baru_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_badge_1week.png.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\badge_1week.png"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_round_edittext_box.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\round_edittext_box.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_icon_donation.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\icon_donation.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_user_icon.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\user_icon.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_rate_icon.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\rate_icon.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-mdpi_story2_round.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-mdpi\\story2_round.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-mdpi_story3_foreground.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-mdpi\\story3_foreground.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_checkbox_selector.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\checkbox_selector.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_fragment_volunteer_upcoming_cancel.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\fragment_volunteer_upcoming_cancel.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_red_urgency.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\red_urgency.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xhdpi_story2_foreground.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xhdpi\\story2_foreground.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_ic_camera.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\ic_camera.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xxxhdpi_circle_baru.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xxxhdpi\\circle_baru.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-hdpi_story3.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-hdpi\\story3.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_fragment_story_full.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\fragment_story_full.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_fragment_login.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_login.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_close.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\close.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_donations_icon.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\donations_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-mdpi_story_1_foreground.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-mdpi\\story_1_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_fragment_water_rating.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\fragment_water_rating.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-mdpi_default_image_news.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-mdpi\\default_image_news.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-anydpi-v26_story3.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-anydpi-v26\\story3.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_ic_report.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\ic_report.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_fragment_story_view.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\fragment_story_view.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_camera.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\camera.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\xml\\backup_rules.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-mdpi_circle_baru_round.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-mdpi\\circle_baru_round.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xxhdpi_story3.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xxhdpi\\story3.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_single_donation_history_grouped.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\single_donation_history_grouped.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xhdpi_story_1_round.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xhdpi\\story_1_round.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xxxhdpi_circle_baru_foreground.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xxxhdpi\\circle_baru_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_toggle_widget_background.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\toggle_widget_background.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_news_card.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\news_card.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-anydpi-v26_story_1_round.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-anydpi-v26\\story_1_round.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_fragment_recycle_view_done.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\fragment_recycle_view_done.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_single_news_story_card.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\single_news_story_card.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_password_box.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\password_box.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-mdpi_default_image_news.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-mdpi\\default_image_news.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_fragment_volunteer.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_volunteer.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_story1.jpg.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\story1.jpg"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_ellipse_icon.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\ellipse_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_fragment_donation_donate_filter.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\fragment_donation_donate_filter.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_fragment_donation_donate_filter.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_donation_donate_filter.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_fragment_volunteer_badges.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_volunteer_badges.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-hdpi_circle_baru_round.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-hdpi\\circle_baru_round.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_activity_login_signup.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\activity_login_signup.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_fragment_signup.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\fragment_signup.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_dropdownarrow_icon.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\dropdownarrow_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_yellow_urgency.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\yellow_urgency.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_fragment_volunteer_upcoming.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_volunteer_upcoming.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_story2.png.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\story2.png"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_filter_icon_putih.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\filter_icon_putih.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_badge_rm50donate.png.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\badge_rm50donate.png"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_icon_home.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\icon_home.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\menu_menu_bottom.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\menu\\menu_bottom.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_default_image_news.jpg.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\default_image_news.jpg"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xxhdpi_default_image_news.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xxhdpi\\default_image_news.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xhdpi_story3_round.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xhdpi\\story3_round.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-anydpi-v26_circle_baru_round.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-anydpi-v26\\circle_baru_round.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_ic_camera.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\ic_camera.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_fragment_donation_donate.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_donation_donate.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_ellipse_icon.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\ellipse_icon.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_yellow_urgency.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\yellow_urgency.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-anydpi-v26_circle_baru.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-anydpi-v26\\circle_baru.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_single_donation_history_recycleview.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\single_donation_history_recycleview.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_donations_icon.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\donations_icon.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_badge_1week.png.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\badge_1week.png"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\font_poppins_black.ttf.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\font\\poppins_black.ttf"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_volunteer_button.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\volunteer_button.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-mdpi_story3_round.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-mdpi\\story3_round.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\menu_bottom_nav.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\menu\\bottom_nav.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xhdpi_circle_baru_foreground.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xhdpi\\circle_baru_foreground.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_person_icon.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\person_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_yucar_studios_cfr_v1quekw_unsplash.jpg.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\yucar_studios_cfr_v1quekw_unsplash.jpg"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-hdpi_default_image_news.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-hdpi\\default_image_news.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_nav_background_curved.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\nav_background_curved.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-anydpi-v26_story3.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-anydpi-v26\\story3.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_fragment_water_recycle_view_pending.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\fragment_water_recycle_view_pending.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_calander.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\calander.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_fragment_login.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\fragment_login.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_single_water_pending_projects_card.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\single_water_pending_projects_card.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_single_donation_recylcleview.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\single_donation_recylcleview.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_checkbox_true.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\checkbox_true.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xhdpi_story_1_foreground.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xhdpi\\story_1_foreground.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_progress_bar_custom.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\progress_bar_custom.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_title_box.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\title_box.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-anydpi-v26_story3_round.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-anydpi-v26\\story3_round.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xxxhdpi_story2_foreground.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xxxhdpi\\story2_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_ic_money.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\ic_money.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xhdpi_story_1.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xhdpi\\story_1.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_single_news_project_card.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\single_news_project_card.xml"
+        "merged": "com.example.aidflow.app-debug-74:/layout_single_news_card.xml.flat",
+        "source": "com.example.aidflow.app-main-76:/layout/single_news_card.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_fragment_water.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\fragment_water.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xxhdpi_story3_round.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xxhdpi\\story3_round.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_story_card.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\story_card.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-hdpi_story_1.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-hdpi\\story_1.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-mdpi_story3.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-mdpi\\story3.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_ic_report.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\ic_report.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-hdpi_story2_foreground.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-hdpi\\story2_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-anydpi-v26_story_1.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-anydpi-v26\\story_1.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_ic_hide_pass.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\ic_hide_pass.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xxxhdpi_story3_round.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xxxhdpi\\story3_round.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xxhdpi_story_1_round.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xxhdpi\\story_1_round.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_single_volunteer_badge.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\single_volunteer_badge.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xxxhdpi_story3.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xxxhdpi\\story3.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xxxhdpi_story2_foreground.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xxxhdpi\\story2_foreground.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_nav_background_curved.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\nav_background_curved.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_red_urgency.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\red_urgency.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_badge_12hours.png.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\badge_12hours.png"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_rating_bar.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\rating_bar.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_toggle_widget_background.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\toggle_widget_background.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_fragment_volunteer_details.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\fragment_volunteer_details.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xxhdpi\\ic_launcher_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_fragment_volunteer.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\fragment_volunteer.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_fragment_donation.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_donation.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_profile2.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\profile2.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xxxhdpi_story_1_foreground.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xxxhdpi\\story_1_foreground.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_icon_profile.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\icon_profile.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_fragment_news_cam.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\fragment_news_cam.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_round_box_white.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\round_box_white.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_box_login.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\box_login.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-mdpi_story3_foreground.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-mdpi\\story3_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_home_icon.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\home_icon.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\navigation_nav.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\navigation\\nav.xml"
     },
     {
-        "merged": "com.example.aidflow.app-debug-66:/layout_fragment_water_rating.xml.flat",
-        "source": "com.example.aidflow.app-main-68:/layout/fragment_water_rating.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_circle.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\circle.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_donation_title.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\donation_title.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_button_amount.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\button_amount.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_fragment_water_report.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\fragment_water_report.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_filter_icon.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\filter_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_default_image_news.jpg.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\default_image_news.jpg"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xxxhdpi_story2.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xxxhdpi\\story2.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_progress_bar_style.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\progress_bar_style.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_round_button_donation.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\round_button_donation.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-hdpi_circle_baru_foreground.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-hdpi\\circle_baru_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xxxhdpi_story2_round.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xxxhdpi\\story2_round.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xxhdpi_circle_baru_round.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xxhdpi\\circle_baru_round.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_fragment_news_projects_full_page.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\fragment_news_projects_full_page.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-anydpi-v26_story2.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-anydpi-v26\\story2.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_bottom_nav.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\bottom_nav.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_arrow_icon.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\arrow_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_pending_projects_card.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\pending_projects_card.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xhdpi_story2.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xhdpi\\story2.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-mdpi_ic_launcher_foreground.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-mdpi\\ic_launcher_foreground.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_single_water_done_card.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\single_water_done_card.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_badge_1month.png.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\badge_1month.png"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_roundbox_filter.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\roundbox_filter.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_dropdown_box.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\dropdown_box.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xxhdpi_circle_baru.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xxhdpi\\circle_baru.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-hdpi_story_1_round.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-hdpi\\story_1_round.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\menu_menu_bottom.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\menu\\menu_bottom.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_rounded_corners.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\rounded_corners.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-hdpi\\ic_launcher_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_jouni_rajala_0aiko248fhe_unsplash.jpg.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\jouni_rajala_0aiko248fhe_unsplash.jpg"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xhdpi_story2_round.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xhdpi\\story2_round.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-mdpi_story_1_round.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-mdpi\\story_1_round.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-hdpi_story3_round.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-hdpi\\story3_round.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-anydpi-v26_story2_round.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-anydpi-v26\\story2_round.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_progress_bar_circle.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\progress_bar_circle.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_fragment_donation_history.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\fragment_donation_history.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_fragment_news_story_view.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_news_story_view.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_history_recycleview.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\history_recycleview.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-mdpi\\ic_launcher_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-mdpi_circle_baru_foreground.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-mdpi\\circle_baru_foreground.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_ic_show_pass.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\ic_show_pass.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\font_poppins_light.ttf.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\font\\poppins_light.ttf"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\font_poppins_medium.ttf.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\font\\poppins_medium.ttf"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-mdpi_story2_round.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-mdpi\\story2_round.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_close.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\close.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_single_water_done_card.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\single_water_done_card.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_heart_hand_icon.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\heart_hand_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_circle.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\circle.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_checkbox_true.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\checkbox_true.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_story2.png.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\story2.png"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_fragment_donation.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\fragment_donation.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_hand_donate_icon.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\hand_donate_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\font_poppins.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\font\\poppins.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_pinpoint_icon.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\pinpoint_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xxhdpi_circle_baru_round.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xxhdpi\\circle_baru_round.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-anydpi-v26_story2_round.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-anydpi-v26\\story2_round.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_round_box_white.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\round_box_white.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xhdpi_circle_baru_foreground.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xhdpi\\circle_baru_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_round_box_join.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\round_box_join.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-hdpi_circle_baru_round.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-hdpi\\circle_baru_round.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_green_urgency.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\green_urgency.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_edit_text_background.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\edit_text_background.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_single_volunteer_upcoming_recycleview.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\single_volunteer_upcoming_recycleview.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_donation_title.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\donation_title.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_badge_1day.png.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\badge_1day.png"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xhdpi\\ic_launcher_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_rounded_lightblue.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\rounded_lightblue.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xxxhdpi_circle_baru_round.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xxxhdpi\\circle_baru_round.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_rating_cardview.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\rating_cardview.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_home_button.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\home_button.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_edit_text_background.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\edit_text_background.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_fragment_news_cam.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_news_cam.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\xml\\data_extraction_rules.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_badge_10reports.png.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\badge_10reports.png"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_single_donation_history_grouped.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\single_donation_history_grouped.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_single_volunteer_upcoming_recycleview.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\single_volunteer_upcoming_recycleview.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xxxhdpi\\ic_launcher_foreground.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xxxhdpi\\ic_launcher_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_rounded_blue.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\rounded_blue.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_ic_money.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\ic_money.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xxxhdpi_story3.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xxxhdpi\\story3.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xxxhdpi_story_1_foreground.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xxxhdpi\\story_1_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_circle_baru_background.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\circle_baru_background.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_round_box_join.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\round_box_join.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_fragment_projects.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\fragment_projects.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_phone_icon.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\phone_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_round_shape.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\round_shape.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_fragment_donation_history.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_donation_history.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-hdpi_default_image_news.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-hdpi\\default_image_news.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_single_news_project_card.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\single_news_project_card.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_round_button.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\round_button.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_round_box_select.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\round_box_select.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-anydpi-v26_story_1_round.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-anydpi-v26\\story_1_round.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_button_login.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\button_login.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_project_card.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\project_card.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_button_design_line.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\button_design_line.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_round_edittext_box.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\round_edittext_box.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_fragment_news_story_full.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\fragment_news_story_full.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xhdpi_circle_baru.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xhdpi\\circle_baru.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-hdpi_circle_baru_foreground.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-hdpi\\circle_baru_foreground.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xxhdpi_story_1.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xxhdpi\\story_1.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_fragment_water_rating.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_water_rating.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xhdpi_circle_baru_round.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xhdpi\\circle_baru_round.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xxhdpi_story2_round.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xxhdpi\\story2_round.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\menu_bottom_nav.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\menu\\bottom_nav.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xxxhdpi_circle_baru.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xxxhdpi\\circle_baru.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_fragment_donation_donate.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\fragment_donation_donate.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_ic_pass.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\ic_pass.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xxhdpi_story2_foreground.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xxhdpi\\story2_foreground.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_edit_text_small.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\edit_text_small.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_ic_pass.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\ic_pass.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_rounded_corners.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\rounded_corners.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_filter_icon.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\filter_icon.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xxxhdpi_story_1_round.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xxxhdpi\\story_1_round.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xxhdpi_story2_foreground.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xxhdpi\\story2_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_fragment_projects_full_page.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\fragment_projects_full_page.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_single_water_rating_cardview.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\single_water_rating_cardview.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\font_poppins_semibold.ttf.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\font\\poppins_semibold.ttf"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_water_logo.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\water_logo.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xhdpi_ic_launcher_foreground.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xhdpi\\ic_launcher_foreground.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xhdpi_default_image_news.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xhdpi\\default_image_news.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xxhdpi_story2_round.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xxhdpi\\story2_round.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_round_rectangle.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\round_rectangle.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-hdpi_story3_round.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-hdpi\\story3_round.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_arrow_down.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\arrow_down.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\font_poppins_extralight.ttf.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\font\\poppins_extralight.ttf"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_circle_shape.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\circle_shape.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_button_login.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\button_login.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\font_poppins_semibold.ttf.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\font\\poppins_semibold.ttf"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_arrow_down.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\arrow_down.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xxxhdpi_story3_round.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xxxhdpi\\story3_round.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_fragment_cam.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\fragment_cam.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xxhdpi_story3_foreground.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xxhdpi\\story3_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-hdpi_circle_baru.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-hdpi\\circle_baru.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_ic_donate.png.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\ic_donate.png"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_pinpoint_icon.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\pinpoint_icon.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xxhdpi_story2.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xxhdpi\\story2.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-mdpi_story2.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-mdpi\\story2.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_single_volunteer_badge.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\single_volunteer_badge.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_camera.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\camera.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xhdpi_story_1_foreground.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xhdpi\\story_1_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_button_amount.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\button_amount.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-hdpi_story2.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-hdpi\\story2.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-mdpi_story2.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-mdpi\\story2.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_circle_shape.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\circle_shape.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-mdpi_circle_baru.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-mdpi\\circle_baru.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-mdpi_story_1_foreground.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-mdpi\\story_1_foreground.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_story3.jpg.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\story3.jpg"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\navigation_nav.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\navigation\\nav.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-anydpi-v26_circle_baru.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-anydpi-v26\\circle_baru.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_icon_water.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\icon_water.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xxxhdpi_story2.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xxxhdpi\\story2.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_btn_donate.png.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\btn_donate.png"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_person_outline.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\person_outline.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-hdpi_story2_foreground.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-hdpi\\story2_foreground.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_fragment_news_story_view.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\fragment_news_story_view.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xxxhdpi_default_image_news.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xxxhdpi\\default_image_news.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_button_design_line.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\button_design_line.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_fragment_news_web.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_news_web.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_donation_recylcleview.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\donation_recylcleview.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_icon_volunteer.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\icon_volunteer.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-hdpi_story3_foreground.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-hdpi\\story3_foreground.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-mdpi_story_1.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-mdpi\\story_1.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_fragment_donation_hist_filter.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_donation_hist_filter.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_roundbox_filter.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\roundbox_filter.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_checkbox_selector.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\checkbox_selector.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_slider_rating.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\slider_rating.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_profile2.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\profile2.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xxhdpi_story_1_foreground.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xxhdpi\\story_1_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-anydpi-v26_story2.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-anydpi-v26\\story2.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-hdpi_story2_round.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-hdpi\\story2_round.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_icon_volunteer.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\icon_volunteer.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_rounded_lightblue.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\rounded_lightblue.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_icon_donation.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\icon_donation.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_icon_water.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\icon_water.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_calander.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\calander.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-hdpi_story3_foreground.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-hdpi\\story3_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_circle_baru_background.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\circle_baru_background.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_donate_person.png.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\donate_person.png"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_nav_icon_color.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\nav_icon_color.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xhdpi_story3.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xhdpi\\story3.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_btn_donate.png.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\btn_donate.png"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_phone_icon.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\phone_icon.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_fragment_news_main_page.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_news_main_page.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_badge_12hours.png.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\badge_12hours.png"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_fragment_volunteer_prog.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_volunteer_prog.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xxxhdpi_default_image_news.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xxxhdpi\\default_image_news.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_droplet_icon.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\droplet_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_single_news_story_card.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\single_news_story_card.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_fragment_news_story_full.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_news_story_full.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_hand_donate_icon.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\hand_donate_icon.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_round_button_donation.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\round_button_donation.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_profile_text_box.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\profile_text_box.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_person_icon_1.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\person_icon_1.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_nav_icon_color.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\nav_icon_color.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_round_box_nav.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\round_box_nav.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_fragment_water_recycle_view_pending.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\fragment_water_recycle_view_pending.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_fragment_volunteer_prog.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\fragment_volunteer_prog.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xhdpi_circle_baru_round.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xhdpi\\circle_baru_round.webp"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xxhdpi_story_1.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xxhdpi\\story_1.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_badge_7hours.png.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\badge_7hours.png"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\font_poppins_bold.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\font\\poppins_bold.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\drawable_round_shape.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\drawable\\round_shape.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_person_outline.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\person_outline.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\layout_single_profile_badge.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\layout\\single_profile_badge.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_single_donation_history_recycleview.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\single_donation_history_recycleview.xml"
-    },
-    {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xxhdpi_story2.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xxhdpi\\story2.webp"
-    },
-    {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_badge_7hours.png.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\badge_7hours.png"
-    },
-    {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xxxhdpi_circle_baru_round.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xxxhdpi\\circle_baru_round.webp"
-    },
-    {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_activity_login_signup.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\activity_login_signup.xml"
-    },
-    {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_single_water_pending_projects_card.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\single_water_pending_projects_card.xml"
-    },
-    {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_single_water_rating_cardview.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\single_water_rating_cardview.xml"
-    },
-    {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_home_button.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\home_button.xml"
-    },
-    {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_badge_10reports.png.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\badge_10reports.png"
-    },
-    {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_back_icon.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\back_icon.xml"
-    },
-    {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\layout_fragment_recycle_view_pending.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\fragment_recycle_view_pending.xml"
-    },
-    {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xhdpi_story3_foreground.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xhdpi\\story3_foreground.webp"
-    },
-    {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-xhdpi_story_1.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-xhdpi\\story_1.webp"
-    },
-    {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_ic_donate.png.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\ic_donate.png"
-    },
-    {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_round_box_select.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\round_box_select.xml"
-    },
-    {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\drawable_water_logo.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\drawable\\water_logo.xml"
-    },
-    {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-66:\\mipmap-hdpi_story_1_foreground.webp.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\mipmap-hdpi\\story_1_foreground.webp"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-debug-74:\\mipmap-xxxhdpi_story3_foreground.webp.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-76:\\mipmap-xxxhdpi\\story3_foreground.webp"
     }
 ]

@@ -7,6 +7,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.Navigation;
 
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -16,6 +17,8 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
+import com.google.android.material.imageview.ShapeableImageView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
 
@@ -27,6 +30,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 public class ProfileFragment extends Fragment {
 
     private RadioGroup toggleProfile;
+    private ShapeableImageView IVProfile;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -127,12 +131,22 @@ public class ProfileFragment extends Fragment {
         TextView TVLname = v.findViewById(R.id.TVLName);
         TextView TVEmail = v.findViewById(R.id.TVUserEmail);
         TextView TVPhone = v.findViewById(R.id.TVUserPhone);
+        IVProfile = v.findViewById(R.id.IVProfile);
 
         TVUsername.setText(user.getUsername());
         TVFname.setText(user.getFirstName());
         TVLname.setText(user.getLastName());
         TVEmail.setText(user.getEmail());
         TVPhone.setText(user.getPhone());
+
+        if (user.getImageUrl()!=null) {
+            Glide.with(requireContext())
+                    .load(user.getImageUrl())
+                    .placeholder(R.drawable.default_image_news)
+                    .into(IVProfile);
+        } else{
+            Log.e("ProjectsAdapter", "No image to display");
+        }
     }
 
 }

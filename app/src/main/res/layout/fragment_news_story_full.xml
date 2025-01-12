@@ -9,7 +9,7 @@
     tools:context=".NewsStoryFullFragment">
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnBack"
+        android:id="@+id/btnBackNews"
         android:layout_width="69dp"
         android:layout_height="45dp"
         android:layout_marginTop="15dp"
@@ -34,7 +34,7 @@
         app:layout_constraintEnd_toEndOf="@+id/linearLayout"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/linearLayout"
-        app:layout_constraintTop_toBottomOf="@+id/btnBack" />
+        app:layout_constraintTop_toBottomOf="@+id/btnBackNews" />
 
     <LinearLayout
         android:id="@+id/linearLayout"

@@ -60,18 +60,10 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsViewHolder
         holder.itemView.setOnClickListener(v -> {
             // Pass the article details to the destination
             Bundle bundle = new Bundle();
-            bundle.putString("title", anews.getTitle());
-            bundle.putString("description", anews.getDescription());
-            bundle.putString("url", anews.getUrl());
-            bundle.putString("imageUrl", anews.getImage());
-            bundle.putString("publisherName", anews.getAuthor());
-
-            // set to pass arguments
-            Fragment newsFullPage = new NewsFullPage();
-            newsFullPage.setArguments(bundle);
+            bundle.putString("url_key", anews.getUrl()); // Use "url_key" to match with the fragment
 
             NavController navController = Navigation.findNavController(v);
-            navController.navigate(R.id.action_newsMainPageFragment_to_destNewsFull, bundle);
+            navController.navigate(R.id.destNewsWeb, bundle); // Ensure destNewsWeb is the correct action ID
         });
     }
 

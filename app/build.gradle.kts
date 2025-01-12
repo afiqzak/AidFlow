@@ -65,4 +65,11 @@ dependencies {
     implementation(libs.cloudinary.android)
     implementation (libs.glide)
     annotationProcessor (libs.compiler)
+    val cameraxVersion="1.2.2"
+    implementation(libs.camera.core)
+    implementation(libs.camera.camera2)
+    implementation(libs.camera.lifecycle)
+    implementation(libs.androidx.camera.video)
+    implementation(libs.androidx.camera.view)
+    implementation(libs.androidx.camera.extensions)
 }

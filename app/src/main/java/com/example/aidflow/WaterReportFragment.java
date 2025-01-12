@@ -7,7 +7,6 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
@@ -20,12 +19,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.Firebase;
 import com.google.firebase.Timestamp;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import com.cloudinary.Cloudinary;
@@ -171,7 +166,7 @@ public class WaterReportFragment extends Fragment {
         };
         time.setOnClickListener(OCLTime);
 
-        Button btnBack = view.findViewById(R.id.btnBack);
+        Button btnBack = view.findViewById(R.id.btnBackNews);
         View.OnClickListener OCLBack = v -> Navigation.findNavController(view).navigate(R.id.destWaterQuality);
         btnBack.setOnClickListener(OCLBack);
     }

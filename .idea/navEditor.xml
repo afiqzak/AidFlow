@@ -17,6 +17,15 @@
                             <option name="y" value="368" />
                           </Point>
                         </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_newsCamFragment_to_newsMainPageFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
                       </LayoutPositions>
                     </value>
                   </entry>
@@ -177,18 +186,6 @@
                           <Point>
                             <option name="x" value="-758" />
                             <option name="y" value="-631" />
-                          </Point>
-                        </option>
-                      </LayoutPositions>
-                    </value>
-                  </entry>
-                  <entry key="newsStoryView">
-                    <value>
-                      <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="286" />
-                            <option name="y" value="330" />
                           </Point>
                         </option>
                       </LayoutPositions>

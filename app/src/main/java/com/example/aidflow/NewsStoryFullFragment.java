@@ -78,7 +78,7 @@ public class NewsStoryFullFragment extends Fragment {
     @SuppressLint("SetTextI18n")
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
-        Button btnBack = view.findViewById(R.id.btnBack);
+        Button btnBack = view.findViewById(R.id.btnBackNews);
         TextView username = view.findViewById(R.id.user_name);
         TextView description = view.findViewById(R.id.story_desc);
         ImageView profileIV = view.findViewById(R.id.user_image);

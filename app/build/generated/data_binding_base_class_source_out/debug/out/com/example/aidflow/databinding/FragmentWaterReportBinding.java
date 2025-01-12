@@ -26,7 +26,7 @@ public final class FragmentWaterReportBinding implements ViewBinding {
   public final EditText address;
 
   @NonNull
-  public final MaterialButton btnBack;
+  public final MaterialButton btnBackNews;
 
   @NonNull
   public final EditText complaint;
@@ -59,13 +59,13 @@ public final class FragmentWaterReportBinding implements ViewBinding {
   public final Button uploadPhotoButton;
 
   private FragmentWaterReportBinding(@NonNull ConstraintLayout rootView, @NonNull EditText address,
-      @NonNull MaterialButton btnBack, @NonNull EditText complaint, @NonNull EditText date,
+      @NonNull MaterialButton btnBackNews, @NonNull EditText complaint, @NonNull EditText date,
       @NonNull EditText email, @NonNull EditText firstName, @NonNull EditText lastName,
       @NonNull EditText phoneNumber, @NonNull ScrollView scrollView2, @NonNull Button submit,
       @NonNull EditText time, @NonNull Button uploadPhotoButton) {
     this.rootView = rootView;
     this.address = address;
-    this.btnBack = btnBack;
+    this.btnBackNews = btnBackNews;
     this.complaint = complaint;
     this.date = date;
     this.email = email;
@@ -111,9 +111,9 @@ public final class FragmentWaterReportBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.btnBack;
-      MaterialButton btnBack = ViewBindings.findChildViewById(rootView, id);
-      if (btnBack == null) {
+      id = R.id.btnBackNews;
+      MaterialButton btnBackNews = ViewBindings.findChildViewById(rootView, id);
+      if (btnBackNews == null) {
         break missingId;
       }
 
@@ -177,7 +177,7 @@ public final class FragmentWaterReportBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentWaterReportBinding((ConstraintLayout) rootView, address, btnBack,
+      return new FragmentWaterReportBinding((ConstraintLayout) rootView, address, btnBackNews,
           complaint, date, email, firstName, lastName, phoneNumber, scrollView2, submit, time,
           uploadPhotoButton);
     }

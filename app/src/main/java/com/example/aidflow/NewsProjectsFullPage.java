@@ -96,7 +96,7 @@ public class NewsProjectsFullPage extends Fragment {
                 });
 
         // Back Button Setup
-        Button btnBack = view.findViewById(R.id.btnBack);
+        Button btnBack = view.findViewById(R.id.btnBackNews);
         View.OnClickListener OCLBack = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
