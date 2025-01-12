@@ -3550,6 +3550,7 @@ int id RLService 0x7f0a0037
 int id RLTime 0x7f0a0038
 int id RVListHistory 0x7f0a0039
 int id RVPBadges 0x7f0a003a
+int id RVProject 0x7f0a0367
 int id RVVBadges 0x7f0a003b
 int id SBEffective 0x7f0a003c
 int id SBService 0x7f0a003d
@@ -3602,6 +3603,7 @@ int id TVPassRequi 0x7f0a006a
 int id TVPassword 0x7f0a006b
 int id TVPayMehtod 0x7f0a006c
 int id TVPhone 0x7f0a006d
+int id TVProgress 0x7f0a036b
 int id TVPublisherName 0x7f0a0365
 int id TVRequirement 0x7f0a006e
 int id TVService 0x7f0a006f
@@ -4120,10 +4122,9 @@ int id progress_circular 0x7f0a0275
 int id progress_horizontal 0x7f0a0276
 int id projectButton 0x7f0a0277
 int id projectFullDesc 0x7f0a0278
-int id projectImage 0x7f0a0279
-int id projectList 0x7f0a027a
-int id projectProgressBar 0x7f0a027d
-int id projectTitle 0x7f0a027e
+int id projectFullImage 0x7f0a0368
+int id projectFullProgressBar 0x7f0a0369
+int id projectFullTitle 0x7f0a036a
 int id projects_toggle 0x7f0a027f
 int id publisherpic 0x7f0a0280
 int id radio 0x7f0a0281

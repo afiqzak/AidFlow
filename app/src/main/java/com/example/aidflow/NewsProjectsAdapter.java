@@ -1,7 +1,6 @@
 package com.example.aidflow;
 
 import android.content.Context;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,8 +11,6 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
-import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -25,10 +22,12 @@ public class NewsProjectsAdapter extends RecyclerView.Adapter<NewsProjectsAdapte
 
     private final List<NewsProjects> projectsList;
     private Context context;
+    private NewsProjectViewModel newsProjectViewModel;
 
-    public NewsProjectsAdapter(List<NewsProjects> projectsList, Context context) {
+    public NewsProjectsAdapter(List<NewsProjects> projectsList, Context context, NewsProjectViewModel newsProjectViewModel) {
         this.projectsList = projectsList;
         this.context = context;
+        this.newsProjectViewModel = newsProjectViewModel;
     }
 
     @NonNull
@@ -50,9 +49,9 @@ public class NewsProjectsAdapter extends RecyclerView.Adapter<NewsProjectsAdapte
 
         holder.projectTitles.setText(projects.getProjectsName());
         holder.projectDesc.setText(projects.getProjectsDesc());
-        holder.projectDate.setText(projects.getStartDate() + " - " + projects.getEndDate());
+        holder.projectDate.setText(projects.getSDate() + " - " + projects.getEDate());
         //holder.projectImages.setImageResource(projectImages.get(position));
-        holder.progressBar.setProgress(projects.getProgress());
+        holder.progressBar.setProgress(projects.getProgressRate());
 
         if (projects.getImageUrl()!=null) {
             Glide.with(context)
@@ -64,22 +63,14 @@ public class NewsProjectsAdapter extends RecyclerView.Adapter<NewsProjectsAdapte
         }
 
         holder.ProjectButton.setOnClickListener(v -> {
-            // Pass the projects details to the destination
-            Bundle bundle = new Bundle();
-            bundle.putString("projectsTitle", projects.getProjectsName());
-            bundle.putString("projectsDesc", projects.getProjectsDesc());
-            bundle.putString("projectsGoals", projects.getProjectsGoal());
-            bundle.putString("startDate", projects.getStartDate());
-            bundle.putString("endDate", projects.getEndDate());
-            bundle.putInt("progressRate", projects.getProgress());
-            bundle.putString("imageUrl", projects.getImageUrl());
+            if (newsProjectViewModel != null) {
 
-            // set to pass arguments
-            Fragment projectsFullPage = new NewsProjectsFullPage();
-            projectsFullPage.setArguments(bundle);
-
-            NavController navController = Navigation.findNavController(v);
-            navController.navigate(R.id.action_newsMainPageFragment_to_projectsFullPage);
+                newsProjectViewModel.getSelectedProject().setValue(projects);
+                Log.d("ProjectsAdapter", "Setting selected project: " + newsProjectViewModel.getSelectedProject().getValue().getProjectsName());
+                Navigation.findNavController(v).navigate(R.id.destProjectFull);
+            } else {
+                Log.e("ProjectsAdapter", "ViewModel is null");
+            }
         });
     }
 

@@ -3551,6 +3551,7 @@ id RLService
 id RLTime
 id RVListHistory
 id RVPBadges
+id RVProject
 id RVVBadges
 id SBEffective
 id SBService
@@ -3603,6 +3604,7 @@ id TVPassRequi
 id TVPassword
 id TVPayMehtod
 id TVPhone
+id TVProgress
 id TVPublisherName
 id TVRequirement
 id TVService
@@ -4121,10 +4123,9 @@ id progress_circular
 id progress_horizontal
 id projectButton
 id projectFullDesc
-id projectImage
-id projectList
-id projectProgressBar
-id projectTitle
+id projectFullImage
+id projectFullProgressBar
+id projectFullTitle
 id projects_toggle
 id publisherpic
 id radio

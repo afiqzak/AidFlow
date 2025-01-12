@@ -24,7 +24,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/projectTitle"
+        android:id="@+id/projectFullTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Title"
@@ -36,7 +36,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btnBack" />
 
     <ImageView
-        android:id="@+id/projectImage"
+        android:id="@+id/projectFullImage"
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:layout_marginTop="20dp"
@@ -45,7 +45,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/projectTitle"
+        app:layout_constraintTop_toBottomOf="@+id/projectFullTitle"
         app:layout_constraintVertical_bias="0.0"></ImageView>
 
     <ScrollView
@@ -58,7 +58,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/projectImage"
+        app:layout_constraintTop_toBottomOf="@+id/projectFullImage"
         app:layout_constraintVertical_bias="0.09">
 
         <TextView
@@ -82,6 +82,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <TextView
+            android:id="@+id/TVProgress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -91,7 +92,7 @@
             android:textStyle="bold"></TextView>
 
         <ProgressBar
-            android:id="@+id/projectProgressBar"
+            android:id="@+id/projectFullProgressBar"
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="300dp"
             android:layout_height="wrap_content"

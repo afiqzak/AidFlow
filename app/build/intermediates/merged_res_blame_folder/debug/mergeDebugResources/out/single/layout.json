@@ -20,12 +20,12 @@
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\donation_recylcleview.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-65:\\layout\\fragment_volunteer_upcoming_cancel.xml",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\fragment_volunteer_upcoming_cancel.xml"
-    },
-    {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-65:\\layout\\pending_projects_card.xml",
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\pending_projects_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-65:\\layout\\fragment_volunteer_upcoming_cancel.xml",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\fragment_volunteer_upcoming_cancel.xml"
     },
     {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-65:\\layout\\fragment_donation_history.xml",
@@ -42,10 +42,6 @@
     {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-65:\\layout\\single_water_done_card.xml",
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\single_water_done_card.xml"
-    },
-    {
-        "merged": "com.example.aidflow.app-mergeDebugResources-65:/layout/fragment_news_story_full.xml",
-        "source": "com.example.aidflow.app-main-68:/layout/fragment_news_story_full.xml"
     },
     {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-65:\\layout\\single_volunteer_badge.xml",
@@ -134,6 +130,10 @@
     {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-65:\\layout\\fragment_login.xml",
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-main-68:\\layout\\fragment_login.xml"
+    },
+    {
+        "merged": "com.example.aidflow.app-mergeDebugResources-65:/layout/fragment_news_projects_full_page.xml",
+        "source": "com.example.aidflow.app-main-68:/layout/fragment_news_projects_full_page.xml"
     },
     {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.9\\com.example.aidflow.app-mergeDebugResources-65:\\layout\\fragment_water_report.xml",

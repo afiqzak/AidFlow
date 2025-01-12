@@ -22,10 +22,12 @@ public class NewsStoryAdapter extends RecyclerView.Adapter<NewsStoryAdapter.News
 
     private Context context;
     private List<NewsStory> storyList;
+    private NewsStoryViewModel newsStoryViewModel;
 
-    public NewsStoryAdapter( Context context, List<NewsStory> storyList) {
+    public NewsStoryAdapter( Context context, List<NewsStory> storyList, NewsStoryViewModel newsStoryViewModel) {
         this.storyList = storyList;
         this.context = context;
+        this.newsStoryViewModel = newsStoryViewModel;
     }
 
     @NonNull
@@ -55,19 +57,8 @@ public class NewsStoryAdapter extends RecyclerView.Adapter<NewsStoryAdapter.News
         }
 
         holder.itemView.setOnClickListener(v -> {
-            Bundle bundle = new Bundle();
-            bundle.putString("userID", story.getUserID());
-            bundle.putString("username", story.getUsername());
-            bundle.putString("description", story.getDescription());
-            bundle.putString("imageUrl", story.getImageUrl());
-            bundle.putString("userImageUrl", story.getUserImageUrl());
-
-
-            Fragment storyFullPage = new NewsStoryFullFragment();
-            storyFullPage.setArguments(bundle);
-
-            NavController navController = Navigation.findNavController(v);
-            navController.navigate(R.id.action_newsMainPageFragment_to_storyFullFragment, bundle);
+            newsStoryViewModel.getSelectedStory().setValue(story);
+            Navigation.findNavController(v).navigate(R.id.destStoryFull);
         });
     }
 

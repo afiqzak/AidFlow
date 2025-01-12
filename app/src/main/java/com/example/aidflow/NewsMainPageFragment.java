@@ -20,7 +20,6 @@ import android.widget.RadioGroup;
  */
 public class NewsMainPageFragment extends Fragment {
 
-    private NewsStoryViewModel newsStoryViewModel;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -80,19 +79,14 @@ public class NewsMainPageFragment extends Fragment {
             Navigation.findNavController(v).navigate(R.id.action_newsMainPageFragment_to_camFragment);
         });
 
-        newsStoryViewModel = new ViewModelProvider(requireActivity()).get(NewsStoryViewModel.class);
-
-        newsStoryViewModel.fetchStoryList();
 
         toggleGroup = view.findViewById(R.id.toggleNews);
 
         toggleGroup.setOnCheckedChangeListener((group, checkedId) -> {
             if (checkedId == R.id.projectButton) {
-                // tukar ke pending
 
                 switchFragment(new NewsProjectsFragment());
             } else if (checkedId == R.id.newsButton) {
-                // tukar ke done fragment
 
                 switchFragment(new NewsView());
             }

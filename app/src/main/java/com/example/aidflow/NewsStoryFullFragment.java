@@ -1,9 +1,11 @@
 package com.example.aidflow;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
 
 import android.util.Log;
@@ -23,6 +25,8 @@ import com.bumptech.glide.load.resource.bitmap.CircleCrop;
  * create an instance of this fragment.
  */
 public class NewsStoryFullFragment extends Fragment {
+
+    private NewsStoryViewModel newsStoryViewModel;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -71,6 +75,7 @@ public class NewsStoryFullFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_news_story_full, container, false);
     }
 
+    @SuppressLint("SetTextI18n")
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         Button btnBack = view.findViewById(R.id.btnBack);
@@ -79,29 +84,27 @@ public class NewsStoryFullFragment extends Fragment {
         ImageView profileIV = view.findViewById(R.id.user_image);
         ImageView storyIV = view.findViewById(R.id.story_image);
 
-        Bundle bundle = getArguments();
-        if (bundle != null) {
-            String storyUsername = bundle.getString("username");
-            String storyDesc = bundle.getString("description");
-            String imageUrl = bundle.getString("imageUrl");
-            String userImageUrl = bundle.getString("userImageUrl");
+        newsStoryViewModel = new ViewModelProvider(requireActivity()).get(NewsStoryViewModel.class);
 
-            Glide.with(this)
-                    .load(imageUrl)
-                    .placeholder(R.drawable.default_image_news)
-                    .into(storyIV);
+        newsStoryViewModel.getSelectedStory().observe(getViewLifecycleOwner(), story -> {
+            if (story != null) {
+                Glide.with(this)
+                        .load(story.getImageUrl())
+                        .placeholder(R.drawable.default_image_news)
+                        .into(storyIV);
 
-            Glide.with(this)
-                    .load(userImageUrl)
-                    .placeholder(R.drawable.default_image_news)
-                    .transform(new CircleCrop())
-                    .into(profileIV);
+                Glide.with(this)
+                        .load(story.getUserImageUrl())
+                        .placeholder(R.drawable.default_image_news)
+                        .transform(new CircleCrop())
+                        .into(profileIV);
 
-            username.setText("  " + storyUsername);
-            description.setText(storyDesc);
-        } else {
-            Log.d("StoryFullFragment", "Bundle is null");
-        }
+                username.setText("  " + story.getUsername());
+                description.setText(story.getDescription());
+            } else {
+                Log.d("StoryFullFragment", "Story is null");
+            }
+        });
 
 
         View.OnClickListener OCLBack = new View.OnClickListener() {

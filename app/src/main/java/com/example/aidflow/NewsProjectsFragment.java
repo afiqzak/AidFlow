@@ -5,6 +5,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -29,6 +30,10 @@ import java.util.Locale;
  * create an instance of this fragment.
  */
 public class NewsProjectsFragment extends Fragment {
+
+    private RecyclerView recyclerView;
+    private NewsProjectsAdapter adapter;
+    private NewsProjectViewModel newsProjectViewModel;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -70,87 +75,28 @@ public class NewsProjectsFragment extends Fragment {
         }
     }
 
-    private RecyclerView recyclerView;
-    private NewsProjectsAdapter adapter;
-    private ArrayList<NewsProjects> projectsList;
-    private FirebaseFirestore db;
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_news_projects, container, false);
-
-        recyclerView = view.findViewById(R.id.projectList);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-
-        projectsList = new ArrayList<NewsProjects>();
-
-        db = FirebaseFirestore.getInstance();
-
-        fetchProjects();
-
         return view;
     }
 
-    private void fetchProjects() {
-        Query query = db.collection("projects");
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
 
-        query.get()
-                .addOnSuccessListener(queryDocumentSnapshots -> {
-                    if (queryDocumentSnapshots != null) {
-                        projectsList.clear();
+        recyclerView = view.findViewById(R.id.RVProject);
 
-                        for (DocumentSnapshot document : queryDocumentSnapshots) {
-                            NewsProjects projects = retrieveFromDB(document);
-                            projectsList.add(projects);
+        newsProjectViewModel = new ViewModelProvider(requireActivity()).get(NewsProjectViewModel.class);
 
-                        }
-                        updateRecyclerView();
-                    }
-                })
-                .addOnFailureListener(e -> {
-                    Log.e("ProjectsFragment", "Error fetching projects data", e);
-                    Toast.makeText(getContext(), "Error fetching data: " + e.getMessage(), Toast.LENGTH_SHORT).show();
-                });
+        newsProjectViewModel.fetchProjects();
 
-    }
-
-    private void updateRecyclerView() {
-        if (adapter == null) {
-            adapter = new NewsProjectsAdapter(projectsList, getContext());
+        newsProjectViewModel.getProjects().observe(getViewLifecycleOwner(), projects -> {
+            adapter = new NewsProjectsAdapter(projects, getContext(), newsProjectViewModel);
+            recyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false));
             recyclerView.setAdapter(adapter);
-        } else {
-            adapter.notifyDataSetChanged();
-        }
-    }
-
-    private NewsProjects retrieveFromDB(DocumentSnapshot document) {
-        String projectsName = document.get("projectsName", String.class);
-        String projectsDesc = document.get("projectsDesc", String.class);
-        String projectsGoal = document.get("projectsGoals", String.class);
-        String imageUrl = document.get("imageUrl", String.class);
-
-        // Retrieve Timestamps
-        com.google.firebase.Timestamp startTimestamp = document.getTimestamp("startDate");
-        com.google.firebase.Timestamp endTimestamp = document.getTimestamp("endDate");
-
-        // Convert Timestamps to Strings (if needed)
-        String startDate = formatTimestamp(startTimestamp);
-        String endDate = formatTimestamp(endTimestamp);
-
-        Long progressLong = document.getLong("progressRate");
-        int progress = progressLong != null ? progressLong.intValue() : 0;
-
-        return new NewsProjects(projectsName, projectsDesc, projectsGoal, startDate, endDate, progress, imageUrl);
+        });
 
     }
-
-    private String formatTimestamp(com.google.firebase.Timestamp timestamp) {
-        if (timestamp == null) {
-            return null;
-        }
-        SimpleDateFormat sdf = new SimpleDateFormat("d MMM yyyy", Locale.getDefault());
-        return sdf.format(timestamp.toDate());
-    }
-
 }

@@ -81,13 +81,13 @@ public class NewsStoryView extends Fragment {
 
         storyViewModel = new ViewModelProvider(requireActivity()).get(NewsStoryViewModel.class);
 
+        storyViewModel.fetchStoryList();
+
         storyViewModel.getStoryList().observe(getViewLifecycleOwner(), stories -> {
-            adapter = new NewsStoryAdapter(getContext(), stories);
+            adapter = new NewsStoryAdapter(getContext(), stories, storyViewModel);
             recyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
             recyclerView.setAdapter(adapter);
                 });
-
-        // takyah kacau
 
     }
 }
