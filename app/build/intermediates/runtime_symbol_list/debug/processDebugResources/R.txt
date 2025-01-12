@@ -3521,6 +3521,7 @@ int id History_button 0x7f0a001b
 int id IVBack 0x7f0a001c
 int id IVBadge 0x7f0a001d
 int id IVBadgeV 0x7f0a001e
+int id IVDone 0x7f0a036d
 int id IVMoney 0x7f0a001f
 int id IVNewsFull 0x7f0a0363
 int id IVProfile 0x7f0a0020
@@ -3578,7 +3579,6 @@ int id TVConfirmPass 0x7f0a0052
 int id TVDate 0x7f0a0053
 int id TVDesc 0x7f0a0054
 int id TVDonationCategory 0x7f0a0055
-int id TVDonationDueDate 0x7f0a0056
 int id TVDonationProgress 0x7f0a0057
 int id TVDonationTitle 0x7f0a0058
 int id TVEffective 0x7f0a0059
@@ -3742,6 +3742,7 @@ int id browser_actions_menu_items 0x7f0a00f2
 int id browser_actions_menu_view 0x7f0a00f3
 int id btnBack 0x7f0a00f4
 int id btnBack2 0x7f0a00f5
+int id btnSubmit 0x7f0a036e
 int id buttonPanel 0x7f0a00f6
 int id buttonsContainer 0x7f0a00f7
 int id cache_measures 0x7f0a00f8
@@ -3808,6 +3809,7 @@ int id custom 0x7f0a0134
 int id customPanel 0x7f0a0135
 int id cut 0x7f0a0136
 int id dark 0x7f0a0137
+int id date 0x7f0a036c
 int id date_picker_actions 0x7f0a0138
 int id decelerate 0x7f0a0139
 int id decelerateAndComplete 0x7f0a013a
@@ -4231,7 +4233,6 @@ int id story_image 0x7f0a02e7
 int id stretch 0x7f0a02e8
 int id submenuarrow 0x7f0a02e9
 int id submit 0x7f0a02ea
-int id submitRating 0x7f0a02eb
 int id submit_area 0x7f0a02ec
 int id subtitle 0x7f0a02ed
 int id supportScrollUp 0x7f0a02ee

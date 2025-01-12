@@ -35,7 +35,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/submitRating"
+        android:id="@+id/btnSubmit"
         android:layout_width="349dp"
         android:layout_height="51dp"
         android:layout_marginBottom="16dp"

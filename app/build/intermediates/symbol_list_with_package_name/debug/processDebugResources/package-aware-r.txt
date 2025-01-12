@@ -3522,6 +3522,7 @@ id History_button
 id IVBack
 id IVBadge
 id IVBadgeV
+id IVDone
 id IVMoney
 id IVNewsFull
 id IVProfile
@@ -3579,7 +3580,6 @@ id TVConfirmPass
 id TVDate
 id TVDesc
 id TVDonationCategory
-id TVDonationDueDate
 id TVDonationProgress
 id TVDonationTitle
 id TVEffective
@@ -3743,6 +3743,7 @@ id browser_actions_menu_items
 id browser_actions_menu_view
 id btnBack
 id btnBack2
+id btnSubmit
 id buttonPanel
 id buttonsContainer
 id cache_measures
@@ -3809,6 +3810,7 @@ id custom
 id customPanel
 id cut
 id dark
+id date
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -4232,7 +4234,6 @@ id story_image
 id stretch
 id submenuarrow
 id submit
-id submitRating
 id submit_area
 id subtitle
 id supportScrollUp

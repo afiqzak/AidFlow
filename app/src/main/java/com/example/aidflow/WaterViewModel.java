@@ -47,6 +47,7 @@ public class WaterViewModel extends ViewModel {
                     for (DocumentSnapshot doc : querySnapshot.getDocuments()) {
                         WaterReport report = doc.toObject(WaterReport.class);
                         if (report != null) {
+                            report.setReportID(doc.getId());
                             allPending.add(report);
                         }
                     }
@@ -76,6 +77,7 @@ public class WaterViewModel extends ViewModel {
                     for (DocumentSnapshot doc : querySnapshot.getDocuments()) {
                         WaterReport report = doc.toObject(WaterReport.class);
                         if (report != null) {
+                            report.setReportID(doc.getId());
                             allPending.add(report);
                         }
                     }

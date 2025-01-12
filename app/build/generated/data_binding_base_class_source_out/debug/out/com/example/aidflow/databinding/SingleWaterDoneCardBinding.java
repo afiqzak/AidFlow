@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,6 +22,9 @@ public final class SingleWaterDoneCardBinding implements ViewBinding {
   private final CardView rootView;
 
   @NonNull
+  public final ImageView IVDone;
+
+  @NonNull
   public final TextView donePlace;
 
   @NonNull
@@ -29,9 +33,11 @@ public final class SingleWaterDoneCardBinding implements ViewBinding {
   @NonNull
   public final TextView doneTitle;
 
-  private SingleWaterDoneCardBinding(@NonNull CardView rootView, @NonNull TextView donePlace,
-      @NonNull ImageButton doneStarButton, @NonNull TextView doneTitle) {
+  private SingleWaterDoneCardBinding(@NonNull CardView rootView, @NonNull ImageView IVDone,
+      @NonNull TextView donePlace, @NonNull ImageButton doneStarButton,
+      @NonNull TextView doneTitle) {
     this.rootView = rootView;
+    this.IVDone = IVDone;
     this.donePlace = donePlace;
     this.doneStarButton = doneStarButton;
     this.doneTitle = doneTitle;
@@ -64,6 +70,12 @@ public final class SingleWaterDoneCardBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.IVDone;
+      ImageView IVDone = ViewBindings.findChildViewById(rootView, id);
+      if (IVDone == null) {
+        break missingId;
+      }
+
       id = R.id.done_place;
       TextView donePlace = ViewBindings.findChildViewById(rootView, id);
       if (donePlace == null) {
@@ -82,7 +94,7 @@ public final class SingleWaterDoneCardBinding implements ViewBinding {
         break missingId;
       }
 
-      return new SingleWaterDoneCardBinding((CardView) rootView, donePlace, doneStarButton,
+      return new SingleWaterDoneCardBinding((CardView) rootView, IVDone, donePlace, doneStarButton,
           doneTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);

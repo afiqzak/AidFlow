@@ -82,7 +82,7 @@ public class WaterRecycleViewDone extends Fragment {
 
         recyclerView = view.findViewById(R.id.recyclerViewDone);
 
-        waterViewModel = new ViewModelProvider(this).get(WaterViewModel.class);
+        waterViewModel = new ViewModelProvider(requireActivity()).get(WaterViewModel.class);
 
         waterViewModel.fetchDoneReport(userId);
 

@@ -58,14 +58,14 @@ public final class FragmentWaterRatingBinding implements ViewBinding {
   public final MaterialButton btnBack2;
 
   @NonNull
-  public final Button submitRating;
+  public final Button btnSubmit;
 
   private FragmentWaterRatingBinding(@NonNull ConstraintLayout rootView,
       @NonNull ImageView IVRating, @NonNull LinearLayout RLEffective,
       @NonNull LinearLayout RLService, @NonNull LinearLayout RLTime, @NonNull SeekBar SBEffective,
       @NonNull SeekBar SBService, @NonNull SeekBar SBTime, @NonNull TextView TVEffective,
       @NonNull TextView TVService, @NonNull TextView TVTime, @NonNull MaterialButton btnBack2,
-      @NonNull Button submitRating) {
+      @NonNull Button btnSubmit) {
     this.rootView = rootView;
     this.IVRating = IVRating;
     this.RLEffective = RLEffective;
@@ -78,7 +78,7 @@ public final class FragmentWaterRatingBinding implements ViewBinding {
     this.TVService = TVService;
     this.TVTime = TVTime;
     this.btnBack2 = btnBack2;
-    this.submitRating = submitRating;
+    this.btnSubmit = btnSubmit;
   }
 
   @Override
@@ -174,15 +174,15 @@ public final class FragmentWaterRatingBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.submitRating;
-      Button submitRating = ViewBindings.findChildViewById(rootView, id);
-      if (submitRating == null) {
+      id = R.id.btnSubmit;
+      Button btnSubmit = ViewBindings.findChildViewById(rootView, id);
+      if (btnSubmit == null) {
         break missingId;
       }
 
       return new FragmentWaterRatingBinding((ConstraintLayout) rootView, IVRating, RLEffective,
           RLService, RLTime, SBEffective, SBService, SBTime, TVEffective, TVService, TVTime,
-          btnBack2, submitRating);
+          btnBack2, btnSubmit);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

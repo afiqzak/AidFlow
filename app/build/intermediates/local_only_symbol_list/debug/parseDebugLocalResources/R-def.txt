@@ -149,6 +149,7 @@ id History_button
 id IVBack
 id IVBadge
 id IVBadgeV
+id IVDone
 id IVMoney
 id IVNewsFull
 id IVProfile
@@ -197,7 +198,6 @@ id TVConfirmPass
 id TVDate
 id TVDesc
 id TVDonationCategory
-id TVDonationDueDate
 id TVDonationProgress
 id TVDonationTitle
 id TVEffective
@@ -261,6 +261,7 @@ id badgeImage
 id bottomNavigationView
 id btnBack
 id btnBack2
+id btnSubmit
 id cameraButton
 id camera_button
 id cancel_button_upcoming
@@ -280,6 +281,7 @@ id close_icon
 id complaint
 id constraintLayout
 id constraintLayout2
+id date
 id destCam
 id destDonation
 id destHome
@@ -373,7 +375,6 @@ id storyList
 id story_desc
 id story_image
 id submit
-id submitRating
 id subtitle
 id textLayout
 id textView
