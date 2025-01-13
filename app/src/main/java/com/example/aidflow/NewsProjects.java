@@ -1,22 +1,27 @@
 package com.example.aidflow;
 
 public class NewsProjects {
-    private final String projectsName;
-    private final String projectsDesc;
-    private final String projectsGoal;
-    private final String startDate;
-    private final String endDate;
-    private final int progress;
-    private final String imageUrl;
+    private String projectsName;
+    private String projectsDesc;
+    private String projectGoals;
+    private String sDate;
+    private String eDate;
+    private int progressRate;
+    private String imageUrl;
 
-    public NewsProjects(String projectsName, String projectsDesc, String projectsGoal, String startDate, String endDate, int progress, String imageUrl) {
+    public NewsProjects(String projectsName, String projectsDesc, String projectsGoals, String sDate,
+                        String eDate, int progressRate, String imageUrl) {
         this.projectsName = projectsName;
         this.projectsDesc = projectsDesc;
-        this.projectsGoal = projectsGoal;
-        this.startDate = startDate;
-        this.endDate = endDate;
-        this.progress = progress;
+        this.projectGoals = projectsGoals;
+        this.sDate = sDate;
+        this.eDate = eDate;
+        this.progressRate = progressRate;
         this.imageUrl = imageUrl;
+    }
+
+    public NewsProjects() {
+        // Default constructor required for calls to DataSnapshot.getValue(NewsProjects.class)
     }
 
     public String getProjectsName() {
@@ -27,23 +32,29 @@ public class NewsProjects {
         return projectsDesc;
     }
 
-    public String getProjectsGoal() {
-        return projectsGoal;
+    public String getProjectGoals() {
+        return projectGoals;
     }
 
-    public String getStartDate() {
-        return startDate;
+    public String getSDate() {return sDate;}
+
+    public String getEDate() {
+        return eDate;
     }
 
-    public String getEndDate() {
-        return endDate;
-    }
-
-    public int getProgress() {
-        return progress;
+    public int getProgressRate() {
+        return progressRate;
     }
 
     public String getImageUrl(){
         return imageUrl;
+    }
+
+    public void setEDate(String eDate) {
+        this.eDate = eDate;
+    }
+
+    public void setSDate(String sDate) {
+        this.sDate = sDate;
     }
 }

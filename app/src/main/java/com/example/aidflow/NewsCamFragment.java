@@ -44,6 +44,7 @@ public class NewsCamFragment extends Fragment {
     private ImageView capturedImageView;
     private EditText userCaption;
     private String uploadedImageUrl;
+    private Uri imageUri;
 
     public NewsCamFragment() {
         // Required empty public constructor
@@ -89,7 +90,7 @@ public class NewsCamFragment extends Fragment {
                 capturedImageView.setImageBitmap(photo);
 
                 // Save image to temp file and get Uri
-                Uri imageUri = getImageUriFromBitmap(photo);
+                imageUri = getImageUriFromBitmap(photo);
                 if (imageUri != null) {
                     new UploadImageTask().execute(imageUri);
                 }
@@ -99,7 +100,11 @@ public class NewsCamFragment extends Fragment {
         postButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                submitStory();
+                if (imageUri != null && uploadedImageUrl == null) {
+                    new UploadImageTask().execute(imageUri); // Ensure image uploads before submitting report
+                } else {
+                    submitStory();
+                }
             }
         });
     }

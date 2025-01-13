@@ -4,8 +4,10 @@ import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,7 +25,7 @@ import com.bumptech.glide.Glide;
  */
 public class NewsProjectsFullPage extends Fragment {
 
-
+    private NewsProjectViewModel newsProjectViewModel;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -73,28 +75,25 @@ public class NewsProjectsFullPage extends Fragment {
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
-        TextView projectsTitle = view.findViewById(R.id.ProjectsTitle);
+        TextView projectsTitle = view.findViewById(R.id.projectFullTitle);
         TextView projectsDesc = view.findViewById(R.id.projectFullDesc);
-        ProgressBar projectProgress = view.findViewById(R.id.projectProgressBar);
-        ImageView projectIV = view.findViewById(R.id.projectImage);
+        TextView TVProgress = view.findViewById(R.id.TVProgress);
+        ProgressBar projectProgress = view.findViewById(R.id.projectFullProgressBar);
+        ImageView projectIV = view.findViewById(R.id.projectFullImage);
 
-        // Retrieve the Bundle data
-        Bundle bundle = getArguments();
-        if (bundle != null) {
-            String projectsName = bundle.getString("projectsTitle");
-            String projectsGoals = bundle.getString("projectsGoals");
-            int progress = bundle.getInt("progressRate");
-            String imageUrl = bundle.getString("imageUrl");
+        newsProjectViewModel = new ViewModelProvider(requireActivity()).get(NewsProjectViewModel.class);
 
+        newsProjectViewModel.getSelectedProject().observe(getViewLifecycleOwner(), project -> {
+            Log.d("NewsProjectViewModel", "Selected Project: " + project.getProjectsName());
             Glide.with(this)
-                    .load(imageUrl)
+                    .load(project.getImageUrl())
                     .into(projectIV);
 
-            projectsTitle.setText(projectsName);
-            projectsDesc.setText(projectsGoals);
-            projectProgress.setProgress(progress);
-        }
-
+            projectsTitle.setText(project.getProjectsName());
+            projectsDesc.setText(project.getProjectGoals().replaceAll("(\\d+\\.\\s)", "\n$1").trim());
+            TVProgress.setText(project.getProgressRate() + "% to complete");
+            projectProgress.setProgress(project.getProgressRate());
+                });
 
         // Back Button Setup
         Button btnBack = view.findViewById(R.id.btnBack);

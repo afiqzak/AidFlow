@@ -25,6 +25,9 @@ public final class FragmentNewsProjectsFullPageBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final TextView TVProgress;
+
+  @NonNull
   public final MaterialButton btnBack;
 
   @NonNull
@@ -37,30 +40,32 @@ public final class FragmentNewsProjectsFullPageBinding implements ViewBinding {
   public final TextView projectFullDesc;
 
   @NonNull
-  public final ImageView projectImage;
+  public final ImageView projectFullImage;
 
   @NonNull
-  public final ProgressBar projectProgressBar;
+  public final ProgressBar projectFullProgressBar;
 
   @NonNull
-  public final TextView projectTitle;
+  public final TextView projectFullTitle;
 
   @NonNull
   public final ScrollView scrollView3;
 
   private FragmentNewsProjectsFullPageBinding(@NonNull ConstraintLayout rootView,
-      @NonNull MaterialButton btnBack, @NonNull ConstraintLayout frameLayout3,
-      @NonNull LinearLayout linearLayout3, @NonNull TextView projectFullDesc,
-      @NonNull ImageView projectImage, @NonNull ProgressBar projectProgressBar,
-      @NonNull TextView projectTitle, @NonNull ScrollView scrollView3) {
+      @NonNull TextView TVProgress, @NonNull MaterialButton btnBack,
+      @NonNull ConstraintLayout frameLayout3, @NonNull LinearLayout linearLayout3,
+      @NonNull TextView projectFullDesc, @NonNull ImageView projectFullImage,
+      @NonNull ProgressBar projectFullProgressBar, @NonNull TextView projectFullTitle,
+      @NonNull ScrollView scrollView3) {
     this.rootView = rootView;
+    this.TVProgress = TVProgress;
     this.btnBack = btnBack;
     this.frameLayout3 = frameLayout3;
     this.linearLayout3 = linearLayout3;
     this.projectFullDesc = projectFullDesc;
-    this.projectImage = projectImage;
-    this.projectProgressBar = projectProgressBar;
-    this.projectTitle = projectTitle;
+    this.projectFullImage = projectFullImage;
+    this.projectFullProgressBar = projectFullProgressBar;
+    this.projectFullTitle = projectFullTitle;
     this.scrollView3 = scrollView3;
   }
 
@@ -91,6 +96,12 @@ public final class FragmentNewsProjectsFullPageBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.TVProgress;
+      TextView TVProgress = ViewBindings.findChildViewById(rootView, id);
+      if (TVProgress == null) {
+        break missingId;
+      }
+
       id = R.id.btnBack;
       MaterialButton btnBack = ViewBindings.findChildViewById(rootView, id);
       if (btnBack == null) {
@@ -111,21 +122,21 @@ public final class FragmentNewsProjectsFullPageBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.projectImage;
-      ImageView projectImage = ViewBindings.findChildViewById(rootView, id);
-      if (projectImage == null) {
+      id = R.id.projectFullImage;
+      ImageView projectFullImage = ViewBindings.findChildViewById(rootView, id);
+      if (projectFullImage == null) {
         break missingId;
       }
 
-      id = R.id.projectProgressBar;
-      ProgressBar projectProgressBar = ViewBindings.findChildViewById(rootView, id);
-      if (projectProgressBar == null) {
+      id = R.id.projectFullProgressBar;
+      ProgressBar projectFullProgressBar = ViewBindings.findChildViewById(rootView, id);
+      if (projectFullProgressBar == null) {
         break missingId;
       }
 
-      id = R.id.projectTitle;
-      TextView projectTitle = ViewBindings.findChildViewById(rootView, id);
-      if (projectTitle == null) {
+      id = R.id.projectFullTitle;
+      TextView projectFullTitle = ViewBindings.findChildViewById(rootView, id);
+      if (projectFullTitle == null) {
         break missingId;
       }
 
@@ -135,9 +146,9 @@ public final class FragmentNewsProjectsFullPageBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentNewsProjectsFullPageBinding((ConstraintLayout) rootView, btnBack,
-          frameLayout3, linearLayout3, projectFullDesc, projectImage, projectProgressBar,
-          projectTitle, scrollView3);
+      return new FragmentNewsProjectsFullPageBinding((ConstraintLayout) rootView, TVProgress,
+          btnBack, frameLayout3, linearLayout3, projectFullDesc, projectFullImage,
+          projectFullProgressBar, projectFullTitle, scrollView3);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

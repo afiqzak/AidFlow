@@ -150,6 +150,7 @@ id History_button
 id IVBack
 id IVBadge
 id IVBadgeV
+id IVDone
 id IVMoney
 id IVNewsFull
 id IVProfile
@@ -177,6 +178,7 @@ id RLService
 id RLTime
 id RVListHistory
 id RVPBadges
+id RVProject
 id RVVBadges
 id SBEffective
 id SBService
@@ -197,7 +199,6 @@ id TVConfirmPass
 id TVDate
 id TVDesc
 id TVDonationCategory
-id TVDonationDueDate
 id TVDonationProgress
 id TVDonationTitle
 id TVEffective
@@ -222,6 +223,7 @@ id TVPassRequi
 id TVPassword
 id TVPayMehtod
 id TVPhone
+id TVProgress
 id TVPublisherName
 id TVRequirement
 id TVService
@@ -261,6 +263,7 @@ id badgeImage
 id bottomNavigationView
 id btnBack
 id btnBack2
+id btnSubmit
 id cameraButton
 id camera_button
 id cancel_button_upcoming
@@ -280,6 +283,7 @@ id close_icon
 id complaint
 id constraintLayout
 id constraintLayout2
+id date
 id destCam
 id destDonation
 id destHome
@@ -346,10 +350,9 @@ id progressText_denominator
 id progressText_numerator
 id projectButton
 id projectFullDesc
-id projectImage
-id projectList
-id projectProgressBar
-id projectTitle
+id projectFullImage
+id projectFullProgressBar
+id projectFullTitle
 id projects_toggle
 id publisherpic
 id radioGroup
@@ -375,7 +378,6 @@ id storyList
 id story_desc
 id story_image
 id submit
-id submitRating
 id subtitle
 id textLayout
 id textView

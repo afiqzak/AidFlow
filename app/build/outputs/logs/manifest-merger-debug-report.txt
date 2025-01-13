@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:2:1-44:12
+ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:2:1-46:12
 MERGED from [androidx.databinding:viewbinding:8.7.3] C:\Users\afiqz\.gradle\caches\8.9\transforms\6f1d0ff5de58ca17f802d27196267e0b\transformed\viewbinding-8.7.3\AndroidManifest.xml:2:1-7:12
 MERGED from [com.mikhaellopez:circularprogressbar:3.1.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\abecf5d97748598e07fcf96d7b2a441e\transformed\circularprogressbar-3.1.0\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.navigation:navigation-common:2.8.4] C:\Users\afiqz\.gradle\caches\8.9\transforms\ea7e1bd949f1488349fe7583445a65f3\transformed\navigation-common-2.8.4\AndroidManifest.xml:17:1-22:12
@@ -217,8 +217,8 @@ ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidMani
 	android:name
 		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:10:22-62
 application
-ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:12:5-42:19
-INJECTED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:12:5-42:19
+ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:12:5-44:19
+INJECTED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:12:5-44:19
 MERGED from [com.cloudinary:cloudinary-android-ui:2.0.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\c6dc22034857d7f04eaa03cf7d31f488\transformed\cloudinary-android-ui-2.0.0\AndroidManifest.xml:9:5-14:19
 MERGED from [com.cloudinary:cloudinary-android-ui:2.0.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\c6dc22034857d7f04eaa03cf7d31f488\transformed\cloudinary-android-ui-2.0.0\AndroidManifest.xml:9:5-14:19
 MERGED from [com.cloudinary:cloudinary-android-core:2.0.0] C:\Users\afiqz\.gradle\caches\8.9\transforms\fc7f316d6198ad2e13c8ab97c58483f6\transformed\cloudinary-android-core-2.0.0\AndroidManifest.xml:11:5-67
@@ -337,33 +337,37 @@ MERGED from [com.facebook.soloader:soloader:0.10.1] C:\Users\afiqz\.gradle\cache
 	tools:replace
 		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:23:9-50
 activity#com.example.aidflow.LoginSignupActivity
-ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:24:9-28:20
+ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:24:9-29:20
+	android:windowSoftInputMode
+		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:27:13-64
 	android:exported
 		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:26:13-37
 	android:name
 		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:25:13-48
 activity#com.example.aidflow.MainActivity
-ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:29:9-37:20
+ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:30:9-39:20
+	android:windowSoftInputMode
+		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:33:13-64
 	android:exported
-		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:31:13-36
+		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:32:13-36
 	android:name
-		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:30:13-41
+		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:31:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:32:13-36:29
+ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:34:13-38:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:33:17-69
+ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:35:17-69
 	android:name
-		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:33:25-66
+		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:35:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:35:17-77
+ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:37:17-77
 	android:name
-		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:35:27-74
+		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:37:27-74
 meta-data#preloaded_fonts
-ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:39:9-41:57
+ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:41:9-43:57
 	android:resource
-		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:41:13-54
+		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:43:13-54
 	android:name
-		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:40:13-43
+		ADDED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml:42:13-43
 uses-sdk
 INJECTED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\afiqz\AndroidStudioProjects\AidFlow\app\src\main\AndroidManifest.xml

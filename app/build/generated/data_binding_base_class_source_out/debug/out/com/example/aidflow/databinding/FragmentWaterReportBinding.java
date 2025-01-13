@@ -23,9 +23,6 @@ public final class FragmentWaterReportBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final EditText TVDonationDueDate;
-
-  @NonNull
   public final EditText address;
 
   @NonNull
@@ -33,6 +30,9 @@ public final class FragmentWaterReportBinding implements ViewBinding {
 
   @NonNull
   public final EditText complaint;
+
+  @NonNull
+  public final EditText date;
 
   @NonNull
   public final EditText email;
@@ -58,17 +58,16 @@ public final class FragmentWaterReportBinding implements ViewBinding {
   @NonNull
   public final Button uploadPhotoButton;
 
-  private FragmentWaterReportBinding(@NonNull ConstraintLayout rootView,
-      @NonNull EditText TVDonationDueDate, @NonNull EditText address,
-      @NonNull MaterialButton btnBack, @NonNull EditText complaint, @NonNull EditText email,
-      @NonNull EditText firstName, @NonNull EditText lastName, @NonNull EditText phoneNumber,
-      @NonNull ScrollView scrollView2, @NonNull Button submit, @NonNull EditText time,
-      @NonNull Button uploadPhotoButton) {
+  private FragmentWaterReportBinding(@NonNull ConstraintLayout rootView, @NonNull EditText address,
+      @NonNull MaterialButton btnBack, @NonNull EditText complaint, @NonNull EditText date,
+      @NonNull EditText email, @NonNull EditText firstName, @NonNull EditText lastName,
+      @NonNull EditText phoneNumber, @NonNull ScrollView scrollView2, @NonNull Button submit,
+      @NonNull EditText time, @NonNull Button uploadPhotoButton) {
     this.rootView = rootView;
-    this.TVDonationDueDate = TVDonationDueDate;
     this.address = address;
     this.btnBack = btnBack;
     this.complaint = complaint;
+    this.date = date;
     this.email = email;
     this.firstName = firstName;
     this.lastName = lastName;
@@ -106,12 +105,6 @@ public final class FragmentWaterReportBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.TVDonationDueDate;
-      EditText TVDonationDueDate = ViewBindings.findChildViewById(rootView, id);
-      if (TVDonationDueDate == null) {
-        break missingId;
-      }
-
       id = R.id.address;
       EditText address = ViewBindings.findChildViewById(rootView, id);
       if (address == null) {
@@ -127,6 +120,12 @@ public final class FragmentWaterReportBinding implements ViewBinding {
       id = R.id.complaint;
       EditText complaint = ViewBindings.findChildViewById(rootView, id);
       if (complaint == null) {
+        break missingId;
+      }
+
+      id = R.id.date;
+      EditText date = ViewBindings.findChildViewById(rootView, id);
+      if (date == null) {
         break missingId;
       }
 
@@ -178,8 +177,8 @@ public final class FragmentWaterReportBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentWaterReportBinding((ConstraintLayout) rootView, TVDonationDueDate, address,
-          btnBack, complaint, email, firstName, lastName, phoneNumber, scrollView2, submit, time,
+      return new FragmentWaterReportBinding((ConstraintLayout) rootView, address, btnBack,
+          complaint, date, email, firstName, lastName, phoneNumber, scrollView2, submit, time,
           uploadPhotoButton);
     }
     String missingId = rootView.getResources().getResourceName(id);

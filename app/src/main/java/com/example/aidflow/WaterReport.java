@@ -8,13 +8,15 @@ public class WaterReport {
     private boolean status;
     private String complaint;
     private boolean rate;
+    private String imageUrl;
 
-    public WaterReport(String reportID, String address, boolean status, String complaint, boolean rate) {
+    public WaterReport(String reportID, String address, boolean status, String complaint, boolean rate, String imageUrl) {
         this.reportID = reportID;
         this.address = address;
         this.status = status;
         this.complaint = complaint;
         this.rate = rate;
+        this.imageUrl = imageUrl;
     }
 
     public WaterReport() {}
@@ -39,5 +41,11 @@ public class WaterReport {
         return rate;
     }
 
+    public String getImageUrl() {
+        return imageUrl;
+    }
 
+    public void setReportID(String reportID) {
+        this.reportID = reportID;
+    }
 }

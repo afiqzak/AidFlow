@@ -27,13 +27,13 @@ public final class SingleDonationRecylcleviewBinding implements ViewBinding {
   public final TextView TVDonationCategory;
 
   @NonNull
-  public final TextView TVDonationDueDate;
-
-  @NonNull
   public final TextView TVDonationProgress;
 
   @NonNull
   public final TextView TVDonationTitle;
+
+  @NonNull
+  public final TextView date;
 
   @NonNull
   public final CardView donationCardView;
@@ -43,15 +43,14 @@ public final class SingleDonationRecylcleviewBinding implements ViewBinding {
 
   private SingleDonationRecylcleviewBinding(@NonNull CardView rootView,
       @NonNull ProgressBar PBDonation, @NonNull TextView TVDonationCategory,
-      @NonNull TextView TVDonationDueDate, @NonNull TextView TVDonationProgress,
-      @NonNull TextView TVDonationTitle, @NonNull CardView donationCardView,
-      @NonNull View urgencyIndicator) {
+      @NonNull TextView TVDonationProgress, @NonNull TextView TVDonationTitle,
+      @NonNull TextView date, @NonNull CardView donationCardView, @NonNull View urgencyIndicator) {
     this.rootView = rootView;
     this.PBDonation = PBDonation;
     this.TVDonationCategory = TVDonationCategory;
-    this.TVDonationDueDate = TVDonationDueDate;
     this.TVDonationProgress = TVDonationProgress;
     this.TVDonationTitle = TVDonationTitle;
+    this.date = date;
     this.donationCardView = donationCardView;
     this.urgencyIndicator = urgencyIndicator;
   }
@@ -95,12 +94,6 @@ public final class SingleDonationRecylcleviewBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.TVDonationDueDate;
-      TextView TVDonationDueDate = ViewBindings.findChildViewById(rootView, id);
-      if (TVDonationDueDate == null) {
-        break missingId;
-      }
-
       id = R.id.TVDonationProgress;
       TextView TVDonationProgress = ViewBindings.findChildViewById(rootView, id);
       if (TVDonationProgress == null) {
@@ -113,6 +106,12 @@ public final class SingleDonationRecylcleviewBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.date;
+      TextView date = ViewBindings.findChildViewById(rootView, id);
+      if (date == null) {
+        break missingId;
+      }
+
       CardView donationCardView = (CardView) rootView;
 
       id = R.id.urgencyIndicator;
@@ -122,8 +121,8 @@ public final class SingleDonationRecylcleviewBinding implements ViewBinding {
       }
 
       return new SingleDonationRecylcleviewBinding((CardView) rootView, PBDonation,
-          TVDonationCategory, TVDonationDueDate, TVDonationProgress, TVDonationTitle,
-          donationCardView, urgencyIndicator);
+          TVDonationCategory, TVDonationProgress, TVDonationTitle, date, donationCardView,
+          urgencyIndicator);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -24,9 +24,14 @@ import java.util.Set;
 
 public class NewsStoryViewModel extends ViewModel {
     private MutableLiveData<List<NewsStory>> storyList = new MutableLiveData<>();
+    private MutableLiveData<NewsStory> selectedStory = new MutableLiveData<>();
     private Map<String, User> accessedUsers = new HashMap<>();
     public MutableLiveData<List<NewsStory>> getStoryList() {
         return storyList;
+    }
+
+    public MutableLiveData<NewsStory> getSelectedStory() {
+        return selectedStory;
     }
 
     public void fetchStoryList() {

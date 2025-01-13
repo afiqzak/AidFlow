@@ -20,12 +20,12 @@ public final class FragmentNewsProjectsBinding implements ViewBinding {
   private final FrameLayout rootView;
 
   @NonNull
-  public final RecyclerView projectList;
+  public final RecyclerView RVProject;
 
   private FragmentNewsProjectsBinding(@NonNull FrameLayout rootView,
-      @NonNull RecyclerView projectList) {
+      @NonNull RecyclerView RVProject) {
     this.rootView = rootView;
-    this.projectList = projectList;
+    this.RVProject = RVProject;
   }
 
   @Override
@@ -55,13 +55,13 @@ public final class FragmentNewsProjectsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.projectList;
-      RecyclerView projectList = ViewBindings.findChildViewById(rootView, id);
-      if (projectList == null) {
+      id = R.id.RVProject;
+      RecyclerView RVProject = ViewBindings.findChildViewById(rootView, id);
+      if (RVProject == null) {
         break missingId;
       }
 
-      return new FragmentNewsProjectsBinding((FrameLayout) rootView, projectList);
+      return new FragmentNewsProjectsBinding((FrameLayout) rootView, RVProject);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

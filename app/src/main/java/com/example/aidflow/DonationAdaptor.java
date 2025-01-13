@@ -7,12 +7,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
-import androidx.fragment.app.FragmentActivity;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -89,7 +86,7 @@ class DonationAdapter extends RecyclerView.Adapter<DonationAdapter.DonationViewH
             super(itemView);
             TVDonationTitle = itemView.findViewById(R.id.TVDonationTitle);
             TVDonationCategory = itemView.findViewById(R.id.TVDonationCategory);
-            TVDonationDueDate = itemView.findViewById(R.id.TVDonationDueDate);
+            TVDonationDueDate = itemView.findViewById(R.id.date);
             TVDonationProgress = itemView.findViewById(R.id.TVDonationProgress);
             PBDonation = itemView.findViewById(R.id.PBDonation);
             urgencyIndicator = itemView.findViewById(R.id.urgencyIndicator);
