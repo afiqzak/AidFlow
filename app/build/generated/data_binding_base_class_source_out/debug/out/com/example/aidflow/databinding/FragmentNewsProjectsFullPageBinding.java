@@ -28,7 +28,7 @@ public final class FragmentNewsProjectsFullPageBinding implements ViewBinding {
   public final TextView TVProgress;
 
   @NonNull
-  public final MaterialButton btnBack;
+  public final MaterialButton btnBackNews;
 
   @NonNull
   public final ConstraintLayout frameLayout3;
@@ -52,14 +52,14 @@ public final class FragmentNewsProjectsFullPageBinding implements ViewBinding {
   public final ScrollView scrollView3;
 
   private FragmentNewsProjectsFullPageBinding(@NonNull ConstraintLayout rootView,
-      @NonNull TextView TVProgress, @NonNull MaterialButton btnBack,
+      @NonNull TextView TVProgress, @NonNull MaterialButton btnBackNews,
       @NonNull ConstraintLayout frameLayout3, @NonNull LinearLayout linearLayout3,
       @NonNull TextView projectFullDesc, @NonNull ImageView projectFullImage,
       @NonNull ProgressBar projectFullProgressBar, @NonNull TextView projectFullTitle,
       @NonNull ScrollView scrollView3) {
     this.rootView = rootView;
     this.TVProgress = TVProgress;
-    this.btnBack = btnBack;
+    this.btnBackNews = btnBackNews;
     this.frameLayout3 = frameLayout3;
     this.linearLayout3 = linearLayout3;
     this.projectFullDesc = projectFullDesc;
@@ -102,9 +102,9 @@ public final class FragmentNewsProjectsFullPageBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.btnBack;
-      MaterialButton btnBack = ViewBindings.findChildViewById(rootView, id);
-      if (btnBack == null) {
+      id = R.id.btnBackNews;
+      MaterialButton btnBackNews = ViewBindings.findChildViewById(rootView, id);
+      if (btnBackNews == null) {
         break missingId;
       }
 
@@ -147,7 +147,7 @@ public final class FragmentNewsProjectsFullPageBinding implements ViewBinding {
       }
 
       return new FragmentNewsProjectsFullPageBinding((ConstraintLayout) rootView, TVProgress,
-          btnBack, frameLayout3, linearLayout3, projectFullDesc, projectFullImage,
+          btnBackNews, frameLayout3, linearLayout3, projectFullDesc, projectFullImage,
           projectFullProgressBar, projectFullTitle, scrollView3);
     }
     String missingId = rootView.getResources().getResourceName(id);

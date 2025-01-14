@@ -4,6 +4,7 @@ package com.example.aidflow.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -22,6 +23,9 @@ import java.lang.String;
 public final class FragmentProfileBinding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
+
+  @NonNull
+  public final Button BtnLogout;
 
   @NonNull
   public final FragmentContainerView FCVProfile;
@@ -56,13 +60,14 @@ public final class FragmentProfileBinding implements ViewBinding {
   @NonNull
   public final RadioGroup toggleProfile;
 
-  private FragmentProfileBinding(@NonNull ConstraintLayout rootView,
+  private FragmentProfileBinding(@NonNull ConstraintLayout rootView, @NonNull Button BtnLogout,
       @NonNull FragmentContainerView FCVProfile, @NonNull ShapeableImageView IVProfile,
       @NonNull RadioButton RBBadges, @NonNull RadioButton RBOverview, @NonNull TextView TVFName,
       @NonNull TextView TVLName, @NonNull TextView TVUserEmail, @NonNull TextView TVUserPhone,
       @NonNull TextView TVUsername, @NonNull ConstraintLayout frameLayout5,
       @NonNull RadioGroup toggleProfile) {
     this.rootView = rootView;
+    this.BtnLogout = BtnLogout;
     this.FCVProfile = FCVProfile;
     this.IVProfile = IVProfile;
     this.RBBadges = RBBadges;
@@ -103,6 +108,12 @@ public final class FragmentProfileBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.BtnLogout;
+      Button BtnLogout = ViewBindings.findChildViewById(rootView, id);
+      if (BtnLogout == null) {
+        break missingId;
+      }
+
       id = R.id.FCVProfile;
       FragmentContainerView FCVProfile = ViewBindings.findChildViewById(rootView, id);
       if (FCVProfile == null) {
@@ -165,8 +176,8 @@ public final class FragmentProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentProfileBinding((ConstraintLayout) rootView, FCVProfile, IVProfile,
-          RBBadges, RBOverview, TVFName, TVLName, TVUserEmail, TVUserPhone, TVUsername,
+      return new FragmentProfileBinding((ConstraintLayout) rootView, BtnLogout, FCVProfile,
+          IVProfile, RBBadges, RBOverview, TVFName, TVLName, TVUserEmail, TVUserPhone, TVUsername,
           frameLayout5, toggleProfile);
     }
     String missingId = rootView.getResources().getResourceName(id);

@@ -62,11 +62,6 @@
         android:theme="@style/Theme.AidFlow" > <!-- Add this line -->
         <activity
             android:name="com.example.aidflow.LoginSignupActivity"
-            android:exported="false"
-            android:windowSoftInputMode="stateHidden|adjustPan" >
-        </activity>
-        <activity
-            android:name="com.example.aidflow.MainActivity"
             android:exported="true"
             android:windowSoftInputMode="stateHidden|adjustPan" >
             <intent-filter>
@@ -74,6 +69,11 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.aidflow.MainActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
         </activity>
 
         <meta-data

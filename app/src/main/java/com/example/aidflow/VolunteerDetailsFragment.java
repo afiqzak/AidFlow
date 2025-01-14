@@ -29,9 +29,8 @@ import java.util.Map;
 
 public class VolunteerDetailsFragment extends Fragment {
 
-    private TextView TVEventTitle,TVEventDate,TVEventLocation,TVEventContact,TVPIC,TVEventDesc;
+    private TextView TVEventTitle, TVEventDate, TVEventLocation, TVEventContact, TVPIC, TVEventDesc;
     private VolunteerViewModel volunteerViewModel;
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -39,13 +38,14 @@ public class VolunteerDetailsFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_volunteer_details, container, false);
 
-        //get current user id
+        // Get current user id
         String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
+        // Initialize ViewModel
         volunteerViewModel = new ViewModelProvider(requireActivity()).get(VolunteerViewModel.class);
 
+        // Initialize UI elements
         Button joinButton = view.findViewById(R.id.BtnJoinCancel);
-
         TVEventTitle = view.findViewById(R.id.TVEventTitle);
         TVEventDate = view.findViewById(R.id.TVEventDate);
         TVEventLocation = view.findViewById(R.id.TVEventLocation);
@@ -53,12 +53,15 @@ public class VolunteerDetailsFragment extends Fragment {
         TVPIC = view.findViewById(R.id.TVPIC);
         TVEventDesc = view.findViewById(R.id.TVEventDesc);
 
+        // Observe selected volunteer data
         volunteerViewModel.getSelectedVolunteer().observe(getViewLifecycleOwner(), volunteer -> {
             if (volunteer != null) {
+                // Check if user has joined the event
                 boolean isJoined = volunteerViewModel.getJoinedID().contains(volunteer.getVolunteerID());
                 joinButton.setText(isJoined ? "CANCEL" : "JOIN");
                 joinButton.setBackgroundTintList(isJoined ? ColorStateList.valueOf(Color.parseColor("#FF0000")) : ColorStateList.valueOf(Color.parseColor("#00E74D")));
 
+                // Bind volunteer data to UI elements
                 TVEventTitle.setText(volunteer.getEventTitle());
                 TVEventDate.setText(volunteer.getEventDate());
                 TVEventLocation.setText(volunteer.getLocation());
@@ -66,6 +69,7 @@ public class VolunteerDetailsFragment extends Fragment {
                 TVPIC.setText(volunteer.getPIC());
                 TVEventDesc.setText(volunteer.getDescription());
 
+                // Set join/cancel button click listener
                 joinButton.setOnClickListener(v1 -> {
                     FirebaseFirestore db = FirebaseFirestore.getInstance();
 
@@ -144,6 +148,7 @@ public class VolunteerDetailsFragment extends Fragment {
             }
         });
 
+        // Set back button click listener
         ImageView back_button = view.findViewById(R.id.back_icon_volunteer);
         back_button.setOnClickListener(new View.OnClickListener() {
             @Override

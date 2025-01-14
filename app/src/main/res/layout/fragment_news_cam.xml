@@ -9,7 +9,7 @@
     tools:context=".NewsCamFragment">
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnBack"
+        android:id="@+id/btnBackNews"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginBottom="27dp"
@@ -61,7 +61,7 @@
         android:layout_marginTop="70dp"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="230dp"
-        app:layout_constraintBottom_toTopOf="@+id/camera_button"
+        app:layout_constraintBottom_toTopOf="@+id/post_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

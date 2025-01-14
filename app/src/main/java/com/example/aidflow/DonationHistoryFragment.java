@@ -29,7 +29,6 @@ import java.text.SimpleDateFormat;
 import java.util.Locale;
 
 public class DonationHistoryFragment extends Fragment {
-    private boolean isHistoryFiltered=false;
     private RecyclerView recyclerView;
     private FirebaseFirestore db;
     private DonationViewModel donationViewModel;
@@ -44,25 +43,27 @@ public class DonationHistoryFragment extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
         return view;
-
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        // Initialize Firestore instance
         db = FirebaseFirestore.getInstance();
 
+        // Initialize ViewModel
         donationViewModel = new ViewModelProvider(requireActivity()).get(DonationViewModel.class);
 
+        // Observe filtered donation history LiveData
         donationViewModel.getFilteredDonationHistory().observe(getViewLifecycleOwner(), filteredHistory -> {
+            // Set up RecyclerView with the adapter
             RecyclerView RVHistory = view.findViewById(R.id.recyclerView_history);
             RVHistory.setLayoutManager(new LinearLayoutManager(getContext()));
             DonationHistoryGroupAdaptor adaptor = new DonationHistoryGroupAdaptor(filteredHistory, getContext());
             RVHistory.setAdapter(adaptor);
         });
     }
-
 }
 
 

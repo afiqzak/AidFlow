@@ -1,10 +1,10 @@
 package com.example.aidflow;
 
-import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.Manifest;
 
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
@@ -29,13 +29,10 @@ import android.widget.Toast;
  */
 public class NewsMainPageFragment extends Fragment {
 
-
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+    // Fragment initialization parameters
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
 
@@ -44,14 +41,12 @@ public class NewsMainPageFragment extends Fragment {
     }
 
     /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
+     * Factory method to create a new instance of this fragment using the provided parameters.
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
      * @return A new instance of fragment NewsMainPageFragment.
      */
-    // TODO: Rename and change types and number of parameters
     public static NewsMainPageFragment newInstance(String param1, String param2) {
         NewsMainPageFragment fragment = new NewsMainPageFragment();
         Bundle args = new Bundle();
@@ -83,8 +78,8 @@ public class NewsMainPageFragment extends Fragment {
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        // Initialize camera button
         Button cameraButton = view.findViewById(R.id.cameraButton);
-
 
         // Register a launcher for the camera intent
         ActivityResultLauncher<Intent> cameraLauncher = registerForActivityResult(
@@ -101,6 +96,7 @@ public class NewsMainPageFragment extends Fragment {
                 }
         );
 
+        // Set camera button click listener
         cameraButton.setOnClickListener(v -> {
             if (ContextCompat.checkSelfPermission(requireContext(), android.Manifest.permission.CAMERA)
                     == PackageManager.PERMISSION_GRANTED) {
@@ -113,23 +109,30 @@ public class NewsMainPageFragment extends Fragment {
             }
         });
 
-
+        // Initialize toggle group
         toggleGroup = view.findViewById(R.id.toggleNews);
 
+        // Set toggle group checked change listener
         toggleGroup.setOnCheckedChangeListener((group, checkedId) -> {
             if (checkedId == R.id.projectButton) {
-
                 switchFragment(new NewsProjectsFragment());
             } else if (checkedId == R.id.newsButton) {
-
                 switchFragment(new NewsView());
             }
         });
 
-        // default klau tak pilih pape agi pending
+        // Default fragment to display
         switchFragment(new NewsProjectsFragment());
     }
-    // ActivityResultLauncher for requesting permissions
+
+    // Switch to the specified fragment
+    private void switchFragment(Fragment fragment) {
+        FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
+        transaction.replace(R.id.fragmentContainerViewNews, fragment);
+        transaction.commit();
+    }
+
+    // Request permission launcher for camera
     private final ActivityResultLauncher<String> requestPermissionLauncher =
             registerForActivityResult(new ActivityResultContracts.RequestPermission(), isGranted -> {
                 if (isGranted) {
@@ -140,12 +143,4 @@ public class NewsMainPageFragment extends Fragment {
                     Toast.makeText(requireContext(), "Camera permission denied", Toast.LENGTH_SHORT).show();
                 }
             });
-
-    // ni fragment manager
-    private void switchFragment(Fragment fragment) {
-        FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
-        transaction.replace(R.id.fragmentContainerViewNews, fragment);
-        transaction.commit();
-    }
-
 }

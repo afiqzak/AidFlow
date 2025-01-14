@@ -22,6 +22,7 @@ public class WaterDoneAdapter extends RecyclerView.Adapter<WaterDoneAdapter.Done
     private List<WaterReport> doneReport;
     private WaterViewModel waterViewModel;
 
+    // Constructor to initialize context, doneReport list, and waterViewModel
     public WaterDoneAdapter(Context context, List<WaterReport> doneReport, WaterViewModel waterViewModel) {
         this.context = context;
         this.doneReport = doneReport;
@@ -31,31 +32,36 @@ public class WaterDoneAdapter extends RecyclerView.Adapter<WaterDoneAdapter.Done
     @NonNull
     @Override
     public DoneViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        // Inflate the layout for each item in the RecyclerView
         View view = LayoutInflater.from(context).inflate(R.layout.single_water_done_card, parent, false);
         return new DoneViewHolder(view);
     }
 
     @Override
     public int getItemCount() {
+        // Return the size of the doneReport list
         return doneReport.size();
     }
 
     @Override
     public void onBindViewHolder(@NonNull DoneViewHolder holder, int position) {
+        // Bind data to the views in each item
         WaterReport done = doneReport.get(position);
         holder.doneTitle.setText(done.getComplaint());
-        holder.donePlace.setText(done.getAddress()); // Example: Dynamically set the place
-        if (done.getImageUrl()!=null) {
+        holder.donePlace.setText(done.getAddress()); // Dynamically set the place
+        if (done.getImageUrl() != null) {
+            // Load image using Glide library
             Glide.with(context)
                     .load(done.getImageUrl())
                     .placeholder(R.drawable.default_image_news)
                     .into(holder.IVDone);
-        } else{
+        } else {
             Log.e("ProjectsAdapter", "No image to display");
         }
         holder.doneStarButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // Set the selected report in the ViewModel and navigate to the rating screen
                 waterViewModel.getSelectedReport().setValue(done);
                 Log.d("WaterDoneAdapter", "Selected report: " + done.getReportID());
                 Navigation.findNavController(v).navigate(R.id.waterRating);
@@ -63,10 +69,9 @@ public class WaterDoneAdapter extends RecyclerView.Adapter<WaterDoneAdapter.Done
         });
     }
 
-
-    //ni class for recyclerview so takyah kacau kot
+    // ViewHolder class to hold references to the views in each item
     public static class DoneViewHolder extends RecyclerView.ViewHolder {
-        TextView donePlace,doneTitle;
+        TextView donePlace, doneTitle;
         ImageButton doneStarButton;
         ImageView IVDone;
 

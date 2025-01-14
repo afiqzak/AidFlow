@@ -23,17 +23,24 @@ import java.util.Map;
 import java.util.Set;
 
 public class NewsStoryViewModel extends ViewModel {
+    // LiveData to hold the list of news stories
     private MutableLiveData<List<NewsStory>> storyList = new MutableLiveData<>();
+    // LiveData to hold the selected news story
     private MutableLiveData<NewsStory> selectedStory = new MutableLiveData<>();
+    // Cache to store accessed user details
     private Map<String, User> accessedUsers = new HashMap<>();
+
+    // Getter for the story list LiveData
     public MutableLiveData<List<NewsStory>> getStoryList() {
         return storyList;
     }
 
+    // Getter for the selected story LiveData
     public MutableLiveData<NewsStory> getSelectedStory() {
         return selectedStory;
     }
 
+    // Method to fetch the list of news stories from Firestore
     public void fetchStoryList() {
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         Map<String, User> userCache = new HashMap<>(); // Cache for user data
@@ -95,10 +102,9 @@ public class NewsStoryViewModel extends ViewModel {
 
     }
 
+    // Helper method to populate a story with user details
     private void populateStoryWithUser(NewsStory story, User user) {
         story.setUsername(user.getUsername());
         story.setImgUrl(user.getImageUrl());
     }
-
-
 }

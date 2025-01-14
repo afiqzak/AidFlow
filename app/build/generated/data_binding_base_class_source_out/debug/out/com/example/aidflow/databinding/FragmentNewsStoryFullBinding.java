@@ -23,7 +23,7 @@ public final class FragmentNewsStoryFullBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final MaterialButton btnBack;
+  public final MaterialButton btnBackNews;
 
   @NonNull
   public final ConstraintLayout frameLayout;
@@ -44,11 +44,11 @@ public final class FragmentNewsStoryFullBinding implements ViewBinding {
   public final TextView userName;
 
   private FragmentNewsStoryFullBinding(@NonNull ConstraintLayout rootView,
-      @NonNull MaterialButton btnBack, @NonNull ConstraintLayout frameLayout,
+      @NonNull MaterialButton btnBackNews, @NonNull ConstraintLayout frameLayout,
       @NonNull LinearLayout linearLayout, @NonNull TextView storyDesc,
       @NonNull ImageView storyImage, @NonNull ImageView userImage, @NonNull TextView userName) {
     this.rootView = rootView;
-    this.btnBack = btnBack;
+    this.btnBackNews = btnBackNews;
     this.frameLayout = frameLayout;
     this.linearLayout = linearLayout;
     this.storyDesc = storyDesc;
@@ -84,9 +84,9 @@ public final class FragmentNewsStoryFullBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btnBack;
-      MaterialButton btnBack = ViewBindings.findChildViewById(rootView, id);
-      if (btnBack == null) {
+      id = R.id.btnBackNews;
+      MaterialButton btnBackNews = ViewBindings.findChildViewById(rootView, id);
+      if (btnBackNews == null) {
         break missingId;
       }
 
@@ -122,7 +122,7 @@ public final class FragmentNewsStoryFullBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentNewsStoryFullBinding((ConstraintLayout) rootView, btnBack, frameLayout,
+      return new FragmentNewsStoryFullBinding((ConstraintLayout) rootView, btnBackNews, frameLayout,
           linearLayout, storyDesc, storyImage, userImage, userName);
     }
     String missingId = rootView.getResources().getResourceName(id);

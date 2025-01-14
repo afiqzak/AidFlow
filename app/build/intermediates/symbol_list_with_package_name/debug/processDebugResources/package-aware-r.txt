@@ -3500,6 +3500,7 @@ id BOTTOM_START
 id Badges_button
 id BtnDonate
 id BtnJoinCancel
+id BtnLogout
 id BtnRM10
 id BtnRM20
 id BtnRM5
@@ -3527,8 +3528,8 @@ id IVBadge
 id IVBadgeV
 id IVDone
 id IVMoney
-id IVNewsFull
 id IVProfile
+id IVProfileStory
 id IVRating
 id IVReport
 id IVTime
@@ -3598,7 +3599,6 @@ id TVHistoryDate
 id TVLName
 id TVLastName
 id TVMoneyCollected
-id TVNewsDesc
 id TVNoAcc
 id TVNoti
 id TVPIC
@@ -3608,13 +3608,11 @@ id TVPassword
 id TVPayMehtod
 id TVPhone
 id TVProgress
-id TVPublisherName
 id TVRequirement
 id TVService
 id TVTime
 id TVTitle
 id TVTitleDonForm
-id TVTitleNews
 id TVToggle
 id TVTotDonate
 id TVTotReport
@@ -3688,7 +3686,6 @@ id action_mode_bar_stub
 id action_mode_close_button
 id action_newsCamFragment_to_newsMainPageFragment
 id action_newsMainPageFragment_to_camFragment
-id action_newsMainPageFragment_to_destNewsFull
 id action_newsMainPageFragment_to_mainActivity
 id action_newsMainPageFragment_to_projectsFullPage
 id action_newsMainPageFragment_to_storyFullFragment
@@ -3745,15 +3742,14 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
-id btnBack
 id btnBack2
+id btnBackNews
 id btnSubmit
 id buttonPanel
 id buttonsContainer
 id cache_measures
 id callMeasure
 id cameraButton
-id camera_button
 id cancelButton
 id cancel_action
 id cancel_button
@@ -3831,7 +3827,7 @@ id design_navigation_view
 id destCam
 id destDonation
 id destHome
-id destNewsFull
+id destNewsWeb
 id destProfile
 id destProjectFull
 id destStoryFull
@@ -4139,7 +4135,6 @@ id projectFullImage
 id projectFullProgressBar
 id projectFullTitle
 id projects_toggle
-id publisherpic
 id radio
 id radioGroup
 id rating_labels
@@ -4346,6 +4341,7 @@ id volunteer_cardView
 id waterRating
 id waterReport
 id water_quality_image
+id webview
 id west
 id wide
 id withText
@@ -4510,13 +4506,13 @@ layout fragment_donation_hist_filter
 layout fragment_donation_history
 layout fragment_login
 layout fragment_news_cam
-layout fragment_news_full_page
 layout fragment_news_main_page
 layout fragment_news_projects
 layout fragment_news_projects_full_page
 layout fragment_news_story_full
 layout fragment_news_story_view
 layout fragment_news_view
+layout fragment_news_web
 layout fragment_profile
 layout fragment_profile_badges
 layout fragment_profile_overview

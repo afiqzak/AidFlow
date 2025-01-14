@@ -34,6 +34,7 @@ import java.util.Map;
 
 
 public class DonationFormFragment extends Fragment {
+    // Variables to store donation form data
     private boolean isAnonymous = false;
     private String selectedMethod;
     private EditText ETAmount, additionalText;
@@ -46,6 +47,8 @@ public class DonationFormFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view =  inflater.inflate(R.layout.fragment_donation_form, container, false);
+
+        // Initialize UI components
         TVTitleDonForm = view.findViewById(R.id.TVTitleDonForm);
         TVCategory = view.findViewById(R.id.TVCategory);
         TVDesc = view.findViewById(R.id.TVDesc);
@@ -56,12 +59,16 @@ public class DonationFormFragment extends Fragment {
         additionalText = view.findViewById(R.id.ETMeaningful);
         PBMoney = view.findViewById(R.id.PBMoney);
 
+        // Initialize ViewModel
         donationViewModel = new ViewModelProvider(requireActivity()).get(DonationViewModel.class);
 
+        // Observe selected donation data
         donationViewModel.getSelectedDonation().observe(getViewLifecycleOwner(), donation -> {
             if (donation != null){
+                // Calculate progress percentage
                 double progress = donation.getCurrentAmount()/donation.getTargetAmount()*100;
 
+                // Set donation details in UI components
                 TVTitleDonForm.setText(donation.getDonationTitle());
                 TVCategory.setText(donation.getCategory());
                 TVDesc.setText(donation.getDescription());
@@ -71,6 +78,7 @@ public class DonationFormFragment extends Fragment {
                 PBMoney.setProgress((int) Math.round(progress));
                 TVMoneyCollected.setText("This charity has raised RM " + String.valueOf(donation.getCurrentAmount()) + " out of RM " + String.valueOf(donation.getTargetAmount()));
 
+                // Set urgency background color based on urgency level
                 switch (donation.getUrgency()) {
                     case "High Priority":
                         TVUrgency.setBackgroundTintList(ColorStateList.valueOf(ContextCompat.getColor(getContext(), R.color.red)));
@@ -88,6 +96,7 @@ public class DonationFormFragment extends Fragment {
                 donationButton_donate.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+                        // Validate form before proceeding
                         if (validateDonationForm()) {
                             FirebaseFirestore db = FirebaseFirestore.getInstance();
 
@@ -141,15 +150,16 @@ public class DonationFormFragment extends Fragment {
         Button amount_20 = view.findViewById(R.id.BtnRM20);
         Button amount_50 = view.findViewById(R.id.BtnRM50);
 
-
+        // Initialize EditText for donation amount
         ETAmount = view.findViewById(R.id.ETAmount);
 
+        // Set click listeners for predefined donation amounts
         amount_5.setOnClickListener(v -> updateAmountText(ETAmount, 5));
         amount_10.setOnClickListener(v -> updateAmountText(ETAmount, 10));
         amount_20.setOnClickListener(v -> updateAmountText(ETAmount, 20));
         amount_50.setOnClickListener(v -> updateAmountText(ETAmount, 50));
 
-
+        // Set listener for custom donation amount input
         ETAmount.setOnEditorActionListener((v, actionId, event) -> {
             String input = ETAmount.getText().toString().trim();
             if (!input.isEmpty()) {
@@ -173,7 +183,6 @@ public class DonationFormFragment extends Fragment {
                 }
             }
         });
-
 
         // Method Payment Dropbox Setup
         TextView paymentMethodTextView = view.findViewById(R.id.SpPayMethod);
@@ -202,13 +211,12 @@ public class DonationFormFragment extends Fragment {
             popupMenu.show();
         });
 
-
-
         // Anonymous Radio Button Setup
         RadioButton yesAnon = view.findViewById(R.id.RBYes);
         RadioButton noAnon = view.findViewById(R.id.RBNo);
         noAnon.setChecked(true);
 
+        // Set click listeners for anonymous donation options
         View.OnClickListener anonClickListener = v -> {
             if (v.getId() == R.id.RBYes) {
                 isAnonymous = true;
@@ -229,118 +237,13 @@ public class DonationFormFragment extends Fragment {
         return view;
     }
 
+    // Update the donation amount EditText with the specified amount
     private void updateAmountText(EditText amountText, int amount) {
         amountText.setText(String.valueOf(amount));
     }
 
-//    private void submitDonation(String donationID) {
-//
-//        String donationAmount = ETAmount.getText().toString().trim();
-//        String additionalMessage = additionalText.getText().toString().trim();
-//
-//
-//        long parsedAmount;
-//        try {
-//            parsedAmount = Long.parseLong(donationAmount);
-//            if (parsedAmount <= 0) {
-//                ETAmount.setError("Donation amount must be greater than zero.");
-//                ETAmount.requestFocus();
-//                return;
-//            }
-//        } catch (NumberFormatException e) {
-//            ETAmount.setError("Please enter a valid number.");
-//            ETAmount.requestFocus();
-//            return;
-//        }
-//
-//        if (donationID == null) {
-//            Toast.makeText(getContext(), "Donation ID is missing!", Toast.LENGTH_SHORT).show();
-//            return;
-//        }
-//
-//        String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
-//
-//
-//
-//        // Use Firestore's Timestamp for the current date and time
-//        Timestamp transactionDate = Timestamp.now();
-//
-//        // Prepare data for submission
-//        Map<String, Object> donationSubmit = new HashMap<>();
-//
-//        donationSubmit.put("organizerName", organizationName);
-//        donationSubmit.put("projectName", projectName);
-//        donationSubmit.put("donationName", name);
-//        donationSubmit.put("donationID", donationID);
-//        donationSubmit.put("donationAmount", parsedAmount);
-//        donationSubmit.put("donateAnonymously", isAnonymous);
-//        donationSubmit.put("additionalMessage", additionalMessage.isEmpty() ? "-" : additionalMessage);
-//        donationSubmit.put("selectedMethod", selectedMethod);
-//        donationSubmit.put("userId", userId);
-//        donationSubmit.put("transactionDate", transactionDate);
-//
-//        // Submit to Firestore
-//        FirebaseFirestore db = FirebaseFirestore.getInstance();
-//        db.collection("donationSubmit")
-//                .add(donationSubmit)
-//                .addOnSuccessListener(documentReference -> {
-//
-//                    addDonationAmountToDatabase(parsedAmount);
-//                    Toast.makeText(getContext(), "Donation submitted successfully!", Toast.LENGTH_SHORT).show();
-//                    clearFields();
-//                })
-//                .addOnFailureListener(e -> {
-//                    Log.e("FirestoreError", "Failed to submit donation: " + e.getMessage(), e);
-//                    Toast.makeText(getContext(), "Failed to submit donation: " + e.getMessage(), Toast.LENGTH_SHORT).show();
-//                });
-//    }
-
-//    private void addDonationAmountToDatabase(long parsedAmount) {
-//
-//        FirebaseFirestore db = FirebaseFirestore.getInstance();
-//        DocumentReference donationRef = db.collection("donations").document(donationID);
-//
-//        // Fetch the current amount from Firestore
-//        donationRef.get()
-//                .addOnSuccessListener(documentSnapshot -> {
-//                    if (documentSnapshot.exists()) {
-//                        // Get the current donation amount
-//                        Long currentAmount = documentSnapshot.getLong("currentDonationAmount");
-//                        Long targetAmount = documentSnapshot.getLong("targetDonationAmount");
-//                        if (currentAmount == null) {
-//                            currentAmount = 0L; // Default to 0 if null
-//                        }
-//
-//                        long updatedAmount = currentAmount + parsedAmount;
-//
-//                        // Fix progress calculation using double precision
-//                        double progressDouble = ((double) updatedAmount / targetAmount) * 100;
-//                        long progress = Math.round(progressDouble);
-//
-//
-//                        donationRef.update(
-//                                        "currentDonationAmount", updatedAmount,
-//                                        "progress", progress
-//                                )
-//                                .addOnSuccessListener(aVoid -> {
-//                                    Log.d("Firestore", "Donation amount successfully updated.");
-//                                })
-//                                .addOnFailureListener(e -> {
-//                                    Log.e("Firestore", "Error updating donation amount", e);
-//                                });
-//                    } else {
-//                        Log.e("Firestore", "Donation document does not exist.");
-//                    }
-//                })
-//                .addOnFailureListener(e -> {
-//                    Log.e("Firestore", "Error fetching donation document", e);
-//                });
-//
-//    }
-
+    // Validate the donation form inputs
     private boolean validateDonationForm() {
-
-
         String donationAmount = ETAmount.getText().toString().trim();
         if (donationAmount.isEmpty()) {
             Toast.makeText(getContext(), "Please insert a valid amount.", Toast.LENGTH_SHORT).show();
@@ -366,11 +269,9 @@ public class DonationFormFragment extends Fragment {
         return true;
     }
 
-
+    // Clear the input fields
     private void clearFields() {
         ETAmount.setText("");
         additionalText.setText("");
     }
-
-
 }

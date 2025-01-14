@@ -16,19 +16,23 @@ import java.util.List;
 import java.util.Locale;
 
 public class NewsProjectViewModel extends ViewModel {
+    // LiveData to hold the list of projects
     private MutableLiveData<List<NewsProjects>> projects = new MutableLiveData<>();
+    // LiveData to hold the selected project
     private MutableLiveData<NewsProjects> selectedProject = new MutableLiveData<>();
 
+    // Getter for projects LiveData
     public MutableLiveData<List<NewsProjects>> getProjects() {
         return projects;
     }
 
+    // Getter for selected project LiveData
     public MutableLiveData<NewsProjects> getSelectedProject() {
         return selectedProject;
     }
 
+    // Method to fetch projects from Firestore
     public void fetchProjects() {
-        // Fetch projects from Firestore
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         List<NewsProjects> projectsList = new ArrayList<>();
         db.collection("Project")
@@ -45,17 +49,18 @@ public class NewsProjectViewModel extends ViewModel {
                         }
                     }
 
-
-
+                    // Log the number of projects fetched
                     Log.d("NewsProjectViewModel", "Projects fetched: " + projectsList.size());
                     projects.postValue(projectsList);
 
                 })
                 .addOnFailureListener(e -> {
+                    // Log error if fetching projects fails
                     Log.e("NewsProjectViewModel", "Error getting projects", e);
                 });
     }
 
+    // Method to format date to "MMM yyyy"
     public String formatDate(Date date) {
         if (date == null) {
             return null; // Handle null date

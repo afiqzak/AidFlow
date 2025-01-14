@@ -11,6 +11,7 @@ import androidx.cardview.widget.CardView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.aidflow.R;
+import com.google.android.material.imageview.ShapeableImageView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -20,10 +21,15 @@ public final class SingleNewsStoryCardBinding implements ViewBinding {
   private final CardView rootView;
 
   @NonNull
+  public final ShapeableImageView IVProfileStory;
+
+  @NonNull
   public final ImageView storyImage;
 
-  private SingleNewsStoryCardBinding(@NonNull CardView rootView, @NonNull ImageView storyImage) {
+  private SingleNewsStoryCardBinding(@NonNull CardView rootView,
+      @NonNull ShapeableImageView IVProfileStory, @NonNull ImageView storyImage) {
     this.rootView = rootView;
+    this.IVProfileStory = IVProfileStory;
     this.storyImage = storyImage;
   }
 
@@ -54,13 +60,19 @@ public final class SingleNewsStoryCardBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.IVProfileStory;
+      ShapeableImageView IVProfileStory = ViewBindings.findChildViewById(rootView, id);
+      if (IVProfileStory == null) {
+        break missingId;
+      }
+
       id = R.id.story_image;
       ImageView storyImage = ViewBindings.findChildViewById(rootView, id);
       if (storyImage == null) {
         break missingId;
       }
 
-      return new SingleNewsStoryCardBinding((CardView) rootView, storyImage);
+      return new SingleNewsStoryCardBinding((CardView) rootView, IVProfileStory, storyImage);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

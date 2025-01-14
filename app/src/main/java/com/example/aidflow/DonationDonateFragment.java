@@ -29,19 +29,13 @@ import java.util.Set;
 
 public class DonationDonateFragment extends Fragment{
 
-    private FirebaseFirestore db;
     private DonationViewModel donationViewModel;
     private RecyclerView recyclerView;
-    private DonationAdapter adapter;  // Declare the adapter
-    private boolean isDonationFiltered = false;
-    private ArrayList<Donation> donationList;
-    private Set<String> filterUrgencies = new HashSet<>();
-    private Set<String> filterProjects = new HashSet<>();
-
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_donation_donate, container, false);
 
         return view;
@@ -51,17 +45,19 @@ public class DonationDonateFragment extends Fragment{
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        // Initialize the ViewModel
         donationViewModel = new ViewModelProvider(requireActivity()).get(DonationViewModel.class);
-        donationViewModel.fetchDonations();
 
         // Initialize RecyclerView
         recyclerView = view.findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
+        // Observe filtered donations and set the adapter
         donationViewModel.getFilteredDonations().observe(getViewLifecycleOwner(), donations -> {
-            Log.d("Fragment", donations.toString());
-            DonationAdapter donationAdapter = new DonationAdapter(donations, getContext(), donationViewModel);
-            recyclerView.setAdapter(donationAdapter);
+            if(donations != null) {
+                DonationAdapter donationAdapter = new DonationAdapter(donations, getContext(), donationViewModel);
+                recyclerView.setAdapter(donationAdapter);
+            }
         });
     }
 }

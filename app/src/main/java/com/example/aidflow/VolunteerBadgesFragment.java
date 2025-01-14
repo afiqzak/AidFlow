@@ -46,10 +46,10 @@ public class VolunteerBadgesFragment extends Fragment {
 
         setUpBadges();
 
-        //get current user id
+        // Get current user id
         String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
-        //observe view model for real time updates on user data
+        // Observe view model for real-time updates on user data
         UserViewModel userViewModel = new ViewModelProvider(requireActivity()).get(UserViewModel.class);
         userViewModel.fetchUserData(userId);
 
@@ -60,6 +60,7 @@ public class VolunteerBadgesFragment extends Fragment {
 
                 setUpProgress(user, badges, view);
 
+                // Set up RecyclerView with adapter
                 adaptor = new VolunteerBadgesAdaptor(getContext(), badges, user);
                 RecyclerView recyclerView = view.findViewById(R.id.RVVBadges);
                 GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext(), 3);
@@ -70,10 +71,9 @@ public class VolunteerBadgesFragment extends Fragment {
                 Log.d("Fragment", "User is null");
             }
         });
-
-
     }
 
+    // Set up the list of badges
     private void setUpBadges(){
         badges.add(new ProfileBadges("Complete 7 total volunteer hours", "hour >= 7", R.drawable.badge_7hours));
         badges.add(new ProfileBadges("Complete 12 total volunteer hours", "hour >= 12", R.drawable.badge_12hours));
@@ -82,6 +82,7 @@ public class VolunteerBadgesFragment extends Fragment {
         badges.add(new ProfileBadges("Complete 720 total volunteer hours", "hour >= 720", R.drawable.badge_1month));
     }
 
+    // Set up the progress bar and badge image based on user data
     private void setUpProgress(User user, ArrayList<ProfileBadges> badges, View view){
         circularProgressBar = view.findViewById(R.id.circularProgressBar);
         progressText_numerator = view.findViewById(R.id.progressText_numerator);
@@ -110,6 +111,5 @@ public class VolunteerBadgesFragment extends Fragment {
         // If all badges are achieved, handle the case here (e.g., set progress to max or hide the progress bar)
         badgeImage.setImageResource(R.drawable.badge_1month); // Show a "completed" badge
         circularProgressBar.setProgress(100);
-
     }
 }

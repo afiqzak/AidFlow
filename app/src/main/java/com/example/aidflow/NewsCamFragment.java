@@ -20,22 +20,16 @@ import androidx.navigation.Navigation;
 
 import com.cloudinary.Cloudinary;
 import com.cloudinary.utils.ObjectUtils;
-import com.google.android.gms.common.util.IOUtils;
 import com.google.firebase.Timestamp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.WriteBatch;
 
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.HashMap;
-import java.util.Locale;
 import java.util.Map;
 
 public class NewsCamFragment extends Fragment {
@@ -46,13 +40,14 @@ public class NewsCamFragment extends Fragment {
     private String uploadedImageUrl;
     private Uri imageUri;
 
+    // Required empty public constructor
     public NewsCamFragment() {
-        // Required empty public constructor
     }
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // Initialize Cloudinary with credentials
         cloudinary = new Cloudinary(ObjectUtils.asMap(
                 "cloud_name", "dwyryjcgp",
                 "api_key", "889922453814139",
@@ -63,6 +58,7 @@ public class NewsCamFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_news_cam, container, false);
     }
 
@@ -70,7 +66,13 @@ public class NewsCamFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        Button btnBack = view.findViewById(R.id.btnBack);
+        // Initialize UI components
+        Button btnBack = view.findViewById(R.id.btnBackNews);
+        postButton = view.findViewById(R.id.post_button);
+        userCaption = view.findViewById(R.id.userCaption);
+        capturedImageView = view.findViewById(R.id.click_image);
+
+        // Set up back button click listener
         View.OnClickListener OCLBack = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -78,10 +80,6 @@ public class NewsCamFragment extends Fragment {
             }
         };
         btnBack.setOnClickListener(OCLBack);
-
-        postButton = view.findViewById(R.id.post_button);
-        userCaption = view.findViewById(R.id.userCaption);
-        capturedImageView = view.findViewById(R.id.click_image);
 
         // Retrieve the image from the Bundle
         if (getArguments() != null) {
@@ -97,11 +95,13 @@ public class NewsCamFragment extends Fragment {
             }
         }
 
+        // Set up post button click listener
         postButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (imageUri != null && uploadedImageUrl == null) {
                     new UploadImageTask().execute(imageUri); // Ensure image uploads before submitting report
+                    Navigation.findNavController(view).navigate(R.id.destHome);
                 } else {
                     submitStory();
                 }
@@ -109,6 +109,7 @@ public class NewsCamFragment extends Fragment {
         });
     }
 
+    // Convert Bitmap to Uri by saving it to a temporary file
     private Uri getImageUriFromBitmap(Bitmap bitmap) {
         File tempFile = new File(getContext().getCacheDir(), "image.jpg");
         try (FileOutputStream out = new FileOutputStream(tempFile)) {
@@ -120,6 +121,7 @@ public class NewsCamFragment extends Fragment {
         }
     }
 
+    // AsyncTask to upload image to Cloudinary
     private class UploadImageTask extends AsyncTask<Uri, Void, String> {
         @Override
         protected String doInBackground(Uri... params) {
@@ -146,6 +148,7 @@ public class NewsCamFragment extends Fragment {
         }
     }
 
+    // Create a temporary file from Uri
     private File createTempFileFromUri(Uri uri) throws Exception {
         InputStream inputStream = getContext().getContentResolver().openInputStream(uri);
         File tempFile = File.createTempFile("upload", ".jpg", getContext().getCacheDir());
@@ -162,6 +165,7 @@ public class NewsCamFragment extends Fragment {
         return tempFile;
     }
 
+    // Submit the story to Firestore
     private void submitStory() {
         if (uploadedImageUrl == null) {
             Toast.makeText(getContext(), "Image is still uploading. Please wait.", Toast.LENGTH_SHORT).show();

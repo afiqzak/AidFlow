@@ -22,12 +22,11 @@ import java.util.List;
  */
 public class NewsStoryView extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+    // Fragment initialization parameters
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
+    // Parameters to store fragment arguments
     private String mParam1;
     private String mParam2;
 
@@ -36,14 +35,12 @@ public class NewsStoryView extends Fragment {
     }
 
     /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
+     * Factory method to create a new instance of this fragment using the provided parameters.
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment StotyView.
+     * @return A new instance of fragment NewsStoryView.
      */
-    // TODO: Rename and change types and number of parameters
     public static NewsStoryView newInstance(String param1, String param2) {
         NewsStoryView fragment = new NewsStoryView();
         Bundle args = new Bundle();
@@ -62,13 +59,17 @@ public class NewsStoryView extends Fragment {
         }
     }
 
+    // RecyclerView to display the list of news stories
     private RecyclerView recyclerView;
+    // Adapter for the RecyclerView
     private NewsStoryAdapter adapter;
+    // ViewModel to manage UI-related data
     private NewsStoryViewModel storyViewModel;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_news_story_view, container, false);
         return view;
     }
@@ -77,17 +78,20 @@ public class NewsStoryView extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        // Initialize RecyclerView
         recyclerView = view.findViewById(R.id.storyList);
 
+        // Initialize ViewModel
         storyViewModel = new ViewModelProvider(requireActivity()).get(NewsStoryViewModel.class);
 
+        // Fetch the list of stories
         storyViewModel.fetchStoryList();
 
+        // Observe the story list and update the RecyclerView
         storyViewModel.getStoryList().observe(getViewLifecycleOwner(), stories -> {
             adapter = new NewsStoryAdapter(getContext(), stories, storyViewModel);
             recyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
             recyclerView.setAdapter(adapter);
-                });
-
+        });
     }
 }

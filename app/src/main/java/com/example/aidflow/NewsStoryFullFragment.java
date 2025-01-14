@@ -28,12 +28,11 @@ public class NewsStoryFullFragment extends Fragment {
 
     private NewsStoryViewModel newsStoryViewModel;
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+    // Fragment initialization parameters
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
+    // Parameters for the fragment
     private String mParam1;
     private String mParam2;
 
@@ -42,14 +41,12 @@ public class NewsStoryFullFragment extends Fragment {
     }
 
     /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
+     * Factory method to create a new instance of this fragment using the provided parameters.
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment StoryFullFragment.
+     * @return A new instance of fragment NewsStoryFullFragment.
      */
-    // TODO: Rename and change types and number of parameters
     public static NewsStoryFullFragment newInstance(String param1, String param2) {
         NewsStoryFullFragment fragment = new NewsStoryFullFragment();
         Bundle args = new Bundle();
@@ -78,27 +75,33 @@ public class NewsStoryFullFragment extends Fragment {
     @SuppressLint("SetTextI18n")
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
-        Button btnBack = view.findViewById(R.id.btnBack);
+        // Initialize UI components
+        Button btnBack = view.findViewById(R.id.btnBackNews);
         TextView username = view.findViewById(R.id.user_name);
         TextView description = view.findViewById(R.id.story_desc);
         ImageView profileIV = view.findViewById(R.id.user_image);
         ImageView storyIV = view.findViewById(R.id.story_image);
 
+        // Initialize ViewModel
         newsStoryViewModel = new ViewModelProvider(requireActivity()).get(NewsStoryViewModel.class);
 
+        // Observe the selected story and update UI
         newsStoryViewModel.getSelectedStory().observe(getViewLifecycleOwner(), story -> {
             if (story != null) {
+                // Load story image
                 Glide.with(this)
                         .load(story.getImageUrl())
                         .placeholder(R.drawable.default_image_news)
                         .into(storyIV);
 
+                // Load user profile image
                 Glide.with(this)
                         .load(story.getUserImageUrl())
                         .placeholder(R.drawable.default_image_news)
                         .transform(new CircleCrop())
                         .into(profileIV);
 
+                // Set username and description
                 username.setText("  " + story.getUsername());
                 description.setText(story.getDescription());
             } else {
@@ -106,11 +109,12 @@ public class NewsStoryFullFragment extends Fragment {
             }
         });
 
-
+        // Set up back button click listener
         View.OnClickListener OCLBack = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Navigation.findNavController(v).navigate(R.id.destHome);
+                newsStoryViewModel.getSelectedStory().setValue(null);
             }
         };
         btnBack.setOnClickListener(OCLBack);

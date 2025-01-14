@@ -7,7 +7,6 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
@@ -20,12 +19,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.Firebase;
 import com.google.firebase.Timestamp;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import com.cloudinary.Cloudinary;
@@ -50,6 +45,7 @@ import java.util.Map;
  */
 public class WaterReportFragment extends Fragment {
 
+    // UI elements
     private EditText firstName;
     private EditText lastName;
     private EditText email;
@@ -59,19 +55,21 @@ public class WaterReportFragment extends Fragment {
     private EditText time;
     private EditText complaint;
 
+    // Firebase Firestore instance
     private FirebaseFirestore db;
+    // Cloudinary instance for image upload
     private Cloudinary cloudinary;
 
+    // Constants
     private static final int PICK_IMAGE_REQUEST = 1;
     private Uri imageUri;
     private String uploadedImageUrl;
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+    // Fragment initialization parameters
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
+    // Parameters
     private String mParam1;
     private String mParam2;
 
@@ -96,6 +94,7 @@ public class WaterReportFragment extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
 
+        // Initialize Cloudinary with credentials
         cloudinary = new Cloudinary(ObjectUtils.asMap(
                 "cloud_name", "dwyryjcgp",
                 "api_key", "889922453814139",
@@ -106,13 +105,16 @@ public class WaterReportFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_water_report, container, false);
     }
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        // Get current user ID
         String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
+        // Initialize UI elements
         firstName = view.findViewById(R.id.first_name);
         lastName = view.findViewById(R.id.last_name);
         phoneNum = view.findViewById(R.id.phone_number);
@@ -122,11 +124,14 @@ public class WaterReportFragment extends Fragment {
         time = view.findViewById(R.id.time);
         complaint = view.findViewById(R.id.complaint);
 
+        // Initialize Firestore
         db = FirebaseFirestore.getInstance();
 
+        // Set up button to upload photo
         Button btnUpload = view.findViewById(R.id.upload_photo_button);
         btnUpload.setOnClickListener(v -> openFileChooser());
 
+        // Set up button to submit report
         Button btnSubmit = view.findViewById(R.id.submit);
         btnSubmit.setOnClickListener(v -> {
             if (imageUri != null && uploadedImageUrl == null) {
@@ -136,6 +141,7 @@ public class WaterReportFragment extends Fragment {
             }
         });
 
+        // Set up date picker dialog
         View.OnClickListener OCLDate = v -> {
             Calendar calendar = Calendar.getInstance();
             int year = calendar.get(Calendar.YEAR);
@@ -154,6 +160,7 @@ public class WaterReportFragment extends Fragment {
         };
         date.setOnClickListener(OCLDate);
 
+        // Set up time picker dialog
         View.OnClickListener OCLTime = v -> {
             Calendar calendar = Calendar.getInstance();
             int hour = calendar.get(Calendar.HOUR_OF_DAY);
@@ -171,12 +178,14 @@ public class WaterReportFragment extends Fragment {
         };
         time.setOnClickListener(OCLTime);
 
-        Button btnBack = view.findViewById(R.id.btnBack);
+        // Set up back button to navigate to previous screen
+        Button btnBack = view.findViewById(R.id.btnBackNews);
         View.OnClickListener OCLBack = v -> Navigation.findNavController(view).navigate(R.id.destWaterQuality);
         btnBack.setOnClickListener(OCLBack);
     }
 
     private void openFileChooser() {
+        // Open file chooser to select an image
         Intent intent = new Intent();
         intent.setType("image/*");
         intent.setAction(Intent.ACTION_GET_CONTENT);
@@ -220,6 +229,7 @@ public class WaterReportFragment extends Fragment {
     }
 
     private File createTempFileFromUri(Uri uri) throws Exception {
+        // Create a temporary file from the selected image URI
         InputStream inputStream = getContext().getContentResolver().openInputStream(uri);
         File tempFile = File.createTempFile("upload", ".jpg", getContext().getCacheDir());
         FileOutputStream outStream = new FileOutputStream(tempFile);
@@ -236,6 +246,7 @@ public class WaterReportFragment extends Fragment {
     }
 
     private void submitWaterReport(String userId) {
+        // Get values from input fields
         String fName = firstName.getText().toString().trim();
         String lName = lastName.getText().toString().trim();
         String emailVal = email.getText().toString().trim();
@@ -245,6 +256,7 @@ public class WaterReportFragment extends Fragment {
         String timeVal = time.getText().toString().trim();
         String complaintVal = complaint.getText().toString().trim();
 
+        // Validate input fields
         if (emailVal.isEmpty() || phoneNumVal.isEmpty() || addressVal.isEmpty() || dateVal.isEmpty() || timeVal.isEmpty() || complaintVal.isEmpty()) {
             Toast.makeText(getContext(), "All fields are required", Toast.LENGTH_SHORT).show();
             return;
@@ -264,6 +276,7 @@ public class WaterReportFragment extends Fragment {
         // Convert the Date object to a Firestore Timestamp
         Timestamp reportTimestamp = new Timestamp(parsedDate);
 
+        // Create a report map to store in Firestore
         Map<String, Object> report = new HashMap<>();
         report.put("status", false);
         report.put("userID", userId);
@@ -279,6 +292,7 @@ public class WaterReportFragment extends Fragment {
             report.put("imageUrl", uploadedImageUrl);
         }
 
+        // Add the report to Firestore
         db.collection("report")
                 .add(report).addOnSuccessListener(documentReference -> {
                     Toast.makeText(getContext(), "Report submitted successfully!", Toast.LENGTH_SHORT).show();
@@ -291,6 +305,7 @@ public class WaterReportFragment extends Fragment {
     }
 
     private void clearFields() {
+        // Clear all input fields
         firstName.setText("");
         lastName.setText("");
         email.setText("");

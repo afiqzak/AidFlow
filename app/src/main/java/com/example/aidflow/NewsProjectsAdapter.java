@@ -20,9 +20,9 @@ import java.util.List;
 
 public class NewsProjectsAdapter extends RecyclerView.Adapter<NewsProjectsAdapter.NewsProjectsViewHolder> {
 
-    private final List<NewsProjects> projectsList;
-    private Context context;
-    private NewsProjectViewModel newsProjectViewModel;
+    private final List<NewsProjects> projectsList; // List of projects to display
+    private Context context; // Context for accessing resources
+    private NewsProjectViewModel newsProjectViewModel; // ViewModel for managing project data
 
     public NewsProjectsAdapter(List<NewsProjects> projectsList, Context context, NewsProjectViewModel newsProjectViewModel) {
         this.projectsList = projectsList;
@@ -33,38 +33,40 @@ public class NewsProjectsAdapter extends RecyclerView.Adapter<NewsProjectsAdapte
     @NonNull
     @Override
     public NewsProjectsAdapter.NewsProjectsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        // Inflate the layout for each project item
         View view = LayoutInflater.from(context).inflate(R.layout.single_news_project_card, parent, false);
         return new NewsProjectsAdapter.NewsProjectsViewHolder(view);
     }
 
     @Override
     public int getItemCount() {
+        // Return the total number of projects
         return projectsList.size();
     }
 
-    //onbind ni tak tau do semua sbb den yg buat saya copy je (tanya den)
     @Override
     public void onBindViewHolder(@NonNull NewsProjectsAdapter.NewsProjectsViewHolder holder, int position) {
+        // Bind the project data to the view holder
         NewsProjects projects = projectsList.get(position);
 
         holder.projectTitles.setText(projects.getProjectsName());
         holder.projectDesc.setText(projects.getProjectsDesc());
         holder.projectDate.setText(projects.getSDate() + " - " + projects.getEDate());
-        //holder.projectImages.setImageResource(projectImages.get(position));
         holder.progressBar.setProgress(projects.getProgressRate());
 
-        if (projects.getImageUrl()!=null) {
+        // Load project image using Glide
+        if (projects.getImageUrl() != null) {
             Glide.with(context)
                     .load(projects.getImageUrl())
                     .placeholder(R.drawable.default_image_news)
                     .into(holder.projectImages);
-        } else{
+        } else {
             Log.e("ProjectsAdapter", "No image to display");
         }
 
+        // Set click listener for the project button
         holder.ProjectButton.setOnClickListener(v -> {
             if (newsProjectViewModel != null) {
-
                 newsProjectViewModel.getSelectedProject().setValue(projects);
                 Log.d("ProjectsAdapter", "Setting selected project: " + newsProjectViewModel.getSelectedProject().getValue().getProjectsName());
                 Navigation.findNavController(v).navigate(R.id.destProjectFull);
@@ -74,8 +76,7 @@ public class NewsProjectsAdapter extends RecyclerView.Adapter<NewsProjectsAdapte
         });
     }
 
-
-    //ni class for recycle view so takyah kacau kot
+    // ViewHolder class for holding project item views
     public static class NewsProjectsViewHolder extends RecyclerView.ViewHolder {
         TextView projectTitles, projectDesc, projectDate;
         ImageView projectImages;
@@ -87,7 +88,7 @@ public class NewsProjectsAdapter extends RecyclerView.Adapter<NewsProjectsAdapte
             projectTitles = itemView.findViewById(R.id.ProjectsTitle);
             projectDesc = itemView.findViewById(R.id.ProjectsDesc);
             projectDate = itemView.findViewById(R.id.ProjectsDate);
-            progressBar =itemView.findViewById(R.id.progressBar);
+            progressBar = itemView.findViewById(R.id.progressBar);
             projectImages = itemView.findViewById(R.id.ProjectsImage);
             ProjectButton = itemView.findViewById(R.id.ProjectButton);
         }

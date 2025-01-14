@@ -45,7 +45,7 @@ public class VolunteerFragment extends Fragment {
     private VolunteerViewModel volunteerViewModel;
     private boolean join;
 
-    // Parameters
+    // Parameters for fragment initialization
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
@@ -56,6 +56,7 @@ public class VolunteerFragment extends Fragment {
         // Required empty public constructor
     }
 
+    // Factory method to create a new instance of this fragment
     public static VolunteerFragment newInstance(String param1, String param2) {
         VolunteerFragment fragment = new VolunteerFragment();
         Bundle args = new Bundle();
@@ -77,9 +78,8 @@ public class VolunteerFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
+        // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_volunteer, container, false);
-
         return view;
     }
 
@@ -89,23 +89,24 @@ public class VolunteerFragment extends Fragment {
 
         this.join = false;
 
-        //get current user id
+        // Get current user id
         String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
-        //fetch all event that user not joined
+        // Fetch all events that user has not joined
         volunteerViewModel = new ViewModelProvider(requireActivity()).get(VolunteerViewModel.class);
         SPState = view.findViewById(R.id.SPState);
         SPRegion = view.findViewById(R.id.SPRegion);
 
         try {
-            //load state/region data from JSON
+            // Load state/region data from JSON
             String jsonString = loadJsonFromAssets("state.json");
             statesData = new JSONObject(jsonString);
 
+            // Fetch joined and not joined volunteers
             volunteerViewModel.fetchJoinedVolunteerID(userId);
             volunteerViewModel.fetchNotJoinedVolunteers(userId);
 
-            //populate state spinner
+            // Populate state spinner
             List<String> stateNames = getStateNames(statesData);
             stateNames.add(0, "Select State");
             ArrayAdapter<String> stateAdapter = new ArrayAdapter<>(requireContext(), android.R.layout.simple_spinner_item, stateNames);
@@ -116,17 +117,17 @@ public class VolunteerFragment extends Fragment {
             region = "Select Region";
             updateRegionSpinner(state);
 
-            //set up listener for state selection
+            // Set up listener for state selection
             SPState.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                 @Override
                 public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                     state = parent.getItemAtPosition(position).toString();
-                    //if there is no item selected or "Select State" is selected, disable region spinner
-                    if (state.equals("Select State")){
+                    // If no item selected or "Select State" is selected, disable region spinner
+                    if (state.equals("Select State")) {
                         SPRegion.setEnabled(false);
                         SPRegion.setSelection(0);
-                        //if there is an item selected, update region spinner and enable it
                     } else {
+                        // If an item is selected, update region spinner and enable it
                         updateRegionSpinner(state);
                         SPRegion.setEnabled(true);
                     }
@@ -138,7 +139,7 @@ public class VolunteerFragment extends Fragment {
                 public void onNothingSelected(AdapterView<?> parent) {}
             });
 
-            //set up listener for region selection
+            // Set up listener for region selection
             SPRegion.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                 @Override
                 public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -147,20 +148,20 @@ public class VolunteerFragment extends Fragment {
                 }
 
                 @Override
-                public void onNothingSelected(AdapterView<?> parent) {
-
-                }
+                public void onNothingSelected(AdapterView<?> parent) {}
             });
 
         } catch (JSONException | IOException e) {
             Toast.makeText(requireContext(), "Error loading JSON data", Toast.LENGTH_SHORT).show();
         }
 
+        // Set up buttons and their click listeners
         MaterialButton volunteerButton = view.findViewById(R.id.Volunteer_button);
         MaterialButton upcomingButton = view.findViewById(R.id.Upcoming_button);
         MaterialButton badgesButton = view.findViewById(R.id.Badges_button);
         LinearLayout selectLayout = view.findViewById(R.id.select_layout);
 
+        // Default view settings
         selectLayout.setVisibility(View.VISIBLE);
         volunteerButton.setAlpha(1.0F);
         upcomingButton.setAlpha(0.5F);
@@ -169,6 +170,7 @@ public class VolunteerFragment extends Fragment {
         transaction.replace(R.id.fragment_button, new VolunteerProgFragment());
         transaction.commit();
 
+        // Volunteer button click listener
         volunteerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -187,6 +189,7 @@ public class VolunteerFragment extends Fragment {
             }
         });
 
+        // Upcoming button click listener
         upcomingButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -206,6 +209,7 @@ public class VolunteerFragment extends Fragment {
             }
         });
 
+        // Badges button click listener
         badgesButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -220,7 +224,7 @@ public class VolunteerFragment extends Fragment {
         });
     }
 
-    //update region spinner based on selected state
+    // Update region spinner based on selected state
     private void updateRegionSpinner(String selectedState) {
         try {
             JSONArray regionsArray = getRegionsForState(selectedState, statesData);
@@ -239,7 +243,7 @@ public class VolunteerFragment extends Fragment {
         }
     }
 
-    //get list of state name in the JSON file
+    // Get list of state names from the JSON file
     private List<String> getStateNames(JSONObject statesData) throws JSONException {
         List<String> stateNames = new ArrayList<>();
         JSONArray statesArray = statesData.getJSONArray("states");
@@ -250,7 +254,7 @@ public class VolunteerFragment extends Fragment {
         return stateNames;
     }
 
-    //get list of region name in the JSON file
+    // Get list of region names for a given state from the JSON file
     private JSONArray getRegionsForState(String stateName, JSONObject statesData) throws JSONException {
         JSONArray statesArray = statesData.getJSONArray("states");
         for (int i = 0; i < statesArray.length(); i++) {
@@ -262,7 +266,7 @@ public class VolunteerFragment extends Fragment {
         return null; // Or throw an exception if the state is not found
     }
 
-    //load JSON data from assets folder
+    // Load JSON data from assets folder
     private String loadJsonFromAssets(String filename) throws IOException {
         InputStream is = requireContext().getAssets().open(filename);
         int size = is.available();

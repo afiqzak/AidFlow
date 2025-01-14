@@ -14,7 +14,7 @@ import java.util.List;
 public class WaterRatingAdapter extends RecyclerView.Adapter<WaterRatingAdapter.RatingViewHolder> {
 
     private Context context;
-    private List<String> ratingTitles; // list yg rating
+    private List<String> ratingTitles; // List of rating titles
 
     public WaterRatingAdapter(Context context, List<String> ratingTitles) {
         this.context = context;
@@ -24,14 +24,14 @@ public class WaterRatingAdapter extends RecyclerView.Adapter<WaterRatingAdapter.
     @NonNull
     @Override
     public RatingViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        // Inflate the layout for each item in the RecyclerView
         View view = LayoutInflater.from(context).inflate(R.layout.single_water_rating_cardview, parent, false);
         return new RatingViewHolder(view);
     }
 
-
-    //bind yg ni lak utk seek bar gerak2 tu
     @Override
     public void onBindViewHolder(@NonNull RatingViewHolder holder, int position) {
+        // Bind data to the views in each item
         String title = ratingTitles.get(position);
         holder.ratingTitle.setText(title);
 
@@ -43,19 +43,24 @@ public class WaterRatingAdapter extends RecyclerView.Adapter<WaterRatingAdapter.
             }
 
             @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {}
+            public void onStartTrackingTouch(SeekBar seekBar) {
+                // Handle start of touch event
+            }
 
             @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {}
+            public void onStopTrackingTouch(SeekBar seekBar) {
+                // Handle stop of touch event
+            }
         });
     }
 
     @Override
     public int getItemCount() {
+        // Return the size of the rating titles list
         return ratingTitles.size();
     }
 
-    //ni class utk recycle view so takyah kacau kot
+    // ViewHolder class to hold references to the views in each item
     public static class RatingViewHolder extends RecyclerView.ViewHolder {
         TextView ratingTitle;
         SeekBar seekBar;

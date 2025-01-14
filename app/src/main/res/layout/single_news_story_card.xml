@@ -5,7 +5,6 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
-    app:cardBackgroundColor="@color/vibrant_blue"
     app:cardCornerRadius="12dp"
     app:cardElevation="4dp">
 
@@ -13,6 +12,22 @@
         android:id="@+id/story_image"
         android:layout_width="120dp"
         android:layout_height="150dp"
-        android:scaleType="centerCrop"/>
+        android:alpha="0.5"
+        android:scaleType="centerCrop">
+
+    </ImageView>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/IVProfileStory"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="#D9D9D9"
+        android:padding="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.Circle"
+        app:strokeColor="@color/light_blue"
+        app:strokeWidth="4dp" />
 
 </androidx.cardview.widget.CardView>

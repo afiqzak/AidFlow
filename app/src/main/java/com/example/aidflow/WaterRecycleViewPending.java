@@ -28,12 +28,11 @@ import java.util.List;
  */
 public class WaterRecycleViewPending extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+    // Fragment initialization parameters
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
+    // Parameters
     private String mParam1;
     private String mParam2;
     private RecyclerView recyclerView;
@@ -45,14 +44,12 @@ public class WaterRecycleViewPending extends Fragment {
     }
 
     /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
+     * Factory method to create a new instance of this fragment using the provided parameters.
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
      * @return A new instance of fragment WaterRecycleViewPending.
      */
-    // TODO: Rename and change types and number of parameters
     public static WaterRecycleViewPending newInstance(String param1, String param2) {
         WaterRecycleViewPending fragment = new WaterRecycleViewPending();
         Bundle args = new Bundle();
@@ -76,15 +73,19 @@ public class WaterRecycleViewPending extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_water_recycle_view_pending, container, false);
 
-        //get current user id
+        // Get current user id
         String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
+        // Initialize RecyclerView
         recyclerView = view.findViewById(R.id.recyclerViewPending);
 
+        // Initialize ViewModel
         waterViewModel = new ViewModelProvider(this).get(WaterViewModel.class);
 
+        // Fetch pending reports for the current user
         waterViewModel.fetchPendingReport(userId);
 
+        // Observe changes in pending reports and update RecyclerView
         waterViewModel.getPendingReport().observe(getViewLifecycleOwner(), pendingReport -> {
             adapter = new WaterPendingAdapter(getContext(), pendingReport);
             recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));

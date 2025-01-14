@@ -37,19 +37,22 @@ public class VolunteerUpcomingFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        // Get current user ID from FirebaseAuth
         String userID = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
+        // Initialize ViewModel
         volunteerViewModel = new ViewModelProvider(requireActivity()).get(VolunteerViewModel.class);
 
         // Initialize RecyclerView
         RecyclerView recyclerView = view.findViewById(R.id.recyclerView_upcoming);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
+        // Observe ViewModel for joined volunteers
         volunteerViewModel.getFilteredJoinedVolunteers().observe(getViewLifecycleOwner(), joinedVolunteers -> {
             if (joinedVolunteers != null) {
                 Log.d("Fragment", joinedVolunteers.toString());
                 // Attach adapter to RecyclerView
-                VolunteerUpcomingAdapter adapter = new VolunteerUpcomingAdapter(joinedVolunteers,getContext(), volunteerViewModel);
+                VolunteerUpcomingAdapter adapter = new VolunteerUpcomingAdapter(joinedVolunteers, getContext(), volunteerViewModel);
                 recyclerView.setAdapter(adapter);
             } else {
                 // Handle the case where user data is null (e.g., show an error message)

@@ -25,7 +25,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class WaterFragment extends Fragment {
 
-    private RadioGroup toggleGroup; //radiogroup ni yg toggle pending ke done project
+    private RadioGroup toggleGroup; // RadioGroup to toggle between pending and done projects
     private WaterViewModel waterViewModel;
     private TextView TVNoti;
     // Parameters
@@ -64,50 +64,56 @@ public class WaterFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_water, container, false);
     }
 
-    //ni method tekan2 butang semua
+    // Method to handle button clicks and other interactions
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
         TVNoti = view.findViewById(R.id.TVNoti);
 
-        //get current user id
+        // Get current user ID
         String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
         waterViewModel = new ViewModelProvider(this).get(WaterViewModel.class);
 
+        // Fetch done reports for the current user
         waterViewModel.fetchDoneReport(userId);
 
+        // Observe changes in the done reports
         waterViewModel.getDoneReport().observe(getViewLifecycleOwner(), reports -> {
-            WaterReport latest = reports.get(0);
-            TVNoti.setText(latest.getComplaint() + " at " + latest.getAddress() + " has been solved");
+            if (reports.isEmpty()) {
+                TVNoti.setText("No solved reports");
+            } else {
+                WaterReport latest = reports.get(0);
+                TVNoti.setText(latest.getComplaint() + " at " + latest.getAddress() + " has been solved");
+            }
         });
 
-        // gi report fragment
+        // Navigate to the report fragment
         Button btnReport = view.findViewById(R.id.reportbutton);
         btnReport.setOnClickListener(v ->
                 Navigation.findNavController(view).navigate(R.id.waterReport)
         );
 
-        // ni semua yg pending or done tu
+        // Handle toggling between pending and done projects
         toggleGroup = view.findViewById(R.id.toggle);
 
         toggleGroup.setOnCheckedChangeListener((group, checkedId) -> {
             if (checkedId == R.id.pending_projects) {
                 waterViewModel.fetchPendingReport(userId);
-                // tukar ke pending
+                // Switch to pending fragment
                 switchFragment(new WaterRecycleViewPending());
             } else if (checkedId == R.id.done_projects) {
-                // tukar ke done fragment
+                // Switch to done fragment
                 switchFragment(new WaterRecycleViewDone());
             }
         });
 
-        // default klau tak pilih pape agi pending
+        // Default to pending fragment if no selection is made
         switchFragment(new WaterRecycleViewPending());
     }
 
-    // ni fragment manager
+    // Method to switch between fragments
     private void switchFragment(Fragment fragment) {
         FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
         transaction.replace(R.id.fragmentContainerView, fragment);

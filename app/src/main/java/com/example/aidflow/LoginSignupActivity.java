@@ -19,12 +19,15 @@ public class LoginSignupActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_login_signup);
+
+        // Apply window insets to the title view
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.TVTitle), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
+        // Toggle between login and signup views
         TextView TVToggle = (TextView) findViewById(R.id.TVToggle);
         TVToggle.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,7 +37,7 @@ public class LoginSignupActivity extends AppCompatActivity {
 
                 String current = TVToggle.getText().toString();
 
-                //toggle between log in and sign up
+                // Toggle between login and signup fragments
                 if(current.equals("Sign up")){
                     TVToggle.setText("Sign in");
                     TVTitle.setText("Sign up");

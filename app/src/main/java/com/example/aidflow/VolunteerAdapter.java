@@ -24,6 +24,7 @@ class VolunteerAdapter extends RecyclerView.Adapter<VolunteerAdapter.VolunteerVi
     private Context context;
     private VolunteerViewModel volunteerViewModel;
 
+    // Constructor to initialize the adapter with the volunteer list, context, and ViewModel
     public VolunteerAdapter(List<Volunteer> volunteerList, Context context, VolunteerViewModel volunteerViewModel) {
         this.volunteerList = volunteerList;
         this.context = context;
@@ -33,14 +34,17 @@ class VolunteerAdapter extends RecyclerView.Adapter<VolunteerAdapter.VolunteerVi
     @NonNull
     @Override
     public VolunteerViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        // Inflate the layout for each item in the RecyclerView
         View view = LayoutInflater.from(context).inflate(R.layout.single_volunteer_recycleview, parent, false);
         return new VolunteerAdapter.VolunteerViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull VolunteerViewHolder holder, int position) {
+        // Get the current volunteer from the list
         Volunteer volunteer = volunteerList.get(position);
 
+        // Calculate the percentage of volunteers applied
         double percentage = (double) volunteer.getNumOfVolunteersApplied() / volunteer.getNumOfVolunteersNeeded() * 100;
 
         // Bind data to views
@@ -49,11 +53,12 @@ class VolunteerAdapter extends RecyclerView.Adapter<VolunteerAdapter.VolunteerVi
         holder.dueDate_volunteer.setText(volunteer.getEventDate());
         holder.volunteerProgress.setText(volunteer.getNumOfVolunteersApplied() + "/" + volunteer.getNumOfVolunteersNeeded());
         holder.volunteerProgressBar.setProgress((int) Math.round(percentage));
-//
-//
+
+        // Set click listener for the card view
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // Update the selected volunteer in the ViewModel and navigate to the details screen
                 volunteerViewModel.getSelectedVolunteer().setValue(volunteer);
                 Navigation.findNavController(v).navigate(R.id.volunteerDetails);
             }
@@ -62,16 +67,19 @@ class VolunteerAdapter extends RecyclerView.Adapter<VolunteerAdapter.VolunteerVi
 
     @Override
     public int getItemCount() {
+        // Return the total number of items in the list
         return volunteerList.size();
     }
 
+    // ViewHolder class to hold references to the views in each item
     static class VolunteerViewHolder extends RecyclerView.ViewHolder {
-        TextView volunteerName,districtName,dueDate_volunteer,volunteerProgress;
+        TextView volunteerName, districtName, dueDate_volunteer, volunteerProgress;
         ProgressBar volunteerProgressBar;
         CardView cardView;
 
         public VolunteerViewHolder(@NonNull View itemView) {
             super(itemView);
+            // Initialize the views
             volunteerName = itemView.findViewById(R.id.TVEventTitle);
             volunteerProgressBar = itemView.findViewById(R.id.volunteerProgressBar);
             volunteerProgress = itemView.findViewById(R.id.volunteerProgress);

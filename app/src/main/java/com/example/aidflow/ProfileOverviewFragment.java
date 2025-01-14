@@ -24,12 +24,11 @@ import java.util.ArrayList;
  */
 public class ProfileOverviewFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+    // Arguments for fragment initialization parameters
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
+    // Parameters for fragment instance
     private String mParam1;
     private String mParam2;
 
@@ -38,14 +37,12 @@ public class ProfileOverviewFragment extends Fragment {
     }
 
     /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
+     * Factory method to create a new instance of this fragment using the provided parameters.
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
      * @return A new instance of fragment OverviewFragment.
      */
-    // TODO: Rename and change types and number of parameters
     public static ProfileOverviewFragment newInstance(String param1, String param2) {
         ProfileOverviewFragment fragment = new ProfileOverviewFragment();
         Bundle args = new Bundle();
@@ -74,10 +71,10 @@ public class ProfileOverviewFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        //get current user id
+        // Get current user id
         String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
-        //observe view model for real time updates on user data
+        // Observe ViewModel for real-time updates on user data
         UserViewModel userViewModel = new ViewModelProvider(requireActivity()).get(UserViewModel.class);
         userViewModel.fetchUserData(userId);
 
@@ -95,11 +92,18 @@ public class ProfileOverviewFragment extends Fragment {
         });
     }
 
+    /**
+     * Binds user data to the UI elements.
+     *
+     * @param v The view containing the UI elements.
+     * @param user The user data to bind.
+     */
     private void bindData(View v, User user){
         TextView TVAmountDonate = v.findViewById(R.id.TVAmounrDonate);
         TextView TVAmountTime = v.findViewById(R.id.TVAmounrTime);
         TextView TVAmountReport = v.findViewById(R.id.TVAmounrReport);
 
+        // Set user data to UI elements
         TVAmountDonate.setText("RM " + user.getTotalDonate());
         TVAmountTime.setText(user.getVolunteerHours() + " hrs");
         TVAmountReport.setText(String.valueOf(user.getReportSubmitted()));

@@ -23,6 +23,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsViewHolder
     private Context context;
     private List<News> news;
 
+    // Constructor to initialize context and news list
     public NewsAdapter(Context context, List<News> news) {
         this.context = context;
         this.news = news;
@@ -31,25 +32,28 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsViewHolder
     @NonNull
     @Override
     public NewsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        // Inflate the layout for each news item
         View view = LayoutInflater.from(context).inflate(R.layout.single_news_card, parent, false);
         return new NewsViewHolder(view);
     }
 
     @Override
     public int getItemCount() {
+        // Return the total number of news items
         return news.size();
     }
 
-
     @Override
     public void onBindViewHolder(@NonNull NewsViewHolder holder, int position) {
+        // Get the news item at the current position
         News anews = news.get(position);
 
+        // Bind the news data to the views
         holder.newsTitle.setText(anews.getTitle());
         holder.newsDesc.setText(anews.getDescription());
         holder.newsDate.setText(anews.getPublished());
 
-        // Optionally load image using Glide or Picasso
+        // Load the news image using Glide if available
         if (anews.getImage() != null) {
             Glide.with(context)
                     .load(anews.getImage())
@@ -57,26 +61,18 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsViewHolder
                     .into(holder.newsImage);
         }
 
+        // Set click listener to navigate to the news details
         holder.itemView.setOnClickListener(v -> {
             // Pass the article details to the destination
             Bundle bundle = new Bundle();
-            bundle.putString("title", anews.getTitle());
-            bundle.putString("description", anews.getDescription());
-            bundle.putString("url", anews.getUrl());
-            bundle.putString("imageUrl", anews.getImage());
-            bundle.putString("publisherName", anews.getAuthor());
-
-            // set to pass arguments
-            Fragment newsFullPage = new NewsFullPage();
-            newsFullPage.setArguments(bundle);
+            bundle.putString("url_key", anews.getUrl()); // Use "url_key" to match with the fragment
 
             NavController navController = Navigation.findNavController(v);
-            navController.navigate(R.id.action_newsMainPageFragment_to_destNewsFull, bundle);
+            navController.navigate(R.id.destNewsWeb, bundle); // Ensure destNewsWeb is the correct action ID
         });
     }
 
-
-    //ni class for recycle view so takyah kacau kot
+    // ViewHolder class to hold the views for each news item
     public static class NewsViewHolder extends RecyclerView.ViewHolder {
         TextView newsTitle, newsDesc, newsDate;
         ImageView newsImage;
@@ -88,7 +84,5 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsViewHolder
             newsDate = itemView.findViewById(R.id.newsDate);
             newsImage = itemView.findViewById(R.id.newsImageCard);
         }
-
-
     }
 }

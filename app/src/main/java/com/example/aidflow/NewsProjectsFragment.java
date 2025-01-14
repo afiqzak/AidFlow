@@ -31,9 +31,9 @@ import java.util.Locale;
  */
 public class NewsProjectsFragment extends Fragment {
 
-    private RecyclerView recyclerView;
-    private NewsProjectsAdapter adapter;
-    private NewsProjectViewModel newsProjectViewModel;
+    private RecyclerView recyclerView; // RecyclerView to display the list of projects
+    private NewsProjectsAdapter adapter; // Adapter for the RecyclerView
+    private NewsProjectViewModel newsProjectViewModel; // ViewModel to manage project data
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -78,6 +78,7 @@ public class NewsProjectsFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_news_projects, container, false);
         return view;
     }
@@ -86,12 +87,16 @@ public class NewsProjectsFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        // Initialize RecyclerView
         recyclerView = view.findViewById(R.id.RVProject);
 
+        // Initialize ViewModel
         newsProjectViewModel = new ViewModelProvider(requireActivity()).get(NewsProjectViewModel.class);
 
+        // Fetch projects from ViewModel
         newsProjectViewModel.fetchProjects();
 
+        // Observe the projects LiveData and update the RecyclerView adapter
         newsProjectViewModel.getProjects().observe(getViewLifecycleOwner(), projects -> {
             adapter = new NewsProjectsAdapter(projects, getContext(), newsProjectViewModel);
             recyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false));

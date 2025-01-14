@@ -35,12 +35,11 @@ import java.util.Map;
  */
 public class WaterRatingFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+    // Fragment initialization parameters
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
+    // Parameters
     private String mParam1;
     private String mParam2;
 
@@ -49,14 +48,12 @@ public class WaterRatingFragment extends Fragment {
     }
 
     /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
+     * Factory method to create a new instance of this fragment using the provided parameters.
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment DogFragment.
+     * @return A new instance of fragment WaterRatingFragment.
      */
-    // TODO: Rename and change types and number of parameters
     public static WaterRatingFragment newInstance(String param1, String param2) {
         WaterRatingFragment fragment = new WaterRatingFragment();
         Bundle args = new Bundle();
@@ -81,12 +78,12 @@ public class WaterRatingFragment extends Fragment {
     private FirebaseFirestore db;
     private Button btnSubmit, btnBack;
 
-    //button function semua
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         db = FirebaseFirestore.getInstance();
 
+        // Initialize views
         IVRating = view.findViewById(R.id.IVRating);
         SBEffective = view.findViewById(R.id.SBEffective);
         SBService = view.findViewById(R.id.SBService);
@@ -94,6 +91,7 @@ public class WaterRatingFragment extends Fragment {
         btnBack = view.findViewById(R.id.btnBack2);
         btnSubmit = view.findViewById(R.id.btnSubmit);
 
+        // Set up back button click listener
         View.OnClickListener OCLBack = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -102,16 +100,18 @@ public class WaterRatingFragment extends Fragment {
         };
         btnBack.setOnClickListener(OCLBack);
 
+        // Initialize ViewModel
         waterViewModel = new ViewModelProvider(requireActivity()).get(WaterViewModel.class);
 
+        // Observe selected report
         waterViewModel.getSelectedReport().observe(getViewLifecycleOwner(), waterReport -> {
             Log.d("WaterRatingFragment", "Selected report: " + waterReport.getComplaint());
-            if (waterReport.getImageUrl()!=null) {
+            if (waterReport.getImageUrl() != null) {
                 Glide.with(requireContext())
                         .load(waterReport.getImageUrl())
                         .placeholder(R.drawable.default_image_news)
                         .into(IVRating);
-            } else{
+            } else {
                 Log.e("ProjectsAdapter", "No image to display");
             }
 
@@ -166,6 +166,7 @@ public class WaterRatingFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_water_rating, container, false);
 
         return view;

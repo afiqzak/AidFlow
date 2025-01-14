@@ -19,23 +19,27 @@ public class WaterViewModel extends ViewModel {
     private MutableLiveData<List<WaterReport>> doneReport = new MutableLiveData<>();
     private MutableLiveData<WaterReport> selectedReport = new MutableLiveData<>();
 
+    // Getter for pending reports LiveData
     public MutableLiveData<List<WaterReport>> getPendingReport() {
         return pendingReport;
     }
 
+    // Getter for done reports LiveData
     public MutableLiveData<List<WaterReport>> getDoneReport() {
         return doneReport;
     }
 
+    // Getter for selected report LiveData
     public MutableLiveData<WaterReport> getSelectedReport() {
         return selectedReport;
     }
 
+    // Fetch pending reports for a specific user
     public void fetchPendingReport(String userID) {
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         List<WaterReport> allPending = new ArrayList<>();
 
-        // Query for report that haven't been solve yet
+        // Query for reports that haven't been solved yet
         db.collection("report")
                 .whereEqualTo("status", false)
                 .whereEqualTo("userID", userID)
@@ -60,11 +64,12 @@ public class WaterViewModel extends ViewModel {
                 .addOnFailureListener(e -> Log.e("Firestore", "Error fetching pending report", e));
     }
 
+    // Fetch done reports for a specific user
     public void fetchDoneReport(String userID) {
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         List<WaterReport> allPending = new ArrayList<>();
 
-        // Query for report that haven't been solve yet
+        // Query for reports that have been solved but not rated yet
         db.collection("report")
                 .whereEqualTo("status", true)
                 .whereEqualTo("userID", userID)

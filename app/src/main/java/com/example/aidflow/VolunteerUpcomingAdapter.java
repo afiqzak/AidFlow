@@ -21,6 +21,7 @@ class VolunteerUpcomingAdapter extends RecyclerView.Adapter<VolunteerUpcomingAda
     private Context context;
     private VolunteerViewModel volunteerViewModel;
 
+    // Constructor to initialize the adapter with the list of volunteers, context, and view model
     public VolunteerUpcomingAdapter(List<Volunteer> upcomingList, Context context, VolunteerViewModel volunteerViewModel) {
         this.upcomingList = upcomingList;
         this.context = context;
@@ -30,12 +31,14 @@ class VolunteerUpcomingAdapter extends RecyclerView.Adapter<VolunteerUpcomingAda
     @NonNull
     @Override
     public UpcomingViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        // Inflate the layout for each item in the RecyclerView
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.single_volunteer_upcoming_recycleview, parent, false);
         return new UpcomingViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull UpcomingViewHolder holder, int position) {
+        // Get the current volunteer item
         Volunteer upcoming = upcomingList.get(position);
 
         // Bind data to views
@@ -45,6 +48,7 @@ class VolunteerUpcomingAdapter extends RecyclerView.Adapter<VolunteerUpcomingAda
         holder.contactNum_upcoming.setText(upcoming.getContactPIC());
         holder.organizer_upcoming.setText(upcoming.getPIC());
 
+        // Set click listener for the card view to navigate to volunteer details
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -56,15 +60,18 @@ class VolunteerUpcomingAdapter extends RecyclerView.Adapter<VolunteerUpcomingAda
 
     @Override
     public int getItemCount() {
+        // Return the total number of items in the list
         return upcomingList.size();
     }
 
+    // ViewHolder class to hold references to the views for each item
     static class UpcomingViewHolder extends RecyclerView.ViewHolder {
-        TextView volunteerName_upcoming,dueDate_upcoming,address_upcoming,contactNum_upcoming,organizer_upcoming;
+        TextView volunteerName_upcoming, dueDate_upcoming, address_upcoming, contactNum_upcoming, organizer_upcoming;
         CardView cardView;
 
         public UpcomingViewHolder(@NonNull View itemView) {
             super(itemView);
+            // Initialize the views
             volunteerName_upcoming = itemView.findViewById(R.id.TVUpcomingTitle);
             dueDate_upcoming = itemView.findViewById(R.id.TVUpcomingDate);
             address_upcoming = itemView.findViewById(R.id.TVUpcomingLoc);

@@ -75,14 +75,17 @@ public class NewsProjectsFullPage extends Fragment {
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        // Initialize views
         TextView projectsTitle = view.findViewById(R.id.projectFullTitle);
         TextView projectsDesc = view.findViewById(R.id.projectFullDesc);
         TextView TVProgress = view.findViewById(R.id.TVProgress);
         ProgressBar projectProgress = view.findViewById(R.id.projectFullProgressBar);
         ImageView projectIV = view.findViewById(R.id.projectFullImage);
 
+        // Initialize ViewModel
         newsProjectViewModel = new ViewModelProvider(requireActivity()).get(NewsProjectViewModel.class);
 
+        // Observe selected project and update UI
         newsProjectViewModel.getSelectedProject().observe(getViewLifecycleOwner(), project -> {
             Log.d("NewsProjectViewModel", "Selected Project: " + project.getProjectsName());
             Glide.with(this)
@@ -93,14 +96,14 @@ public class NewsProjectsFullPage extends Fragment {
             projectsDesc.setText(project.getProjectGoals().replaceAll("(\\d+\\.\\s)", "\n$1").trim());
             TVProgress.setText(project.getProgressRate() + "% to complete");
             projectProgress.setProgress(project.getProgressRate());
-                });
+        });
 
         // Back Button Setup
-        Button btnBack = view.findViewById(R.id.btnBack);
+        Button btnBack = view.findViewById(R.id.btnBackNews);
         View.OnClickListener OCLBack = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Navigation.findNavController(view).navigate(R.id.newsMainPageFragment);
+                // Navigate back to home
                 Navigation.findNavController(view).navigate(R.id.destHome);
             }
         };

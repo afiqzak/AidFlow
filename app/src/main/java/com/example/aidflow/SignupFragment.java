@@ -40,6 +40,7 @@ import com.cloudinary.utils.ObjectUtils;
  * create an instance of this fragment.
  */
 public class SignupFragment extends Fragment {
+    // UI elements
     private EditText ETEmail, ETFirstName, ETLastName, ETPhone, ETUsername;
     private TextInputEditText TIETPassword, TIETConfirmPass;
     private Button btnSignup;
@@ -48,12 +49,11 @@ public class SignupFragment extends Fragment {
     private ImageView imageButton;
     private Uri selectedImageUri = null;
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+    // Fragment initialization parameters
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
+    // Parameters for fragment instance
     private String mParam1;
     private String mParam2;
 
@@ -62,14 +62,12 @@ public class SignupFragment extends Fragment {
     }
 
     /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
+     * Factory method to create a new instance of this fragment using the provided parameters.
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment SingupFragment.
+     * @return A new instance of fragment SignupFragment.
      */
-    // TODO: Rename and change types and number of parameters
     public static SignupFragment newInstance(String param1, String param2) {
         SignupFragment fragment = new SignupFragment();
         Bundle args = new Bundle();
@@ -99,6 +97,7 @@ public class SignupFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        // Initialize UI elements
         ETEmail = view.findViewById(R.id.ETEmail);
         ETFirstName = view.findViewById(R.id.ETFirstName);
         ETLastName = view.findViewById(R.id.ETLastName);
@@ -111,26 +110,29 @@ public class SignupFragment extends Fragment {
         IVProfileChoose = view.findViewById(R.id.IVProfile);
         imageButton = view.findViewById(R.id.imageButton);
 
+        // Set click listener for image button
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ImagePicker.with(SignupFragment.this)
-                        .crop()         //Crop image
-                        .compress(1024)  //Final image size will be less than 1 MB
-                        .maxResultSize(1080,1080)       //Final image resolution will be less than 1080 x 1080
+                        .crop()         // Crop image
+                        .compress(1024)  // Final image size will be less than 1 MB
+                        .maxResultSize(1080, 1080)       // Final image resolution will be less than 1080 x 1080
                         .start();
             }
         });
 
+        // Set click listener for signup button
         btnSignup.setOnClickListener(v -> {
-            String email = ETEmail.getText().toString().trim(); //trim for whitespace
+            String email = ETEmail.getText().toString().trim(); // Trim for whitespace
             String firstName = ETFirstName.getText().toString().trim();
             String lastName = ETLastName.getText().toString().trim();
             String phone = ETPhone.getText().toString().trim();
             String username = ETUsername.getText().toString().trim();
             String password = TIETPassword.getText().toString().trim(); // Get text from EditText inside TextInputLayout
-            String confirmPass = TIETConfirmPass.getText().toString().trim();// Get text from EditText inside TextInputLayout
+            String confirmPass = TIETConfirmPass.getText().toString().trim(); // Get text from EditText inside TextInputLayout
 
+            // Validate input fields
             if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
                 Toast.makeText(requireContext(), "Enter valid email address", Toast.LENGTH_SHORT).show();
                 return;
@@ -163,6 +165,7 @@ public class SignupFragment extends Fragment {
                 return;
             }
 
+            // Check if an image is selected
             if (selectedImageUri != null) {
                 // If an image is selected, upload it to Cloudinary
                 uploadImageToCloudinaryAndRegister(email, firstName, lastName, phone, username, password);
@@ -174,6 +177,16 @@ public class SignupFragment extends Fragment {
         });
     }
 
+    /**
+     * Uploads the selected image to Cloudinary and registers the user.
+     *
+     * @param email The user's email.
+     * @param firstName The user's first name.
+     * @param lastName The user's last name.
+     * @param phone The user's phone number.
+     * @param username The user's username.
+     * @param password The user's password.
+     */
     private void uploadImageToCloudinaryAndRegister(String email, String firstName, String lastName, String phone, String username, String password) {
         try {
             InputStream inputStream = requireContext().getContentResolver().openInputStream(selectedImageUri);
@@ -198,29 +211,37 @@ public class SignupFragment extends Fragment {
         }
     }
 
-
     @Override
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        //get uri of the image
+        // Get URI of the image
         selectedImageUri = data.getData();
         IVProfileChoose.setImageURI(selectedImageUri);
     }
 
-
+    /**
+     * Registers the user with Firebase Authentication.
+     *
+     * @param email The user's email.
+     * @param firstName The user's first name.
+     * @param lastName The user's last name.
+     * @param phone The user's phone number.
+     * @param username The user's username.
+     * @param password The user's password.
+     * @param imageUrl The URL of the user's profile image.
+     */
     private void registerUser(String email, String firstName, String lastName, String phone, String username, String password, @Nullable String imageUrl) {
-        // Register the user with Firebase Authentication
         mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(requireActivity(), task -> {
                     if (task.isSuccessful()) {
                         // Registration successful
                         FirebaseUser firebaseUser = mAuth.getCurrentUser();
                         if (firebaseUser != null) {
-                            //send verification email
+                            // Send verification email
                             firebaseUser.sendEmailVerification()
                                     .addOnCompleteListener(verificationTask -> {
                                         if (verificationTask.isSuccessful()) {
-                                            // Email verification sent successfully, NOW store user data
+                                            // Email verification sent successfully, now store user data
                                             storeUserData(firebaseUser.getUid(), email, firstName, lastName, phone, username, imageUrl);
 
                                             Toast.makeText(requireContext(), "Registration successful. Please check your email for verification.", Toast.LENGTH_LONG).show();
@@ -231,10 +252,10 @@ public class SignupFragment extends Fragment {
                                             // Perform the fragment transaction
                                             if (getActivity() != null) {
                                                 Fragment fragmentToReplace = new LoginFragment();
-                                                        getActivity().getSupportFragmentManager().beginTransaction()
-                                                                .replace(R.id.FCVLogin, fragmentToReplace)  // Specify the fragment
-                                                                .addToBackStack("login") // Add to back stack (optional)
-                                                                .commit();
+                                                getActivity().getSupportFragmentManager().beginTransaction()
+                                                        .replace(R.id.FCVLogin, fragmentToReplace)  // Specify the fragment
+                                                        .addToBackStack("login") // Add to back stack (optional)
+                                                        .commit();
                                             }
 
                                         } else {
@@ -263,9 +284,20 @@ public class SignupFragment extends Fragment {
                 });
     }
 
+    /**
+     * Stores the user data in Firestore.
+     *
+     * @param uid The user's UID.
+     * @param email The user's email.
+     * @param firstName The user's first name.
+     * @param lastName The user's last name.
+     * @param phone The user's phone number.
+     * @param username The user's username.
+     * @param imageUrl The URL of the user's profile image.
+     */
     private void storeUserData(String uid, String email, String firstName, String lastName, String phone, String username, @Nullable String imageUrl) {
         FirebaseFirestore db = FirebaseFirestore.getInstance();
-        //map user data
+        // Map user data
         Map<String, Object> user = new HashMap<>();
         user.put("userID", uid);
         user.put("email", email);
@@ -273,12 +305,12 @@ public class SignupFragment extends Fragment {
         user.put("lastName", lastName);
         user.put("phone", phone);
         user.put("username", username);
-        user.put("profileImage", imageUrl);
+        user.put("imageUrl", imageUrl);
         user.put("totalDonate", 0);
         user.put("volunteerHours", 0);
         user.put("reportSubmitted", 0);
 
-        //store the mapping of the user data into users collection
+        // Store the mapping of the user data into users collection
         db.collection("users").document(uid)
                 .set(user)
                 .addOnSuccessListener(aVoid -> {
@@ -289,6 +321,4 @@ public class SignupFragment extends Fragment {
                     Toast.makeText(requireContext(), "Failed to store user data: " + e.getMessage(), Toast.LENGTH_SHORT).show();
                 });
     }
-
-
 }

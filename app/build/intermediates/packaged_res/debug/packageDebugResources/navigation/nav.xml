@@ -50,9 +50,6 @@
         android:label="fragment_news_main_page"
         tools:layout="@layout/fragment_news_main_page" >
         <action
-            android:id="@+id/action_newsMainPageFragment_to_destNewsFull"
-            app:destination="@id/destNewsFull" />
-        <action
             android:id="@+id/action_newsMainPageFragment_to_storyFullFragment"
             app:destination="@id/destStoryFull" />
         <action
@@ -64,18 +61,6 @@
         <action
             android:id="@+id/action_newsMainPageFragment_to_camFragment"
             app:destination="@id/destCam" />
-    </fragment>
-    <fragment
-        android:id="@+id/destNewsFull"
-        android:name="com.example.aidflow.NewsFullPage"
-        android:label="fragment_news_full_page"
-        tools:layout="@layout/fragment_news_full_page" >
-        <argument
-            android:name="newsTitle"
-            app:argType="string" />
-        <argument
-            android:name="newsDesc"
-            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/destStoryFull"
@@ -113,6 +98,12 @@
         android:name="com.example.aidflow.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/destNewsWeb"
+        android:name="com.example.aidflow.NewsWebFragment"
+        android:label="fragment_news_web"
+        tools:layout="@layout/fragment_news_web" />
 
 
 </navigation>

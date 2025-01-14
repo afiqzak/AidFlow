@@ -39,12 +39,11 @@ public class LoginFragment extends Fragment {
     private Button btnSignin;
     private FirebaseAuth mAuth;
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+    // Fragment initialization parameters
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
+    // Parameters
     private String mParam1;
     private String mParam2;
 
@@ -53,14 +52,12 @@ public class LoginFragment extends Fragment {
     }
 
     /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
+     * Factory method to create a new instance of this fragment using the provided parameters.
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
      * @return A new instance of fragment LoginFragment.
      */
-    // TODO: Rename and change types and number of parameters
     public static LoginFragment newInstance(String param1, String param2) {
         LoginFragment fragment = new LoginFragment();
         Bundle args = new Bundle();
@@ -86,6 +83,7 @@ public class LoginFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_login, container, false);
     }
 
+    @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         ETEmail = view.findViewById(R.id.ETEmail);
@@ -94,10 +92,12 @@ public class LoginFragment extends Fragment {
 
         mAuth = FirebaseAuth.getInstance();
 
+        // Set click listener for the sign-in button
         btnSignin.setOnClickListener(v -> {
             String email = ETEmail.getText().toString().trim();
             String password = TIETPassword.getText().toString().trim();
 
+            // Validate email and password
             if (TextUtils.isEmpty(email)) {
                 ETEmail.setError("Email is required");
                 ETEmail.requestFocus();
@@ -116,26 +116,32 @@ public class LoginFragment extends Fragment {
                 return;
             }
 
+            // Attempt to log in the user
             loginUser(email, password);
         });
     }
 
+    /**
+     * Log in the user with Firebase Authentication.
+     *
+     * @param email    The user's email.
+     * @param password The user's password.
+     */
     private void loginUser(String email, String password) {
-        // Sign in the user with Firebase Authentication
         mAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(requireActivity(), task -> {
                     if (task.isSuccessful()) {
                         FirebaseUser user = mAuth.getCurrentUser();
                         // Check if the user's email is verified
-                        if(user.isEmailVerified()){
+                        if (user.isEmailVerified()) {
                             Toast.makeText(requireContext(), "Login Successful", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(requireContext(), MainActivity.class));
                             requireActivity().finish();
-                        }else{
+                        } else {
                             Toast.makeText(requireContext(), "Please verify your email", Toast.LENGTH_SHORT).show();
                         }
-
                     } else {
+                        // Handle login failure
                         String errorMessage = "Login failed: ";
                         try {
                             throw task.getException();

@@ -23,42 +23,57 @@ import java.util.Map;
 import java.util.Set;
 
 public class DonationViewModel extends ViewModel {
+    // LiveData to hold the list of all donations
     private MutableLiveData<List<Donation>> donations = new MutableLiveData<>();
+    // LiveData to hold the list of filtered donations
     private MutableLiveData<List<Donation>> filteredDonations = new MutableLiveData<>();
+    // LiveData to hold the map of filtered donation history grouped by date
     private MutableLiveData<Map<String, List<DonationHistory>>> filteredDonationHistory = new MutableLiveData<>();
+    // LiveData to indicate if the history filter is applied
     private MutableLiveData<Boolean> fromHistFilter = new MutableLiveData<>(false);
+    // LiveData to hold the selected donation
     private MutableLiveData<Donation> selectedDonation = new MutableLiveData<>();
+    // LiveData to hold the selected filter
     private MutableLiveData<Integer> selectedFilter = new MutableLiveData<>();
+    // Map to hold the donation data
     private Map<String, Donation> donationMap = new LinkedHashMap<>();
 
+    // Getter for donations LiveData
     public MutableLiveData<List<Donation>> getDonations() {
         return donations;
     }
 
+    // Getter for filtered donations LiveData
     public MutableLiveData<List<Donation>> getFilteredDonations() {
         return filteredDonations;
     }
 
+    // Getter for selected donation LiveData
     public MutableLiveData<Donation> getSelectedDonation() {
         return selectedDonation;
     }
 
+    // Getter for filtered donation history LiveData
     public MutableLiveData<Map<String, List<DonationHistory>>> getFilteredDonationHistory() {
         return filteredDonationHistory;
     }
 
+    // Getter for history filter LiveData
     public MutableLiveData<Boolean> getFromHistFilter() {
         return fromHistFilter;
     }
 
+    // Getter for selected filter LiveData
     public MutableLiveData<Integer> getSelectedFilter() {
         return selectedFilter;
     }
 
+    // Setter for selected donation
     public void setSelectedDonation(Donation donation) {
         selectedDonation.setValue(donation);
     }
 
+    // Method to fetch donations from Firestore
     public void fetchDonations() {
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         List<Donation> allDonationAvailable = new ArrayList<>();
@@ -97,6 +112,7 @@ public class DonationViewModel extends ViewModel {
                 .addOnFailureListener(e -> Log.e("Firestore", "Error fetching unjoined events", e));
     }
 
+    // Method to filter donations based on selected urgencies and categories
     public void filterDonations(Set<String> selectedUrgencies, Set<String> selectedCategorys) {
         List<Donation> originalDonations = donations.getValue();
         if (originalDonations == null || (selectedUrgencies.isEmpty() && selectedCategorys.isEmpty())) {
@@ -105,20 +121,31 @@ public class DonationViewModel extends ViewModel {
             return;
         }
 
+        filteredDonations.setValue(null); // Clear the list while filtering
+
+        Log.d("DonationViewModel", "selectedUrgencies:: " + selectedUrgencies);
+        Log.d("DonationViewModel", "selectedCategorys:: " + selectedCategorys);
+
         // Apply filters
         List<Donation> filteredList = new ArrayList<>();
         for (Donation donation : originalDonations) {
             boolean matchesUrgency = selectedUrgencies.isEmpty() || selectedUrgencies.contains(donation.getUrgency());
             boolean matchesProject = selectedCategorys.isEmpty() || selectedCategorys.contains(donation.getCategory());
+            Log.d("DonationViewModel", "donation: " + donation.getDonationTitle());
+            Log.d("DonationViewModel", "matchesUrgency: " + matchesUrgency);
+            Log.d("DonationViewModel", "matchesCategory: " + matchesProject);
 
             if (matchesUrgency && matchesProject) {
+                Log.d("DonationViewModel", "Donation matches filter: " + donation.getDonationTitle());
                 filteredList.add(donation);
             }
         }
 
-        filteredDonations.setValue(filteredList);
+        Log.d("DonationViewModel", "Filtered donations: " + filteredList.size());
+        filteredDonations.postValue(filteredList);
     }
 
+    // Method to fetch donation history from Firestore
     public void fetchDonationHistory(String userID, int days) {
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         Map<String, Donation> donationCache = new HashMap<>(); // Cache for donation data
@@ -192,6 +219,7 @@ public class DonationViewModel extends ViewModel {
                 .addOnFailureListener(e -> Log.e("Firestore", "Error fetching donation history", e));
     }
 
+    // Method to format date to "d MMM" format
     public String formatDate(Date date) {
         if (date == null) {
             return null; // Handle null date
@@ -201,6 +229,7 @@ public class DonationViewModel extends ViewModel {
         return outputFormat.format(date);
     }
 
+    // Method to populate donation history with donation details
     private void populateDonationHistory(DonationHistory history, Donation donation) {
         history.setPIC(donation.getPIC());
         history.setCategory(donation.getCategory());
